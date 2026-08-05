@@ -1,0 +1,383 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор платформ для вебинаров: от Яндекс.Телемост и Webinar.ru до Zoom и Livestorm. Сравнение по лимитам участников, записи, интерактиву и ценам."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Платформы для проведения вебинаров и онлайн-мероприятий — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Платформы для проведения вебинаров и онлайн-мероприятий</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-03T00:00:00.000Z" data-astro-cid-ymihodss>3 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>вебинары</li><li data-astro-cid-ymihodss>онлайн-мероприятия</li><li data-astro-cid-ymihodss>видео</li><li data-astro-cid-ymihodss>стриминг</li><li data-astro-cid-ymihodss>образование</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="вебинар-vs-видеоконференция-в-чём-разница">Вебинар vs видеоконференция: в чём разница</h2>
+<p>Видеоконференции и вебинары — разные задачи. Видеосвязь нужна для общения коллег: все участники равноправны, каждый может включить микрофон и камеру. Вебинар — это мероприятие с выступающим (или несколькими спикерами), аудиторией слушателей, интерактивом (опросы, чат, whiteboard), записью и возможностью монетизации.</p>
+<p>Специализированные платформы для вебинаров предлагают инструменты, недоступные в обычных видеоконференциях: страница регистрации с формой сбора данных, автоматическая рассылка напоминаний, трансляция на YouTube и социальные сети, продажа билетов, интерактивные элементы (опросы, тесты, breakout-rooms), белое брендирование комнаты, аналитика участия (кто пришёл, сколько смотрел, какие ответы выбрал).</p>
+<p>При выборе платформы для вебинаров стоит обратить внимание на пять критериев: максимальное количество участников, качество записи и возможность перепубликации, набор интерактивных инструментов, возможность монетизации и стоимость. По данным сравнительных обзоров 2026 года, рынок вебинарных платформ продолжает активно развиваться: особое внимание уделяется автоматическим (evergreen) вебинарам, аналитике вовлечённости и ИИ-инструментам для генерации контента.</p>
+<h2 id="российские-платформы">Российские платформы</h2>
+<h3 id="яндекстелемост">Яндекс.Телемост</h3>
+<p>Яндекс.Телемост — видеоконференц-сервис Яндекса, который также подходит для проведения вебинаров небольшой и средней величины. Бесплатный тариф позволяет проводить встречи до 35 участников без ограничения по времени, с записью и демонстрацией экрана.</p>
+<p>Телемост — не специализированная вебинарная платформа, поэтому в нём нет опросов, whiteboard, страницы регистрации или breakout-rooms. Однако для простых вебинаров (презентация + чат + запись) его возможностей достаточно. Качество записи — 720p или 1080p в зависимости от тарифа и пропускной способности. Платные тарифы (от 299₽/мес) расширяют лимиты и добавляют облачную запись.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Бесплатный до 35 участников, без лимита времени — один из самых щедрых бесплатных тарифов.</li>
+<li>Запись конференции, демонстрация экрана.</li>
+<li>Данные хранятся в РФ, соответствует 152-ФЗ.</li>
+<li>Интеграция с Яндекс 360 (почта, календарь, Документы).</li>
+<li>Простой интерфейс, не требующий обучения.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет специализированных вебинарных инструментов (опросы, whiteboard, регистрация).</li>
+<li>Нет breakout-rooms для групповой работы.</li>
+<li>Нет автоматических (evergreen) вебинаров.</li>
+<li>Платный тариф добавляет лишь расширенные лимиты, не вебинарные функции.</li>
+</ul>
+<p>Ссылка: <a href="https://telemost.yandex.ru" rel="nofollow" target="_blank">telemost.yandex.ru</a></p>
+<h3 id="webinarru">Webinar.ru</h3>
+<p>Webinar.ru (теперь часть экосистемы МТС Линк) — одна из крупнейших и наиболее функциональных российских платформ для вебинаров и онлайн-мероприятий. Предлагает тарифные планы как для совещаний (до 10 участников бесплатно), так и для полноценных вебинаров.</p>
+<p>Тарифы для вебинаров: Basic (до 50 участников), Optima (до 150) и Advance (до 500). На базовых тарифах работа ограничена часами с 10:00 до 20:00. Для крупных мероприятий доступны тарифы Enterprise с индивидуальными условиями.</p>
+<p>Webinar.ru предоставляет полный набор вебинарных инструментов: страница регистрации, рассылка напоминаний, опросы и тесты, whiteboard (маркерная доска), раздевалки (breakout-rooms), автоматические вебинары, CRM-интеграции, брендирование комнаты и аналитика.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Широкий набор вебинарных инструментов (опросы, тесты, whiteboard, breakout-rooms).</li>
+<li>Высокая масштабируемость — до 500 участников на продвинутых тарифах.</li>
+<li>Интеграция с CRM (amoCRM, Битрикс24 и другие).</li>
+<li>Белое брендирование комнаты (логотип, цвета, фон).</li>
+<li>Автоматические вебинары — запись воспроизводится по расписанию.</li>
+<li>Данные в России.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Дорого для малого бизнеса — тарифы для вебинаров существенно дороже совещаний.</li>
+<li>Ограниченное время работы на базовых тарифах (с 10:00 до 20:00).</li>
+<li>Интерфейс требует привыкания — много настроек и панелей.</li>
+<li>Мобильная версия ограничена по функциональности.</li>
+</ul>
+<p>Ссылка: <a href="https://webinar.ru" rel="nofollow" target="_blank">webinar.ru</a></p>
+<h3 id="myownconference">MyOwnConference</h3>
+<p>MyOwnConference — платформа для проведения обучающих вебинаров, конференций и онлайн-курсов. Бесплатный тариф позволяет проводить вебинары до 20 участников с записью до 20 минут. Платные тарифы стартуют от 1 850₽/мес — одна из самых доступных цен входа на российском рынке.</p>
+<p>По обзорам 2025–2026 годов, MyOwnConference — качественная рабочая платформа с необходимыми функциями для живых и автоматических вебинаров. Средняя оценка сервиса — 4.0 из 5 по 25 отзывам.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Доступная цена: от 1 850₽/мес за базовый тариф.</li>
+<li>Все необходимые функции: запись, перепубликация, чат, презентации, whiteboard.</li>
+<li>Автоматические вебинары.</li>
+<li>Белый брендинг.</li>
+<li>Хорошая техническая поддержка.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Бесплатный тариф сильно ограничен (20 участников, 20 минут записи).</li>
+<li>Интерфейс устаревает по сравнению с Webinar.ru и зарубежными конкурентами.</li>
+<li>Нет breakout-rooms на базовых тарифах.</li>
+<li>Меньше интеграций, чем у Webinar.ru.</li>
+</ul>
+<p>Ссылка: <a href="https://myownconference.ru" rel="nofollow" target="_blank">myownconference.ru</a></p>
+<h3 id="vk-звонки">VK Звонки</h3>
+<p>VK Звонки — бесплатная платформа ВКонтакте для видео встреч. Позиционируется для уроков, консультаций, совещаний и вебинаров. Для авторов сообществ есть интеграция с VK Donut: закрытые встречи с платными подписчиками — по сути, встроенная монетизация.</p>
+<p>VK Звонки не требуют регистрации для зрителей — достаточно ссылки. Это делает платформу удобной для открытых вебинаров и мастер-классов.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатно, без ограничений на длительность.</li>
+<li>Интеграция с VK Donut для монетизации закрытых встреч.</li>
+<li>Не требуется регистрация для зрителей.</li>
+<li>Доступно из любого браузера.</li>
+<li>Широкая аудитория ВКонтакте.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченные вебинарные инструменты: нет опросов, whiteboard, регистрации.</li>
+<li>Качество видео зависит от нагрузки серверов VK.</li>
+<li>Нет breakout-rooms и автоматических вебинаров.</li>
+<li>Невозможно брендирование.</li>
+<li>Нет аналитики участников.</li>
+</ul>
+<p>Ссылка: <a href="https://calls.vk.com" rel="nofollow" target="_blank">calls.vk.com</a></p>
+<h3 id="clickmeeting">ClickMeeting</h3>
+<p>ClickMeeting — платформа для вебинаров с русскоязычным интерфейсом. Разработана польской компанией и ориентирована на обучающие и маркетинговые вебинары. Тарифы стартуют от ~3 995₽/мес.</p>
+<p>ClickMeeting предлагает качественную запись, интерактивные инструменты (опросы, доска, чат), интеграцию с YouTube-трансляцией и автоматические вебинары. Интерфейс переведён на русский, но местами заметны переводческие шероховатости.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Качественная запись и перепубликация.</li>
+<li>Интерактивные инструменты (опросы, доска, чат).</li>
+<li>Интеграция с YouTube-трансляцией.</li>
+<li>Белое брендирование комнаты.</li>
+<li>Автоматические вебинары.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Дорогой для российского рынка (от ~3 995₽/мес).</li>
+<li>Данные за рубежом (Польша) — риски по 152-ФЗ.</li>
+<li>Ограниченный бесплатный тест.</li>
+<li>Интерфейс на русском, но с шероховатостями.</li>
+</ul>
+<p>Ссылка: <a href="https://clickmeeting.com" rel="nofollow" target="_blank">clickmeeting.com</a></p>
+<h2 id="зарубежные-платформы">Зарубежные платформы</h2>
+<h3 id="zoom-webinars">Zoom (Webinars)</h3>
+<p>Zoom Webinars — отдельный продукт от Zoom, специально для проведения вебинаров (в отличие от Zoom Meetings для совещаний). Поддерживает до 1000 участников на базовом тарифе и до 50 000 с дополнениями (Large Meeting/Webinar Add-on).</p>
+<p>Zoom Webinars разделяет роли: панелисты (могут говорить и показывать экран) и зрители (смотрят и пишут в чат). Есть Q&#x26;A-сессии, опросы, breakout-rooms и интеграция с 3000+ приложениями.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Проверенная масштабируемость — до 50 000 зрителей.</li>
+<li>Отличное качество видео и записи.</li>
+<li>Интерактивные инструменты (опросы, Q&#x26;A, breakout-rooms).</li>
+<li>Панелисты и co-hosts для управления мероприятием.</li>
+<li>Интеграции с 3000+ приложениями.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Платный тариф Zoom Webinars от $79/хост/мес (гораздо дороже обычных встреч).</li>
+<li>Данные за рубежом.</li>
+<li>Сложная структура тарифов с множеством дополнений.</li>
+<li>Бесплатный тариф Meetings (40 минут, до 100 участников) не подходит для вебинаров.</li>
+</ul>
+<p>Ссылка: <a href="https://zoom.us" rel="nofollow" target="_blank">zoom.us</a></p>
+<h3 id="livestorm">Livestorm</h3>
+<p>Livestorm — современная платформа для вебинаров и онлайн-мероприятий с упором на маркетинг и продажи. В 2026 году Livestorm активно сравнивают с Zoom Webinars и Demio как один из лучших вариантов для B2B-маркетинга.</p>
+<p>Livestorm предлагает красивый интерфейс, мощные инструменты для регистрации и email-напоминаний, интеграции с CRM и подробную аналитику. Подходит для маркетинговых вебинаров, product demos и customer onboarding.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Современный и красивый интерфейс.</li>
+<li>Мощные инструменты для регистрации и email-напоминаний.</li>
+<li>Интеграция с CRM (HubSpot, Salesforce, Pipedrive, Marketo).</li>
+<li>Аналитика участия: кто пришёл, сколько смотрел, какие ссылки кликнул.</li>
+<li>Автоматические (evergreen) вебинары.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Дорогой (от $99/мес за Standard, до 250 участников).</li>
+<li>Данные за рубежом (Франция).</li>
+<li>Нет breakout-rooms.</li>
+<li>Ориентация на англоязычный рынок.</li>
+</ul>
+<p>Ссылка: <a href="https://livestorm.co" rel="nofollow" target="_blank">livestorm.co</a></p>
+<h3 id="demio">Demio</h3>
+<p>Demio — платформа для вебинаров, созданная маркетологами для маркетологов. Фокус на простоте проведения и конверсии участников в клиентов. Минимальная настройка — запустить вебинар можно за 5 минут.</p>
+<p>Demio предлагает встроенную воронку регистрации, интеграции с email-сервисами и CRM, а также автоматические и мгновенные вебинары. Мгновенные вебинары — уникальная функция: зритель регистрируется и сразу попадает на запись, как будто вебинар идёт прямо сейчас.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Минимальная настройка — запуск за 5 минут.</li>
+<li>Встроенная воронка регистрации.</li>
+<li>Интеграции с email-сервисами и CRM.</li>
+<li>Автоматические и мгновенные вебинары.</li>
+<li>Красивые комнаты с хорошим дизайном по умолчанию.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Дорогой: от $49/мес (Starter, до 50 участников).</li>
+<li>Ограниченные интерактивные инструменты (нет whiteboard, нет breakout-rooms).</li>
+<li>Данные за рубежом (США).</li>
+<li>Стартовый тариф ограничен 50 участниками.</li>
+</ul>
+<p>Ссылка: <a href="https://demio.com" rel="nofollow" target="_blank">demio.com</a></p>
+<h3 id="stepik-для-курсов-с-вебинарами">Stepik (для курсов с вебинарами)</h3>
+<p>Stepik — образовательная платформа для создания онлайн-курсов с более чем 20 000 курсов по программированию, анализу данных, языкам и другим темам. Хотя Stepik — это прежде всего LMS (система управления обучением), авторы курсов могут проводить встроенные видеолекции и вебинары.</p>
+<p>Stepik бесплатен для авторов: можно создать курс с видеоуроками, тестами, домашними заданиями и сертификатами. Монетизация через платные курсы. Однако для прямых вебинаров с интерактивом Stepik не подходит — для этого нужны сторонние инструменты.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Бесплатная платформа для авторов курсов.</li>
+<li>Встроенная система тестирования и домашних заданий.</li>
+<li>Сертификация учащихся.</li>
+<li>Монетизация через платные курсы.</li>
+<li>Русскоязычная аудитория и интерфейс.</li>
+<li>Данные в России.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не специализированная вебинарная платформа.</li>
+<li>Нет breakout-rooms, whiteboard, опросов в реальном времени.</li>
+<li>Запись вебинаров — через сторонние инструменты.</li>
+<li>Ориентирован на образовательный контент, а не на бизнес-вебинары.</li>
+</ul>
+<p>Ссылка: <a href="https://stepik.org" rel="nofollow" target="_blank">stepik.org</a></p>
+<h2 id="как-выбрать-платформу-для-вебинаров">Как выбрать платформу для вебинаров</h2>
+<p>Для <strong>бесплатных вебинаров</strong> небольшой аудитории — Яндекс.Телемост (до 35 участников, без ограничений по времени) или VK Звонки (без ограничений, с VK Donut для монетизации).</p>
+<p>Для <strong>обучающих вебинаров и курсов</strong> — MyOwnConference (доступная цена от 1 850₽/мес) или Stepik (если нужен полноценный курс с тестами и сертификацией).</p>
+<p>Для <strong>корпоративных мероприятий</strong> — Webinar.ru (российская платформа с полным набором инструментов, до 500 участников) или Zoom Webinars (если нет ограничений по 152-ФЗ, до 50 000 зрителей).</p>
+<p>Для <strong>маркетинговых вебинаров</strong> с фокусом на конверсию — Demio (простота запуска, мгновенные вебинары) или Livestorm (аналитика, интеграции с CRM).</p>
+<p>Для <strong>масштабных мероприятий</strong> с тысячами участников — Zoom Webinars (до 50 000 зрителей) или Webinar.ru Enterprise (индивидуальные условия).</p>
+<p>Важно помнить, что для компаний, работающих с персональными данными граждан РФ, предпочтительны платформы с хранением данных в России: Яндекс.Телемост, Webinar.ru, MyOwnConference, VK Звонки, Stepik.</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Лимит участников</th><th>Запись</th><th>Опросы / Whiteboard</th><th>Монетизация</th><th>Цена</th><th>Данные в РФ</th></tr></thead><tbody><tr><td>Яндекс.Телемост</td><td>До 35 (бесплатно)</td><td>Да</td><td>Нет</td><td>Нет</td><td>Бесплатно / от 299₽/мес</td><td>Да</td></tr><tr><td>Webinar.ru</td><td>До 500</td><td>Да</td><td>Да</td><td>Да</td><td>Совещания бесплатно, вебинары от ~3 995₽/мес</td><td>Да</td></tr><tr><td>MyOwnConference</td><td>Зависит от тарифа</td><td>Да</td><td>Да</td><td>Да</td><td>От 1 850₽/мес</td><td>Да</td></tr><tr><td>VK Звонки</td><td>Без ограничений</td><td>Да</td><td>Нет</td><td>VK Donut</td><td>Бесплатно</td><td>Да</td></tr><tr><td>ClickMeeting</td><td>До 1000</td><td>Да</td><td>Да</td><td>Да</td><td>От ~3 995₽/мес</td><td>Нет (Польша)</td></tr><tr><td>Zoom Webinars</td><td>До 1000 (до 50 000)</td><td>Да</td><td>Да</td><td>Да</td><td>От $79/хост/мес</td><td>Нет</td></tr><tr><td>Livestorm</td><td>До 250 (Standard)</td><td>Да</td><td>Да</td><td>Да</td><td>От $99/мес</td><td>Нет</td></tr><tr><td>Demio</td><td>До 50 (Starter)</td><td>Да</td><td>Опросы</td><td>Да</td><td>От $49/мес</td><td>Нет</td></tr><tr><td>Stepik</td><td>Не ограничено</td><td>Через сторонние</td><td>Нет</td><td>Платные курсы</td><td>Бесплатно (для авторов)</td><td>Да</td></tr></tbody></table></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор и сравнение сервисов для web push, mobile push и in-app уведомлений — российские и зарубежные платформы с ценами, функционалом и отзывами."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Сервисы для push-уведомлений: сравнение платформ — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Сервисы для push-уведомлений: сравнение платформ</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-03T00:00:00.000Z" data-astro-cid-ymihodss>3 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>push</li><li data-astro-cid-ymihodss>уведомления</li><li data-astro-cid-ymihodss>маркетинг</li><li data-astro-cid-ymihodss>retention</li><li data-astro-cid-ymihodss>вовлечение</li></ul></header><div class="prose" data-astro-cid-ymihodss><p>Push-уведомления — один из самых недооценённых каналов коммуникации с аудиторией. При правильном использовании они обеспечивают CTR в 3–5 раз выше, чем email-рассылки, а стоимость одного уведомления в сотни раз ниже SMS. В этой статье мы разберём восемь платформ для отправки push-уведомлений, сравним их возможности и поможем определиться с выбором.</p>
+<h2 id="типы-push-уведомлений">Типы push-уведомлений</h2>
+<p>Прежде чем перейти к обзору сервисов, важно понимать разницу между тремя основными типами push-уведомлений.</p>
+<p><strong>Web push</strong> — уведомления, которые отображаются на рабочем столе (desktop) или мобильном устройстве пользователя через браузер. Для их получения пользователь должен дать разрешение (opt-in) на сайте. Не требуют установки приложения.</p>
+<p><strong>Mobile push</strong> — уведомления, отправляемые в нативные мобильные приложения через Firebase Cloud Messaging (FCM) или Apple Push Notification Service (APNs). Требуют установленного приложения.</p>
+<p><strong>In-app push</strong> — сообщения, отображаемые внутри приложения во время его использования. Не требуют разрешения от системы — пользователь видит их, когда активно пользуется приложением.</p>
+<p>Идеальная стратегия обычно включает комбинацию всех трёх типов, но для начала достаточно выбрать один канал и его обслуживание.</p>
+<h2 id="российские-платформы">Российские платформы</h2>
+<h3 id="pushwoosh">Pushwoosh</h3>
+<p>Pushwoosh — международная платформа с российскими корнями (штаб-квартира в Люксембурге, R&#x26;D-офис в Москве). Сервис специализируется исключительно на push-уведомлениях и является одним из самых функциональных решений на рынке.</p>
+<p><strong>Особенности:</strong></p>
+<ul>
+<li>Поддержка web push, mobile push (iOS, Android) и in-app сообщений</li>
+<li>Стоимость — бесплатно до 1 000 MAU, далее от $13 за 1 000 MAU в месяц</li>
+<li>AI-poweredPersonalized push с рекомендациями по контенту</li>
+<li>Rich push-уведомления с изображениями, видео и кнопками действий</li>
+<li>Геотаргетинг и геофенсинг</li>
+<li>Предиктивная аналитика: определение лучшего времени для отправки</li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Глубокая специализация на push — платформа не размывается на другие каналы</li>
+<li>Отличный SDK с поддержкой всех основных мобильных платформ</li>
+<li>AI-инструменты для персонализации и оптимизации</li>
+<li>Встроенный A/B-тест для push-кампаний</li>
+<li>Богатая аналитика: от CTR до retention-метрик</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Бесплатный лимит небольшой — 1 000 MAU</li>
+<li>Нет email и SMS в составе платформы</li>
+<li>Порог входа для нетехнических пользователей выше, чем у конкурентов</li>
+<li>Англоязычный интерфейс панели управления</li>
+</ul>
+<p><strong>Ссылка:</strong> <a href="https://www.pushwoosh.com" rel="nofollow" target="_blank">https://www.pushwoosh.com</a></p>
+<h3 id="devino-бывш-pushpush">Devino (бывш. PushPush)</h3>
+<p>Devino — российский провайдер omnichannel-коммуникаций, ранее известный как PushPush. Помимо push-уведомлений, сервис предлагает SMS, Viber-рассылки и email, представляя собой комплексное решение для маркетинга.</p>
+<p><strong>Особенности:</strong></p>
+<ul>
+<li>Web push и mobile push уведомления</li>
+<li>SMS, Viber и email-рассылки в единой платформе</li>
+<li>Стоимость push-уведомлений — «в сотни раз ниже стоимости SMS»</li>
+<li>Сегментация аудитории по поведенческим и демографическим параметрам</li>
+<li>Автоматические триггерные кампании</li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Omnichannel-подход: push + SMS + Viber + email</li>
+<li>Доступная стоимость для российского рынка</li>
+<li>Триггерные рассылки на основе событий пользователя</li>
+<li>Техподдержка на русском языке</li>
+<li>Прямые подключения к российским операторам связи</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Менее развитый функционал push по сравнению с Pushwoosh</li>
+<li>Нет AI-оптимизации отправки</li>
+<li>Нет in-app push-уведомлений</li>
+<li>Меньше готовых SDK и интеграций</li>
+</ul>
+<p><strong>Ссылка:</strong> <a href="https://devinotel.com" rel="nofollow" target="_blank">https://devinotel.com</a></p>
+<h3 id="notix">Notix</h3>
+<p>Notix — бесплатный сервис web push-уведомлений, ориентированный на повторное вовлечение аудитории (re-engagement). Платформа работает как с desktop, так и с мобильными устройствами и заявляет о базе более 220 000 подписчиков с ROI +40%.</p>
+<p><strong>Особенности:</strong></p>
+<ul>
+<li>Полностью бесплатный для базового использования</li>
+<li>Web push для desktop и мобильных браузеров</li>
+<li>Сегментация по географии, языку, платформе</li>
+<li>Автоматические уведомления при обновлении контента на сайте</li>
+<li>Монетизация push-трафика (опционально)</li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Бесплатный сервис — нет скрытых платежей</li>
+<li>Быстрая установка: несколько строк JavaScript-кода</li>
+<li>Монетизационный модуль — можно зарабатывать на push-трафике</li>
+<li>Поддержка мобильных и desktop-браузеров</li>
+<li>Простой интерфейс без лишних функций</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только web push — нет mobile push и in-app</li>
+<li>Нет продвинутой аналитики и AI-оптимизации</li>
+<li>Монетизационная модель может снижать качество трафика</li>
+<li>Нет триггерных и автоматических кампаний</li>
+<li>Поддержка ограничена</li>
+</ul>
+<p><strong>Ссылка:</strong> <a href="https://notix.io" rel="nofollow" target="_blank">https://notix.io</a></p>
+<h3 id="gravitec">Gravitec</h3>
+<p>Gravitec — платформа web push-уведомлений с гибкими тарифами и широкими возможностями сегментации. Сервис ориентирован на медиа-издания, интернет-магазины и SaaS-проекты, которым важно вовлекать аудиторию и возвращать на сайт.</p>
+<p><strong>Особенности:</strong></p>
+<ul>
+<li>Web push-уведомления для desktop и мобильных устройств</li>
+<li>Бесплатный старт без ограничений по функционалу</li>
+<li>Сегментация по подпискам, тегам и пользовательским параметрам</li>
+<li>Автоматические уведомления (RSS-to-push)</li>
+<li>A/B-тестирование заголовков и текстов уведомлений</li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Прозрачное ценообразование с гибкими тарифами</li>
+<li>Бесплатный стартовый период для тестирования</li>
+<li>Хорошая сегментация аудитории</li>
+<li>A/B-тестирование уведомлений</li>
+<li>Много готовых плагинов (WordPress, Shopify, Joomla)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только web push — нет поддержки мобильных приложений</li>
+<li>Нет omnichannel (SMS, email, Viber)</li>
+<li>Функционал автоматизации ограничен по сравнению с лидерами</li>
+<li>Нет in-app уведомлений</li>
+</ul>
+<p><strong>Ссылка:</strong> <a href="https://gravitec.net" rel="nofollow" target="_blank">https://gravitec.net</a></p>
+<h2 id="зарубежные-платформы">Зарубежные платформы</h2>
+<h3 id="onesignal">OneSignal</h3>
+<p>OneSignal — мировой лидер среди платформ push-уведомлений с базой более 2 миллионов бизнеса и 12 миллиардов отправленных сообщений. Платформа поддерживает push, email, SMS/RCS и in-app messaging.</p>
+<p><strong>Особенности:</strong></p>
+<ul>
+<li>Web push, mobile push (iOS, Android), email, SMS, in-app</li>
+<li>Бесплатный тариф с существенным лимитом (до 10 000 подписчиков)</li>
+<li>Новые API для каждого канала (Email API, SMS API, In-App API)</li>
+<li>A/B-тестирование, автоматические kampanii</li>
+<li>Сегментация по пользовательским данным и поведению</li>
+<li>SDK для всех основных платформ (iOS, Android, Web, Unity, React Native)</li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Самый щедрый бесплатный тариф на рынке — до 10 000 подписчиков</li>
+<li>Omnichannel-платформа: push + email + SMS + in-app</li>
+<li>Выдающийся developer experience: отличная документация, SDK, API</li>
+<li>Одно из 4 крупнейших приложений в App Store используют OneSignal</li>
+<li>Сегментация, автоматизация, A/B-тестирование — всё в бесплатном плане</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>При превышении бесплатного лимита тарифы становятся дорогостоящими</li>
+<li>Порог входа для нетехнических пользователей — требуется разработчик для настройки</li>
+<li>Нет встроенного конструктора креативов для push</li>
+<li>На высоких объёмах платный тариф может оказаться дороже конкурентов</li>
+</ul>
+<p><strong>Ссылка:</strong> <a href="https://onesignal.com" rel="nofollow" target="_blank">https://onesignal.com</a></p>
+<h3 id="pushalert">PushAlert</h3>
+<p>PushAlert — индийский сервис для web push-уведомлений с акцентом на recovering брошенных корзин и re-engagement. Платформа ориентирована на интернет-магазины и e-commerce проекты.</p>
+<p><strong>Особенности:</strong></p>
+<ul>
+<li>Web push-уведомления (desktop и мобильные)</li>
+<li>Автоматические уведомления для брошенных корзин</li>
+<li>Уведомления о снижении цен и распродажах</li>
+<li>Сегментация по географии, браузеру, поведению</li>
+<li>JS API для расширенной кастомизации</li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Готовые сценарии для e-commerce (cart abandonment, price drop)</li>
+<li>Доступные тарифы — от $12/месяц</li>
+<li>Гибкий JS API для кастомных интеграций</li>
+<li>WooCommerce, Shopify и другие готовые плагины</li>
+<li>Автоматизация без дополнительной оплаты</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только web push — нет mobile push и in-app</li>
+<li>Нет omnichannel-возможностей</li>
+<li>Меньше функций аналитики по сравнению с OneSignal</li>
+<li>Нет AI-оптимизации отправки</li>
+<li>Поддержка в основном на английском языке</li>
+</ul>
+<p><strong>Ссылка:</strong> <a href="https://www.pushalert.co" rel="nofollow" target="_blank">https://www.pushalert.co</a></p>
+<h3 id="sendpulse-модуль-push">SendPulse (модуль push)</h3>
+<p>SendPulse — мультимедийная платформа маркетинговых коммуникаций, в состав которой входит модуль web push-уведомлений. Помимо push, сервис предоставляет email-рассылки, SMS, Viber и чат-боты, что делает его комплексным инструментом omnichannel-маркетинга.</p>
+<p><strong>Особенности:</strong></p>
+<ul>
+<li>Web push-уведомления бесплатно до 10 000 подписчиков</li>
+<li>Поддержка desktop и мобильных браузеров</li>
+<li>Автоматические триггерные push на основе событий</li>
+<li>Каскадные рассылки: push → email → SMS</li>
+<li>Сегментация по тегам, переменным и поведению</li>
+<li>Готовые плагины для WordPress, Shopify, Bitrix и других CMS</li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатный модуль push до 10 000 подписчиков</li>
+<li>Omnichannel в одном интерфейсе: push + email + SMS + Viber</li>
+<li>Триггерные push на основе пользовательских событий</li>
+<li>Отличная поддержка на русском языке</li>
+<li>Много готовых интеграций с популярными CMS</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только web push — нет native mobile push и in-app</li>
+<li>Бесплатный лимит одинаковый для push и email — 10 000 контактов суммарно</li>
+<li>Функционал push менее глубокий, чем у специализированных платформ (Pushwoosh, OneSignal)</li>
+<li>Нет AI-оптимизации и предиктивной аналитики для push</li>
+</ul>
+<p><strong>Ссылка:</strong> <a href="https://sendpulse.com" rel="nofollow" target="_blank">https://sendpulse.com</a></p>
+<h2 id="сравнительная-таблица-push-платформ">Сравнительная таблица push-платформ</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Web push</th><th>Mobile push</th><th>In-app</th><th>Бесплатно до</th><th>Автоматизация</th><th>Персонализация</th></tr></thead><tbody><tr><td>Pushwoosh</td><td>✅</td><td>✅</td><td>✅</td><td>1 000 MAU</td><td>✅ AI</td><td>✅ AI</td></tr><tr><td>Devino</td><td>✅</td><td>✅</td><td>❌</td><td>По запросу</td><td>✅ Триггеры</td><td>✅ Сегментация</td></tr><tr><td>Notix</td><td>✅</td><td>❌</td><td>❌</td><td>Без лимита</td><td>❌</td><td>Базовая</td></tr><tr><td>Gravitec</td><td>✅</td><td>❌</td><td>❌</td><td>Тестовый период</td><td>✅ RSS</td><td>✅ A/B</td></tr><tr><td>OneSignal</td><td>✅</td><td>✅</td><td>✅</td><td>10 000 подписчиков</td><td>✅</td><td>✅</td></tr><tr><td>PushAlert</td><td>✅</td><td>❌</td><td>❌</td><td>14 дней</td><td>✅ E-commerce</td><td>✅ JS API</td></tr><tr><td>SendPulse</td><td>✅</td><td>❌</td><td>❌</td><td>10 000 подписчиков</td><td>✅ Триггеры</td><td>✅ Теги</td></tr><tr><td>Push.js</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table>
+<p><em>Примечание: Push.js — это open-source JavaScript-библиотека для работы с push-уведомлениями в браузере, а не самостоятельный сервис. Она не требует регистрации и не предоставляет аналитики.</em></p>
+<h2 id="какой-сервис-выбрать">Какой сервис выбрать</h2>
+<p><strong>Для интернет-магазина в России</strong> — SendPulse. Бесплатный модуль push до 10 000 подписчиков, каскадные рассылки (push → email → SMS), готовые плагины для популярных CMS и поддержка на русском языке. Отличный вариант для старта.</p>
+<p><strong>Для мобильного приложения</strong> — Pushwoosh или OneSignal. Оба сервиса предлагают полноценные SDK для iOS и Android, поддерживают in-app push и предоставляют глубокую аналитику. Pushwoosh лучше для продвинутой персонализации с AI, OneSignal — для щедрого бесплатного тарифа.</p>
+<p><strong>Для медиа-издания или контентного сайта</strong> — Gravitec. RSS-to-push автоматизация, A/B-тестирование заголовков и плагины для WordPress/Joomla. Цены адекватные для проектов с большим количеством подписчиков.</p>
+<p><strong>Для e-commerce с акцентом на возврат корзины</strong> — PushAlert. Готовые сценарии для abandoned cart, price drop notifications и WooCommerce-интеграция. Лёгкий и целевой инструмент.</p>
+<p><strong>Для крупного enterprise-проекта</strong> — Pushwoosh. Глубокая аналитика, AI-оптимизация, геофенсинг, предиктивные модели лучшего времени отправки. Платформа рассчитана на профессиональные команды с технической экспертизой.</p>
+<p><strong>Для бесплатного старта</strong> — Notix или SendPulse. Notix полностью бесплатен для web push (но с ограниченным функционалом), SendPulse предлагает полноценный модуль бесплатно до 10 000 подписчиков.</p>
+<p>Помните: успешная push-стратегия начинается с качественного opt-in. Не запрашивайте разрешение на push-уведомления при первом визите — дайте пользователю acquainted с вашим контентом, и только затем предлагайте подписку. И обязательно сегментируйте аудиторию — нерелевантные push-уведомления — кратчайший путь к отпискам.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

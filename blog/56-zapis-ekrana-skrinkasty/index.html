@@ -1,0 +1,399 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор сервисов и программ для записи экрана — от OBS Studio и ShareX до Loom, Vidyard и Camtasia. Сравнение качества записи, веб-камеры, монтажа и облака."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Сервисы для записи экрана (скринкасты) — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Сервисы для записи экрана (скринкасты)</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>скринкаст</li><li data-astro-cid-ymihodss>запись экрана</li><li data-astro-cid-ymihodss>OBS</li><li data-astro-cid-ymihodss>Loom</li><li data-astro-cid-ymihodss>Camtasia</li><li data-astro-cid-ymihodss>ShareX</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="почему-нужны-сервисы-для-записи-экрана">Почему нужны сервисы для записи экрана</h2>
+<p>Запись экрана (скринкастинг) — обязательный инструмент для создателей обучающих видео, демо продуктов, отчётов об ошибках и корпоративных коммуникаций. По данным Swarmify (2026), лучший инструмент для большинства создателей — OBS Studio, но Camtasia, Loom и ScreenPal выигрывают в определённых сценариях. TechSmith (июнь 2026) выделяет 10 ключевых инструментов, различающихся по качеству записи, возможностям монтажа и формату использования.</p>
+<p>При выборе стоит оценивать: <strong>качество записи</strong> (1080p, 4K, частота кадров), <strong>оверлей веб-камеры</strong> (картинка в картинке), <strong>инструменты монтажа</strong> (обрезка, аннотации, переходы), <strong>облачное хранилище</strong> (автоматическая загрузка и ссылка для просмотра), <strong>бесплатные ограничения</strong> (водяной знак, таймлимит, разрешение).</p>
+<h2 id="obs-studio">OBS Studio</h2>
+<p><strong>Сайт:</strong> <a href="https://obsproject.com" rel="nofollow" target="_blank">obsproject.com</a></p>
+<p>OBS Studio — бесплатная open-source программа для записи экрана и стриминга. Является стандартом де-факто среди стримеров и создателей контента. Поддерживает запись в 4K, многоканальный звук, сцены с гибкой композицией (экран + веб-камера + текст + изображения), плагины и фильтры. Работает на Windows, macOS и Linux.</p>
+<p>OBS не имеет встроенного облачного хранилища — файлы сохраняются локально в выбранную папку. Для монтажа потребуется внешний редактор (DaVinci Resolve, Premiere Pro). Интерфейс сложен для новичков, но гибкость настройек несравнима: каждый параметр кодирования, от битрейта до профиля кодека, доступен для ручной настройки.</p>
+<p><strong>Цена:</strong> бесплатно (open-source).</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатный, без ограничений</li>
+<li>Запись в 4K с настраиваемым битрейтом</li>
+<li>Неограниченное количество сцен и источников</li>
+<li>Мощное комьюнити и плагины</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Сложный интерфейс для новичков</li>
+<li>Нет встроенного монтажа</li>
+<li>Нет облачного хранилища</li>
+<li>Требует настройки кодировщика</li>
+</ul>
+<h2 id="яндекс-браузер-встроенная-запись-экрана">Яндекс Браузер (встроенная запись экрана)</h2>
+<p><strong>Сайт:</strong> <a href="https://browser.yandex.ru" rel="nofollow" target="_blank">browser.yandex.ru</a></p>
+<p>Яндекс Браузер предлагает встроенные инструменты для создания скриншотов и записи экрана вкладки. По данным lumpics.ru (март 2026), для записи экрана в Яндекс Браузере можно использовать расширение Screen Recorder, Screencastify или сторонние решения. Также Яндекс.Диск обеспечивает быстрый скриншот с последующей загрузкой в облако.</p>
+<p>Встроенные возможности ограничены: запись одной вкладки, базовое качество, нет монтажа. Подходит для быстрых демонстраций.</p>
+<p><strong>Цена:</strong> бесплатно.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Не требует установки отдельных программ</li>
+<li>Быстрый скриншот с загрузкой в Яндекс.Диск</li>
+<li>Интеграция с экосистемой Яндекса</li>
+<li>Простота для базовых задач</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Запись только одной вкладки браузера</li>
+<li>Нет монтажа</li>
+<li>Ограниченное качество</li>
+<li>Нет оверлея веб-камеры</li>
+</ul>
+<h2 id="loom">Loom</h2>
+<p><strong>Сайт:</strong> <a href="https://loom.com" rel="nofollow" target="_blank">loom.com</a></p>
+<p>Loom — один из самых популярных облачных сервисов для записи экрана. Позволяет записывать экран, веб-камеру и микрофон, мгновенно получать ссылку для просмотра и делиться. По данным TechSmith и LinkedIn (2026), Loom — лучший выбор для асинхронных коммуникаций в командах.</p>
+<p>Loom предлагает ИИ-функции: автогенерация субтитров, резюме видео (Loom AI), удаление слов-паразитов. Запись в HD (1080p), оверлей веб-камеры, авто-транскрибация. Облачное хранилище с неограниченным числом зрителей.</p>
+<p><strong>Цена:</strong> бесплатно (25 записей, 5 мин/видео), «Business» — $12,50/мес (неограниченно, Loom AI).</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Мгновенная ссылка для просмотра</li>
+<li>ИИ-субтитры и авто-резюме</li>
+<li>Простота использования</li>
+<li>Отличен для командных коммуникаций</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Бесплатный тариф ограничен 5 минутами</li>
+<li>Нет записи в 4K</li>
+<li>Нет продвинутого монтажа</li>
+<li>Требует интернета для записи</li>
+</ul>
+<h2 id="vidyard">Vidyard</h2>
+<p><strong>Сайт:</strong> <a href="https://vidyard.com" rel="nofollow" target="_blank">vidyard.com</a></p>
+<p>Vidyard — облачный сервис для записи экрана с акцентом на продажи и маркетинг. Позволяет создавать персонализированные видео для потенциальных клиентов, встраивать видео в email-рассылки и отслеживать просмотры. По данным обзоров 2026 года, Vidyard — лидер среди B2B-инструментов для видео-коммуникаций.</p>
+<p>Vidyard предлагает запись в HD, оверлей веб-камеры, ИИ-субтитры, встраивание в CRM (Salesforce, HubSpot). Аналитика: кто, когда и сколько смотрел видео.</p>
+<p><strong>Цена:</strong> «Free» — бесплатно (25 видео/мес, водяной знак), «Pro» — $19/мес, «Business» — $59/мес.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Аналитика просмотров для продаж</li>
+<li>Встраивание в CRM и email</li>
+<li>ИИ-субтитры и генерация</li>
+<li>Отличен для B2B и продаж</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Водяной знак на бесплатной версии</li>
+<li>Нет записи в 4K</li>
+<li>Фокус на продажи, а не на контент</li>
+<li>Платные тарифы дорогие</li>
+</ul>
+<h2 id="screencast-o-matic-screenpal">Screencast-O-Matic (ScreenPal)</h2>
+<p><strong>Сайт:</strong> <a href="https://screenpal.com" rel="nofollow" target="_blank">screenpal.com</a></p>
+<p>ScreenPal (ранее Screencast-O-Matic) — онлайн-сервис и десктопное приложение для записи экрана и простого монтажа. По данным Texterra (июль 2024), входит в список основных инструментов для записи экрана. Предоставляет запись экрана, веб-камеры и микрофона, простой видеоредактор с обрезкой, аннотациями, переходами и наложением текста.</p>
+<p>Доступен как веб-расширение и десктопное приложение. Загрузка в облако ScreenPal или экспорт на YouTube, Google Drive.</p>
+<p><strong>Цена:</strong> «Free» — бесплатно (водяной знак, 15 мин), «Pro» — $4/мес, «Max» — $7/мес.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Доступная цена</li>
+<li>Встроенный простой видеоредактор</li>
+<li>Работает и в браузере, и как приложение</li>
+<li>Быстрая загрузка в облако</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Водяной знак на бесплатной версии</li>
+<li>Ограничение 15 минут бесплатно</li>
+<li>Нет 4K</li>
+<li>Облачное хранилище ограничено</li>
+</ul>
+<h2 id="sharex">ShareX</h2>
+<p><strong>Сайт:</strong> <a href="https://getsharex.com" rel="nofollow" target="_blank">getsharex.com</a></p>
+<p>ShareX — бесплатная open-source утилита для Windows, специализирующаяся на захвате экрана и записи. По данным Puppydog (2026), ShareX — standout-инструмент, сочетающий скриншоты и запись экрана. Поддерживает более 80 мест назначения для автоматической загрузки (Imgur, Google Drive, OneDrive, Dropbox, FTP и др.).</p>
+<p>ShareX обеспечивает запись экрана в GIF, видео (MP4) и скриншоты с аннотациями. Нет веб-камеры. Нет облачного хранилища собственного — использует сторонние сервисы.</p>
+<p><strong>Цена:</strong> бесплатно (open-source).</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатный</li>
+<li>80+ мест для автоматической загрузки</li>
+<li>Запись в GIF и видео</li>
+<li>Автоматизация через горячие клавиши</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только Windows</li>
+<li>Нет оверлея веб-камеры</li>
+<li>Нет монтажа видео</li>
+<li>Сложная настройка для новичков</li>
+</ul>
+<h2 id="camtasia">Camtasia</h2>
+<p><strong>Сайт:</strong> <a href="https://www.techsmith.com/camtasia.html" rel="nofollow" target="_blank">techsmith.com/camtasia</a></p>
+<p>Camtasia — профессиональная программа для записи экрана и видеомонтажа от TechSmith. По данным TechSmith (июнь 2026), это лучший инструмент для полноценного создания обучающих видео. Запись экрана в 4K, веб-камера, мощный таймлайн, анимации, переходы, голосовые комментарии, квизы и субтитры.</p>
+<p>Camtasia включает шаблоны, библиотеку медиа и ИИ-функции (удаление пауз, улучшение звука). Один из самых полных инструментов для скринкастов.</p>
+<p><strong>Цена:</strong> «Starter» — $149,99/год, «Professional» — $299,99/год.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полный видеоредактор + запись экрана</li>
+<li>Запись в 4K</li>
+<li>Шаблоны, анимации, квизы</li>
+<li>ИИ-улучшение звука и удаление пауз</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Высокая цена (подписка или разовая покупка)</li>
+<li>Нет облачного хранилища</li>
+<li>Тяжёлый софт, требует мощного ПК</li>
+<li>Избыточен для простых задач</li>
+</ul>
+<h2 id="snagit">Snagit</h2>
+<p><strong>Сайт:</strong> <a href="https://www.techsmith.com/snagit.html" rel="nofollow" target="_blank">techsmith.com/snagit</a></p>
+<p>Snagit — утилита для скриншотов и быстрой записи экрана от TechSmith. По данным Puppydog (2026), это «самый простой и быстрый инструмент для скриншотов и быстрой записи экрана». Основной фокус — захват экрана с аннотациями, а не полноценный монтаж видео.</p>
+<p>Snagit обеспечивает запись коротких видео (скринкастов), обрезку, маркировку, стрелки, текст, штампы. Встроенная библиотека для организации скриншотов.</p>
+<p><strong>Цена:</strong> $62,99/год.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Лучший для скриншотов с аннотациями</li>
+<li>Быстрая запись коротких видео</li>
+<li>Библиотека для организации</li>
+<li>Простота использования</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет полноценного видеомонтажа</li>
+<li>Нет облачного хранилища</li>
+<li>Нет 4K</li>
+<li>Платный (нет бесплатной версии)</li>
+</ul>
+<h2 id="recordcast">RecordCast</h2>
+<p><strong>Сайт:</strong> <a href="https://recordcast.com" rel="nofollow" target="_blank">recordcast.com</a></p>
+<p>RecordCast — бесплатный онлайн-сервис для записи экрана без установки. Позволяет записывать экран, веб-камеру или оба источника одновременно. Доступен базовый видеоредактор для обрезки, обрезки кадров и добавления субтитров.</p>
+<p>Работает в браузере, не требует регистрации для записи. Подходит для быстрых задач, но функционал ограничен.</p>
+<p><strong>Цена:</strong> бесплатно.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатный</li>
+<li>Работает в браузере, без установки</li>
+<li>Запись экрана и веб-камеры</li>
+<li>Базовый редактор</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет 4K</li>
+<li>Нет облачного хранилища</li>
+<li>Ограниченные инструменты монтажа</li>
+<li>Нет экспорта в высоком битрейте</li>
+</ul>
+<h2 id="awesome-screenshot">Awesome Screenshot</h2>
+<p><strong>Сайт:</strong> <a href="https://www.awesomescreenshot.com" rel="nofollow" target="_blank">awesomescreenshot.com</a></p>
+<p>Awesome Screenshot — расширение для браузера (Chrome, Firefox, Edge) для скриншотов и записи экрана. Позволяет захватить всю страницу, видимой область или выбранный фрагмент, а также записать экран с микрофоном и веб-камерой.</p>
+<p>Встроенный редактор: обрезка, аннотации, размытие, пикселизация. Облачное хранилище для мгновенного обмена ссылками. В основном фокусируется на скриншотах, запись экрана — дополнительная функция.</p>
+<p><strong>Цена:</strong> «Personal» — бесплатно (ограниченно), «Professional» — $6/мес.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Удобное расширение для браузера</li>
+<li>Отличные скриншоты с аннотациями</li>
+<li>Облачное хранилище и мгновенные ссылки</li>
+<li>Простота использования</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченные возможности записи</li>
+<li>Нет 4K</li>
+<li>Нет полноценного видеомонтажа</li>
+<li>Облачное хранилище ограничено на бесплатной версии</li>
+</ul>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th align="center">Макс. качество</th><th align="center">Веб-камера</th><th align="center">Монтаж</th><th align="center">Облако</th><th align="center">Бесплатно</th><th>Цена от</th></tr></thead><tbody><tr><td>OBS Studio</td><td align="center">4K</td><td align="center">Да</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Без ограничений</td><td>Бесплатно</td></tr><tr><td>Яндекс Браузер</td><td align="center">1080p</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Яндекс.Диск</td><td align="center">Без ограничений</td><td>Бесплатно</td></tr><tr><td>Loom</td><td align="center">1080p</td><td align="center">Да</td><td align="center">Базовый</td><td align="center">Да</td><td align="center">5 мин, 25 видео</td><td>$12,50/мес</td></tr><tr><td>Vidyard</td><td align="center">1080p</td><td align="center">Да</td><td align="center">Нет</td><td align="center">Да</td><td align="center">25 видео/мес</td><td>$19/мес</td></tr><tr><td>ScreenPal</td><td align="center">1080p</td><td align="center">Да</td><td align="center">Да</td><td align="center">Да</td><td align="center">15 мин (ВЗ)</td><td>$4/мес</td></tr><tr><td>ShareX</td><td align="center">1080p</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Стороннее</td><td align="center">Без ограничений</td><td>Бесплатно</td></tr><tr><td>Camtasia</td><td align="center">4K</td><td align="center">Да</td><td align="center">Полный</td><td align="center">Нет</td><td align="center">30-дн. trial</td><td>$149,99/год</td></tr><tr><td>Snagit</td><td align="center">1080p</td><td align="center">Нет</td><td align="center">Базовый</td><td align="center">Нет</td><td align="center">30-дн. trial</td><td>$62,99/год</td></tr><tr><td>RecordCast</td><td align="center">1080p</td><td align="center">Да</td><td align="center">Базовый</td><td align="center">Нет</td><td align="center">Без ограничений</td><td>Бесплатно</td></tr><tr><td>Awesome Screenshot</td><td align="center">1080p</td><td align="center">Да</td><td align="center">Базовый</td><td align="center">Да</td><td align="center">Ограниченно</td><td>$6/мес</td></tr></tbody></table>
+<h2 id="что-выбрать">Что выбрать</h2>
+<p>Для <strong>бесплатной профессиональной записи</strong> — OBS Studio (4K, без ограничений, гибкие сцены). Для <strong>быстрых видео для команды</strong> — Loom (облако, ИИ-субтитры, мгновенные ссылки). Для <strong>B2B и продаж</strong> — Vidyard (аналитика, CRM-интеграция). Для <strong>простых онлайн-записей</strong> — RecordCast (браузер, бесплатно). Для <strong>полноценных обучающих видео</strong> — Camtasia (запись + монтаж + 4K). Для <strong>скриншотов с аннотациями</strong> — Awesome Screenshot или Snagit. Для <strong>автоматизации загрузки</strong> — ShareX (80+ интеграций, горячие клавиши, GIF-экспорт). Для <strong>записи только внутри браузера</strong> — Яндекс Браузер или RecordCast (быстро, без установки, интеграция с облаком Яндекса).</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

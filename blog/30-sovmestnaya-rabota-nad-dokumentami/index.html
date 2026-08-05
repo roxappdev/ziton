@@ -1,0 +1,354 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор сервисов для совместного редактирования документов: от российских решений (Яндекс.Документы, Р7-Офис, ONLYOFFICE) до мировых лидеров (Google Docs, Notion, Confluence)."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Совместная работа над документами онлайн — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Совместная работа над документами онлайн</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-03T00:00:00.000Z" data-astro-cid-ymihodss>3 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>документы</li><li data-astro-cid-ymihodss>совместная работа</li><li data-astro-cid-ymihodss>офис</li><li data-astro-cid-ymihodss>коллаборация</li><li data-astro-cid-ymihodss>облако</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="зачем-нужен-онлайн-редактор-документов">Зачем нужен онлайн-редактор документов</h2>
+<p>Совместная работа над документами стала нормой для большинства команд. Вместо того чтобы пересылать файлы по почте и путаться в версиях «final_v3_real.docx», сотрудники редактируют один документ одновременно, видя изменения коллег в реальном времени. Это экономит время, снижает количество ошибок и упрощает согласование.</p>
+<p>Согласно исследованиям, команды, использующие онлайн-редакторы, сокращают время на создание и согласование документов на 30–40 %. Особенно это важно для распределённых команд, работающих удалённо.</p>
+<p>При выборе сервиса важно учитывать несколько параметров: качество реального совместного редактирования (сколько человек могут работать одновременно, как быстро отображаются изменения), историю версий с возможностью отката, поддержку офлайн-режима, набор функций форматирования и стоимость. Для российских компаний дополнительный критерий — соответствие 152-ФЗ и нахождение данных на территории РФ.</p>
+<p>Разделим рассмотрение на две группы: российские сервисы (данные в РФ, соответствие законодательству) и зарубежные решения (максимальный функционал, но риски по локализации).</p>
+<h2 id="российские-сервисы">Российские сервисы</h2>
+<h3 id="яндексдокументы">Яндекс.Документы</h3>
+<p>Бесплатный облачный редактор текстов, таблиц и презентаций от Яндекса. Входит в экосистему Яндекс 360 и хранит файлы на Яндекс.Диске. Внешне и функционально напоминает Microsoft Office и Google Docs, что упрощает переход.</p>
+<p>По данным Т-Адвизор, к концу 2025 года в Яндекс.Документах обновилась функция совместного редактирования — работать над одним файлом могут до 400 пользователей. Редактор поддерживает форматы DOCX, XLSX, PPTX и PDF, позволяет работать с изображениями, таблицами и простыми диаграммами. В декабре 2024 года Яндекс обновил дизайн редакторов — он стал современнее, а приложения начали работать быстрее.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатен для личного использования, не требует подписки.</li>
+<li>Поддерживает форматы DOCX, XLSX, PPTX, PDF — открывает и сохраняет.</li>
+<li>Есть офлайн-режим через мобильные приложения (файлы синхронизируются при появлении сети).</li>
+<li>Данные хранятся в России, полностью соответствует 152-ФЗ.</li>
+<li>Интеграция с Яндекс 360 (почта, календарь, Диск, Телемост).</li>
+<li>Согласно отзывам на a2is.ru, пользователи отмечают понятный интерфейс и удобную работу с виджетами.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Меньше расширенных функций форматирования по сравнению с Microsoft Word (сложные стили, автоматическое оглавление).</li>
+<li>Ограниченные макросы и скрипты — нет аналога VBA.</li>
+<li>Нет полноценного десктопного редактора для Linux.</li>
+<li>Функция совместного редактирования до 400 человек — теоретический максимум, на практике при 10+ пользователей возможны задержки.</li>
+</ul>
+<p>Ссылка: <a href="https://docs.yandex.ru" rel="nofollow" target="_blank">docs.yandex.ru</a></p>
+<h3 id="р7-офис-мойофис">Р7-Офис (МойОфис)</h3>
+<p>Два основных российских офисных пакета — Р7-Офис (от «Новые Облачные Технологии») и МойОфис (от «МойОфис», ранее «Новые Облачные Технологии», затем «ПараТайп» и «Новые Облачные Технологии» разделились). Оба решения входят в реестр отечественного ПО и имеют сертификаты ФСТЭК, что критически важно для госсектора и компаний с повышенными требованиями к безопасности.</p>
+<p>По данным Habr (декабрь 2023), Р7-Офис позиционируется как недорогая замена Microsoft Office с сертификатом ФСТЭК. Серверная версия обеспечивает многопользовательский доступ, совместное редактирование и рецензирование. Р7-Офис неоднократно становился победителем профильных премий. В 2025 году Bonnie&#x26;Slide отмечали, что Р7-Офис поддерживает совместное редактирование, комментирование и встроенный командный чат.</p>
+<p>МойОфис в 2025 году добавил ИИ-агента в текстовый и табличный редакторы — аналог Copilot от Microsoft, но работающий с российскими данными.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полное соответствие 152-ФЗ и ФСТЭК — можно использовать в госсекторе и на объектах КИИ.</li>
+<li>Поддержка форматов Microsoft Office (DOCX, XLSX, PPTX).</li>
+<li>Настольные приложения для Windows, Linux, macOS.</li>
+<li>Серверная версия для развёртывания в собственной инфраструктуре (self-hosted).</li>
+<li>Встроенный командный чат и комментирование.</li>
+<li>ИИ-помощник в МойОфис.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Качество совместного редактирования в реальном времени уступает Google Docs — возможны конфликты при одновременных правках.</li>
+<li>Интерфейс менее полирован, чем у конкурентов.</li>
+<li>Облачная версия менее функциональна, чем десктопная.</li>
+<li>Серверная версия требует собственных системных ресурсов и квалифицированного администратора.</li>
+</ul>
+<p>Ссылка: <a href="https://r7-office.ru" rel="nofollow" target="_blank">r7-office.ru</a></p>
+<h3 id="onlyoffice">ONLYOFFICE</h3>
+<p>Российский офисный пакет с мощными возможностями совместного редактирования. ONLYOFFICE Docs — это офисные редакторы, которые можно развёртывать на собственном сервере (self-hosted), а ONLYOFFICE DocSpace — облачная платформа для совместной работы.</p>
+<p>В 2025 году ONLYOFFICE выпустил четыре крупных обновления (версии 3.1–3.6 для DocSpace, аналогичные релизы Docs), добавив более 100 новых функций и исправив 1500+ ошибок. Среди нововведений — улучшенный ИИ-помощник, новые форматы, расширенные возможности совместного редактирования.</p>
+<p>ONLYOFFICE славится наилучшей совместимостью с форматами Microsoft Office среди всех решений (включая зарубежные). Файлы DOCX, XLSX и PPTX открываются с минимальным искажением форматирования, что критически важно при миграции с Microsoft Office.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Лучшая совместимость с форматами Microsoft Office среди российских решений.</li>
+<li>Self-hosted версия бесплатна для команд до 20 человек.</li>
+<li>DocSpace — отдельная SaaS-платформа для совместной работы с документами.</li>
+<li>Обширные API и интеграции: Nextcloud, ownCloud, Moodle, WordPress, Jira, GitHub.</li>
+<li>Активное развитие: 1500+ исправлений за 2025 год, 30 новых сотрудников.</li>
+<li>Сообщество на Reddit активно обсуждает и тестирует новые функции.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Интерфейс может показаться перегруженным по сравнению с минималистичными конкурентами.</li>
+<li>Облачная версия бесплатна лишь с ограничениями по объёму и числу пользователей.</li>
+<li>Производительность при большом количестве одновременно редактирующих пользователей ниже, чем у Google Docs.</li>
+<li>Обучение команд занимает время из-за обилия функций.</li>
+</ul>
+<p>Ссылка: <a href="https://www.onlyoffice.com/ru" rel="nofollow" target="_blank">onlyoffice.com</a></p>
+<h2 id="зарубежные-сервисы">Зарубежные сервисы</h2>
+<h3 id="google-docs">Google Docs</h3>
+<p>Классика совместного редактирования. Google Docs стал стандартом де-факто для командной работы над текстами — именно Google впервые сделал реальное редактирование массов и надёжным. Сервис поддерживает реальные правки, комментарии, предложенные изменения (suggest mode — аналог отслеживания изменений в Word), обширную историю версий.</p>
+<p>Google Docs бесплатен с Google-аккаунтом. Доступно 15 ГБ на весь Google Drive (разделяется между Drive, Gmail и Google Photos).</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Лучшее на рынке реальное совместное редактирование — минимум задержек, курсоры участников видны мгновенно.</li>
+<li>Полностью бесплатен для базового использования.</li>
+<li>Отличная история версий с возможностью отката к любой правке.</li>
+<li>Обширные интеграции с Google Workspace (Gmail, Calendar, Meet, Chat).</li>
+<li>Работает в любом браузере, минимальные требования к оборудованию.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Данные хранятся за рубежом — риски по 152-ФЗ.</li>
+<li>Офлайн-режим требует настройки через Google Docs Offline в Chrome.</li>
+<li>Ограниченные возможности по сравнению с Microsoft Word (особенно для сложных документов со стилями, макросами, сносками).</li>
+<li>Нет полноценного рабочего стола (desktop-приложение — это обёртка над веб-версией).</li>
+</ul>
+<p>Ссылка: <a href="https://docs.google.com" rel="nofollow" target="_blank">docs.google.com</a></p>
+<h3 id="microsoft-365-word-online">Microsoft 365 (Word Online)</h3>
+<p>Онлайн-версия Word в составе Microsoft 365. Предлагает реальное совместное редактирование, комментарии, отслеживание изменений, автосохранение. Для сложного форматирования можно переключиться на десктопное приложение — переход происходит бесшовно.</p>
+<p>Microsoft 365 — это экосистема, включающая Word, Excel, PowerPoint, Outlook, Teams, OneDrive, SharePoint. Онлайн-версии менее функциональны, чем десктопные, но для большинства задач совместной работы их достаточно.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Наиболее полный набор функций форматирования — стандарт де-факто для деловых документов.</li>
+<li>Бесшовный переход между онлайн и десктопной версией.</li>
+<li>Интеграция с SharePoint для корпоративного управления документами.</li>
+<li>Copilot ИИ-помощник (на тарифах Business Standard и выше).</li>
+<li>Автосохранение и отслеживание изменений.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Платный: Microsoft 365 Business Basic от $6/пользователь/мес при годовой подписке, Business Standard от $12.50.</li>
+<li>Данные за рубежом.</li>
+<li>Онлайн-версия Word уступает десктопной по функциональности (нет макросов, ограничены стили).</li>
+<li>Сложный интерфейс для новых пользователей, который не менялся десятилетиями.</li>
+</ul>
+<p>Ссылка: <a href="https://www.office.com" rel="nofollow" target="_blank">office.com</a></p>
+<h3 id="notion">Notion</h3>
+<p>Notion — это не просто редактор документов, а рабочее пространство, объединяющее заметки, базы данных, канбан-доски и вики. Для совместной работы над текстовой документацией Notion отлично подходит, но не является полнофункциональным аналогом Word.</p>
+<p>Особенность Notion — гибкость: каждая страница может содержать текст, таблицы, изображения, embed-виджеты, базы данных с различными видами отображения. Это делает Notion идеальным для создания баз знаний, вики-страниц и проектной документации.</p>
+<p>По данным сравнений 2026 года, Notion бизнес-тариф стоит $20/пользователь/мес с полным ИИ, а Confluence — от $5.42/пользователь/мес с включённым ИИ.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Гибкая структура — страницы, базы данных, шаблоны в одном месте.</li>
+<li>Отличный ИИ-помощник (на тарифах от Business).</li>
+<li>Мощные базы данных с различными видами (таблица, канбан, календарь, таймлайн).</li>
+<li>Бесплатный тариф для небольших команд (до 10 гостей).</li>
+<li>Красивый, современный интерфейс.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не подходит для сложного форматирования документов (нет полноценного DOCX-экспорта со стилями).</li>
+<li>Нет отслеживания изменений как в Google Docs (нет suggest mode).</li>
+<li>Базы данных могут перегружать интерфейс для новых пользователей.</li>
+<li>Данные за рубежом.</li>
+</ul>
+<p>Ссылка: <a href="https://www.notion.so" rel="nofollow" target="_blank">notion.so</a></p>
+<h3 id="confluence">Confluence</h3>
+<p>Решение от Atlassian для создания баз знаний и корпоративной документации. Confluence используется преимущественно IT-командами вместе с Jira — задачи из Jira можно привязывать к страницам Confluence, создавая единое пространство для документации и трекинга.</p>
+<p>Confluence предлагает шаблоны дляmeeting notes, product requirements, decision records и других типов документов. ИИ-функции включены во все платные тарифы.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Глубокая интеграция с Jira — задачи, спринты, эпики привязываются к страницам.</li>
+<li>Мощные шаблоны для документации.</li>
+<li>Управление правами доступа на уровне страниц и пространств.</li>
+<li>ИИ-функции включены во все платные тарифы (от $5.42/пользователь/мес).</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Перегруженный интерфейс, высокая кривая обучения.</li>
+<li>Платный даже для малого бизнеса.</li>
+<li>Медленная производительность при больших объёмах контента.</li>
+<li>Не подходит как замена Word для стандартных документов.</li>
+</ul>
+<p>Ссылка: <a href="https://www.atlassian.com/software/confluence" rel="nofollow" target="_blank">atlassian.com/software/confluence</a></p>
+<h3 id="coda">Coda</h3>
+<p>Coda объединяет документы, таблицы и приложения в одном месте. Уникальная модель ценообразования: платят только «создатели документов» (doc makers), а «зрители» (viewers) — бесплатно. Это делает Coda выгодной для команд, где много читателей и мало авторов.</p>
+<p>Coda позволяет создавать интерактивные документы с таблицами, кнопками, автоматизациями и интеграциями. По сравнению с Notion, Coda больше ориентирована на создание «приложений» внутри документа.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Мощные таблицы и автоматизации внутри документов.</li>
+<li>Выгодная модель оплаты для команд с немногими авторами.</li>
+<li>Интеграции с Slack, GitHub, Figma, Google Calendar.</li>
+<li>Красивые готовые шаблоны (templates gallery).</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Высокий порог входа — нужно изучать логику Coda.</li>
+<li>Не подходит как замена Word для стандартных документов.</li>
+<li>Данные за рубежом.</li>
+<li>Ограниченный экспорт в DOCX.</li>
+</ul>
+<p>Ссылка: <a href="https://coda.io" rel="nofollow" target="_blank">coda.io</a></p>
+<h2 id="что-важно-учесть-при-выборе">Что важно учесть при выборе</h2>
+<p>Для <strong>российских компаний</strong>, работающих с персональными данными или государственными контрактами, приоритет — Яндекс.Документы (бесплатно, просто), Р7-Офис / МойОфис (ФСТЭК-сертификация, self-hosted) или ONLYOFFICE (лучшая совместимость с MS Office, self-hosted). Все три варианта гарантируют хранение данных в РФ и соответствие 152-ФЗ.</p>
+<p>Для <strong>IT-команд</strong> с международным составом оптимальны Google Docs (лучшее реальное совместное редактирование) или Notion (гибкие базы данных + документация). Если нужен self-hosted вариант без рисков — ONLYOFFICE.</p>
+<p>Для <strong>корпоративной документации</strong> и баз знаний стоит рассмотреть Confluence (особенно вместе с Jira) или Notion — оба предлагают шаблоны и структурирование.</p>
+<p>Для <strong>максимальной совместимости</strong> с документами Microsoft Office при необходимости self-hosted — ONLYOFFICE не имеет равных среди российских решений.</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Совместное редактирование</th><th>История версий</th><th>Офлайн</th><th>Форматирование</th><th>Цена</th><th>Данные в РФ</th></tr></thead><tbody><tr><td>Яндекс.Документы</td><td>До 400 человек</td><td>Да</td><td>Мобильные приложения</td><td>Хорошее</td><td>Бесплатно</td><td>Да</td></tr><tr><td>Р7-Офис</td><td>Да (серверная версия)</td><td>Да</td><td>Десктопные приложения</td><td>Хорошее</td><td>От 0₽ (desktop), сервер от ~15 000₽/год</td><td>Да</td></tr><tr><td>ONLYOFFICE</td><td>Да (реальное)</td><td>Да</td><td>Desktop-приложения</td><td>Отличное</td><td>Free (self-hosted до 20 чел.), Cloud от $8/мес</td><td>Да (self-hosted)</td></tr><tr><td>Google Docs</td><td>Отличное</td><td>Отличная</td><td>Через Chrome</td><td>Среднее</td><td>Бесплатно (15 ГБ)</td><td>Нет</td></tr><tr><td>Microsoft 365</td><td>Отличное</td><td>Отличная</td><td>Desktop-приложения</td><td>Отличное</td><td>От $6/пользователь/мес</td><td>Нет</td></tr><tr><td>Notion</td><td>Хорошее</td><td>Да</td><td>Desktop + мобильные</td><td>Среднее (для текстов)</td><td>Free / $10–20/пользователь/мес</td><td>Нет</td></tr><tr><td>Confluence</td><td>Хорошее</td><td>Да</td><td>Нет</td><td>Среднее</td><td>От $5.42/пользователь/мес</td><td>Нет</td></tr><tr><td>Coda</td><td>Хорошее</td><td>Да</td><td>Ограниченно</td><td>Среднее</td><td>Платят только авторы, от $10/мес</td><td>Нет</td></tr></tbody></table></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

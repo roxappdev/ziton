@@ -1,0 +1,332 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор сервисов для проверки контрагентов: от бесплатных решений ФНС до мощных платформ Контур.Фокус и СПАРК-Интерфакс с API и мониторингом."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Сервисы проверки контрагентов — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Сервисы проверки контрагентов</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>проверка контрагентов</li><li data-astro-cid-ymihodss>комплаенс</li><li data-astro-cid-ymihodss>ЕГРЮЛ</li><li data-astro-cid-ymihodss>ФНС</li><li data-astro-cid-ymihodss>безопасность бизнеса</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="зачем-проверять-контрагентов">Зачем проверять контрагентов</h2>
+<p>Проверка контрагентов — не просто рекомендация, а реальная необходимость для любого бизнеса в России. Статья 54.1 Налогового кодекса РФ возлагает на налогоплательщика обязанность проявлять должную осмотрительность при выборе контрагента. Если налоговая признает вашего партнёра «фирмой-однодневкой» или недобросовестным участником сделки, вы можете потерять вычеты по НДС и получить доначисления налогов с пенями и штрафами. В 2026 году вступил в силу закон № 254-ФЗ, усиливающий требования к проверке партнёров и вводящий рейтинг надежности от ФНС.</p>
+<p>На рынке работает множество сервисов — от бесплатных государственных порталов до дорогих корпоративных платформ. Разница между ними заключается в объёме данных, скорости получения информации, наличии API для автоматизации и системе оповещений об изменениях.</p>
+<h3 id="контурфокус">Контур.Фокус</h3>
+<p><a href="https://focus.kontur.ru" rel="nofollow" target="_blank">focus.kontur.ru</a></p>
+<p>Контур.Фокус — один из самых популярных сервисов проверки контрагентов от СКБ «Контур». Позволяет за 30 секунд получить полную картину о компании или ИП: выписку из ЕГРЮЛ, финансовую отчётность, арбитражные дела, исполнительные производства, госконтракты и связи между компаниями. Проверка одной компании вручную доступна бесплатно. Для регулярного использования и доступа к API нужен подписочный тариф: «Базовый» стоит от 29 760 рублей в год и подходит для детальной проверки российских контрагентов. Также доступен API для автоматической проверки прямо из учётных систем — 1С, ERP, CRM.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Мгновенная проверка за 30 секунд</li>
+<li>Полные данные из ФНС, судов, ФССП</li>
+<li>Мощный API для автоматизации</li>
+<li>Мониторинг изменений по контрагентам</li>
+<li>Анализ связей между компаниями и бенефициарами</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Высокая цена для малого бизнеса (от ~30 000 ₽/год)</li>
+<li>Бесплатная версия сильно ограничена</li>
+<li>Интерфейс может показаться сложным для новичков</li>
+<li>Проверка контрагентов из СНГ только на дорогих тарифах</li>
+</ul>
+<h3 id="сбис-проверка-контрагентов">СБИС (проверка контрагентов)</h3>
+<p><a href="https://sbis.ru" rel="nofollow" target="_blank">sbis.ru</a></p>
+<p>СБИС от компании «Тензор» предлагает модуль проверки контрагентов, встроенный в единую бизнес-экосистему. Сервис показывает финансовое состояние, реквизиты, аффилированность, судебные дела и госконтракты. Отдельная функция — Saby Profile, которая анализирует не только официальные данные из реестров, но и отзывы о компании, формируя репутационный профиль. Тарифы на проверку контрагентов начинаются от 9 000 рублей в год, что делает СБИС одним из более доступных платных решений на рынке.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Доступная цена начиная от 9 000 ₽/год</li>
+<li>Интеграция с CRM и учётными системами СБИС</li>
+<li>Репутационный анализ на основе отзывов</li>
+<li>Единая экосистема с ЭДО и коммуникациями</li>
+<li>Мобильное приложение для проверки на ходу</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Меньше данных по сравнению с Контур.Фокусом и СПАРКом</li>
+<li>Аналитика менее глубока, чем у конкурентов</li>
+<li>Навязывание других продуктов экосистемы</li>
+<li>Обновление данных иногда запаздывает</li>
+</ul>
+<h3 id="спарк-интерфакс">СПАРК-Интерфакс</h3>
+<p><a href="https://spark-interfax.ru" rel="nofollow" target="_blank">spark-interfax.ru</a></p>
+<p>СПАРК-Интерфакс — премиальный сервис проверки контрагентов от информационного агентства «Интерфакс». Это самый дорогой, но и самый мощный инструмент на российском рынке. СПАРК использует более миллиона источников данных и предоставляет уникальную аналитику: финансовые показатели, рейтинги надёжности, графики связей, анализ бенефициаров, мониторинг СМИ. В 2026 году СПАРК запустил ИИ-ассистента для анализа контрагентов. Стоимость подписки — около 25 000 рублей в месяц (300 000 рублей в год). По отзывам пользователей, СПАРК «без преувеличения лучший сервис из подобных существующих», но доступен в основном крупному бизнесу.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Самый глубокий анализ на рынке</li>
+<li>Более миллиона источников данных</li>
+<li>Уникальные рейтинги и скоринг от Интерфакса</li>
+<li>ИИ-ассистент для автоматического анализа</li>
+<li>Лучший выбор для корпоративного комплаенса</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Очень высокая цена (~25 000 ₽/месяц)</li>
+<li>Избыточный функционал для малого бизнеса</li>
+<li>Длительное обучение работе с системой</li>
+<li>Оплата только помесячно, нельзя оплатить за один запрос</li>
+</ul>
+<h3 id="rusprofile">Rusprofile</h3>
+<p><a href="https://rusprofile.ru" rel="nofollow" target="_blank">rusprofile.ru</a></p>
+<p>Rusprofile — бесплатный сервис проверки российских юридических лиц и индивидуальных предпринимателей. Платформа предоставляет выписки из ЕГРЮЛ, актуальные реквизиты, коды ОКВЭД, базовую финансовую отчётность и информацию об арбитражных делах. В отличие от платных аналогов, Rusprofile не требует регистрации для базовых проверок. Данные обновляются регулярно из официальных источников. По итогам обзоров 2026 года Rusprofile входит в число сервисов, которые дают максимум информации бесплатно: выписка ЕГРЮЛ, ОКВЭД, базовые финансы, суды и госконтракты.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатный для базовых проверок</li>
+<li>Не требует регистрации</li>
+<li>Актуальные данные из ЕГРЮЛ</li>
+<li>Информация об арбитражных делах и госконтрактах</li>
+<li>Простой и понятный интерфейс</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет API для автоматической проверки</li>
+<li>Нет системы мониторинга и оповещений</li>
+<li>Ограниченная аналитика и скоринг</li>
+<li>Рекламный контент на сайте</li>
+<li>Нет проверки контрагентов из СНГ</li>
+</ul>
+<h3 id="за-честный-бизнес-zachestnyibiznes">За честный бизнес (Zachestnyibiznes)</h3>
+<p><a href="https://zachestnyibiznes.ru" rel="nofollow" target="_blank">zachestnyibiznes.ru</a></p>
+<p>За честный бизнес — Всероссийская система данных о юридических лицах и индивидуальных предпринимателях. Портал позволяет бесплатно получить информацию о любом ООО или ИП по названию, ИНН, фамилии руководителя, адресу или телефону. Сервис объединяет данные из ЕГРЮЛ, ЕГРИП, реестра дисквалифицированных лиц, реестра недобросовестных поставщиков и других государственных источников. Как и Rusprofile, входит в топ бесплатных сервисов, дающих максимум полезной информации без оплаты.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатный</li>
+<li>Поиск по множеству критериев (ИНН, телефон, фамилия, адрес)</li>
+<li>Данные из множества госреестров</li>
+<li>Реестр недобросовестных поставщиков</li>
+<li>Удобный поиск связанных компаний</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет API для автоматизации</li>
+<li>Нет мониторинга изменений</li>
+<li>Интерфейс выглядит перегруженным</li>
+<li>Аналитика ограничена базовыми показателями</li>
+<li>Нет интеграции с учётными системами</li>
+</ul>
+<h3 id="мой-налог-проверка">Мой Налог (проверка)</h3>
+<p><a href="https://mojnalog.ru" rel="nofollow" target="_blank">mojnalog.ru</a></p>
+<p>Официальный сервис ФНС «Мой Налог», помимо регистрации ИП и ведения бухгалтерии, предоставляет базовые инструменты проверки контрагентов. Пользователь может найти компанию или ИП по ИНН и получить основные данные из ЕГРЮЛ. Проверка бесплатна и доступна всем. Однако функционал существенно уступает специализированным сервисам: нет арбитражных дел, финансовой аналитики, мониторинга и API.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Официальный источник данных от ФНС</li>
+<li>Абсолютно бесплатно</li>
+<li>Нет рекламы</li>
+<li>Данные гарантированно актуальны</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Минимальный набор данных</li>
+<li>Нет арбитражных дел и финансовой отчётности</li>
+<li>Нет мониторинга и оповещений</li>
+<li>Нет API</li>
+</ul>
+<h3 id="картотекарф">Картотека.рф</h3>
+<p><a href="https://kartoteka.ru" rel="nofollow" target="_blank">kartoteka.ru</a></p>
+<p>Картотека.рф — сервис агрегированной проверки контрагентов. Платформа собирает данные из различных источников: ЕГРЮЛ, суды, исполнительные производства, реестры ФНС. Предлагает как бесплатные базовые проверки, так и платные расширенные отчёты. Сервис удобно использовать для быстрого поиска информации о компании без необходимости переходить между разными государственными порталами.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Агрегирует данные из нескольких источников</li>
+<li>Базовая проверка бесплатна</li>
+<li>Удобный поиск по нескольким критериям</li>
+<li>Понятное оформление отчётов</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Менее известен, чем конкуренты</li>
+<li>Платные функции стоят дороже аналогов</li>
+<li>Нет API для автоматизации</li>
+<li>Редкие обновления базы данных</li>
+<li>Нет мобильного приложения</li>
+</ul>
+<h3 id="законконтроль">Закон.Контроль</h3>
+<p><a href="https://zakon-kontrol.ru" rel="nofollow" target="_blank">zakon-kontrol.ru</a></p>
+<p>Закон.Контроль — сервис для юридического compliance и проверки контрагентов. Платформа ориентирована на компании, которым нужен структурированный подход к проверке партнёров с учётом требований статьи 54.1 НК РФ. Сервис помогает документировать процедуру проверки, что важно при возможных спорах с налоговой. Предоставляет шаблоны проверочных процедур, чек-листы и отчёты.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Фокус на compliance и требованиях НК РФ</li>
+<li>Документирование процедуры проверки</li>
+<li>Чек-листы и шаблоны для должной осмотрительности</li>
+<li>Готовые отчёты для налоговой</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Меньше исходных данных, чем у конкурентов</li>
+<li>Специфический фокус, не подходящий для разовых проверок</li>
+<li>Выше цена для малого бизнеса</li>
+<li>Нет бесплатной версии</li>
+</ul>
+<h2 id="источники-данных">Источники данных</h2>
+<p>Все сервисы проверки контрагентов в конечном счёте опираются на одни и те же государственные источники: ЕГРЮЛ и ЕГРИП (данные ФНС), Kartoteka.ru (арбитражные дела), реестр ФССП (исполнительные производства), ЕИС (госконтракты), реестр недобросовестных поставщиков. Разница заключается в том, насколько оперативно сервис обновляет данные, насколько глубоко их анализирует и насколько удобно представляет пользователю. Платные сервисы добавляют собственную аналитику, скоринг, граф связей и мониторинг.</p>
+<h2 id="api-и-автоматизация">API и автоматизация</h2>
+<p>Для компаний с большим количеством контрагентов критически важна возможность автоматической проверки через API. Контур.Фокус и СПАРК-Интерфакс предлагают мощные API с документацией и SDK, позволяющие встроить проверку в 1С, ERP или CRM-систему. СБИС предоставляет API в рамках своей экосистемы. Бесплатные сервисы (Rusprofile, За честный бизнес) API не предоставляют — проверку нужно проводить вручную, что увеличивает риск пропустить важные изменения. Пакетная проверка (batch checking) доступна в Контур.Фокусе и СПАРК, что позволяет проверить сразу весь список контрагентов из учётной системы и получить структурированный отчёт.</p>
+<h2 id="система-оповещений">Система оповещений</h2>
+<p>Мониторинг изменений по контрагентам — одна из важнейших функций для компаний с постоянными бизнес-партнёрами. Если ваш поставщик попадает под ликвидацию, получает статус недействующего или в отношении него возбуждается банкротство, важно узнать об этом как можно раньше. Контур.Фокус, СПАРК и СБИС предлагают автоматические оповещения: email-уведомления, Push в мобильном приложении или вебхуки для интеграции с внутренними системами. Пороговые значения можно настроить индивидуально — например, получать уведомления при изменении директора, адреса или уставного капитала.</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Бесплатная проверка</th><th>API</th><th>Мониторинг</th><th>Цена (от, год)</th><th>Глубина данных</th></tr></thead><tbody><tr><td>Контур.Фокус</td><td>Ограниченно</td><td>Да</td><td>Да</td><td>29 760 ₽</td><td>Высокая</td></tr><tr><td>СБИС</td><td>Ограниченно</td><td>Да</td><td>Да</td><td>9 000 ₽</td><td>Средняя</td></tr><tr><td>СПАРК-Интерфакс</td><td>Нет</td><td>Да</td><td>Да</td><td>~300 000 ₽</td><td>Максимальная</td></tr><tr><td>Rusprofile</td><td>Да</td><td>Нет</td><td>Нет</td><td>0 ₽</td><td>Базовая</td></tr><tr><td>За честный бизнес</td><td>Да</td><td>Нет</td><td>Нет</td><td>0 ₽</td><td>Базовая</td></tr><tr><td>Мой Налог</td><td>Да</td><td>Нет</td><td>Нет</td><td>0 ₽</td><td>Минимальная</td></tr><tr><td>Картотека.рф</td><td>Да</td><td>Нет</td><td>Нет</td><td>0 ₽</td><td>Средняя</td></tr><tr><td>Закон.Контроль</td><td>Нет</td><td>Ограниченно</td><td>Да</td><td>~15 000 ₽</td><td>Средняя</td></tr></tbody></table>
+<h2 id="итог">Итог</h2>
+<p>Для малого бизнеса и разовых проверок достаточно бесплатных Rusprofile и «За честный бизнес» — они дают выписку ЕГРЮЛ, арбитражные дела и госконтракты. Если нужна автоматизация и мониторинг — Контур.Фокус (оптимальное соотношение цены и функционала) или СБИС (доступная цена от 9 000 рублей в год). Для крупного бизнеса с серьёзными комплаенс-требованиями — СПАРК-Интерфакс, несмотря на высокую цену. Закон.Контроль подойдёт компаниям, которым важно документировать должную осмотрительность по ст. 54.1 НК РФ. Помните: с 2026 года требования ФНС к проверке контрагентов усилились, и пренебрегать этим процессом рискованно.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор онлайн-переводчиков от Яндекса и DeepL до специализированных CAT-инструментов. Сравнение качества перевода, API, глоссариев и цен."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Сервисы для перевода текстов онлайн — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Сервисы для перевода текстов онлайн</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>переводчик</li><li data-astro-cid-ymihodss>DeepL</li><li data-astro-cid-ymihodss>Яндекс.Переводчик</li><li data-astro-cid-ymihodss>Google Translate</li><li data-astro-cid-ymihodss>CAT-инструменты</li><li data-astro-cid-ymihodss>машинный перевод</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="зачем-нужны-онлайн-переводчики">Зачем нужны онлайн-переводчики</h2>
+<p>Онлайн-переводчики стали неотъемлемой частью рабочей рутины: от быстрого перевода письма до локализации всей документации. Рынок машинного перевода переживает настоящую революцию благодаря нейросетевым моделям. По данным Habr (октябрь 2024), основные движки — Яндекс.Переводчик, Google Translate и DeepL — существенно различаются по качеству в зависимости от языковой пары. Если ещё пять лет назад машинный перевод использовался преимущественно для «понять смысл», сегодня качественные MT-движки способны выдавать тексты, пригодные для публикации без серьёзной редактуры.</p>
+<p>Особенно важно различать два типа задач. <strong>Бытовой перевод</strong> — перевести статью, понять суть письма, перевести меню в ресторане. Здесь достаточно любого крупного сервиса. <strong>Профессиональный перевод</strong> — локализация ПО, юридических документов, технической документации. Здесь критически важны глоссарии, память переводов и интеграция с CAT-инструментами. Ещё одна категория — <strong>переводчик как услуга для бизнеса</strong>, когда нужна интеграция через API в CRM, CMS или мессенджеры.</p>
+<p>При выборе сервиса стоит обращать внимание на несколько критериев: <strong>качество перевода</strong> (для какой языковой пары), <strong>перевод документов</strong> (сохранение форматирования), <strong>наличие API</strong> (для интеграции в продукты), <strong>поддержка глоссариев</strong> (для терминологической согласованности) и <strong>цена</strong> (бесплатный тариф, подписка, оплата за символы).</p>
+<h2 id="яндекспереводчик">Яндекс.Переводчик</h2>
+<p><strong>Сайт:</strong> <a href="https://translate.yandex.ru" rel="nofollow" target="_blank">translate.yandex.ru</a></p>
+<p>Яндекс.Переводчик — основной онлайн-переводчик на российском рынке. Поддерживает более 100 языков, включая все основные европейские и многие азиатские. Сильная сторона — качество перевода с русского языка и на русский, особенно в паре «русский — английский». По отзывам на Reddit, после ухода Google из России Яндекс стал предпочтительным вариантом для ру-язычных пользователей из-за низкого пинга и стабильного доступа.</p>
+<p>Перевод документов доступен для форматов DOCX, PDF, TXT, XLSX. API Яндекс.Переводчика предоставляет до 10 млн символов в месяц бесплатно, далее — от $15 за 1 млн символов. Глоссарии поддерживаются в API (Yandex Translate API v2). Для мобильных устройств есть приложение с функцией переводчика изображений и голосового перевода.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Отличное качество для русскоязычных пар</li>
+<li>Щедрый бесплатный лимит API (10 млн символов/мес)</li>
+<li>Работает стабильно из России без VPN</li>
+<li>Перевод документов и изображений</li>
+<li>Интеграция с браузером и ОС</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Качество перевода для редких языков ниже, чем у DeepL</li>
+<li>Нет детальной настройки стиля перевода</li>
+<li>Интерфейс менее минималистичный, чем у конкурентов</li>
+</ul>
+<h2 id="deepl">DeepL</h2>
+<p><strong>Сайт:</strong> <a href="https://www.deepl.com" rel="nofollow" target="_blank">deepl.com</a></p>
+<p>DeepL — немецкий сервис, основанный в 2017 году командой, стоявшей за словарём Linguee. Считается лидером по качеству перевода для европейских языков. По данным comparative обзоров (RapidTranslate, 2026; Linguise, 2025), DeepL выдаёт наиболее естественные и точные переводы, особенно для технических и юридических текстов. Большинство людей, опрошенных в исследованиях, считают DeepL более подходящим для технического перевода. Поддерживает около 35 языков, включая русский. Минималистичный и чистый интерфейс делает его очень удобным для пользователей, которые ценят простоту и эффективность.</p>
+<p>DeepL Pro стоит от $8,74 в месяц при годовой оплате (индивидуальный план). API доступен по тарифу: бесплатный план — 500 000 символов/мес, API Pro — €5,49/мес + €25 за 1 млн символов (цена снижена на 37,5% с 2025 года). Поддерживается перевод документов (Word, PDF, PPTX) с сохранением форматирования. Глоссарии доступны в Pro-версии, что критически важно для корпоративных пользователей.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Лидирующее качество перевода для европейских языков</li>
+<li>Естественный стиль, минимальный «машинный» оттенок</li>
+<li>Глоссарии и настройка формальности</li>
+<li>Расширения для браузера и десктоп-приложение</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченное количество языков (около 35)</li>
+<li>Платный для серьёзного использования</li>
+<li>Доступ из России может требовать VPN</li>
+<li>Бесплатный лимит — 50 000 символов в день</li>
+</ul>
+<h2 id="google-translate">Google Translate</h2>
+<p><strong>Сайт:</strong> <a href="https://translate.google.com" rel="nofollow" target="_blank">translate.google.com</a></p>
+<p>Google Translate — самый популярный переводчик в мире с поддержкой более 130 языков. Качество перевода сильно зависит от языковой пары: для распространённых языков (англо-испанский, англо-французский) Google показывает отличные результаты, но для русского языка качество часто уступает DeepL и Яндексу. Отличительная черта — огромная языковая база и поддержка редких языков.</p>
+<p>Перевод документов поддерживается (PDF, DOCX). API Google Cloud Translation pricing: от $20 за 1 млн символов (Advanced Edition). Глоссарии поддерживаются. Google Translate также обеспечивает работу функции автоперевода в Chrome и Android.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Самая широкая языковая поддержка (130+ языков)</li>
+<li>Бесплатный безлимит для веб-версии</li>
+<li>Мощный API с автодетекцией языка</li>
+<li>Перевод через камеру, голосовой ввод, рукописный текст</li>
+<li>Интеграция во все продукты Google</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Качество для русского языка уступает DeepL и Яндексу</li>
+<li>Не всегда сохраняет контекст длинных текстов</li>
+<li>Доступ из России ограничен (нужен VPN)</li>
+<li>API дороже конкурентов</li>
+</ul>
+<h2 id="promt">PROMT</h2>
+<p><strong>Сайт:</strong> <a href="https://www.translate.ru" rel="nofollow" target="_blank">www.translate.ru</a></p>
+<p>PROMT (ПРОМТ) — один из старейших российских разработчиков систем машинного перевода, работающий с 1991 года. Сервис translate.ru предоставляет онлайн-перевод для 19 языков. Отличительная особенность — специализированные тематические словари (бизнес, техника, медицина, IT), которые улучшают точность терминологии.</p>
+<p>PROMT.One — бесплатная версия с ограничениями. PROMT Professional — платная версия для бизнеса с расширенными словарями и интеграцией. API доступен по запросу. Глоссарии поддерживаются в профессиональной версии.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Специализированные отраслевые словари</li>
+<li>Российский сервис, работает без перебоев</li>
+<li>Долгая история и накопленная база</li>
+<li>Поддержка редких языковых пар (например, русский-финский)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Качество общего перевода уступает DeepL и Яндексу</li>
+<li>Меньше языков, чем у конкурентов</li>
+<li>Устаревший интерфейс</li>
+<li>Ограниченные возможности API</li>
+</ul>
+<h2 id="мультитран">Мультитран</h2>
+<p><strong>Сайт:</strong> <a href="https://www.multitran.ru" rel="nofollow" target="_blank">multitran.ru</a></p>
+<p>Мультитран — это не классический машинный переводчик, а крупнейшая онлайн-словарная база с функцией контекстного перевода. Содержит миллионы словарных статей по 30+ языкам. Каждый перевод снабжён примерами употребления из реальных текстов, что делает его незаменимым для профессиональных переводчиков.</p>
+<p>Мультитран не переводит документы автоматически и не имеет API для машинного перевода. Это справочный инструмент: вы вводите слово или фразу и получаете все возможные варианты перевода с контекстом.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Невероятно богатая словарная база</li>
+<li>Контекстные примеры из реальных текстов</li>
+<li>Специализированная лексика (техническая, медицинская, юридическая)</li>
+<li>Бесплатный и без ограничений</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не переводит тексты автоматически</li>
+<li>Нет API, нет перевода документов</li>
+<li>Интерфейс выглядит устаревшим</li>
+<li>Требует знания языка для выбора правильного варианта</li>
+</ul>
+<h2 id="translateru-promt">Translate.ru (PROMT)</h2>
+<p>Сервис translate.ru работает на базе движка PROMT и был описан выше. Стоит отметить, что на сайте доступен бесплатный переводчик текстов, документов и веб-страниц, а также словари и проверка орфографии. Пользователи отмечают, что для узкоспециализированных текстов (юридических, медицинских) тематические словари PROMT иногда дают более точный перевод отдельных терминов, чем нейросетевые переводчики, которые склонны к «глобальному» контексту, теряя точность в терминологии. Однако для общего текста разница в пользу нейросетей.</p>
+<h2 id="smartcat">Smartcat</h2>
+<p><strong>Сайт:</strong> <a href="https://smartcat.com" rel="nofollow" target="_blank">smartcat.com</a></p>
+<p>Smartcat — профессиональная CAT-платформа (Computer-Assisted Translation), созданная специально для переводчиков и локализационных команд. По данным опроса переводчиков в VK (январь 2024), Smartcat остаётся одним из самых актуальных CAT-инструментов, и многие переводчики выполняют 1–2 проекта в неделю именно в нём. В отличие от обычных онлайн-переводчиков, Smartcat предоставляет полноценную среду для работы: память переводов (Translation Memory), глоссарии, управление проектами, интеграция с MT-движками (включая DeepL и Яндекс).</p>
+<p>Smartcat полностью бесплатен для отдельных переводчиков. Для компаний доступны платные тарифы (от $29/мес за рабочее место). API для автоматизации процессов локализации. Поддержка 50+ форматов файлов.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Бесплатный для переводчиков (все функции)</li>
+<li>Память переводов повышает скорость и согласованность</li>
+<li>Интеграция с MT-движками и TMS</li>
+<li>Управление проектами и командная работа</li>
+<li>Поддержка 50+ форматов файлов</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Сложный интерфейс, порог входа для новичков</li>
+<li>Требуется обучения для эффективного использования</li>
+<li>Для разовых переводов — избыточен</li>
+<li>Англоязычный интерфейс (частично)</li>
+</ul>
+<h2 id="matecat">MateCat</h2>
+<p><strong>Сайт:</strong> <a href="https://www.matecat.com" rel="nofollow" target="_blank">matecat.com</a></p>
+<p>MateCat — бесплатная open-source CAT-платформа, разработанная отделом Translators without Borders. Как и Smartcat, предназначена для профессиональных переводчиков, а не для бытовых задач. Предоставляет память переводов, глоссарии, качественную интеграцию с MT (Google, Microsoft, DeepL).</p>
+<p>По заявлениям разработчиков, MateCat находит больше совпадений в памяти переводов, чем любой другой CAT-инструмент. Полностью бесплатен и open-source (можно установить на собственный сервер). Поддержка форматов: DOCX, XLSX, PPTX, HTML, XML, INDD и другие.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатный и open-source</li>
+<li>Высокая эффективность памяти переводов</li>
+<li>Поддержка множества MT-движков</li>
+<li>Можно развернуть на собственном сервере</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Интерфейс менее удобен, чем у Smartcat</li>
+<li>Нет коммерческой поддержки (только сообщество)</li>
+<li>Меньше функций управления проектами</li>
+<li>Не подходит для нетехнических пользователей</li>
+</ul>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Языки</th><th>Качество (ру-англ)</th><th>Перевод документов</th><th align="right">API</th><th>Глоссарии</th><th>Цена</th></tr></thead><tbody><tr><td>Яндекс.Переводчик</td><td>100+</td><td>Хорошее</td><td>Да (DOCX, PDF)</td><td align="right">Да (10 млн симв. бесплатно)</td><td>Да (API)</td><td>Бесплатно / от $15 за 1 млн симв.</td></tr><tr><td>DeepL</td><td>~35</td><td>Отличное</td><td>Да (Word, PDF, PPTX)</td><td align="right">Да (500 тыс. симв. бесплатно)</td><td>Да (Pro)</td><td>Бесплатно / от $8,74/мес</td></tr><tr><td>Google Translate</td><td>130+</td><td>Хорошее</td><td>Да (PDF, DOCX)</td><td align="right">Да</td><td>Да</td><td>Бесплатно / от $20 за 1 млн симв.</td></tr><tr><td>PROMT</td><td>19</td><td>Среднее</td><td>Да</td><td align="right">По запросу</td><td>Да (Pro)</td><td>Бесплатно / по запросу</td></tr><tr><td>Мультитран</td><td>30+</td><td>Справочник</td><td>Нет</td><td align="right">Нет</td><td>Нет (встроен словарь)</td><td>Бесплатно</td></tr><tr><td>Smartcat</td><td>50+</td><td>Зависит от MT</td><td>Да (50+ форматов)</td><td align="right">Да</td><td>Да</td><td>Бесплатно для переводчиков</td></tr><tr><td>MateCat</td><td>Зависит от MT</td><td>Зависит от MT</td><td>Да (DOCX, HTML, XML…)</td><td align="right">Open-source</td><td>Да</td><td>Бесплатно (open-source)</td></tr></tbody></table>
+<h2 id="что-выбрать">Что выбрать</h2>
+<p>Для <strong>бытового перевода</strong> и работы с русским языком оптимальны Яндекс.Переводчик (доступность) и DeepL (качество). Для <strong>перевода сайтов и приложений</strong> — Smartcat или MateCat (память переводов). Для <strong>справки по терминологии</strong> — Мультитран. Для <strong>корпоративной локализации</strong> — DeepL Pro + Smartcat как CAT-среда.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

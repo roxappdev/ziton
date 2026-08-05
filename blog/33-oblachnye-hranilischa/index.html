@@ -1,0 +1,410 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Сравнение облачных хранилищ: российские (Яндекс.Диск, Облако Mail.ru, VK Файлы, Selectel) и зарубежные (Google Drive, Dropbox, OneDrive, pCloud, Tresorit) с учётом 152-ФЗ."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Облачные хранилища файлов: обзор и сравнение — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Облачные хранилища файлов: обзор и сравнение</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-03T00:00:00.000Z" data-astro-cid-ymihodss>3 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>облако</li><li data-astro-cid-ymihodss>хранилище</li><li data-astro-cid-ymihodss>файлы</li><li data-astro-cid-ymihodss>синхронизация</li><li data-astro-cid-ymihodss>152-ФЗ</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="зачем-нужно-облачное-хранилище">Зачем нужно облачное хранилище</h2>
+<p>Облачное хранилище решает три ключевые задачи: резервное копирование файлов (backup), синхронизация между устройствами (компьютер, смартфон, планшет) и совместный доступ к документам (общие папки, публичные ссылки).</p>
+<p>Выбор хранилища зависит от нескольких факторов. Сколько места нужно — 5 ГБ для документов или 2 ТБ для фото и видео? Насколько важна скорость синхронизации — нужно ли мгновенное обновление или достаточно ночной синхронизации? Нужны ли функции совместной работы (онлайн-просмотр, редактирование, версии)? И, для российских пользователей, — соответствует ли сервис требованиям 152-ФЗ о локализации персональных данных.</p>
+<h3 id="152-фз-и-локализация-данных">152-ФЗ и локализация данных</h3>
+<p>С 1 июля 2025 года вступили в силу ужесточённые требования к локализации персональных данных (ч. 5 ст. 18 Федерального закона от 27.07.2006 № 152-ФЗ). Теперь первичный сбор персональных данных граждан РФ должен осуществляться на серверах, территориально расположенных в России.</p>
+<p>Для бизнеса, работающего с персональными данными россиян, это делает использование зарубежных облачных хранилищ юридически рискованным. Штрафы за нарушение могут достигать 18 млн рублей при повторных нарушениях. Кроме того, Роскомнадзор может заблокировать доступ к сервису.</p>
+<p>Безопасные с точки зрения 152-ФЗ варианты: <strong>Яндекс.Диск</strong>, <strong>Облако Mail.ru</strong>, <strong>СберДиск</strong>, <strong>Selectel Storage</strong>. Для максимального контроля — развёртывание <strong>Nextcloud</strong> или <strong>ONLYOFFICE</strong> на собственном сервере в российском дата-центре.</p>
+<h2 id="российские-сервисы">Российские сервисы</h2>
+<h3 id="яндексдиск">Яндекс.Диск</h3>
+<p>Яндекс.Диск — одно из самых популярных облачных хранилищ в России с миллионами пользователей. Входит в экосистему Яндекс 360 (совместно с почтой, документами и календарём). Предоставляет 5 ГБ бесплатно, платные тарифы позволяют расширить объём до 3 ТБ.</p>
+<p>Тарифы Яндекс.Диска 360: «Безлимитный» — примерно 299–399₽/мес за 3 ТБ (зависит от тарифа Яндекс 360). Премиум-подписка также включает Яндекс.Документы, расширенную почту и другие сервисы.</p>
+<p>Десктопное приложение синхронизирует файлы между компьютером и облаком. Мобильные приложения (iOS и Android) позволяют загружать фото автоматически. Веб-интерфейс позволяет просматривать документы, видео и музыку.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Данные хранятся в РФ, полное соответствие 152-ФЗ.</li>
+<li>Интеграция с Яндекс.Документами для совместного редактирования.</li>
+<li>Удобный десктопный клиент с синхронизацией.</li>
+<li>Публичные ссылки на файлы и папки, парольная защита.</li>
+<li>Фотоархив с автоматической загрузкой.</li>
+<li>Одна из лучших цен: ~100–130₽ за 1 ТБ/мес.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Бесплатный объём всего 5 ГБ (снизился с прежних 10 ГБ).</li>
+<li>Скорость загрузки на большие файлы может ограничиваться.</li>
+<li>Веб-интерфейс для просмотра медиа уступает Google Photos.</li>
+<li>Нет сквозного шифрования (end-to-end encryption).</li>
+</ul>
+<p>Ссылка: <a href="https://disk.yandex.ru" rel="nofollow" target="_blank">disk.yandex.ru</a></p>
+<h3 id="облако-mailru">Облако Mail.ru</h3>
+<p>Облако от Mail.ru Group предлагает 8 ГБ бесплатно, платные тарифы позволяют расширить объём до 4 ТБ. Сервис интегрирован с почтой Mail.ru и экосистемой VK. По данным сравнений, Облако Mail.ru предлагает на 3 ГБ больше бесплатного пространства, чем Яндекс.Диск.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>8 ГБ бесплатно — больше, чем у большинства конкурентов.</li>
+<li>Объём до 4 ТБ на платных тарифах.</li>
+<li>Данные хранятся в России.</li>
+<li>Интеграция с почтой Mail.ru для отправки больших вложений.</li>
+<li>Возможность подключить Яндекс.Диск для переноса файлов.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Десктопный клиент менее стабильный, чем у Яндекса.</li>
+<li>Скорость синхронизации уступает конкурентам.</li>
+<li>Интерфейс перегружен рекламой на бесплатном тарифе.</li>
+<li>Ограниченные функции совместной работы и версионирования.</li>
+<li>Меньше интеграций с третьими сервисами.</li>
+</ul>
+<p>Ссылка: <a href="https://cloud.mail.ru" rel="nofollow" target="_blank">cloud.mail.ru</a></p>
+<h3 id="vk-файлы">VK Файлы</h3>
+<p>VK Файлы — облачное хранилище внутри экосистемы VK (ранее «Диск ВК»). Интегрировано с VK WorkSpace для бизнеса. Точный объём бесплатного хранения зависит от статуса аккаунта и подписок.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Глубоко интегрировано в VK — быстрый доступ.</li>
+<li>Удобный обмен файлами через сообщения и стены.</li>
+<li>Бесплатно для пользователей VK.</li>
+<li>Данные в России.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченные функции по сравнению со специализированными хранилищами.</li>
+<li>Нет полноценного десктопного клиента с синхронизацией.</li>
+<li>Нет версионирования файлов — нельзя откатиться к предыдущей версии.</li>
+<li>Зависит от платформы VK.</li>
+<li>Нет публичного API для интеграций.</li>
+</ul>
+<p>Ссылка: <a href="https://vk.com/files" rel="nofollow" target="_blank">vk.com/files</a></p>
+<h3 id="selectel-storage">Selectel Storage</h3>
+<p>Selectel Storage — облачное объектное S3-хранилище для бизнеса от российского провайдера Selectel. Рассчитывается по модели pay-as-you-go: платите только за фактически занятое пространство. Трафик внутри Selectel и входящий трафик не тарифицируются.</p>
+<p>Selectel предлагает три класса хранения: стандартное (для частого доступа), холодное (для редко используемых данных, ~1 507₽/ТБ/мес) и архивное (для бэкапов). API полностью совместим с Amazon S3 — можно использовать любые S3-клиенты.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Модель оплаты за фактическое использование (pay-as-you-go) — нет фиксированной платы.</li>
+<li>API совместим с Amazon S3 — работоспособность с любыми S3-клиентами.</li>
+<li>Три класса хранения для оптимизации стоимости.</li>
+<li>Входящий трафик бесплатен.</li>
+<li>Данные в России, дата-центры в Москве, Санкт-Петербурге и других городах.</li>
+<li>Масштабируемость — без ограничения объёма.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет привычного веб-интерфейса — только API и S3-клиенты (Cyberduck, AWS CLI и т. д.).</li>
+<li>Не подходит для обычных пользователей — нужен технический специалист.</li>
+<li>От ~990₽/мес за 1 ТБ стандартного хранения — дороже потребительских сервисов.</li>
+<li>Нет встроенного файлового менеджера, предпросмотра и редактирования.</li>
+</ul>
+<p>Ссылка: <a href="https://selectel.ru/services/cloud-storage" rel="nofollow" target="_blank">selectel.ru/services/cloud-storage</a></p>
+<h3 id="сбердиск">СберДиск</h3>
+<p>СберДиск — облачное хранилище от Сбера. Предоставляет 15 ГБ бесплатно — больше, чем Яндекс.Диск (5 ГБ) и Облако Mail.ru (8 ГБ). Платные тарифы позволяют расширить до 1 ТБ.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>15 ГБ бесплатно — лучший бесплатный объём среди российских сервисов.</li>
+<li>Данные в России.</li>
+<li>Интеграция с сервисами Сбера (Сбер ID, СберПрайм).</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченные функции синхронизации — десктопный клиент менее функционален.</li>
+<li>Менее развитая экосистема интеграций по сравнению с Яндекс.Диском.</li>
+<li>Максимум 1 ТБ — меньше, чем у конкурентов.</li>
+<li>Менее известный сервис с меньшим сообществом.</li>
+</ul>
+<h2 id="зарубежные-сервисы">Зарубежные сервисы</h2>
+<h3 id="google-drive">Google Drive</h3>
+<p>Google Drive — самое популярное облачное хранилище в мире. Предоставляет 15 ГБ бесплатно на весь аккаунт Google (разделяется между Drive, Gmail и Google Photos). Платные тарифы: 100 ГБ за $1.99/мес (~190₽), 2 ТБ за $9.99/мес (~960₽).</p>
+<p>Google Drive интегрирован с Google Docs, Sheets и Slides — можно создавать и редактировать документы прямо в облаке. Мощный поиск по содержимому файлов (включая OCR для изображений и сканированных документов).</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>15 ГБ бесплатно (разделяется с Gmail и Photos).</li>
+<li>Отличная интеграция с Google Workspace.</li>
+<li>Мощный поиск по содержимому файлов.</li>
+<li>Совместное редактирование документов.</li>
+<li>Надёжные мобильные приложения.</li>
+<li>Дешёвые платные тарифы: ~95₽ за 100 ГБ/мес.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>15 ГБ делятся между Drive, Gmail и Photos — быстро заканчивается.</li>
+<li>Данные за рубежом — риски по 152-ФЗ.</li>
+<li>Скорость загрузки в России может быть ограничена.</li>
+<li>Нет сквозного шифрования.</li>
+</ul>
+<p>Ссылка: <a href="https://drive.google.com" rel="nofollow" target="_blank">drive.google.com</a></p>
+<h3 id="dropbox">Dropbox</h3>
+<p>Dropbox — один из пионеров облачных хранилищ (основан в 2007 году), славящийся надёжной синхронизацией. Бесплатный тариф — 2 ГБ, платные стартуют от $11.99/мес за 2 ТБ (Plus).</p>
+<p>Dropbox использует технологию блоковой синхронизации: при изменении файла загружаются только изменённые блоки, а не весь файл. Это существенно экономит трафик и время. Функция Smart Sync позволяет видеть файлы в проводнике, не загружая их на диск — файл скачивается только при открытии.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Лучшая на рынке синхронизация (block-sync) — быстрая и надёжная.</li>
+<li>Smart Sync экономит место на диске.</li>
+<li>Отличные десктопные клиенты для всех платформ.</li>
+<li>Dropbox Paper — встроенный инструмент для совместной работы.</li>
+<li>180-дневное версионирование на платных тарифах.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Один из самых дорогих сервисов: 2 ТБ за $11.99/мес (~1 200₽).</li>
+<li>Всего 2 ГБ бесплатно — минимум на рынке.</li>
+<li>Данные за рубежом.</li>
+<li>Сокращение функций на бесплатном тарифе (лимит 3 устройств).</li>
+</ul>
+<p>Ссылка: <a href="https://www.dropbox.com" rel="nofollow" target="_blank">dropbox.com</a></p>
+<h3 id="onedrive">OneDrive</h3>
+<p>OneDrive от Microsoft — облачное хранилище, встроенное в Windows 10/11. Бесплатный тариф — 5 ГБ. С подпиской Microsoft 365 (от $6/мес) — 1 ТБ. Функция Files On-Demand аналогична Smart Sync от Dropbox: файлы видны в проводнике, но не занимают место до открытия.</p>
+<p>OneDrive персональный включает Personal Vault — зашифрованное хранилище для важных документов с дополнительной двухфакторной аутентификацией.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Встроен в Windows — ничего не нужно устанавливать.</li>
+<li>Seamless-интеграция с Microsoft Office.</li>
+<li>1 ТБ в составе Microsoft 365 (от ~600₽/мес) — хорошая цена.</li>
+<li>Files On-Demand экономит место.</li>
+<li>Personal Vault для конфиденциальных документов.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Всего 5 ГБ бесплатно.</li>
+<li>Данные за рубежом.</li>
+<li>Синхронизация иногда глючит при больших объёмах.</li>
+<li>Десктопный клиент может перегружать систему.</li>
+<li>На Mac функция Files On-Demand ограничена.</li>
+</ul>
+<p>Ссылка: <a href="https://onedrive.live.com" rel="nofollow" target="_blank">onedrive.live.com</a></p>
+<h3 id="pcloud">pCloud</h3>
+<p>pCloud — швейцарское облачное хранилище с акцентом на безопасность и ценность. Предоставляет 10 ГБ бесплатно, платные тарифы: 500 ГБ за $4.99/мес (~480₽), 10 ТБ за $9.99/мес (~960₽). Уникальная возможность единоразовой оплаты (Lifetime): 500 ГБ за $199, 10 ТБ за $399.</p>
+<p>pCloud Crypto — отдельная функция сквозного шифрования (end-to-end encryption) за $4.99/мес. Файлы шифруются на устройстве клиента и хранятся в зашифрованном виде — даже сотрудники pCloud не могут их прочитать.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>10 ГБ бесплатно — лучший бесплатный объём среди зарубежных сервисов.</li>
+<li>Возможность единоразовой оплаты (Lifetime) — не нужна подписка.</li>
+<li>pCloud Crypto — сквозное шифрование.</li>
+<li>Хороший веб-плеер для медиа (музыка и видео).</li>
+<li>Интеграции с различными платформами.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Данные в Швейцарии — не соответствует 152-ФЗ.</li>
+<li>pCloud Crypto — отдельная платная функция.</li>
+<li>Синхронизация уступает Dropbox по скорости и надёжности.</li>
+<li>Нет встроенного офисного редактора.</li>
+<li>Версионирование платное (180 дней истории только на Premium+).</li>
+</ul>
+<p>Ссылка: <a href="https://www.pcloud.com" rel="nofollow" target="_blank">pcloud.com</a></p>
+<h3 id="tresorit">Tresorit</h3>
+<p>Tresorit — швейцарское облачное хранилище с упором на конфиденциальность и шифрование. Все файлы шифруются на стороне клиента (end-to-end, zero-knowledge) — даже при запросе властей Tresorit не может предоставить содержимое файлов. Используется компаниями, работающими с чувствительными данными: медицина (HIPAA), юриспруденция, финансы.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Сквозное шифрование (zero-knowledge) — максимальная конфиденциальность.</li>
+<li>Соответствие GDPR, HIPAA, SOC 2.</li>
+<li>Безопасный обмен файлами: ссылки с паролем, сроком действия, ограничением загрузок.</li>
+<li>Аудит-лог: кто, когда и какие файлы открывал.</li>
+<li>Интеграции с Microsoft 365 и Google Workspace.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Очень дорого: от $12.50/пользователь/мес (Personal), от $16/пользователь/мес (Business).</li>
+<li>Нет бесплатного тарифа (только 14-дневный пробный период).</li>
+<li>Скудный объём на персональных тарифах (от 500 ГБ).</li>
+<li>Данные за рубежом (Швейцария).</li>
+<li>Меньше функций синхронизации, чем у Dropbox.</li>
+</ul>
+<p>Ссылка: <a href="https://tresorit.com" rel="nofollow" target="_blank">tresorit.com</a></p>
+<h2 id="как-выбрать-облачное-хранилище">Как выбрать облачное хранилище</h2>
+<p>Для <strong>личного использования</strong> — Яндекс.Диск (если нужны Яндекс.Документы и интеграция с почтой) или Google Drive (15 ГБ бесплатно, лучший поиск, интеграция с Workspace).</p>
+<p>Для <strong>фото и видео</strong> — pCloud (10 ГБ бесплатно, лучший медиаплеер, Lifetime-оплата) или СберДиск (15 ГБ бесплатно).</p>
+<p>Для <strong>бизнеса с персональными данными</strong> — Яндекс.Диск (соответствие 152-ФЗ, интеграции) или Selectel Storage (масштабируемое S3-хранилище, pay-as-you-go).</p>
+<p>Для <strong>максимальной безопасности и конфиденциальности</strong> — Tresorit (zero-knowledge, швейцарская юрисдикция) или self-hosted Nextcloud (полный контроль).</p>
+<p>Для <strong>экономии</strong> — Облако Mail.ru (8 ГБ бесплатно) или Google Drive (15 ГБ бесплатно).</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Бесплатно</th><th>Макс. объём</th><th>Цена за 1 ТБ/мес</th><th>Скорость синхронизации</th><th>Версионирование</th><th>Данные в РФ</th></tr></thead><tbody><tr><td>Яндекс.Диск</td><td>5 ГБ</td><td>3 ТБ</td><td>~100–130₽</td><td>Хорошая</td><td>Да</td><td>Да</td></tr><tr><td>Облако Mail.ru</td><td>8 ГБ</td><td>4 ТБ</td><td>~150₽</td><td>Средняя</td><td>Да</td><td>Да</td></tr><tr><td>VK Файлы</td><td>Зависит</td><td>Зависит</td><td>—</td><td>Низкая</td><td>Нет</td><td>Да</td></tr><tr><td>Selectel Storage</td><td>Нет</td><td>Без лимита</td><td>~990₽</td><td>Отличная (API)</td><td>Нет</td><td>Да</td></tr><tr><td>СберДиск</td><td>15 ГБ</td><td>1 ТБ</td><td>~200₽</td><td>Средняя</td><td>Да</td><td>Да</td></tr><tr><td>Google Drive</td><td>15 ГБ</td><td>30 ТБ</td><td>~95₽ ($2.49/100ГБ)</td><td>Хорошая</td><td>100 версий (30 дней)</td><td>Нет</td></tr><tr><td>Dropbox</td><td>2 ГБ</td><td>3 ТБ</td><td>~600₽ ($6/мес за 2ТБ)</td><td>Отличная</td><td>30 дней (180 платно)</td><td>Нет</td></tr><tr><td>OneDrive</td><td>5 ГБ</td><td>6 ТБ</td><td>~600₽ (в составе 365)</td><td>Хорошая</td><td>30 дней</td><td>Нет</td></tr><tr><td>pCloud</td><td>10 ГБ</td><td>10 ТБ</td><td>~500₽ ($4.99/500ГБ)</td><td>Средняя</td><td>180 дней (платно)</td><td>Нет</td></tr><tr><td>Tresorit</td><td>Пробный период</td><td>4 ТБ</td><td>~1300₽ ($12.50)</td><td>Средняя</td><td>Да</td><td>Нет</td></tr></tbody></table></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

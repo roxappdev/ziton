@@ -1,0 +1,361 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор инструментов для автоматизации рекламы на Wildberries и Ozon: от встроенных кабинетов до ИИ-агентов, управляющих ставками 24/7."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Сервисы для управления рекламой на маркетплейсах — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Сервисы для управления рекламой на маркетплейсах</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>реклама</li><li data-astro-cid-ymihodss>маркетплейсы</li><li data-astro-cid-ymihodss>Ozon</li><li data-astro-cid-ymihodss>Wildberries</li><li data-astro-cid-ymihodss>автоматизация</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="реклама-на-маркетплейсах-в-2026-году">Реклама на маркетплейсах в 2026 году</h2>
+<p>Реклама на Wildberries и Ozon стала обязательной статьёй расходов для любого селлера. По данным uniseller.io (июль 2026), комиссии Wildberries выросли до 25-35%, а Ozon — до 15-27%, что делает органические продажи всё менее прибыльными. Внутренняя реклама маркетплейсов — основной способ обеспечить видимость карточек в поиске и категориях.</p>
+<p>В 2025-2026 годах рекламные кабинеты претерпели серьёзные изменения: Wildberries провёл структурную перестройку (новые модели оплаты, рефакторинг типов кампаний, по данным qmedia.by, декабрь 2025), а Ozon расширил форматы автоматического управления ставками.</p>
+<p>Особенность рекламы на маркетплейсах — аукционная модель. Продавец задаёт ставку за клик (CPC) или целевой показатель (например, ДРР — доля расходов на рекламу в выручке), а маркетплейс автоматически показывает товар в поиске или в карточках конкурентов. Чем выше ставка — тем выше позиция в рекламном блоке. При этом алгоритмы маркетплейсов учитывают CTR (кликабельность) и конверсию карточки, поэтому товар с высокой конверсией может занимать лидирующие позиции при более низкой ставке.</p>
+<p>Это создаёт потребность в инструментах автоматизации: ручное управление тысячами ключевых фраз и десятками SKU занимает часы ежедневно, а ставки нужно корректировать постоянно — конкурент изменил цену, сезонный спрос вырос, алгоритм маркетплейса обновился.</p>
+<p>Ниже — обзор инструментов для управления этой рекламой, от встроенных кабинетов до сторонних платформ автоматизации и ИИ-агентов.</p>
+<h2 id="встроенные-рекламные-кабинеты">Встроенные рекламные кабинеты</h2>
+<h3 id="озонреклама">Озон.Реклама</h3>
+<p><strong>Сайт:</strong> <a href="https://seller.ozon.ru" rel="nofollow" target="_blank">seller.ozon.ru</a> (раздел «Продвижение»)</p>
+<p>Внутренний рекламный кабинет Ozon, доступный из личного кабинета продавца. Позволяет запускать поисковую и товарную рекламу, настраивать ставки вручную или в автоматическом режиме.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Бесплатный доступ, оплата только за клики и показы</li>
+<li>Поисковая реклама (в поисковой выдаче Ozon) и товарная (в карточках конкурентов)</li>
+<li>Автоматическое управление ставками по целевому ДРР (доля расходов на рекламу)</li>
+<li>Прямой доступ к аукциону без посредников</li>
+<li>Подробная статистика по кампаниям и SKU</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет кроссплатформенного управления (только Ozon)</li>
+<li>Ручное управление требует ежедневного мониторинга</li>
+<li>Нет ИИ-оптимизации и предиктивных алгоритмов</li>
+<li>Нет автоматических правил (например, «снизить ставку при ДРР выше 15%»)</li>
+</ul>
+<h3 id="wildberriesреклама">Wildberries.Реклама</h3>
+<p><strong>Сайт:</strong> <a href="https://seller.wildberries.ru" rel="nofollow" target="_blank">seller.wildberries.ru</a> (раздел «Реклама»)</p>
+<p>Встроенный рекламный кабинет Wildberries. По данным uniseller.io (май 2026), поддерживает два основных режима: «Единая ставка» (автоматическая) и «Ручная ставка». В 2025 году кабинет прошёл масштабную перестройку.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Бесплатный доступ из личного кабинета продавца</li>
+<li>Поисковая и товарная реклама, реклама в категориях и рекомендациях</li>
+<li>Автоматический режим с заданием бюджета и целевого ДРР</li>
+<li>Прямое управление аукционом</li>
+<li>Еженедельные отчёты по эффективности</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только для Wildberries, нет управления рекламой на других площадках</li>
+<li>Автоматический режим часто «сливает» бюджет на неэффективные запросы</li>
+<li>Нет кросс-кампейных правил и стратегий</li>
+<li>Интерфейс меняется, документация отстаёт</li>
+</ul>
+<h2 id="сторонние-платформы-автоматизации">Сторонние платформы автоматизации</h2>
+<h3 id="elama-реклама-на-маркетплейсах">eLama (реклама на маркетплейсах)</h3>
+<p><strong>Сайт:</strong> <a href="https://elama.ru" rel="nofollow" target="_blank">elama.ru</a></p>
+<p>Крупная российская рекламная платформа, расширившая функционал на маркетплейсы. eLama позволяет управлять рекламой на Wildberries и Ozon из единого интерфейса, а также подключать внешний трафик из Яндекс.Директа и соцсетей.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Единый интерфейс для WB и Ozon</li>
+<li>Автоматическое управление ставками по заданным правилам</li>
+<li>Подключение внешнего трафика (Яндекс.Директ, VK Реклама)</li>
+<li>ROI-аналитика с учётом всех расходов</li>
+<li>Интеграция с CRM и аналитическими платформами</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Реклама на маркетплейсах — не основной продукт eLama (основной фокус — контекстная реклама)</li>
+<li>Тарифы зависят от оборота рекламы</li>
+<li>Меньше маркетплейс-специфичных функций, чем у специализированных сервисов</li>
+<li>Настройка требует понимания основ рекламных стратегий</li>
+</ul>
+<h3 id="slidermarket">SliderMarket</h3>
+<p><strong>Сайт:</strong> <a href="https://slidermarket.ru" rel="nofollow" target="_blank">slidermarket.ru</a></p>
+<p>Специализированная платформа для автоматизации рекламы на Wildberries и Ozon. Предлагает инструменты для управления ставками, аналитики ROI и оптимизации рекламных кампаний.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Фокус исключительно на маркетплейсах</li>
+<li>Автоматическое управление ставками 24/7</li>
+<li>Правила на основе ДРР, позиции, количества заказов</li>
+<li>Аналитика ROI с учётом всех комиссий маркетплейса</li>
+<li>Простой интерфейс, быстрый старт</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Относительно молодой платформа</li>
+<li>Меньше обучающих материалов и кейсов</li>
+<li>Тарифы могут быть высокими для селлеров с маленьким рекламным бюджетом</li>
+<li>Ограниченная поддержка маркетплейсов (только WB и Ozon)</li>
+</ul>
+<h3 id="маяк-рекламный-модуль">Маяк (рекламный модуль)</h3>
+<p><strong>Сайт:</strong> <a href="https://mayak.bz" rel="nofollow" target="_blank">mayak.bz</a></p>
+<p>Сервис аналитики Маяк (см. статью 66) предлагает рекламный модуль для управления ставками на Wildberries и Ozon. Интегрируется с аналитической платформой, что позволяет принимать решения на основе полных финансовых данных.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Единая экосистема: аналитика + реклама в одном сервисе</li>
+<li>Автоматическое управление ставками на основе данных о продажах</li>
+<li>Поддержка Wildberries и Ozon</li>
+<li>Доступная цена в связке с аналитикой</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Рекламный модуль менее функционален, чем у специализированных платформ</li>
+<li>Нет управления внешним трафиком</li>
+<li>Меньше стратегий оптимизации ставок</li>
+</ul>
+<h3 id="mpstats-рекламный-модуль">MPSTATS (рекламный модуль)</h3>
+<p><strong>Сайт:</strong> <a href="https://mpstats.io" rel="nofollow" target="_blank">mpstats.io</a></p>
+<p>MPSTATS включает модуль расширенного управления рекламой с большими возможностями по анализу. Позволяет управлять ставками на WB и Ozon с учётом глубокой аналитики по ключевым словам и конкурентам.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Самая глубокая база данных по ключевым словам и конкуренции</li>
+<li>Расширенное управление ставками с учётом语义ики</li>
+<li>Интеграция с полной аналитической платформой MPSTATS</li>
+<li>A/B-тестирование рекламных кампаний</li>
+<li>Поддержка всех маркетплейсов платформы (WB, Ozon, Яндекс.Маркет и др.)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Доступен только на дорогих тарифах MPSTATS (от 16 929 ₽/мес)</li>
+<li>Перегруженный интерфейс</li>
+<li>Необходимость обучения</li>
+<li>Дорогой для селлеров с небольшим рекламным бюджетом</li>
+</ul>
+<h3 id="крутомер">Крутомер</h3>
+<p><strong>Сайт:</strong> <a href="https://krutomer.ru" rel="nofollow" target="_blank">krutomer.ru</a></p>
+<p>Сервис для аналитики и оптимизации рекламы на маркетплейсах. Название отражает суть — «крутить» рекламные кампании эффективнее. Предлагает инструменты для анализа эффективности ставок и оптимизации бюджета.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Анализ эффективности каждой рекламной кампании</li>
+<li>Рекомендации по оптимизации ставок</li>
+<li>Мониторинг позиций товаров в рекламе</li>
+<li>Уведомления об изменении алгоритмов маркетплейсов</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет автоматического управления ставками (только рекомендации)</li>
+<li>Менее известный сервис</li>
+<li>Ограниченный функционал</li>
+<li>Нет интеграции с внешними сервисами</li>
+</ul>
+<h3 id="auctionmaster">AuctionMaster</h3>
+<p><strong>Сайт:</strong> <a href="https://auctionmaster.ru" rel="nofollow" target="_blank">auctionmaster.ru</a></p>
+<p>Платформа для автоматического управления рекламными ставками на Wildberries. Позиционируется как ИИ-агент, который управляет бюджетом и кампаниями 24/7 по заданным правилам.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Автоматическое управление ставками 24/7</li>
+<li>Гибкие правила: ДРР, позиция, бюджет, количество кликов</li>
+<li>ИИ-алгоритм оптимизации, обучающийся на ваших данных</li>
+<li>Подробный лог каждого изменения ставки</li>
+<li>Экономия до 30% рекламного бюджета (по заявлению платформы)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только Wildberries, нет поддержки Ozon</li>
+<li>Тарифы зависят от рекламного бюджета</li>
+<li>Мало отзывов от реальных пользователей</li>
+<li>Молодой сервис, возможны баги</li>
+</ul>
+<h3 id="sellerfox-рекламный-модуль">SellerFOX (рекламный модуль)</h3>
+<p><strong>Сайт:</strong> <a href="https://sellerfox.ru" rel="nofollow" target="_blank">sellerfox.ru</a></p>
+<p>SellerFOX, помимо аналитики (см. статью 66), предлагает модуль управления рекламой. Позволяет управлять кампаниями на WB и Ozon из единого интерфейса с учётом данных аналитики.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Единая платформа: аналитика + реклама</li>
+<li>Поддержка нескольких маркетплейсов</li>
+<li>Автоматическое управление ставками</li>
+<li>Финансовая аналитика рекламных кампаний</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Рекламный модуль менее мощный, чем у MPSTATS или eLama</li>
+<li>Нет внешнего трафика</li>
+<li>Ограниченные стратегии оптимизации</li>
+</ul>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Площадки</th><th>Автоуправление ставками</th><th>ROI-аналитика</th><th>Внешний трафик</th><th>Мин. цена (мес)</th></tr></thead><tbody><tr><td>Озон.Реклама</td><td>Ozon</td><td>Базовое</td><td>Да</td><td>Нет</td><td>0 ₽</td></tr><tr><td>WB.Реклама</td><td>WB</td><td>Базовое</td><td>Да</td><td>Нет</td><td>0 ₽</td></tr><tr><td>eLama</td><td>WB, Ozon</td><td>Да</td><td>Да</td><td>Да</td><td>от 5 000 ₽</td></tr><tr><td>SliderMarket</td><td>WB, Ozon</td><td>Да</td><td>Да</td><td>Нет</td><td>от 2 990 ₽</td></tr><tr><td>Маяк</td><td>WB, Ozon</td><td>Да</td><td>Да</td><td>Нет</td><td>от 1 490 ₽</td></tr><tr><td>MPSTATS</td><td>6 площадок</td><td>Да</td><td>Да</td><td>Нет</td><td>от 16 929 ₽</td></tr><tr><td>Крутомер</td><td>WB, Ozon</td><td>Нет (реком.)</td><td>Да</td><td>Нет</td><td>от 990 ₽</td></tr><tr><td>AuctionMaster</td><td>WB</td><td>Да</td><td>Да</td><td>Нет</td><td>от 1 990 ₽</td></tr><tr><td>SellerFOX</td><td>6 площадок</td><td>Да</td><td>Да</td><td>Нет</td><td>от 1 990 ₽</td></tr></tbody></table>
+<h2 id="что-выбрать">Что выбрать</h2>
+<p><strong>Для старта с минимальным бюджетом</strong> — встроенные кабинеты Озон.Реклама и WB.Реклама. Бесплатно, но требует ежедневного ручного управления.</p>
+<p><strong>Для автоматизации на двух площадках</strong> — SliderMarket или Маяк. Доступные тарифы, автоматическое управление ставками, ROI-аналитика.</p>
+<p><strong>Для профессиональных селлеров и агентств</strong> — eLama или MPSTATS. Максимальный функционал, кроссплатформенное управление, но за высокую цену.</p>
+<p><strong>Для максимальной экономии бюджета</strong> — AuctionMaster. ИИ-агент работает 24/7 и обещает экономию до 30% за счёт умного управления ставками.</p>
+<p><strong>Для комплексной аналитики и рекламы в одном окне</strong> — SellerFOX или Маяк. Единая экосистема упрощает принятие решений и сокращает количество инструментов.</p>
+<h2 id="модель-ценообразования">Модель ценообразования</h2>
+<p>Большинство сторонних платформ берут плату по одной из двух моделей. <strong>Фиксированная подписка</strong> (Маяк, SliderMarket, Крутомер) — вы платите фиксированную сумму в месяц независимо от рекламного бюджета. Это выгодно при больших бюджетах. <strong>Процент от оборота</strong> (eLama, AuctionMaster) — платите процент от потраченного на рекламу. Это выгодно при маленьких бюджетах. MPSTATS использует самую дорогую модель — платная подписка на всю платформу, рекламный модуль в которую уже входит.</p>
+<p>При выборе стоит также учитывать <strong>уровень поддержки</strong>. Встроенные кабинеты WB и Ozon предлагают только справочную документацию и техническую поддержку самого маркетплейса. Сторонние сервисы предоставляют персонального менеджера (обычно на тарифах от 5000 ₽/мес), обучающие вебинары и чаты с аналитиками. Для начинающих селлеров это может быть решающим фактором.</p>
+<p>Ещё один тренд 2026 года — <strong>ИИ-агенты для управления рекламой</strong>. Платформы типа AuctionMaster и «Агент Рекламы» (jvo.ru) используют машинное обучение для предиктивного управления ставками. Такие агенты анализируют исторические данные, сезонность, поведение конкурентов и автоматически корректируют ставки без участия человека. По отзывам первых пользователей, это действительно снижает стоимость привлечения заказа на 20-30%, но требует доверия алгоритму и начального периода обучения (обычно 2-4 недели).</p>
+<p>Но даже при использовании ИИ-агента рекомендуется еженедельно проверять настройки и корректировать стратегии — алгоритмы не всегда учитывают внешние факторы вроде праздников, новостей или ручных действий конкурентов.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

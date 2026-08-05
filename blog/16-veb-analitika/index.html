@@ -1,0 +1,370 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор и сравнение популярных систем веб-аналитики — от бесплатных решений Яндекса и Google до приватных альтернатив Plausible и Matomo."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Системы веб-аналитики: Яндекс.Метрика, Google Analytics и альтернативы — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Системы веб-аналитики: Яндекс.Метрика, Google Analytics и альтернативы</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-03T00:00:00.000Z" data-astro-cid-ymihodss>3 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>аналитика</li><li data-astro-cid-ymihodss>Яндекс.Метрика</li><li data-astro-cid-ymihodss>Google Analytics</li><li data-astro-cid-ymihodss>веб-аналитика</li><li data-astro-cid-ymihodss>GDPR</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="зачем-нужна-веб-аналитика-и-как-выбрать-систему">Зачем нужна веб-аналитика и как выбрать систему</h2>
+<p>Веб-аналитика — основа принятия решений в любом онлайн-бизнесе. Без неё невозможно понять, откуда приходит трафик, какие страницы работают, а где пользователи уходят. В 2026 году выбор систем огромен: от бесплатных гигантов до лёгких privacy-first инструментов, которые не требуют согласия на файлы cookie.</p>
+<p>При выборе стоит учитывать несколько ключевых факторов: <strong>точность данных</strong> (особенно при работе с блокировщиками рекламы), <strong>соответствие требованиям конфиденциальности</strong> (GDPR, 152-ФЗ), <strong>наличие данных в реальном времени</strong>, а также <strong>стоимость</strong> при росте трафика. Ниже разберём девять популярных решений — от российских флагманов до зарубежных новичков.</p>
+<h3 id="яндексметрика">Яндекс.Метрика</h3>
+<p><strong>Описание:</strong> Главная система веб-аналитики для российского рынка от компании «Яндекс». Предоставляет полный набор инструментов: отчёты по источникам трафика, поведенческий анализ, конверсии, картограммы и встроенный Вебвизор для записи сессий. В 2025 году сервис получил обновлённый интерфейс и расширенные возможности отчётов.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://metrica.yandex.ru" rel="nofollow" target="_blank">metrica.yandex.ru</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатна, без ограничений по объёму трафика.</li>
+<li>Встроенный Вебвизор (запись сессий) и тепловые карты — уникальное предложение в бесплатном сегменте.</li>
+<li>Точность данных для русскоязычного трафика выше, чем у конкурентов.</li>
+<li>Отличная интеграция с Яндекс.Директом и рекламной сетью Яндекса.</li>
+<li>Отчёт «Карта ссылок» для анализа внутренних ссылок.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Данные по зарубежному трафику могут быть менее точны.</li>
+<li>Не соответствует GDPR в полной мере (требует настройки для европейской аудитории).</li>
+<li>Меньше возможностей кастомных отчётов по сравнению с Google Analytics 4.</li>
+</ul>
+<h3 id="google-analytics-4">Google Analytics 4</h3>
+<p><strong>Описание:</strong> Самая распространённая система веб-аналитики в мире от Google. GA4 использует event-based модель данных, поддерживает машинное обучение для прогнозирования конверсий и оттока, а также интегрируется с экосистемой Google Ads и Google BigQuery.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://analytics.google.com" rel="nofollow" target="_blank">analytics.google.com</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Бесплатна для любого объёма трафика.</li>
+<li>Мощная интеграция с Google Ads, Google Search Console и BigQuery (экспорт сырых данных бесплатно).</li>
+<li>Predictive-аудитории и прогнозные метрики на базе ML.</li>
+<li>Глобальное покрытие: точные данные по всему миру.</li>
+<li>Обширная экосистема сторонних интеграций.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Сложный интерфейс с высоким порогом входа.</li>
+<li>Данные за последний день могут обновляться с задержкой до 24 часов.</li>
+<li>Требует настройки тегов через Google Tag Manager.</li>
+<li>Проблемы с блокировщиками рекламы (ad-blockers отсекают до 25% трафика).</li>
+</ul>
+<h3 id="openstat">OpenStat</h3>
+<p><strong>Описание:</strong> Российский сервис интернет-статистики, популярный в 2000-х и начале 2010-х. Предоставляет базовые данные о посещаемости, источниках трафика и поведении пользователей.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://openstat.ru" rel="nofollow" target="_blank">openstat.ru</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Простота установки и использования.</li>
+<li>Бесплатный базовый функционал.</li>
+<li>Российские серверы — быстрая загрузка счётчика.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Устаревший интерфейс и ограниченный набор отчётов.</li>
+<li>Мало обновлений и развития в последние годы.</li>
+<li>Нет современных инструментов: ни записи сессий, ни тепловых карт.</li>
+</ul>
+<h3 id="liveinternet">LiveInternet</h3>
+<p><strong>Описание:</strong> Одна из старейших российских систем статистики, сочетающая в себе сервис дневников (блогов) и аналитику для сайтов. Рейтинг LiveInternet до сих пор используется как ориентир в русскоязычном сегменте.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://www.liveinternet.ru" rel="nofollow" target="_blank">liveinternet.ru</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Абсолютно бесплатна.</li>
+<li>Публичный рейтинг сайтов — удобно для бенчмаркинга.</li>
+<li>Простой счётчик с визуальным отображением.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Очень устаревший функционал и интерфейс.</li>
+<li>Нет современных отчётов, воронок, конверсий.</li>
+<li>Ограниченная глубина аналитики — подходит только для базовой статистики.</li>
+</ul>
+<h3 id="matomo-self-hosted">Matomo (self-hosted)</h3>
+<p><strong>Описание:</strong> Open-source платформа веб-аналитики, которую можно установить на собственный сервер. Предлагает функциональность, сопоставимую с Google Analytics, но с полным контролем над данными. Облачная версия Matomo Cloud доступна от $21,67/мес (при годовой оплате за 50K хитов).</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://matomo.org" rel="nofollow" target="_blank">matomo.org</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Self-hosted версия полностью бесплатна (платные только плагины).</li>
+<li>Полное владение данными — критично для GDPR и 152-ФЗ.</li>
+<li>Богатая экосистема плагинов (тепловые карты, A/B-тесты, CRM-интеграции).</li>
+<li>Не блокируется ad-blockers при правильной настройке.</li>
+<li>Рейтинг 4,2/5 на Gartner Peer Insights.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Требует собственного сервера и технической экспертизы для self-hosted.</li>
+<li>Облачная версия значительно дороже конкурентов при росте трафика.</li>
+<li>Интерфейс менее интуитивен, чем у GA4 или Яндекс.Метрики.</li>
+<li>На сервере с высоким трафиком могут быть проблемы с производительностью.</li>
+</ul>
+<h3 id="plausible">Plausible</h3>
+<p><strong>Описание:</strong> Лёгкая privacy-first альтернатива Google Analytics. Не использует файлы cookie, полностью соответствует GDPR, имеет минимальный скрипт (менее 1 КБ). Облачный SaaS-сервис с открытым исходным кодом.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://plausible.io" rel="nofollow" target="_blank">plausible.io</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью соответствует GDPR, не требует баннера согласия на cookie.</li>
+<li>Минимальный размер скрипта — не влияет на скорость загрузки страницы.</li>
+<li>Чистый, удобный интерфейс с ключевыми метриками.</li>
+<li>Open-source: можно установить на свой сервер.</li>
+<li>Прозрачное ценообразование: от $9/мес за 10K просмотр.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченный функционал по сравнению с GA4: нет воронок, ML-прогнозов, расширенных сегментов.</li>
+<li>Нет данных в реальном времени.</li>
+<li>При высоком трафике стоимость растёт быстро.</li>
+</ul>
+<h3 id="fathom">Fathom</h3>
+<p><strong>Описание:</strong> Ещё одна privacy-focused аналитика без cookie. Разработана в Канаде, упор на простоту и скорость. В 2026 году стоимость начинается от $15/мес за 100K просмотр.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://usefathom.com" rel="nofollow" target="_blank">usefathom.com</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Простая и минималистичная панель.</li>
+<li>Соответствие GDPR и PIPEDA.</li>
+<li>Быстрая загрузка скрипта.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Дороже Plausible на ~50% при аналогичном объёме трафика.</li>
+<li>Ещё более ограниченный функционал, чем у Plausible.</li>
+<li>Нет self-hosted варианта.</li>
+</ul>
+<h3 id="clicky">Clicky</h3>
+<p><strong>Описание:</strong> Американский сервис веб-аналитики с упором на данные в реальном времени. Позволяет отслеживать отдельных пользователей, их действия и пути по сайту. Доступен с платных тарифов от $9,99/мес (Pro, 30K просмотров/день), бесплатный тариф ограничен одним сайтом.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://clicky.com" rel="nofollow" target="_blank">clicky.com</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Отличный real-time мониторинг с детализацией по каждому посетителю.</li>
+<li>Уведомления о событиях (можно настроить алерты на определённые действия).</li>
+<li>Heatmap в базовом тарифе.</li>
+<li>Простой интерфейс, низкий порог входа.</li>
+<li>Рейтинг 4,5/5 на Trustpilot.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Платный даже для базовых потребностей.</li>
+<li>Ограниченный набор интеграций по сравнению с GA4.</li>
+<li>Нет ML-функций и прогнозной аналитики.</li>
+</ul>
+<h3 id="statcounter">Statcounter</h3>
+<p><strong>Описание:</strong> Один из старейших сервисов веб-статистики (основан в 1999 году). Предоставляет базовые данные о посещаемости в реальном времени. Платные тарифы начинаются от $9/мес, бесплатный план показывает только 500 последних просмотр.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://statcounter.com" rel="nofollow" target="_blank">statcounter.com</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Простой и понятный интерфейс.</li>
+<li>Real-time статистика.</li>
+<li>Низкая стоимость входа.</li>
+<li>Рейтинг 7,0 на Peerspot.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Очень ограниченная аналитика на бесплатном плане.</li>
+<li>Нет современных инструментов: ни воронок, ни записи сессий.</li>
+<li>Устаревший дизайн панели.</li>
+</ul>
+<h2 id="точность-данных-и-блокировщики-рекламы">Точность данных и блокировщики рекламы</h2>
+<p>Одна из главных проблем веб-аналитики в 2026 году — блокировщики рекламы. AdBlock, uBlock Origin и встроенные блокировщики в Safari и Firefox отсекают 15–30% трафика из стандартных счётчиков. Яндекс.Метрика и Google Analytics страдают сильнее всего. Self-hosted Matomo при грамотной настройке (проксирование скрипта) менее подвержен блокировке. Privacy-first инструменты (Plausible, Fathom) используют кастомный атрибут data-domain вместо cookie, что тоже помогает обойти часть блокировщиков.</p>
+<h2 id="приватность-и-gdpr">Приватность и GDPR</h2>
+<p>Если ваш сайт работает с европейской аудиторией, соответствие GDPR обязательно. Plausible и Fathom спроектированы с учётом GDPR «из коробки». Matomo позволяет полностью контролировать хранение данных. Яндекс.Метрика и Google Analytics требуют дополнительной настройки (анонимизация IP, настройка Data Processing Agreement). В России действует 152-ФЗ, который при локальном хранении данных делает Matomo self-hosted предпочтительным выбором.</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Бесплатно</th><th>Privacy/GDPR</th><th>Real-time</th><th>Точность (RU)</th><th>Тепловые карты</th><th>Тариф от</th></tr></thead><tbody><tr><td>Яндекс.Метрика</td><td>Да</td><td>Частично</td><td>Да</td><td>Высокая</td><td>Да (Вебвизор)</td><td>Бесплатно</td></tr><tr><td>Google Analytics 4</td><td>Да</td><td>Требует настройки</td><td>Да</td><td>Средняя</td><td>Нет</td><td>Бесплатно</td></tr><tr><td>OpenStat</td><td>Да</td><td>Нет данных</td><td>Нет</td><td>Средняя</td><td>Нет</td><td>Бесплатно</td></tr><tr><td>LiveInternet</td><td>Да</td><td>Нет данных</td><td>Да</td><td>Низкая</td><td>Нет</td><td>Бесплатно</td></tr><tr><td>Matomo</td><td>Self-hosted</td><td>Полное</td><td>Да</td><td>Высокая</td><td>Плагин</td><td>$21,67/мес (Cloud)</td></tr><tr><td>Plausible</td><td>Нет</td><td>Полное</td><td>Нет</td><td>Средняя</td><td>Нет</td><td>$9/мес</td></tr><tr><td>Fathom</td><td>Нет</td><td>Полное</td><td>Нет</td><td>Средняя</td><td>Нет</td><td>$15/мес</td></tr><tr><td>Clicky</td><td>Ограничено</td><td>Частично</td><td>Да</td><td>Средняя</td><td>Да</td><td>$9,99/мес</td></tr><tr><td>Statcounter</td><td>Ограничено</td><td>Нет данных</td><td>Да</td><td>Средняя</td><td>Нет</td><td>$9/мес</td></tr></tbody></table>
+<h2 id="что-выбрать">Что выбрать?</h2>
+<p>Для <strong>российского бизнеса</strong> оптимальная связка — Яндекс.Метрика (основная аналитика + Вебвизор) в паре с Google Analytics 4 (глобальные данные + BigQuery). Если важна <strong>приватность и GDPR</strong> — Plausible или self-hosted Matomo. Для <strong>небольших проектов</strong>, где нужен только real-time и простота — Clicky. Устаревшие LiveInternet и OpenStat стоит рассматривать только для поддержания уже установленных счётчиков, но не для новых проектов.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

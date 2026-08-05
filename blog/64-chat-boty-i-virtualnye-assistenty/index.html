@@ -1,0 +1,346 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Подборка из девяти платформ для создания чат-ботов и виртуальных ассистентов: от российских решений на базе GigaChat до мировых лидеров Dialogflow и ManyChat."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Чат-боты и виртуальные ассистенты для бизнеса: обзор 2026 — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Чат-боты и виртуальные ассистенты для бизнеса: обзор 2026</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>чат-боты</li><li data-astro-cid-ymihodss>виртуальные ассистенты</li><li data-astro-cid-ymihodss>ИИ</li><li data-astro-cid-ymihodss>автоматизация</li><li data-astro-cid-ymihodss>обслуживание клиентов</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="виртуальные-ассистенты-от-простых-ботов-до-ии-помощников">Виртуальные ассистенты: от простых ботов до ИИ-помощников</h2>
+<p>Чат-боты прошли путь от простых меню-навигаторов до интеллектуальных виртуальных ассистентов, способных вести осмысленный диалог, распознавать намерения пользователя и подключаться к корпоративным базам знаний. По данным обзора от kokoc.com (март 2026), на рынке работает 37 платформ для создания чат-ботов, и число растёт. Главный тренд 2025–2026 годов — интеграция больших языковых моделей (LLM) в чат-боты: GigaChat, GPT, Claude, Llama делают диалоги естественными и контекстными.</p>
+<p>В этом обзоре мы разделяем платформы на две категории: конструкторы с ИИ-возможностями (понимание естественного языка, генерация ответов) и конструкторы диалоговых ботов (сценарные меню, воронки). Все сервисы оценены по наличию AI-функций, поддержке каналов (сайт, мессенджеры, телефония), интеграциям с внешними системами и стоимости.</p>
+<h2 id="российские-платформы-с-ии">Российские платформы с ИИ</h2>
+<h3 id="aimylogic">Aimylogic</h3>
+<p><strong>Сайт:</strong> <a href="https://aimylogic.com" rel="nofollow" target="_blank">aimylogic.com</a></p>
+<p>Aimylogic — российская no-code платформа от компании Just AI для создания чат-ботов, голосовых обзвонов, IVR-систем и навыков для голосовых ассистентов. Это одна из немногих платформ на российском рынке, которая поддерживает полноценное распознавание намерений (intents) с помощью machine learning. Боты Aimylogic способны понимать речь, обучаться на новых данных и вести диалог, а не просто предлагать меню вариантов. Платформа интегрируется с Салют, Алисой и Марусей. Поддерживает создание ботов для сайта, Telegram, VK и других каналов.</p>
+<p><strong>Преимущества:</strong></p>
+<ul>
+<li>Распознавание намерений на базе machine learning</li>
+<li>Создание не только чат-ботов, но и голосовых обзвонов и IVR</li>
+<li>Интеграция с российскими голосовыми ассистентами (Салют, Алиса)</li>
+<li>No-code визуальный конструктор</li>
+<li>Включена в Реестр отечественного ПО</li>
+</ul>
+<p><strong>Недостатки:</strong></p>
+<ul>
+<li>Сложнее в освоении, чем сценарные конструкторы</li>
+<li>На продвинутых тарифах стоимость растёт быстро</li>
+<li>Требует описания интентов для качественной работы</li>
+<li>Ограниченное количество готовых шаблонов</li>
+</ul>
+<h3 id="salutebot">SaluteBot</h3>
+<p><strong>Сайт:</strong> <a href="https://developers.sber.ru/portal/products/salutebot-chat-bot" rel="nofollow" target="_blank">developers.sber.ru/portal/products/salutebot-chat-bot</a></p>
+<p>SaluteBot — платформа для создания чат-ботов от Сбера, использующая технологию GigaChat. Платформа позволяет создавать ботов на базе генеративного ИИ, которые могут отвечать на вопросы клиентов, консультировать по продуктам и услугам, обрабатывать заявки. SaluteBot включает визуальный конструктор Studio для создания сценариев взаимодействия и подключение к базам знаний компании. С мая 2024 года клиентам доступна возможность создания ботов на базе GigaChat, что значительно расширяет возможности по сравнению со сценарными ботами. Также доступна услуга разработки бота под ключ.</p>
+<p><strong>Преимущества:</strong></p>
+<ul>
+<li>База на GigaChat — один из лучших русскоязычных LLM</li>
+<li>Визуальный конструктор Studio</li>
+<li>Возможность разработки под ключ</li>
+<li>Экосистема Сбера (интеграция с банковскими сервисами)</li>
+<li>Поддержка сайта и мессенджеров</li>
+</ul>
+<p><strong>Недостатки:</strong></p>
+<ul>
+<li>Платформа относительно новая — меньше кейсов и отзывов</li>
+<li>Зависимость от экосистемы Сбера</li>
+<li>Стоимость разработки под ключ по запросу</li>
+<li>Меньше документации и обучающих материалов</li>
+</ul>
+<h3 id="sendpulse">SendPulse</h3>
+<p><strong>Сайт:</strong> <a href="https://sendpulse.com" rel="nofollow" target="_blank">sendpulse.com</a></p>
+<p>SendPulse — мультисервисная платформа для маркетинга, включающая email-рассылки, веб-пуш, SMS, чат-боты и CRM. Чат-боты SendPulse поддерживают Instagram, Facebook Messenger, WhatsApp, Telegram и виджет для сайта. Платформа позволяет автоматизировать ответы на типовые вопросы, собирать контактные данные, обрабатывать запросы и сопровождать заказы. Особенность — глубокая интеграция с маркетинговыми инструментами: можно создать автоворонку, где чат-бот выступает одним из каналов наряду с email и SMS. Базовый тариф — от $7.88/мес., есть бесплатный тариф с ограничениями.</p>
+<p><strong>Преимущества:</strong></p>
+<ul>
+<li>Мультисервис: чат-боты + email + SMS + пуш-уведомления</li>
+<li>Поддержка всех основных мессенджеров</li>
+<li>Глубокая интеграция в маркетинговые воронки</li>
+<li>Доступная цена — от $7.88/мес.</li>
+<li>Бесплатный тариф для тестирования</li>
+</ul>
+<p><strong>Недостатки:</strong></p>
+<ul>
+<li>AI-функции ограничены по сравнению с Aimylogic или SaluteBot</li>
+<li>Боты не понимают свободные запросы (только сценарии)</li>
+<li>Оплата в долларах</li>
+<li>Интерфейс может показаться перегруженным из-за обилия функций</li>
+</ul>
+<h3 id="бробот">БроБот</h3>
+<p><strong>Сайт:</strong> <a href="https://brobot.chat" rel="nofollow" target="_blank">brobot.chat</a></p>
+<p>БроБот — российский конструктор чат-ботов, ориентированный на создание умных виртуальных консультантов для сайта и мессенджеров. Платформа позволяет подключить базу знаний компании (FAQ, документы, статьи), на основе которой бот автоматически отвечает на вопросы клиентов. БроБот поддерживает интеграцию с живыми операторами: если бот не может ответить, диалог передаётся человеку. Упоминается в обзорах APIX-Drive как один из популярных российских конструкторов.</p>
+<p><strong>Преимущества:</strong></p>
+<ul>
+<li>Подключение базы знаний для автоматических ответов</li>
+<li>Плавная передача диалога живому оператору</li>
+<li>Поддержка сайта и мессенджеров</li>
+<li>Простой интерфейс без программирования</li>
+<li>Российская разработка с поддержкой на русском</li>
+</ul>
+<p><strong>Недостатки:</strong></p>
+<ul>
+<li>Менее известен, чем Aimylogic или SendPulse</li>
+<li>Ограниченные AI-возможности (без ML-распознавания)</li>
+<li>Меньше интеграций с внешними CRM</li>
+<li>Не подходит для сложных многошаговых сценариев</li>
+</ul>
+<h2 id="международные-платформы">Международные платформы</h2>
+<h3 id="dialogflow">Dialogflow</h3>
+<p><strong>Сайт:</strong> <a href="https://cloud.google.com/dialogflow" rel="nofollow" target="_blank">cloud.google.com/dialogflow</a></p>
+<p>Dialogflow — платформа Google для создания конверсационных AI-агентов. Основана на технологии Natural Language Understanding (NLU), которая позволяет ботам распознавать намерения, извлекать сущности и вести естественный диалог. Dialogflow поддерживает более 20 языков, включая русский, и может работать на сайте, в мессенджерах, телефонии (через интеграцию с Twilio) и голосовых ассистентах. Dialogflow CX (enterprise-версия) предлагает визуальный конструктор сложных диалогов с ветвлениями. Бесплатный тариф ES Edition — до 10 000 запросов в месяц. Платный — от $0.002 за запрос.</p>
+<p><strong>Преимущества:</strong></p>
+<ul>
+<li>Лучший в классе NLU от Google</li>
+<li>Поддержка 20+ языков, включая русский</li>
+<li>Визуальный конструктор Dialogflow CX</li>
+<li>Интеграция с Google Cloud, Telegram, Facebook, Twilio</li>
+<li>Щедрый бесплатный тариф — 10 000 запросов/мес.</li>
+</ul>
+<p><strong>Недостатки:</strong></p>
+<ul>
+<li>Высокий порог входа — требуется понимание концепции интентов</li>
+<li>Настройка под русский язык требует дополнительной работы</li>
+<li>Enterprise-функции (CX) стоят дорого</li>
+<li>Интерфейс перегружен настройками</li>
+<li>Зависимость от Google Cloud</li>
+</ul>
+<h3 id="manychat">ManyChat</h3>
+<p><strong>Сайт:</strong> <a href="https://manychat.com" rel="nofollow" target="_blank">manychat.com</a></p>
+<p>ManyChat — международная платформа для автоматизации общения с клиентами в Instagram, Facebook Messenger и WhatsApp. В контексте виртуальных ассистентов ManyChat предлагает функцию Automation Rules, позволяющую создавать умные триггеры и автоворонки. Хотя ManyChat не имеет встроенного NLU, он поддерживает интеграцию с внешними AI-сервисами через API, включая GPT. Это позволяет создать гибридного ассистента: сценарные автоворонки ManyChat + генеративные ответы от GPT. Платные тарифы — от $15/мес.</p>
+<p><strong>Преимущества:</strong></p>
+<ul>
+<li>Лучший инструмент для Instagram-автоматизации</li>
+<li>Интеграция с GPT для генеративных ответов</li>
+<li>Простые автоворонки и триггерные рассылки</li>
+<li>Огромное сообщество и обучающие ресурсы</li>
+<li>От $15/мес. — доступнее многих конкурентов</li>
+</ul>
+<p><strong>Недостатки:</strong></p>
+<ul>
+<li>Нет встроенного NLU — AI только через интеграцию</li>
+<li>Слабая поддержка Telegram и сайта</li>
+<li>Нет русского интерфейса</li>
+<li>Оплата в долларах</li>
+<li>Нет self-hosted варианта</li>
+</ul>
+<h3 id="intercom">Intercom</h3>
+<p><strong>Сайт:</strong> <a href="https://www.intercom.com" rel="nofollow" target="_blank">intercom.com</a></p>
+<p>Intercom — платформа для обслуживания клиентов, сочетающая живую поддержку (чат с оператором) с AI-ассистентом Fin. Fin — встроенный AI-ассистент, обучаемый на базе данных компании, который может autonomously отвечать до 50% типовых запросов клиентов. Intercom поддерживает чат на сайте, в мессенджерах и по email. Платформа ориентирована на B2B SaaS-компании и средний бизнес. Платные тарифы начинаются от $39/мес., но реальная стоимость для полноценного использования обычно составляет от $100 до $500/мес.</p>
+<p><strong>Преимущества:</strong></p>
+<ul>
+<li>AI-ассистент Fin обучается на вашей базе знаний</li>
+<li>Автоматический ответ до 50% типовых запросов</li>
+<li>Бесшовный переход от бота к живому оператору</li>
+<li>Мощная аналитика и отчётность</li>
+<li>Готовые интеграции с Salesforce, HubSpot, Slack</li>
+</ul>
+<p><strong>Недостатки:</strong></p>
+<ul>
+<li>Высокая стоимость — от $100–500/мес. реально</li>
+<li>Фокус на англоязычный рынок B2B SaaS</li>
+<li>Нет русского интерфейса</li>
+<li>Нет встроенной телефонии</li>
+<li>Сложный процесс настройки AI-ассистента</li>
+</ul>
+<h3 id="chatbot-zapier">ChatBot (Zapier)</h3>
+<p><strong>Сайт:</strong> <a href="https://www.chatbot.com" rel="nofollow" target="_blank">chatbot.com</a></p>
+<p>ChatBot от компании Zety (приобретена Zapier) — платформа для создания AI-чат-ботов для сайта и мессенджеров. Платформа предлагает визуальный конструктор с поддержкой AI-ответов на основе базы знаний: вы загружаете документы, статьи и FAQ, а бот автоматически генерирует ответы на вопросы клиентов. ChatBot интегрируется с экосистемой Zapier (7 000+ приложений), что открывает безграничные возможности автоматизации. Платные тарифы начинаются от $52/мес.</p>
+<p><strong>Преимущества:</strong></p>
+<ul>
+<li>AI-ответы на основе загруженной базы знаний</li>
+<li>Глубокая интеграция с экосистемой Zapier (7 000+ приложений)</li>
+<li>Визуальный конструктор без программирования</li>
+<li>Поддержка сайта и мессенджеров</li>
+<li>Аналитика диалогов и обратная связь</li>
+</ul>
+<p><strong>Недостатки:</strong></p>
+<ul>
+<li>Высокая цена — от $52/мес.</li>
+<li>Нет поддержки русского языка на высоком уровне</li>
+<li>Нет телефонии и голосовых ботов</li>
+<li>Меньше функционала, чем у Intercom или Dialogflow</li>
+<li>Нет self-hosted варианта</li>
+</ul>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Платформа</th><th>Страна</th><th>AI/NLU</th><th>Голос</th><th>Телефония</th><th>Мин. цена</th><th>Бесплатно</th></tr></thead><tbody><tr><td><strong>Aimylogic</strong></td><td>🇷🇺 РФ</td><td>Да (ML)</td><td>Да</td><td>Да (IVR)</td><td>По запросу</td><td>Триал</td></tr><tr><td><strong>SaluteBot</strong></td><td>🇷🇺 РФ</td><td>Да (GigaChat)</td><td>Нет</td><td>Нет</td><td>По запросу</td><td>Нет</td></tr><tr><td><strong>SendPulse</strong></td><td>🇷🇺/🇺🇸</td><td>Огранич.</td><td>Нет</td><td>Нет</td><td>$7.88/мес.</td><td>Да</td></tr><tr><td><strong>БроБот</strong></td><td>🇷🇺 РФ</td><td>База знаний</td><td>Нет</td><td>Нет</td><td>По запросу</td><td>Нет</td></tr><tr><td><strong>Dialogflow</strong></td><td>🇺🇸 США</td><td>Да (Google NLU)</td><td>Да</td><td>Да (Twilio)</td><td>$0.002/запр.</td><td>10 000/мес.</td></tr><tr><td><strong>ManyChat</strong></td><td>🇺🇸 США</td><td>Через GPT</td><td>Нет</td><td>Нет</td><td>$15/мес.</td><td>Да (Pro)</td></tr><tr><td><strong>Intercom</strong></td><td>🇺🇸/🇮🇪</td><td>Да (Fin AI)</td><td>Нет</td><td>Нет</td><td>~$100/мес.</td><td>14-дневн. триал</td></tr><tr><td><strong>ChatBot</strong></td><td>🇺🇸 США</td><td>База знаний</td><td>Нет</td><td>Нет</td><td>$52/мес.</td><td>14-дневн. триал</td></tr></tbody></table>
+<h2 id="как-выбрать-платформу-для-чат-бота-или-ассистента">Как выбрать платформу для чат-бота или ассистента</h2>
+<p>Если вам нужен бот с распознаванием речи и поддержкой телефонии — <strong>Aimylogic</strong> остаётся лучшим российским решением. Она поддерживает интенты, голосовые обзвоны и IVR, что делает её уникальной на отечественном рынке.</p>
+<p>Для создания AI-ассистента на базе GigaChat с экосистемой Сбера — выбирайте <strong>SaluteBot</strong>. Это новое, но перспективное решение с мощной языковой моделью.</p>
+<p>Если приоритет — маркетинговые автоворонки в мессенджерах, а не AI-диалоги — <strong>SendPulse</strong> предлагает лучшее соотношение цены и функционала, объединяя чат-ботов с email и SMS.</p>
+<p>Для технических команд, которым нужен лучший в классе NLU — <strong>Dialogflow</strong> от Google. Бесплатный тариф 10 000 запросов/мес. позволяет полностью протестировать решение.</p>
+<p>Для B2B SaaS-компаний с англоязычной аудиторией — <strong>Intercom</strong> с AI-ассистентом Fin автономно закрывает до половины запросов, но стоит от $100/мес.</p>
+<p><strong>Итог:</strong> для большинства российских компаний рекомендуемый путь: Aimylogic (для интеллектуального бота с речью) или SendPulse (для маркетинговых ботов в мессенджерах). Обе платформы поддерживают русский язык и предлагают адекватное соотношение цены и возможностей.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

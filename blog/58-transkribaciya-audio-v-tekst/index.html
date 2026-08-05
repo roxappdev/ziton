@@ -1,0 +1,399 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор сервисов расшифровки аудио в текст — от Яндекс SpeechKit и Сбербанка SaluteSpeech до Otter.ai, Descript и AssemblyAI. Сравнение точности для русского языка, разделения спикеров и цен."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Сервисы для транскрибации аудио в текст — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Сервисы для транскрибации аудио в текст</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>транскрибация</li><li data-astro-cid-ymihodss>распознавание речи</li><li data-astro-cid-ymihodss>SpeechKit</li><li data-astro-cid-ymihodss>Otter.ai</li><li data-astro-cid-ymihodss>Descript</li><li data-astro-cid-ymihodss>Whisper</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="зачем-нужна-транскрибация">Зачем нужна транскрибация</h2>
+<p>Транскрибация — автоматическое преобразование речи в текст — стала повседневным инструментом для журналистов, исследователей, продюсеров подкастов и бизнес-команд. По данным Habr (декабрь 2025), в топ-7 нейросетей для транскрибации входят Whisper (OpenAI), Яндекс SpeechKit, SaluteSpeech (Сбербанк) и TeamLogs. NovaScribe (январь 2026) сравнила 14 сервисов, выделив Otter.ai для живых субтитров, Descript для видео-креаторов, Sonix для перевода.</p>
+<p>При выборе стоит оценивать: <strong>точность для русского языка</strong> (критично для российского рынка), <strong>разделение спикеров</strong> (speaker diarization — кто что сказал), <strong>таймкоды</strong> (временные метки для каждого фрагмента), <strong>поддерживаемые форматы</strong> (MP3, WAV, MP4, M4A), <strong>цену за минуту</strong> (pay-as-you-go vs подписка) и <strong>наличие API</strong> (для автоматизации).</p>
+<h2 id="яндекс-speechkit">Яндекс SpeechKit</h2>
+<p><strong>Сайт:</strong> <a href="https://yandex.cloud/ru/services/speechkit" rel="nofollow" target="_blank">yandex.cloud/ru/services/speechkit</a></p>
+<p>Яндекс SpeechKit — сервис распознавания и синтеза речи от Яндекса. Распознаёт речь на 15+ языках, включая русский с высокой точностью. По данным Yandex AI Studio, SpeechKit не только транскрибирует, но и обрабатывает результат языковой моделью: суммаризирует, извлекает факты, переводит, готовит структурированные данные.</p>
+<p>SpeechKit обеспечивает разделение спикеров, таймкоды, фильтрацию нецензурной лексики и работу с потоковым аудио. Доступен через API в Yandex Cloud, а также через консоль Yandex AI Studio с тестовым интерфейсом.</p>
+<p><strong>Цена:</strong> pay-as-you-go в Yandex Cloud. Распознавание коротких аудио (до 60 сек) — бесплатный лимит (до 500 запросов/мес). Длинные аудиофайлы — от ~0,00018 ₽/сек (порядка ~0,65 ₽/мин). Первые 100 часов/мес — бесплатно для новых пользователей.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Высокая точность для русского языка</li>
+<li>15+ языков</li>
+<li>Разделение спикеров и таймкоды</li>
+<li>Суммаризация и извлечение фактов через ИИ</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Требует регистрации в Yandex Cloud</li>
+<li>API-ориентированный (нет простого веб-интерфейса загрузки)</li>
+<li>Документация на русском, но интерфейс облака сложен</li>
+<li>Нет встроенного видеоредактора</li>
+</ul>
+<h2 id="salutespeech-сбербанк">SaluteSpeech (Сбербанк)</h2>
+<p><strong>Сайт:</strong> <a href="https://developers.sber.ru/portal/products/smartspeech" rel="nofollow" target="_blank">developers.sber.ru/portal/products/smartspeech</a></p>
+<p>SaluteSpeech — платформа распознавания и синтеза речи от Сбера. По данным Sber Developer, доступна для TTS (озвучка текста) и STT (распознавание речи). Поддерживает русский язык с высокой точностью, включая сленг, акценты и шумные среды.</p>
+<p>SaluteSpeech обеспечивает разделение спикеров, таймкоды и работает через API. По данным sber.pro, платформа открыта для бизнеса — можно создавать аудиокниги, озвучивать контент и расшифровывать аудиодорожки.</p>
+<p><strong>Цена:</strong> API-доступ через портал разработчиков Сбера. Базовое использование — бесплатно (лимиты), для бизнеса — индивидуальные тарифы.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Высокая точность для русского языка</li>
+<li>Работа в шумных условиях</li>
+<li>Разделение спикеров и таймкоды</li>
+<li>Бесплатный базовый доступ</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только API (нет веб-интерфейса загрузки)</li>
+<li>Требует регистрации на портале Сбера</li>
+<li>Индивидуальные тарифы (нет прозрачного прайсинга)</li>
+<li>Меньше языков, чем у SpeechKit</li>
+</ul>
+<h2 id="speechpadru">SpeechPad.ru</h2>
+<p><strong>Сайт:</strong> <a href="https://speechpad.ru" rel="nofollow" target="_blank">speechpad.ru</a></p>
+<p>SpeechPad.ru — российский сервис транскрибации аудио и видео в текст с удобным веб-интерфейсом. По данным navstreche.com (декабрь 2025), пользователь загружает аудио- или видеофайл через веб-интерфейс, выбирает формат и получает готовую расшифровку.</p>
+<p>SpeechPad поддерживает русский и иностранные языки, разделение спикеров, таймкоды и ручную корректировку в редакторе. Поддерживаемые форматы: MP3, WAV, MP4, M4A, OGG и другие.</p>
+<p><strong>Цена:</strong> pay-as-you-go. Примерно 1–3 ₽/минута в зависимости от объёма и языка.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Простой веб-интерфейс загрузки</li>
+<li>Высокая точность для русского языка</li>
+<li>Разделение спикеров и таймкоды</li>
+<li>Ручная корректировка в редакторе</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Платный (нет свободного тарифа)</li>
+<li>Нет подписки — только оплата за минуты</li>
+<li>Нет API для автоматизации</li>
+<li>Нет интеграции с видеоредактором</li>
+</ul>
+<h2 id="revcom">Rev.com</h2>
+<p><strong>Сайт:</strong> <a href="https://www.rev.com" rel="nofollow" target="_blank">rev.com</a></p>
+<p>Rev.com — один из старейших сервисов транскрибации. Предлагает два типа: автоматическую расшифровку (Rev AI) и ручную профессиональную расшифровку людьми. Автоматическая стоит $0,25/мин, ручная — $1,50/мин.</p>
+<p>Rev AI обеспечивает высокую точность для английского, но для русского языка результат хуже, чем у специализированных российских решений. Поддерживает разделение спикеров, таймкоды и API.</p>
+<p><strong>Цена:</strong> автоматическая — $0,25/мин, ручная — $1,50/мин.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Выбор автоматической или ручной расшифровки</li>
+<li>Высокая точность для английского</li>
+<li>API для разработчиков</li>
+<li>Субтитры (SRT, VTT)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Слабая поддержка русского языка</li>
+<li>Дорогая ручная расшифровка</li>
+<li>Нет бесплатного тарифа</li>
+<li>Нет видеоредактора</li>
+</ul>
+<h2 id="otterai">Otter.ai</h2>
+<p><strong>Сайт:</strong> <a href="https://otter.ai" rel="nofollow" target="_blank">otter.ai</a></p>
+<p>Otter.ai — один из самых популярных сервисов транскрибации, особенно для живых субтитров на встречах. По данным Vexascribe (июнь 2026), Otter.ai — лидер для live-субтитров с ценой Pro $16,99/мес. Поддерживает живую транскрибацию (Zoom, Google Meet, Microsoft Teams), совместное редактирование и поиск по транскриптам.</p>
+<p>Для русского языка Otter.ai работает значительно хуже, чем для английского. Точность на русском — средняя, разделение спикеров — нестабильное.</p>
+<p><strong>Цена:</strong> «Basic» — бесплатно (300 мин/мес), «Pro» — $16,99/мес (1200 мин/мес), «Business» — $30/мес.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Лучшая живая транскрибация (meetings)</li>
+<li>Интеграции с Zoom, Meet, Teams</li>
+<li>Совместное редактирование</li>
+<li>Бесплатный тариф (300 мин/мес)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Слабая поддержка русского языка</li>
+<li>Нет видеоредактора</li>
+<li>Платные тарифы выросли в цене</li>
+<li>Нет API на Basic-плане</li>
+</ul>
+<h2 id="descript">Descript</h2>
+<p><strong>Сайт:</strong> <a href="https://www.descript.com" rel="nofollow" target="_blank">descript.com</a></p>
+<p>Descript — уникальный сервис, совмещающий транскрибацию с видеоредактором. Редактируешь текст — видео автоматически обрезается. По данным NovaScribe (январь 2026), Descript — лучший выбор для видео-креаторов. Поддерживает автоматическую транскрибацию, удаление слов-паразитов, заполнение слов, ИИ-голоса, генерацию субтитров и экранную запись.</p>
+<p>Для русского языка Descript обеспечивает приемлемую точность, но уступает Яндекс SpeechKit и SpeechPad. Разделение спикеров работает, но не идеально.</p>
+<p><strong>Цена:</strong> «Free» — бесплатно (1 час транскрибации/мес, водяной знак), «Hobbyist» — $19/мес (10 часов), «Pro» — $29/мес.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Уникальный видеоредактор на базе транскрипции</li>
+<li>Удаление слов-паразитов и пауз</li>
+<li>Запись экрана и ИИ-голоса</li>
+<li>Субтитры и экспорт</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Средняя точность для русского языка</li>
+<li>Бесплатный тариф сильно ограничен (1 час)</li>
+<li>Требует мощного компьютера (десктоп-приложение)</li>
+<li>Дороже конкурентов</li>
+</ul>
+<h2 id="sonix">Sonix</h2>
+<p><strong>Сайт:</strong> <a href="https://sonix.ai" rel="nofollow" target="_blank">sonix.ai</a></p>
+<p>Sonix — сервис транскрибации с акцентом на многоязычность и автоматический перевод. По данным NovaScribe (январь 2026), Sonix стоит $10/час (PAYG) или $5/час + $22/место/мес на Premium-плане. Точность — около 94%. Автоматический перевод на 40+ языков.</p>
+<p>Sonix обеспечивает разделение спикеров, таймкоды, совместное редактирование, экспорт в SRT/VTT/TXT/DOCX. Интерфейс на русском языке.</p>
+<p><strong>Цена:</strong> PAYG — $10/час, «Premium» — $22/мес + $5/час.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Автоматический перевод на 40+ языков</li>
+<li>Поддержка русского языка</li>
+<li>Совместное редактирование</li>
+<li>PAYG без подписки</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Дорого при больших объёмах</li>
+<li>Нет бесплатного тарифа (только 30 мин trial)</li>
+<li>Нет живой транскрибации</li>
+<li>Нет видеоредактора</li>
+</ul>
+<h2 id="trint">Trint</h2>
+<p><strong>Сайт:</strong> <a href="https://trint.com" rel="nofollow" target="_blank">trint.com</a></p>
+<p>Trint — профессиональная платформа транскрибации для медиа и бизнеса. Поддерживает 40+ языков, обеспечивает разделение спикеров, таймкоды, совместное редактирование и интеграции. Точность для русского — средняя.</p>
+<p>Trint позиционируется как инструмент для журналистов и продюсеров: прямая интеграция с Premiere Pro, Avid и другими NLE через плагин. Совместная работа команды над транскриптами.</p>
+<p><strong>Цена:</strong> «Starter» — $52/мес, «Advanced» — $80/мес.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Профессиональные интеграции (Premiere Pro, Avid)</li>
+<li>Совместное редактирование</li>
+<li>40+ языков</li>
+<li>Инструменты для медиа-продакшена</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Высокая цена</li>
+<li>Нет бесплатного тарифа</li>
+<li>Слабее для русского языка</li>
+<li>Нет видеоредактора</li>
+</ul>
+<h2 id="войс-voice">Войс (Voice)</h2>
+<p><strong>Сайт:</strong> <a href="https://voice.ru" rel="nofollow" target="_blank">voice.ru</a></p>
+<p>Войс — российский сервис транскрибации, использующий нейросетевые модели. Обеспечивает высокую точность для русского языка, разделение спикеров, таймкоды и ручную корректировку. Подходит для расшифровки интервью, встреч, подкастов и лекций.</p>
+<p>Войс работает через веб-интерфейс, поддерживает MP3, WAV, MP4. Скорость обработки — сопоставима с длительностью аудио.</p>
+<p><strong>Цена:</strong> pay-as-you-go, примерно 2–5 ₽/минута.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Высокая точность для русского языка</li>
+<li>Разделение спикеров</li>
+<li>Ручная корректировка</li>
+<li>Простой веб-интерфейс</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет бесплатного тарифа</li>
+<li>Нет API</li>
+<li>Нет интеграций с редакторами</li>
+<li>Ограниченная поддержка иностранных языков</li>
+</ul>
+<h2 id="assemblyai">AssemblyAI</h2>
+<p><strong>Сайт:</strong> <a href="https://www.assemblyai.com" rel="nofollow" target="_blank">assemblyai.com</a></p>
+<p>AssemblyAI — API-сервис транскрибации для разработчиков. Предоставляет модели распознавания речи с высокой точностью для английского и поддержкой 15+ языков. Поддерживает разделение спикеров, идентификацию тем, обнаружение ключевых фраз, автоматическое резюме и анализ тональности.</p>
+<p>Для русского языка AssemblyAI обеспечивает среднюю точность — уступает Яндекс SpeechKit. Но для английского — один из лучших API-решений на рынке.</p>
+<p><strong>Цена:</strong> PAYG: $0,00025/сек (~$0,015/мин). Freemium: 100 часов бесплатно/мес для новых пользователей.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Мощный API с ИИ-функциями (суммаризация, тональность)</li>
+<li>Высокая точность для английского</li>
+<li>100 бесплатных часов/мес для новых</li>
+<li>Быстрая обработка</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только API (нет веб-интерфейса)</li>
+<li>Средняя точность для русского</li>
+<li>Требует навыков программирования</li>
+<li>Нет ручной корректировки</li>
+</ul>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th align="center">Русский язык</th><th align="center">Диаризация</th><th align="center">Таймкоды</th><th align="center">Форматы</th><th align="center">API</th><th>Цена от</th></tr></thead><tbody><tr><td>Яндекс SpeechKit</td><td align="center">Отлично</td><td align="center">Да</td><td align="center">Да</td><td align="center">MP3, WAV, OGG</td><td align="center">Да</td><td>~0,65 ₽/мин</td></tr><tr><td>SaluteSpeech</td><td align="center">Отлично</td><td align="center">Да</td><td align="center">Да</td><td align="center">MP3, WAV</td><td align="center">Да</td><td>Бесплатно (лимиты)</td></tr><tr><td>SpeechPad.ru</td><td align="center">Отлично</td><td align="center">Да</td><td align="center">Да</td><td align="center">MP3, WAV, MP4</td><td align="center">Нет</td><td>~1 ₽/мин</td></tr><tr><td>Rev.com</td><td align="center">Средне</td><td align="center">Да</td><td align="center">Да</td><td align="center">MP3, WAV, MP4</td><td align="center">Да</td><td>$0,25/мин</td></tr><tr><td>Otter.ai</td><td align="center">Средне</td><td align="center">Да</td><td align="center">Да</td><td align="center">MP3, MP4, M4A</td><td align="center">Да</td><td>$16,99/мес</td></tr><tr><td>Descript</td><td align="center">Хорошо</td><td align="center">Да</td><td align="center">Да</td><td align="center">MP3, WAV, MP4</td><td align="center">Нет</td><td>$19/мес</td></tr><tr><td>Sonix</td><td align="center">Хорошо</td><td align="center">Да</td><td align="center">Да</td><td align="center">MP3, WAV, MP4</td><td align="center">Да</td><td>$10/час</td></tr><tr><td>Trint</td><td align="center">Средне</td><td align="center">Да</td><td align="center">Да</td><td align="center">MP3, WAV, MP4</td><td align="center">Да</td><td>$52/мес</td></tr><tr><td>Войс</td><td align="center">Отлично</td><td align="center">Да</td><td align="center">Да</td><td align="center">MP3, WAV, MP4</td><td align="center">Нет</td><td>~2 ₽/мин</td></tr><tr><td>AssemblyAI</td><td align="center">Средне</td><td align="center">Да</td><td align="center">Да</td><td align="center">MP3, WAV</td><td align="center">Да</td><td>$0,015/мин</td></tr></tbody></table>
+<h2 id="что-выбрать">Что выбрать</h2>
+<p>Для <strong>высокой точности на русском</strong> — Яндекс SpeechKit (API, бесплатно 100 часов/мес для новых) или SpeechPad.ru (веб-интерфейс, pay-as-you-go). Для <strong>бесплатной транскрибации</strong> — Otter.ai (300 мин/мес) или AssemblyAI (100 часов/мес для новых). Для <strong>видео-креаторов</strong> — Descript (редактор + транскрибация). Для <strong>перевода транскриптов</strong> — Sonix (40+ языков перевода). Для <strong>медиа-продакшена</strong> — Trint (интеграции с Premiere Pro). Для <strong>разработчиков</strong> — AssemblyAI (API, ИИ-аналитика). Для <strong>российского бизнеса</strong> — Войс или SaluteSpeech (русскоязычные модели).</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор десяти сервисов для генерации текста на базе ИИ — от российских YandexGPT и GigaChat до международных ChatGPT, Claude и Gemini. Сравниваем качество, цены и особенности."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Нейросети для генерации текста: что выбрать копирайтеру и маркетологу — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Нейросети для генерации текста: что выбрать копирайтеру и маркетологу</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>нейросети</li><li data-astro-cid-ymihodss>генерация текста</li><li data-astro-cid-ymihodss>ИИ</li><li data-astro-cid-ymihodss>копирайтинг</li><li data-astro-cid-ymihodss>YandexGPT</li><li data-astro-cid-ymihodss>ChatGPT</li><li data-astro-cid-ymihodss>GigaChat</li></ul></header><div class="prose" data-astro-cid-ymihodss><p>Генерация текста с помощью искусственного интеллекта — одна из самых востребованных функций среди маркетологов, копирайтеров, контент-менеджеров и предпринимателей. В 2026 году на рынке уже десятки решений: от свободно доступных чат-ботов до API-платформ для интеграции в бизнес-процессы. В этой статье разберём десять ключевых сервисов — с акцентом на российские решения.</p>
+<h2 id="российские-сервисы">Российские сервисы</h2>
+<h3 id="yandexgpt">YandexGPT</h3>
+<p><strong>Ссылка:</strong> <a href="https://yandex.ru/gpt" rel="nofollow" target="_blank">yandex.ru/gpt</a></p>
+<p>Яндекс представил свою языковую модель YandexGPT в 2023 году, и к 2026-му она дошла до четвёртой версии. Модель доступна через интерфейс «Яндекс Бот» в поиске, в Ассистенте и через API Yandex Cloud. YandexGPT 4 Pro поддерживает контекстное окно до 128 000 токенов, умеет работать с документами и изображениями.</p>
+<p>По тестам, опубликованным на Хабре (пользователь @alexey_romanov, март 2026), YandexGPT 4 Pro показывает сопоставимое с GPT-4o качество на задачах на русском языке. В частности, модель хорошо справляется с написанием SEO-статей, пересказом документов и генерацией маркетинговых текстов.</p>
+<p>На vc.ru пользователи отмечают, что главное преимущество YandexGPT — глубокая интеграция с сервисами Яндекса: можно генерировать тексты прямо в Яндекс.Документах и использовать контекст из поисковой выдачи.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Отличное владение русским языком, понимание культурного контекста</li>
+<li>Глубокая интеграция с экосистемой Яндекса</li>
+<li>API через Yandex Cloud с гибким тарификацией</li>
+<li>Поддержка работы с документами и изображениями (версия Pro)</li>
+<li>Соответствие требованиям законодательства РФ о хранении данных</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Бесплатный доступ ограничен (лимиты запросов)</li>
+<li>Менее сильна на английском и других языках по сравнению с конкурентами</li>
+<li>В сложных логических задачах иногда уступает GPT-4 и Claude</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно с лимитами в «Яндекс Бот»; от 0,5 ₽ за 1000 токенов через API (зависит от модели); подписка Яндекс 360 Премиум — от 299 ₽/мес.</p>
+<h3 id="gigachat">GigaChat</h3>
+<p><strong>Ссылка:</strong> <a href="https://giga.chat" rel="nofollow" target="_blank">giga.chat</a></p>
+<p>GigaChat — языковая модель от Сбера, запущенная в 2023 году. В 2026 году доступна версия GigaChat 3, которая поддерживает генерацию текста, анализ изображений и работу с документами. Доступен через веб-интерфейс, мобильное приложение и API через GigaCloud.</p>
+<p>На Хабре GigaChat часто хвалят за то, что он «просто работает» — регистрация через Сбер ID занимает секунды, а интерфейс интуитивен. Пользователь @miroslav_s в обзоре на vc.ru (январь 2026) отметил, что GigaChat 3 заметно улучшился в написании маркетинговых текстов и email-рассылок по сравнению с первой версией.</p>
+<p>Важное преимущество — генерация изображений встроена прямо в чат (модель Kandinsky). Можно попросить «напиши пост и прикрепи к нему картинку» — и GigaChat сделает всё в одном окне.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Быстрая регистрация через Сбер ID</li>
+<li>Встроенная генерация изображений через Kandinsky</li>
+<li>Доступно мобильное приложение</li>
+<li>Хорошее качество русских текстов</li>
+<li>API через GigaCloud для разработчиков</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Иногда «галлюцинирует» факты, особенно в узких областях</li>
+<li>Меньше настроек и параметров по сравнению с ChatGPT</li>
+<li>Рекламные вставки в бесплатной версии</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно с лимитами; GigaChat Pro — от 199 ₽/мес. (расширенные лимиты); API — от 1,5 ₽ за 1000 токенов.</p>
+<h3 id="салют-мтс">Салют (МТС)</h3>
+<p><strong>Ссылка:</strong> <a href="https://sber.ai" rel="nofollow" target="_blank">sber.ai/speechkit/v3/</a> — экосистема Салют</p>
+<p>Модель «Салют» от МТС изначально создавалась как голосовой ассистент, но в 2025 году МТС значительно расширил текстовые возможности. «Салют» доступен в приложении МТС, на сайте mts.ai и через API. В 2026 году поддерживает генерацию текстов, саммаризацию и ответы на вопросы.</p>
+<p>Отзывы пользователей на форумах МТС и профильных ресурсах показывают, что «Салют» хорош для базовых задач — написания коротких постов, описаний товаров, ответов на письма. Однако для сложных текстов (статьи, отчёты) пользователи предпочитают YandexGPT или GigaChat.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Встроен в экосистему МТС</li>
+<li>Бесплатен для абонентов МТС</li>
+<li>Работает и как голосовой ассистент, и как текстовая модель</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченные текстовые возможности по сравнению с YandexGPT и GigaChat</li>
+<li>Нет генерации изображений</li>
+<li>Меньше возможностей для тонкой настройки</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно для абонентов МТС; для остальных — ограниченный доступ.</p>
+<h3 id="chandgpt">ChandGPT</h3>
+<p><strong>Ссылка:</strong> <a href="https://chadgpt.ru" rel="nofollow" target="_blank">chadgpt.ru</a></p>
+<p>ChandGPT — российский сервис, созданный разработчиками из VK. По сути, это обёртка над несколькими моделями, включая собственные решения VK. Позиционируется как российская альтернатива ChatGPT с простым интерфейсом.</p>
+<p>На Хабре (тред «Российские ИИ-ассистенты», февраль 2026) ChandGPT получили смешанные отзывы. Пользователи хвалят удобный интерфейс и скорость ответов, но отмечают, что качество генерации текстов уступает YandexGPT и GigaChat, особенно на длинных текстах.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Простой и понятный интерфейс</li>
+<li>Интеграция с сервисами VK</li>
+<li>Быстрые ответы</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Качество текста ниже, чем у конкурентов</li>
+<li>Ограниченный контекст</li>
+<li>Меньше функций для профессионального использования</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно с лимитами.</p>
+<h2 id="международные-сервисы">Международные сервисы</h2>
+<h3 id="chatgpt-openai">ChatGPT (OpenAI)</h3>
+<p><strong>Ссылка:</strong> <a href="https://chatgpt.com" rel="nofollow" target="_blank">chatgpt.com</a></p>
+<p>ChatGPT от OpenAI — самый известный в мире ИИ-ассистент. В 2026 году доступна модель GPT-4o и o3 для сложных задач. Подписка Plus включает доступ к DALL-E для генерации изображений, Custom GPTs для создания специализированных ассистентов и расширенные аналитические функции.</p>
+<p>Российские пользователи могут пользоваться ChatGPT через VPN. На vc.ru регулярно появляются обзоры сравнения ChatGPT с YandexGPT, и общая тенденция такая: для английских текстов и программирования ChatGPT предпочтительнее, для русских текстов — разница минимальна и иногда YandexGPT даже выигрывает.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Лучшее в мире качество генерации на английском языке</li>
+<li>Огромная экосистема плагинов и Custom GPTs</li>
+<li>Встроенная генерация изображений (DALL-E 3)</li>
+<li>Анализ файлов, таблиц, изображений</li>
+<li>Voice Mode для голосового общения</li>
+<li>Крупнейшее сообщество и база знаний</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не работает в РФ без VPN</li>
+<li>Подписка платная ($20/мес. для Plus, $200/мес. для Pro)</li>
+<li>Данные обрабатываются на серверах за рубежом — вопросы комплаенса</li>
+<li>Русский язык поддерживается хорошо, но не идеально</li>
+</ul>
+<p><strong>Цена:</strong> GPT-4o mini — бесплатно; ChatGPT Plus — $20/мес.; ChatGPT Pro — $200/мес.; API — от $2,50 за 1M входных токенов.</p>
+<h3 id="claude-anthropic">Claude (Anthropic)</h3>
+<p><strong>Ссылка:</strong> <a href="https://claude.ai" rel="nofollow" target="_blank">claude.ai</a></p>
+<p>Claude от Anthropic стал настоящим открытием 2025–2026 годов. Модель Claude 4 получила признание за более «человечные» тексты, аккуратное обращение с фактами и меньшую склонность к галлюцинациям. Контекстное окно — до 200 000 токенов, что позволяет загружать целые книги и большие документы.</p>
+<p>Российские копирайтеры на vc.ru и в Telegram-каналах часто называют Claude лучшим вариантом для написания длинных статей, книжных глав и аналитических отчётов. Текст Claude читается более естественно и менее «машинно», чем у ChatGPT.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Выдающееся качество длинных текстов</li>
+<li>Большое контекстное окно (200 000 токенов)</li>
+<li>Меньше галлюцинаций, чем у конкурентов</li>
+<li>«Человечный» стиль написания</li>
+<li>Claude Artifacts для интерактивного контента</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не работает в РФ без VPN</li>
+<li>Медленнее, чем ChatGPT, при генерации длинных текстов</li>
+<li>Меньше интеграций и плагинов</li>
+<li>Платный доступ к лучшим моделям</li>
+</ul>
+<p><strong>Цена:</strong> Claude Sonnet — бесплатно с лимитами; Claude Pro — $20/мес.; API — от $3/1M входных токенов.</p>
+<h3 id="gemini-google">Gemini (Google)</h3>
+<p><strong>Ссылка:</strong> <a href="https://gemini.google.com" rel="nofollow" target="_blank">gemini.google.com</a></p>
+<p>Gemini — языковая модель от Google, интегрированная с экосистемой Google Workspace (Документы, Gmail, Таблицы). В 2026 году актуальная версия — Gemini 2.5 Pro с multimodal-возможностями.</p>
+<p>Главное преимущество Gemini для пользователей Google — бесшовная интеграция. Можно попросить «напиши письмо клиенту на основе данных из этой таблицы» — и Gemini обратится к Google Sheets. Для международного бизнеса это мощный инструмент.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Глубокая интеграция с Google Workspace</li>
+<li>Multimodal: текст, изображения, аудио, видео</li>
+<li>Google Search Grounding — поиск актуальной информации</li>
+<li>Доступно в бесплатной версии Gemini Advanced</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>В РФ требуется VPN</li>
+<li>На русском языке уступает YandexGPT и Claude</li>
+<li>Интерфейс менее интуитивен, чем у ChatGPT</li>
+<li>Иногда избыточно «осторожен» в ответах</li>
+</ul>
+<p><strong>Цена:</strong> Gemini — бесплатно; Gemini Advanced (в Google One AI Premium) — $19,99/мес.; API — от $1,25/1M токенов.</p>
+<h3 id="perplexity-ai">Perplexity AI</h3>
+<p><strong>Ссылка:</strong> <a href="https://perplexity.ai" rel="nofollow" target="_blank">perplexity.ai</a></p>
+<p>Perplexity — не просто генератор текста, а «ИИ-поисковик», который на каждый ответ даёт источники с ссылками. Позиционируется как инструмент для исследования и аналитики. В 2026 году Perplexity Pro включает доступ к моделям GPT-4o, Claude 3.5 и Gemini Pro.</p>
+<p>Для маркетологов и исследователей Perplexity ценен тем, что каждый сгенерированный текст сопровождается ссылками на источники. Это решает главную проблему нейросетей — галлюцинации. Можно проверить каждый факт по ссылкам.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Каждый ответ с источниками и ссылками</li>
+<li>Доступ к нескольким моделям в подписке</li>
+<li>Отличен для исследования и аналитики</li>
+<li>Pro Search — пошаговый глубокий поиск</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не подходит для «художественной» генерации (посты, креатив)</li>
+<li>В РФ работает через VPN</li>
+<li>Платные функции стоят $20/мес.</li>
+<li>Ограниченные возможности для длинных текстов</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (5 Pro-запросов в день); Perplexity Pro — $20/мес.</p>
+<h3 id="mistral-ai">Mistral AI</h3>
+<p><strong>Ссылка:</strong> <a href="https://mistral.ai" rel="nofollow" target="_blank">mistral.ai</a></p>
+<p>Mistral AI — французская компания, предлагающая мощные открытые модели. Mistral Large 2 (2026) конкурирует с GPT-4o по качеству. Особенность — доступ к открытым весам моделей (Mistral Nemo, Mistral Small), которые можно запускать на собственных серверах.</p>
+<p>Для российского бизнеса, заботящегося о хранении данных, Mistral — привлекательный вариант: можно развернуть модель на своих серверах в РФ и не отправлять данные за рубеж.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Открытые модели для самостоятельного развёртывания</li>
+<li>Конкурентоспособное качество</li>
+<li>Европейская юрисдикция (GDPR)</li>
+<li>Гибкая тарификация API</li>
+<li>Le Chat — удобный чат-интерфейс</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Для самостоятельного развёртывания нужны технические навыки и мощное железо</li>
+<li>Интерфейс Le Chat менее функционален, чем у ChatGPT</li>
+<li>Меньше готовых интеграций</li>
+<li>На русском языке уступает специализированным моделям</li>
+</ul>
+<p><strong>Цена:</strong> Le Chat — бесплатно с лимитами; API — от $0,80/1M входных токенов (Mistral Small); самостоятельное развёртывание — бесплатно (open-source).</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Русский язык</th><th>Цена</th><th>Генерация картинок</th><th>API</th><th>Работа в РФ</th></tr></thead><tbody><tr><td>YandexGPT</td><td>Отлично</td><td>От бесплатно</td><td>Нет</td><td>Да</td><td>Да</td></tr><tr><td>GigaChat</td><td>Хорошо</td><td>От бесплатно</td><td>Да (Kandinsky)</td><td>Да</td><td>Да</td></tr><tr><td>Салют</td><td>Средне</td><td>Бесплатно (МТС)</td><td>Нет</td><td>Да</td><td>Да</td></tr><tr><td>ChandGPT</td><td>Средне</td><td>Бесплатно</td><td>Нет</td><td>Ограничено</td><td>Да</td></tr><tr><td>ChatGPT</td><td>Хорошо</td><td>От $20/мес.</td><td>Да (DALL-E)</td><td>Да</td><td>Через VPN</td></tr><tr><td>Claude</td><td>Хорошо</td><td>От $20/мес.</td><td>Нет</td><td>Да</td><td>Через VPN</td></tr><tr><td>Gemini</td><td>Хорошо</td><td>От $20/мес.</td><td>Да</td><td>Да</td><td>Через VPN</td></tr><tr><td>Perplexity</td><td>Хорошо</td><td>От $20/мес.</td><td>Нет</td><td>Да</td><td>Через VPN</td></tr><tr><td>Mistral</td><td>Средне</td><td>От бесплатно</td><td>Нет</td><td>Да</td><td>Через VPN</td></tr></tbody></table>
+<h2 id="что-выбрать">Что выбрать?</h2>
+<p><strong>Для маркетолога в России</strong>, которому нужен надёжный инструмент без VPN: <strong>YandexGPT</strong> — лучший выбор по качеству текста, <strong>GigaChat</strong> — если нужна ещё и генерация картинок в одном окне.</p>
+<p><strong>Для профессионального копирайтера</strong>, работающего на международный рынок: <strong>Claude</strong> для длинных и качественных текстов, <strong>ChatGPT</strong> для максимальной универсальности.</p>
+<p><strong>Для исследователя и аналитика</strong>: <strong>Perplexity</strong> — уникальный инструмент с источниками на каждый ответ.</p>
+<p><strong>Для бизнеса с требованиями к хранению данных</strong>: развёртывание <strong>Mistral</strong> на собственных серверах или использование <strong>YandexGPT</strong> через Yandex Cloud.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

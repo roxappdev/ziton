@@ -1,0 +1,431 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор десяти сервисов для заметок и продуктивности — от простых записей до полноценных баз знаний. Сравниваем Яндекс.Заметки, Notion, Obsidian, Evernote и другие."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Планировщики и органайзеры: заметки, календари и Productivity — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Планировщики и органайзеры: заметки, календари и Productivity</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-03T00:00:00.000Z" data-astro-cid-ymihodss>3 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>заметки</li><li data-astro-cid-ymihodss>продуктивность</li><li data-astro-cid-ymihodss>organizery</li><li data-astro-cid-ymihodss>notion</li><li data-astro-cid-ymihodss>obsidian</li><li data-astro-cid-ymihodss>календари</li></ul></header><div class="prose" data-astro-cid-ymihodss><p>Сервисы для заметок и планирования давно перестали быть просто «цифровыми стикерами». Современные планировщики объединяют в себе текстовый редактор, базу данных, календарь и инструмент совместной работы. В этой статье мы разберём десять популярных решений — от минималистичных до всеобъемлющих — и поможем выбрать подходящий.</p>
+<h2 id="российские-сервисы">Российские сервисы</h2>
+<h3 id="яндексзаметки">Яндекс.Заметки</h3>
+<p><strong>Ссылка:</strong> <a href="https://yandex.ru/project/disk/notes" rel="nofollow" target="_blank">yandex.ru/project/disk/notes</a></p>
+<p>Яндекс.Заметки — встроенный сервис внутри Яндекс.Диска, предназначенный для быстрого создания и хранения текстовых записей. Появился в 2019 году и с тех пор постепенно обрастал новыми функциями.</p>
+<p>Заметки поддерживают форматирование текста, списки и чек-листы. Все записи привязаны к аккаунту Яндекс и синхронизируются через Диск. Доступен веб-интерфейс и мобильное приложение для Android. Работает исключительно онлайн — оффлайн-режима нет.</p>
+<p>На Хабре сервис встретили сдержанно: пользователи отмечали, что по сравнению с Google Keep Яндекс.Заметки выглядят функционально беднее, но для базовых задач вполне подходят. В рейтинге приложений для заметок от Leadertask (2026) Яндекс.Заметки заняли седьмое место, что говорит о среднем уровне.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Встроен в экосистему Яндекса, не нужен отдельный аккаунт</li>
+<li>Бесплатно для всех пользователей Яндекса</li>
+<li>Простота и скорость создания заметок</li>
+<li>Интеграция с Яндекс.Диском</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только онлайн-доступ, нет оффлайн-режима</li>
+<li>Отсутствие тегов, папок и сложной структуры</li>
+<li>Нет поддержки Markdown</li>
+<li>Нет приложения для iOS</li>
+<li>Нет функций совместной работы</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (входит в Яндекс.Диск, расширенные функции — в подписке Яндекс 360 от 299 ₽/мес.)</p>
+<h2 id="международные-сервисы">Международные сервисы</h2>
+<h3 id="notion">Notion</h3>
+<p><strong>Ссылка:</strong> <a href="https://www.notion.so" rel="nofollow" target="_blank">notion.so</a></p>
+<p>Notion — это all-in-one платформа, объединяющая заметки, текстовые документы, базы данных, канбан-доски и календари. Сервис стал настоящим хитом среди продакт-менеджеров, стартапов и студентов. По данным kokoc.com (июль 2026), Notion позиционируется как многофункциональная среда для организации работы и личных дел.</p>
+<p>Notion работает на базе блоков: каждый элемент — абзац, изображение, таблица, заголовок — является отдельным блоком, который можно перемещать и комбинировать. Это позволяет создавать страницы любой сложности — от простой заметки до полноценной wiki-системы с базами данных и связями между записями.</p>
+<p>На Reddit в 2025 году активно обсуждали альтернативы Notion: пользователи отмечали, что для простых задач платформа избыточна, а при больших объёмах данных начинает тормозить. Однако для управления знаниями и командной работы конкурентов немного.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Гибкие базы данных с настраиваемыми свойствами и представлениями</li>
+<li>Отличная совместная работа в реальном времени</li>
+<li>Огромная библиотека шаблонов</li>
+<li>Бесплатный план достаточно щедрый для личного использования</li>
+<li>Интеграции с десятками сервисов</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет полноценного оффлайн-режима</li>
+<li>Кривая обучения для новых пользователей</li>
+<li>При больших базах данных наблюдается замедление</li>
+<li>Экспорт данных ограничен</li>
+</ul>
+<p><strong>Цена:</strong> Free (для одного пользователя), Plus — $10/мес., Business — $18/мес., Enterprise — по запросу</p>
+<h3 id="evernote">Evernote</h3>
+<p><strong>Ссылка:</strong> <a href="https://evernote.com" rel="nofollow" target="_blank">evernote.com</a></p>
+<p>Evernote — один из старейших сервисов для заметок, существующий с 2008 года. В 2025 году команда выпустила более 160 улучшений — больше, чем за любой другой год за последнее время. Как пишет PCMag (июль 2025), Evernote остаётся мощным приложением с продвинутыми ИИ-функциями и одним из лучших инструментов для быстрого захвата мыслей.</p>
+<p>Evernote поддерживает богатое форматирование текста, веб-клиппинг, сканирование документов, поиск по тексту на изображениях и голосовые заметки. В 2025 году появился встроенный ИИ-ассистент, который помогает обрабатывать и структурировать записи.</p>
+<p>На Reddit пользователи, остающиеся верными Evernote в 2025 году, выделяют три ключевых преимущества: мгновенный захват контента, надёжный поиск и удобную организацию через теги и блокноты. Однако многие перешли на Notion из-за более гибкой системы баз данных.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Мощный поиск, включая распознавание текста на изображениях</li>
+<li>Веб-клиппер для сохранения страниц из браузера</li>
+<li>ИИ-ассистент для обработки заметок</li>
+<li>Гибкая система блокнотов и тегов</li>
+<li>Отличное мобильное приложение</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Дорогая подписка по сравнению с конкурентами</li>
+<li>Бесплатный план сильно урезан (только 50 заметок)</li>
+<li>Медленная разработка новых функций в прошлые годы</li>
+<li>Нет полноценных баз данных, как в Notion</li>
+</ul>
+<p><strong>Цена:</strong> Free (50 заметок), Personal — $14.99/мес., Professional — $17.99/мес.</p>
+<h3 id="microsoft-onenote">Microsoft OneNote</h3>
+<p><strong>Ссылка:</strong> <a href="https://www.onenote.com" rel="nofollow" target="_blank">onenote.com</a></p>
+<p>Microsoft OneNote — бесплатное приложение для заметок, встроенное в экосистему Microsoft 365. Работает по принципу цифрового блокнота с неограниченной холст-страницей, куда можно помещать текст, изображения, таблицы, аудио и любые другие элементы в произвольном порядке.</p>
+<p>OneNote отлично подходит для рукописных заметок на планшетах с поддержкой стилуса. Приложение бесплатно доступно на Windows, macOS, iOS и Android, а также работает в браузере. Интеграция с Outlook, Teams и SharePoint делает его удобным выбором для корпоративных пользователей.</p>
+<p>Пользователи на форумах отмечают, что OneNote идеален для свободного конспектирования и мозговых штурмов, но уступает Notion в структурировании данных. Поиск работает отлично даже в рукописных записях.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатный для всех платформ</li>
+<li>Свободный холст без ограничений по структуре страницы</li>
+<li>Отличная поддержка рукописного ввода</li>
+<li>Глубокая интеграция с Microsoft 365</li>
+<li>Надёжная синхронизация через OneDrive</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет баз данных и канбан-досок</li>
+<li>Ограниченные возможности совместной работы по сравнению с Notion</li>
+<li>Интерфейс может казаться перегруженным</li>
+<li>Нет поддержки Markdown</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (входит в Microsoft 365 или отдельно)</p>
+<h3 id="apple-notes-icloud">Apple Notes (iCloud)</h3>
+<p><strong>Ссылка:</strong> <a href="https://www.icloud.com/notes" rel="nofollow" target="_blank">icloud.com/notes</a></p>
+<p>Apple Notes — стандартное приложение для заметок в экосистеме Apple. Доступно на iPhone, iPad, Mac и через веб-интерфейс iCloud. В последние годы Apple значительно расширила функционал: появились папки, теги, совместное редактирование, быстрые заметки и блоки содержимого.</p>
+<p>Apple Notes поддерживает форматированный текст, списки, чек-листы, таблицы, сканирование документов, прикрепление медиафайлов и совместное редактирование. Система Smart Folders автоматически собирает заметки по заданным критериям.</p>
+<p>Главное преимущество — бесшовная интеграция с устройствами Apple. Заметка, начатая на iPhone, мгновенно доступна на Mac и iPad. Пользователи высоко оценивают скорость и простоту приложения.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Отличная интеграция с экосистемой Apple</li>
+<li>Быстрый и удобный интерфейс</li>
+<li>Поддержка тегов, папок и умных папок</li>
+<li>Совместное редактирование</li>
+<li>Полностью бесплатный</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Работает только в экосистеме Apple (веб-версия ограничена)</li>
+<li>Нет баз данных и сложных представлений</li>
+<li>Нет поддержки Markdown</li>
+<li>Отсутствие плагинов и расширений</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (требуется аккаунт Apple ID)</p>
+<h3 id="obsidian">Obsidian</h3>
+<p><strong>Ссылка:</strong> <a href="https://obsidian.md" rel="nofollow" target="_blank">obsidian.md</a></p>
+<p>Obsidian — локальное приложение для заметок, работающее с файлами Markdown. Все данные хранятся на вашем устройстве в виде обычных текстовых файлов, что даёт полный контроль над информацией и бессрочный доступ без зависимости от серверов.</p>
+<p>Главная фишка Obsidian — граф связей (graph view), который визуализирует связи между заметками через двусторонние ссылки. Это превращает набор заметок в настоящую базу знаний («второй мозг»). На Habr (декабрь 2025) вышла статья «Вы до сих пор не пользуетесь Obsidian? Очень зря», а пользователь s-kalinin в своём блоге описал более чем годовой опыт использования, выделив удобство атрибутов и метасвойств заметок.</p>
+<p>Obsidian имеет более 2000 плагинов и 1000 тем, что позволяет настроить приложение под любые нужды — от ведения дневника до академических исследований.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полный контроль над данными — файлы Markdown на вашем устройстве</li>
+<li>Работает без интернета (офлайн по умолчанию)</li>
+<li>Граф связей и двусторонние ссылки</li>
+<li>Огромная экосистема плагинов и тем</li>
+<li>Бесплатное для личного использования</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Отсутствие встроенной синхронизации (нужны сторонние решения)</li>
+<li>Кривая обучения для продвинутых функций</li>
+<li>Нет встроенной совместной работы</li>
+<li>Интерфейс по умолчанию может казаться сухим</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно для личного использования, коммерческая лицензия — $50/пользователь/год, синхронизация Obsidian Sync — $4/мес.</p>
+<h3 id="boostnote">Boostnote</h3>
+<p><strong>Ссылка:</strong> <a href="https://boostnote.io" rel="nofollow" target="_blank">boostnote.io</a></p>
+<p>Boostnote — приложение для заметок, изначально созданное для разработчиков. Поддерживает Markdown, подсветку синтаксиса кода и фрагменты (snippets). Версия Boostnote Next написана на Electron и React.</p>
+<p>Boostnote ориентирован на технических специалистов, которым нужно быстро сохранять фрагменты кода, команды терминала и техническую документацию. Поддерживает хранение заметок локально или с синхронизацией через облачные хранилища.</p>
+<p>Пользователи отмечают, что Boostnote удобен для хранения сниппетов кода, но уступает Obsidian в качестве базы знаний. Проект развивался нестабильно, и часть команды ушла на создание альтернативы — Mark Text.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Оптимизирован для разработчиков (подсветка кода, сниппеты)</li>
+<li>Поддержка Markdown</li>
+<li>Локальное хранение данных</li>
+<li>Открытый исходный код</li>
+<li>Бесплатный</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченный функционал по сравнению с конкурентами</li>
+<li>Нестабильное развитие проекта</li>
+<li>Нет мобильных приложений в текущей версии</li>
+<li>Нет совместной работы</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (открытый исходный код)</p>
+<h3 id="google-keep">Google Keep</h3>
+<p><strong>Ссылка:</strong> <a href="https://keep.google.com" rel="nofollow" target="_blank">keep.google.com</a></p>
+<p>Google Keep — минималистичное приложение для быстрых заметок, списков дел и напоминаний. Интегрировано с аккаунтом Google и доступно на всех платформах, включая веб, Android и iOS.</p>
+<p>По данным 9to5Google (январь 2026), 2025 год стал прорывным для Google Keep — сервис получил значительное количество обновлений. Пользователи ценят Keep за скорость и простоту: заметка создаётся буквально за секунду. Поддерживаются текст, голосовые записи, изображения, чек-листы и рисование. Умный поиск распознаёт текст на изображениях.</p>
+<p>На Reddit пользователи советуют Google Keep для быстрых записей и списков покупок, но предупреждают, что для структурированных заметок он не подходит — нет папок, нет иерархии, только метки и цвета.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Максимально быстрое создание заметок</li>
+<li>Бесплатный и безлимитный</li>
+<li>Голосовые заметки с автоматической транскрипцией</li>
+<li>Распознавание текста на изображениях</li>
+<li>Интеграция с Google Workspace (Документы, Календарь, Google Assistant)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет поддержки Markdown</li>
+<li>Нет иерархии — только метки и цвета</li>
+<li>Отсутствие баз данных и продвинутой организации</li>
+<li>Нет совместного редактирования в реальном времени</li>
+<li>Уведомления о закрытии сервиса периодически ходят по сети</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (требуется аккаунт Google)</p>
+<h3 id="coda">Coda</h3>
+<p><strong>Ссылка:</strong> <a href="https://coda.io" rel="nofollow" target="_blank">coda.io</a></p>
+<p>Coda — платформа, объединяющая документы, таблицы и приложения в единое рабочее пространство. По концепции близка к Notion, но с более сильным акцентом на табличные вычисления и автоматизации.</p>
+<p>Coda позволяет создавать интерактивные документы с внедрёнными таблицами, кнопками, автоматизациями и даже полноценными мини-приложениями ( Packs). Сервис активно используется командами для управления проектами, создания dashboards и автоматизации рутинных процессов.</p>
+<p>Пользователи отмечают, что Coda мощнее Notion в плане формул и автоматизаций, но интерфейс сложнее и требует больше времени на освоение. Бесплатный план щедрый, но лимитирован по размеру документа и количеству таблиц.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Мощные таблицы с формулами уровня электронных таблиц</li>
+<li>Автоматизации и Packs-интеграции</li>
+<li>Гибкие представления данных (таблицы, канбан, календарь, таймлайн)</li>
+<li>Хорошая совместная работа</li>
+<li>Щедрый бесплатный план для небольших команд</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Высокий порог входа</li>
+<li>Нет полноценного оффлайн-доступа</li>
+<li>Документы могут становиться тяжёлыми при большом объёме данных</li>
+<li>Меньшее сообщество и fewer шаблонов, чем у Notion</li>
+</ul>
+<p><strong>Цена:</strong> Free (до 5 человек, до 1000 строк в таблицах), Pro — $10/мес. на человека, Team — $30/мес. на человека</p>
+<h3 id="craft">Craft</h3>
+<p><strong>Ссылка:</strong> <a href="https://www.craft.do" rel="nofollow" target="_blank">craft.do</a></p>
+<p>Craft — приложение для заметок и документов с акцентом на дизайн и эстетику интерфейса. Разработано бывшими инженерами Apple и изначально создано для экосистемы Apple, хотя сейчас доступно и на других платформах.</p>
+<p>Craft поддерживает блочный редактор, Markdown, совместную работу, экспорт в различные форматы и встраивание контента из других сервисов. Отличается красивым, минималистичным интерфейсом с вниманием к типографике и анимациям. В 2025 году добавили ИИ-функции для генерации и суммаризации текста.</p>
+<p>Пользователи высоко оценивают визуальную составляющую Craft, но отмечают, что для сложных проектов с базами данных лучше подойдёт Notion или Coda. Craft идеален для писателей, блогеров и тех, кому важна красота оформления.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Один из самых красивых интерфейсов в категории</li>
+<li>Отличная поддержка Markdown</li>
+<li>Хорошее мобильное приложение</li>
+<li>ИИ-ассистент для работы с текстом</li>
+<li>Блоковый редактор с гибкой структурой</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет полноценных баз данных, как в Notion/Coda</li>
+<li>Бесплатный план ограничен (только 1000 блоков)</li>
+<li>Слабые возможности автоматизации</li>
+<li>Меньшее количество интеграций</li>
+</ul>
+<p><strong>Цена:</strong> Free (1000 блоков), Pro — $4.99/мес., Business — $9.99/мес. на человека</p>
+<h2 id="что-важно-учитывать-при-выборе">Что важно учитывать при выборе</h2>
+<p>При выборе сервиса для заметок стоит отталкиваться от задач:</p>
+<ul>
+<li><strong>Быстрые записи и списки</strong> — Google Keep или Яндекс.Заметки подойдут лучше всего.</li>
+<li><strong>Структурированная база знаний</strong> — Notion, Coda или Obsidian.</li>
+<li><strong>Свобода и контроль над данными</strong> — Obsidian (локальные Markdown-файлы).</li>
+<li><strong>Корпоративная среда</strong> — Microsoft OneNote или Notion.</li>
+<li><strong>Экосистема Apple</strong> — Apple Notes или Craft.</li>
+<li><strong>Минималистичный дизайн</strong> — Craft.</li>
+<li><strong>Работа с кодом</strong> — Boostnote.</li>
+</ul>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Типы заметок</th><th>Организация</th><th>Совместная работа</th><th>Оффлайн</th><th>Мобильные приложения</th><th>Цена (от)</th></tr></thead><tbody><tr><td>Яндекс.Заметки</td><td>Rich text</td><td>Папки</td><td>Нет</td><td>Нет</td><td>Android</td><td>Бесплатно</td></tr><tr><td>Notion</td><td>Rich text, БД, Markdown</td><td>Папки, БД, ссылки</td><td>Да (реальное время)</td><td>Частично</td><td>iOS, Android</td><td>Бесплатно</td></tr><tr><td>Evernote</td><td>Rich text, веб-клиппинг</td><td>Блокноты, теги</td><td>Да</td><td>Да</td><td>iOS, Android</td><td>Бесплатно*</td></tr><tr><td>Microsoft OneNote</td><td>Rich text, рукопись</td><td>Секции, страницы</td><td>Да</td><td>Да</td><td>iOS, Android</td><td>Бесплатно</td></tr><tr><td>Apple Notes</td><td>Rich text, сканирование</td><td>Папки, теги, умные папки</td><td>Да</td><td>Да</td><td>iOS</td><td>Бесплатно</td></tr><tr><td>Obsidian</td><td>Markdown</td><td>Папки, ссылки, теги</td><td>Через плагины</td><td>Да (по умолчанию)</td><td>iOS, Android</td><td>Бесплатно**</td></tr><tr><td>Boostnote</td><td>Markdown, код</td><td>Папки, теги</td><td>Нет</td><td>Да</td><td>Нет</td><td>Бесплатно</td></tr><tr><td>Google Keep</td><td>Rich text, голосовые, изображения</td><td>Метки, цвета</td><td>Нет</td><td>Да</td><td>iOS, Android</td><td>Бесплатно</td></tr><tr><td>Coda</td><td>Rich text, БД</td><td>Папки, БД, ссылки</td><td>Да (реальное время)</td><td>Нет</td><td>iOS, Android</td><td>Бесплатно***</td></tr><tr><td>Craft</td><td>Rich text, Markdown</td><td>Папки, ссылки, теги</td><td>Да</td><td>Да</td><td>iOS, Android</td><td>Бесплатно****</td></tr></tbody></table>
+<p>* Бесплатно до 50 заметок. ** Синхронизация — платная ($4/мес.). *** До 1000 строк. **** До 1000 блоков.</p>
+<p>Выбор планировщика — вопрос не только функционала, но и привычек. Если вам нужен быстрый захват мыслей, не стоит усложнять — Google Keep или Яндекс.Заметки справятся идеально. Если же вы строите систему управления знаниями, присмотритесь к Notion или Obsidian. И помните: лучший органайзер — тот, которым вы реально пользуетесь каждый день.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

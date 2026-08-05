@@ -1,0 +1,383 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор ERP-систем для российского бизнеса: от тяжёлых коробочных решений 1С до облачных платформ Битрикс24, Флексиби и зарубежных SAP и Odoo."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>ERP-системы для бизнеса: от коробки до облака — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>ERP-системы для бизнеса: от коробки до облака</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-03T00:00:00.000Z" data-astro-cid-ymihodss>3 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>ERP</li><li data-astro-cid-ymihodss>автоматизация бизнеса</li><li data-astro-cid-ymihodss>1С</li><li data-astro-cid-ymihodss>управление предприятием</li><li data-astro-cid-ymihodss>производство</li><li data-astro-cid-ymihodss>склад</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="что-такое-erp-и-когда-она-нужна">Что такое ERP и когда она нужна</h2>
+<p>ERP (Enterprise Resource Planning) — это система планирования ресурсов предприятия, которая объединяет в единую информационную среду все ключевые бизнес-процессы: продажи, закупки, склад, производство, финансы, кадры и аналитику. Если CRM управляет только продажами, а бухгалтерская программа — только финансами, то ERP связывает всё воедино.</p>
+<p>Внедрение ERP — это серьёзный шаг. Такие системы требуют значительных инвестиций, обучения сотрудников и реорганизации процессов. Однако для компаний, выросших за пределы «Excel + несколько разрозненных программ», ERP становится необходимостью.</p>
+<p>При выборе ERP стоит оценивать пять ключевых параметров: <strong>набор модулей</strong> (продажи, склад, производство, HR, финансы), <strong>сложность внедрения</strong> (от «подключил и работай» до многомесячного проекта), <strong>ценовую модель</strong> (подписка, разовая покупка, аренда), <strong>возможности кастомизации</strong> (настройка под специфику бизнеса) и <strong>интеграции</strong> с другими сервисами (банки, маркетплейсы, ЭДО).</p>
+<h2 id="1сerp-управление-предприятием">1С:ERP Управление предприятием</h2>
+<p><strong>Сайт:</strong> <a href="https://1c.ru/erp" rel="nofollow" target="_blank">1c.ru/erp</a></p>
+<p>Флагманское решение от «1С» для среднего и крупного бизнеса. Самая распространённая ERP-система в России, особенно в производственном секторе, ритейле и сфере услуг. Выпускается в коробочной версии (установка на свой сервер) и через облачный сервис 1С:Fresh.</p>
+<p><strong>Доступные модули:</strong> продажи (CRM, управление заказами), закупки, склад и логистика, производство (планирование, цеховое управление, себестоимость), финансы и бухгалтерия, казначейство, HR и кадры, зарплата, аналитика и BI.</p>
+<p><strong>Сложность внедрения:</strong> высокая. Полноценное внедрение занимает от 3 до 18 месяцев в зависимости от масштаба компании. Требует участия 1С-партнёра (интегратора). Стоимость внедрения часто сопоставима с лицензией или превышает её.</p>
+<p><strong>Ценовая модель:</strong> коробочная лицензия — от 450 000 ₽ (на 5 пользователей). Облачная версия (1С:Fresh) — от 40 000 ₽/мес. Лицензии на дополнительных пользователей продаются отдельно.</p>
+<p><strong>Кастомизация:</strong> практически неограниченная. Открытый код на платформе 1С позволяет дорабатывать систему под любые задачи. Огромная сеть 1С-партнёров по всей стране.</p>
+<p><strong>Интеграции:</strong> более 500 готовых интеграций: банки, ЭДО, маркетплейсы, сайтостроители, складские терминалы, весы, ККТ, транспортные компании.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Самый полный функционал на российском рынке</li>
+<li>Максимальная кастомизация и доработка</li>
+<li>Огромная база 1С-разработчиков и партнёров</li>
+<li>Глубокое производство и сложный склад</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Высокая стоимость владения (лицензия + внедрение + поддержка)</li>
+<li>Длительное и сложное внедрение</li>
+<li>Требует обучения сотрудников</li>
+<li>Интерфейс устаревший по современным меркам</li>
+</ul>
+<h2 id="1сунф-управление-нашей-фирмой">1С:УНФ (Управление нашей фирмой)</h2>
+<p><strong>Сайт:</strong> <a href="https://1c.ru/unf" rel="nofollow" target="_blank">1c.ru/unf</a></p>
+<p>УНФ — «лёгкая» ERP от 1С, предназначенная для малого и среднего бизнеса. Занимает нишу между простыми учётными программами и тяжёлой 1С:ERP.</p>
+<p><strong>Доступные модули:</strong> продажи (базовая CRM), закупки, склад (один или несколько складов), упрощённое производство, финансы, базовый HR, зарплата.</p>
+<p><strong>Сложность внедрения:</strong> средняя. Можно внедрить за 2–6 недель, часто силами штатного бухгалтера или менеджера с базовыми навыками 1С.</p>
+<p><strong>Ценовая модель:</strong> коробочная лицензия — от 30 000 ₽ (на 1 пользователя). Дополнительные лицензии — от 12 000 ₽. Облачная версия — от 5 000 ₽/мес.</p>
+<p><strong>Кастомизация:</strong> хорошая. Работает на платформе 1С, поэтому все стандартные инструменты доработки доступны.</p>
+<p><strong>Интеграции:</strong> банк-клиент, ЭДО, печать этикеток, базовые API-интеграции.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Доступная цена</li>
+<li>Понятный интерфейс для пользователей 1С</li>
+<li>Баланс между простотой и функциональностью</li>
+<li>Быстрое внедрение</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченный функционал по сравнению с 1С:ERP</li>
+<li>Нет продвинутого BI и аналитики</li>
+<li>Слабое управление сложным производством</li>
+<li>Устаревший интерфейс</li>
+</ul>
+<h2 id="мойсклад-расширенные-функции">МойСклад (расширенные функции)</h2>
+<p><strong>Сайт:</strong> <a href="https://moysklad.ru" rel="nofollow" target="_blank">moysklad.ru</a></p>
+<p>МойСклад изначально создавался как облачный сервис управления складом, но со временем разросся до полноценной лёгкой ERP с модулями продаж, закупок, финансов и интеграцией с маркетплейсами.</p>
+<p><strong>Доступные модули:</strong> продажи (CRM, заказы, прайс-листы), закупки, склад (многоскладской учёт, партии, серийные номера), финансы (базовая), производство (базовое — BOM-спецификации, заказы на производство), аналитика.</p>
+<p><strong>Сложность внедрения:</strong> низкая. Регистрация занимает 5 минут, базовая настройка — 1–2 дня. Не требует участия интегратора.</p>
+<p><strong>Ценовая модель:</strong> подписка SaaS. Тариф «Базовый» — 2 990 ₽/мес, «Продвинутый» — 5 990 ₽/мес, «Профессиональный» — 14 990 ₽/мес.</p>
+<p><strong>Кастомизация:</strong> средняя. API и экосистема приложений (AppStore МойСклада) позволяют расширять функционал. Глубокая программная кастомизация невозможна.</p>
+<p><strong>Интеграции:</strong> более 500 интеграций через AppStore: маркетплейсы (Ozon, Wildberries, Яндекс.Маркет), CRM (amoCRM, Битрикс24), транспортные компании, ЭДО, банки, сайтостроители, корреспонденция.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Максимально быстрый старт</li>
+<li>Мощные интеграции с маркетплейсами</li>
+<li>Современный облачный интерфейс</li>
+<li>Большой AppStore с готовыми решениями</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет полноценного управленческого учёта</li>
+<li>Слабое производство</li>
+<li>Нет кадрового модуля</li>
+<li>Зависимость от интернета</li>
+</ul>
+<h2 id="битрикс24-erp-модули">Битрикс24 (ERP-модули)</h2>
+<p><strong>Сайт:</strong> <a href="https://bitrix24.ru" rel="nofollow" target="_blank">bitrix24.ru</a></p>
+<p>Битрикс24 — это комплексная платформа для управления бизнесом, которая включает CRM, коммуникации, задачи, HR и, при подключении соответствующих модулей, ERP-функциональность. В 2023–2025 годах Битрикс24 значительно расширил свои возможности в направлении ERP.</p>
+<p><strong>Доступные модули:</strong> CRM (продажи, лиды, сделки), коммуникации (чат, видеозвонки, почта), задачи и проекты, HR (отпуска, рекрутинг, обучение), базовый склад, финансы (счета, касса), аналитика (CRM-аналитика, кастомные дашборды). Отдельные приложения-модули расширяют ERP-функционал.</p>
+<p><strong>Сложность внедрения:</strong> низкая-средняя. Базовая настройка занимает 1–3 дня. Для полного развёртывания ERP-модулей может потребоваться 2–8 недель.</p>
+<p><strong>Ценовая модель:</strong> бесплатный тариф (ограниченный). Платные тарифы: «Базовый» — 1 600 ₽/мес, «Стандартный» — 4 000 ₽/мес, «Профессиональный» — 8 000 ₽/мес.</p>
+<p><strong>Кастомизация:</strong> высокая для облачной платформы. Бизнес-процессы (BPMN), кастомные поля и сущности, REST API и вебхуки, маркетплейс приложений.</p>
+<p><strong>Интеграции:</strong> огромная экосистема. CRM-интеграции, open API, маркетплейс с тысячами приложений, готовые коннекторы для 1С, МойСклад, банков, ЭДО.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Бесплатный тариф для старта</li>
+<li>Коммуникации + CRM + ERP в одной системе</li>
+<li>Огромный маркетплейс приложений</li>
+<li>Гибкие бизнес-процессы</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>ERP-функционал уступает специализированным решениям</li>
+<li>Слабый складской учёт</li>
+<li>Нет производства</li>
+<li>Интерфейс перегружен функциями</li>
+</ul>
+<h2 id="сапр-отечественные-решения">САПР (отечественные решения)</h2>
+<p><strong>Сайт:</strong> <a href="https://csoft.ru" rel="nofollow" target="_blank">csoft.ru</a> (АСКон — один из ведущих разработчиков)</p>
+<p>САПР (системы автоматизированного проектирования) — это специализированный класс ПО для инженерного проектирования и конструкторской разработки. Хотя САПР не являются ERP в чистом виде, отечественные решения всё чаще интегрируются с ERP-системами для сквозного управления от проектирования до производства. Стоит упомянуть для производственных компаний.</p>
+<p>Ключевые отечественные САПР: КОМПАС-3D (АСКон), T-FLEX CAD (Топ Системы), nanoCAD (Нанософт).</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Импортозамещение критически важного ПО</li>
+<li>Интеграция с 1С:ERP через обмен данными</li>
+<li>Адаптация к российским стандартам (ГОСТ, ЕСКД)</li>
+<li>Поддержка отечественных операционных систем</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не являются полноценной ERP</li>
+<li>Высокая стоимость лицензий для профессиональных версий</li>
+<li>Узкая специализация</li>
+<li>Требуют обучения инженеров</li>
+</ul>
+<h2 id="флексиби-flexbee">Флексиби (Flexbee)</h2>
+<p><strong>Сайт:</strong> <a href="https://flexbee.ru" rel="nofollow" target="_blank">flexbee.ru</a></p>
+<p>Флексиби — российская облачная ERP-система для малого и среднего бизнеса. Позиционируется как современная альтернатива 1С с более простым интерфейсом и faster внедрением.</p>
+<p><strong>Доступные модули:</strong> продажи (CRM, заказы), закупки, склад, производство (базовое и среднее), финансы, HR, проекты, аналитика.</p>
+<p><strong>Сложность внедрения:</strong> средняя. Базовое внедрение — 2–4 недели. Полноценное — 1–3 месяца с участием команды Flexbee.</p>
+<p><strong>Ценовая модель:</strong> SaaS-подписка. Индивидуальное ценообразование в зависимости от числа пользователей и модулей. Ориентировочно — от 15 000 ₽/мес.</p>
+<p><strong>Кастомизация:</strong> средняя-высокая. API, вебхуки, настраиваемые поля и процессы. Глубокая кастомизация возможна через команду разработчиков Flexbee.</p>
+<p><strong>Интеграции:</strong> 1С, банки, ЭДО, маркетплейсы, CRM. API для кастомных интеграций.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Современный интерфейс</li>
+<li>Баланс функциональности и простоты</li>
+<li>Российская разработка и поддержка</li>
+<li>Гибкая ценовая модель</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Относительно молодой продукт</li>
+<li>Меньше партнёров-интеграторов, чем у 1С</li>
+<li>Ограниченная экосистема приложений</li>
+<li>Меньше документации и обучающих материалов</li>
+</ul>
+<h2 id="атлантис-erp">Атлантис (ERP)</h2>
+<p><strong>Сайт:</strong> <a href="https://atlantis-r.ru" rel="nofollow" target="_blank">atlantis-r.ru</a></p>
+<p>Атлантис — отечественная ERP-система, ориентированная на средний бизнес, особенно в сфере торговли, дистрибуции и лёгкого производства. Доступна в коробочной и облачной версии.</p>
+<p><strong>Доступные модули:</strong> продажи (управление заказами, ценообразование), закупки, склад (многоскладской, партии, штрихкоды), производство (диспетчеризация, себестоимость), финансы, казначейство, HR, зарплата, аналитика.</p>
+<p><strong>Сложность внедрения:</strong> средняя-высокая. Внедрение занимает 1–6 месяцев. Требует участия партнёра-интегратора.</p>
+<p><strong>Ценовая модель:</strong> коробочная лицензия — от 150 000 ₽. Облачная версия — от 10 000 ₽/мес. Стоимость внедрения — отдельно.</p>
+<p><strong>Кастомизация:</strong> хорошая. Открытая архитектура, API, возможность доработок через партнёрскую сеть.</p>
+<p><strong>Интеграции:</strong> 1С, банки, ЭДО, сайтостроители, маркетплейсы, складское оборудование.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Сильный модуль торговли и дистрибуции</li>
+<li>Гибкая система ценообразования</li>
+<li>Коробочная и облачная версия</li>
+<li>Активное развитие и обновления</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Меньше специалистов на рынке, чем по 1С</li>
+<li>Интерфейс уступает современным облачным решениям</li>
+<li>Ограниченное сообщество пользователей</li>
+<li>Документация скудная</li>
+</ul>
+<h2 id="sap-s4hana-кратко">SAP S/4HANA (кратко)</h2>
+<p><strong>Сайт:</strong> <a href="https://sap.com" rel="nofollow" target="_blank">sap.com</a></p>
+<p>SAP S/4HANA — мировой лидер среди ERP-систем для крупного бизнеса. После ухода SAP из России в 2022 году новое лицензирование невозможно, однако многие российские компании продолжают использовать уже внедрённые системы.</p>
+<p><strong>Доступные модули:</strong> полный набор — финансы, логистика, производство, HR, закупки, продажи, аналитика, управление активами, инвестиционные проекты и десятки отраслевых решений.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Максимально полный функционал в мире ERP</li>
+<li>Глубокая отраслевая специализация</li>
+<li>Лучшие практики из тысяч внедрений</li>
+<li>Инновационные технологии (in-memory, AI)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Недоступно для новых клиентов в РФ</li>
+<li>Крайне высокая стоимость владения</li>
+<li>Внедрение занимает от 6 до 36 месяцев</li>
+<li>Требует большой команды специалистов</li>
+</ul>
+<h2 id="odoo-кратко">Odoo (кратко)</h2>
+<p><strong>Сайт:</strong> <a href="https://odoo.com" rel="nofollow" target="_blank">odoo.com</a></p>
+<p>Odoo — бельгийская ERP-система с модульной архитектурой. Открытая исходная версия (Community) бесплатна, коммерческая (Enterprise) — платная. В 2024–2025 годах получил распространение в России благодаря санкционному импортозамещению.</p>
+<p><strong>Доступные модули:</strong> более 30 модулей — CRM, продажи, закупки, склад, производство (MRP), HR, зарплата, бухгалтерия, проекты, инвентаризация, маркетинг, POS, e-commerce (встроенный сайт).</p>
+<p><strong>Ценовая модель:</strong> Community — бесплатно (self-hosted). Enterprise — от $35/мес за пользователя. Odoo Online (облако) — от $31/мес.</p>
+<p><strong>Кастомизация:</strong> очень высокая. Открытый код (Python), ORM, собственный фреймворк для веб-клиента. Тысячи community-модулей.</p>
+<p><strong>Интеграции:</strong> огромный маркетплейс модулей (Odoo Apps), REST API, вебхуки.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Бесплатная Community-версия</li>
+<li>Модульная архитектура — подключаешь только нужное</li>
+<li>Современный интерфейс</li>
+<li>Огромное международное сообщество</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Бухгалтерия не адаптирована под российские стандарты</li>
+<li>Нет встроенной интеграции с СБП, российскими банками и ЭДО</li>
+<li>Самостоятельное развертывание требует технической экспертизы</li>
+<li>Enterprise-версия дорогая в пересчёте на рубли</li>
+</ul>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Система</th><th>Модули</th><th>Сложность внедрения</th><th>Цена (от)</th><th>Кастомизация</th><th>Производство</th><th>Облако</th></tr></thead><tbody><tr><td>1С:ERP</td><td>Все</td><td>Высокая</td><td>450 000 ₽</td><td>Макс.</td><td>Глубокое</td><td>✅*</td></tr><tr><td>1С:УНФ</td><td>Осн.</td><td>Средняя</td><td>30 000 ₽</td><td>Высокая</td><td>Базовое</td><td>✅*</td></tr><tr><td>МойСклад</td><td>Осн.+маркетпл.</td><td>Низкая</td><td>2 990 ₽/мес</td><td>Средняя</td><td>Базовое</td><td>✅</td></tr><tr><td>Битрикс24</td><td>CRM+HR+ERP</td><td>Низкая</td><td>0 ₽/мес</td><td>Высокая</td><td>Нет</td><td>✅</td></tr><tr><td>Флексиби</td><td>Осн.</td><td>Средняя</td><td>~15 000 ₽/мес</td><td>Сред.-выс.</td><td>Среднее</td><td>✅</td></tr><tr><td>Атлантис</td><td>Осн.+произв.</td><td>Сред.-выс.</td><td>150 000 ₽</td><td>Высокая</td><td>Среднее</td><td>✅</td></tr><tr><td>SAP S/4HANA</td><td>Все</td><td>Очень выс.</td><td>Млн $</td><td>Высокая</td><td>Глубокое</td><td>✅</td></tr><tr><td>Odoo</td><td>Все (30+)</td><td>Средняя</td><td>$0/мес**</td><td>Макс.</td><td>Среднее</td><td>✅</td></tr></tbody></table>
+<p>*Через 1С:Fresh (облачный сервис). **Community-версия бесплатна, self-hosted.</p>
+<h2 id="как-выбрать-erp">Как выбрать ERP</h2>
+<p>Выбор ERP определяется масштабом бизнеса и бюджетом. <strong>Микробизнесу</strong> (до 10 сотрудников) достаточно МойСклада или Битрикс24 — быстрый старт, низкая цена, минимум рисков. <strong>Малому и среднему бизнесу</strong> (10–100 сотрудников) стоит рассмотреть 1С:УНФ или Флексиби — оптимальный баланс цены и функциональности. <strong>Среднему бизнесу с производством</strong> (50–500 сотрудников) подойдёт Атлантис, 1С:УНФ с доработками или Флексиби. <strong>Крупному бизнесу</strong> (от 500 сотрудников) нужна 1С:ERP или, при наличии уже внедрённой системы, SAP S/4HANA (поддержка действующих инсталляций).</p>
+<p>Главное правило: ERP — это не просто программа, а реорганизация бизнес-процессов. Начинайте с чёткого описания текущих процессов, определения болей и целей внедрения, и только потом выбирайте систему. Непродуманное внедрение ERP — это одна из самых частых причин провала IT-проектов в бизнесе.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

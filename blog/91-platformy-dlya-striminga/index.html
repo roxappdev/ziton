@@ -1,0 +1,419 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор платформ для стриминга: VK Видео, Twitch, YouTube Live, OBS Studio и другие. Монетизация, модерация, мобильный стрим, ограничения зрителей."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Платформы для стриминга и прямых трансляций — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Платформы для стриминга и прямых трансляций</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>стриминг</li><li data-astro-cid-ymihodss>прямые трансляции</li><li data-astro-cid-ymihodss>Twitch</li><li data-astro-cid-ymihodss>YouTube Live</li><li data-astro-cid-ymihodss>OBS</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="стриминг-в-2026-году">Стриминг в 2026 году</h2>
+<p>Стриминг — прямая трансляция контента в реальном времени — стал неотъемлемой частью интернет-культуры. Геймеры ведут трансляции игр, эксперты проводят вебинары, бизнесы — product launches, а политики общаются с избирателями. После блокировки Twitch в России в 2024 году и ограничения доступа к платёжным системам отечественные стримеры были вынуждены искать альтернативы. Рынок перестроился: VK Видео стал главной платформой, YouTube Live укрепил позиции, а новые сервисы вроде Kick набирают обороты. Рассмотрим десять платформ для стриминга по ключевым параметрам: лимиты зрителей, возможности монетизации, запись трансляций, модерация чата, кастомизация оверлеев, задержка сигнала (латентность) и поддержка мобильного стриминга.</p>
+<h3 id="vk-видео-стримы">VK Видео (стримы)</h3>
+<p><strong>Сайт:</strong> <a href="https://vk.com/video" rel="nofollow" target="_blank">vk.com/video</a></p>
+<p>VK Видео — крупнейшая российская платформа для стриминга после ухода Twitch. Позволяет вести прямые трансляции как с компьютера, так и с телефона. Лимит зрителей — до 100 000+ в зависимости от аккаунта. Монетизация доступна через программу VK Play и донаты от зрителей.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>огромная российская аудитория;</li>
+<li>встроенная монетизация и донаты;</li>
+<li>запись трансляций с сохранением;</li>
+<li>автоматическая модерация чата;</li>
+<li>мобильный стрим;</li>
+<li>интеграция с сообществами ВКонтакте.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>задержка 10–30 секунд, что критично для интерактивного контента;</li>
+<li>менее продвинутые инструменты кастомизации оверлеев;</li>
+<li>меньше развитое стримерское сообщество, чем у Twitch;</li>
+<li>ограниченная аналитика для стримеров;</li>
+<li>реклама в плеере может раздражать зрителей.</li>
+</ul>
+<p>VK Видео активно инвестирует в стримерское комьюнити, проводит турниры и предоставляет гранты авторам. Для российских стримеров это сейчас самая массовая платформа с реальной аудиторией.</p>
+<h3 id="twitch-кратко-доступ-из-рф">Twitch (кратко, доступ из РФ)</h3>
+<p><strong>Сайт:</strong> <a href="https://www.twitch.tv" rel="nofollow" target="_blank">twitch.tv</a></p>
+<p>Twitch — мировая платформа №1 для геймерского стриминга, принадлежащая Amazon. В России официально заблокирован с 2024 года, но доступен через VPN. Лимит зрителей — не ограничен. Монетизация: подписки, биты (Bits), донаты, реклама.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>крупнейшее стримерское сообщество в мире;</li>
+<li>неограниченный лимит зрителей;</li>
+<li>развитая система монетизации;</li>
+<li>продвинутая модерация (AutoMod);</li>
+<li>низкая задержка (2–5 секунд);</li>
+<li>интеграции с OBS, XSplit, Streamlabs.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>заблокирован в России, доступен только через VPN;</li>
+<li>нет возможности вывода средств в Россию;</li>
+<li>невероятно высокая конкуренция за внимание зрителей;</li>
+<li>перегруженный рекламой интерфейс;</li>
+<li>50% от дохода с подписок забирает платформа.</li>
+</ul>
+<p>Несмотря на блокировку, многие русскоязычные стримеры продолжают вести трансляции на Twitch через VPN для сохранения международной аудитории. Однако это сопряжено с рисками и неудобствами.</p>
+<h3 id="youtube-live">YouTube Live</h3>
+<p><strong>Сайт:</strong> <a href="https://www.youtube.com" rel="nofollow" target="_blank">youtube.com</a></p>
+<p>YouTube Live — стриминг-платформа от Google, встроенная в YouTube. Позволяет вести трансляции на любую аудиторию (без лимита зрителей). Трансляции автоматически сохраняются как видео. Монетизация: Super Chat, Super Stickers, членство в канале, реклама.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>неограниченное количество зрителей;</li>
+<li>автоматическое сохранение трансляций;</li>
+<li>мощная система монетизации;</li>
+<li>поисковая выдача YouTube для рекрутинга;</li>
+<li>низкая задержка при правильных настройках;</li>
+<li>отличная интеграция с OBS.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>задержка по умолчанию выше, чем на Twitch (10–20 секунд);</li>
+<li>строгие правила авторских прав с автоматическими страйками;</li>
+<li>демонетизация возможна без объяснения причин;</li>
+<li>меньшее «стримерское комьюнити» и ощущение живого общения;</li>
+<li>чат менее интерактивен, чем на Twitch.</li>
+</ul>
+<p>YouTube Live — лучший выбор для долгосрочного контента. Каждая трансляция сохраняется как видео и участвует в поисковой выдаче, что обеспечивает органический рост аудитории.</p>
+<h3 id="яндекстелемост-стрим">Яндекс.Телемост (стрим)</h3>
+<p><strong>Сайт:</strong> <a href="https://telemost.yandex.ru" rel="nofollow" target="_blank">telemost.yandex.ru</a></p>
+<p>Яндекс.Телемост — сервис видеоконференций от Яндекса, также поддерживающий прямые трансляции. Позволяет вести стримы на неограниченную аудиторию. Отличается низкими задержками и простотой настройки. Подходит для вебинаров, лекций и бизнес-трансляций.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>низкая задержка;</li>
+<li>простая настройка;</li>
+<li>неограниченное количество зрителей;</li>
+<li>запись трансляции;</li>
+<li>экранная демонстрация;</li>
+<li>бесплатно.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>нет системы монетизации для контент-мейкеров;</li>
+<li>нет донатов и платных подписок;</li>
+<li>ограниченные инструменты оверлеев;</li>
+<li>нет специализированного чата с ботомами и командами;</li>
+<li>ориентирован на бизнес-аудиторию, а не на игровых стримеров.</li>
+</ul>
+<p>Яндекс.Телемост отлично подходит для образовательных трансляций, корпоративных вебинаров и онлайн-конференций. Его главный плюс — низкая латентность, что важно для интерактивных форматов.</p>
+<h3 id="rutube-live">RuTube Live</h3>
+<p><strong>Сайт:</strong> <a href="https://rutube.ru" rel="nofollow" target="_blank">rutube.ru</a></p>
+<p>RuTube — российская видеоплатформа, поддерживающая прямые трансляции. После ухода YouTube из России активно развивается как альтернатива. Поддержка стриминга: трансляции с веб-камеры или через RTMP-пуш с OBS.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>российская платформа, полностью доступна;</li>
+<li>RTMP-поддержка для OBS;</li>
+<li>запись трансляций;</li>
+<li>модерация чата;</li>
+<li>мобильный стрим;</li>
+<li>программы монетизации для авторов.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>небольшая активная аудитория по сравнению с VK и YouTube;</li>
+<li>ограниченные инструменты аналитики для авторов;</li>
+<li>менее стабильная платформа с периодическими сбоями;</li>
+<li>задержка 15–30 секунд;</li>
+<li>ограниченные возможности кастомизации оверлеев.</li>
+</ul>
+<p>RuTube активно развивается при государственной поддержке и может стать более привлекательным для стримеров в будущем, но пока значительно уступает конкурентам по функциональности и аудитории.</p>
+<h3 id="trovo">Trovo</h3>
+<p><strong>Сайт:</strong> <a href="https://trovo.live" rel="nofollow" target="_blank">trovo.live</a></p>
+<p>Trovo — стриминговая платформа от Tencent, позиционируемая как альтернатива Twitch. Доступна из России. Лимит зрителей не ограничен. Особенности: встроенные мини-игры в чате и система Super Casts для монетизации.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>доступна из России;</li>
+<li>неограниченный лимит зрителей;</li>
+<li>оригинальные интерактивные функции;</li>
+<li>программа монетизации;</li>
+<li>RTMP-поддержка;</li>
+<li>задержка 3–7 секунд.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>небольшая русскоязычная аудитория;</li>
+<li>сложность вывода средств в России;</li>
+<li>ограниченное русскоязычное комьюнити;</li>
+<li>слабая система модерации;</li>
+<li>меньше интеграций с OBS по сравнению с Twitch.</li>
+</ul>
+<p>Trovo интересен своими интерактивными функциями: мини-игры в чате позволяют зрителям влиять на игровой процесс стримера. Это создаёт уникальный формат взаимодействия.</p>
+<h3 id="kick-кратко">Kick (кратко)</h3>
+<p><strong>Сайт:</strong> <a href="https://kick.com" rel="nofollow" target="_blank">kick.com</a></p>
+<p>Kick — быстрорастущая стриминговая платформа, запущенная в 2023 году. Основной козырь — 95% от доходов подписок достаётся стримеру (против 50% на Twitch). Доступна из России без VPN.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>доступна из РФ;</li>
+<li>95% дохода от подписок — стримеру;</li>
+<li>неограниченный лимит зрителей;</li>
+<li>низкая задержка;</li>
+<li>RTMP-поддержка и OBS-интеграция;</li>
+<li>щедрая программа монетизации.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>небольшая аудитория по сравнению с Twitch и YouTube;</li>
+<li>молодая платформа с техническими нестабильностями;</li>
+<li>сложность вывода средств из России;</li>
+<li>меньше инструментов автоматической модерации;</li>
+<li>ограниченный каталог прошлых трансляций.</li>
+</ul>
+<p>Kick привлекает стримеров щедрыми условиями, но для российских пользователей сложность вывода средств остаётся главной проблемой.</p>
+<h3 id="dlive">DLive</h3>
+<p><strong>Сайт:</strong> <a href="https://dlive.tv" rel="nofollow" target="_blank">dlive.tv</a></p>
+<p>DLive — стриминговая платформа на блокчейне, связанная с сетью BitTorrent. Позиционируется как децентрализованная альтернатива Twitch. Доступна из России.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>доступна из РФ;</li>
+<li>90% дохода — стримеру;</li>
+<li>децентрализованная архитектура;</li>
+<li>криптовалютная монетизация (LINO);</li>
+<li>RTMP-поддержка;</li>
+<li>минимальная цензура.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>крошечная активная аудитория;</li>
+<li>криптовалютная монетизация неудобна для массового пользователя;</li>
+<li>нестабильная платформа с частыми перебоями;</li>
+<li>слабые инструменты модерации чата;</li>
+<li>практически нет русскоязычного комьюнити.</li>
+</ul>
+<p>DLive подойдёт энтузиастам блокчейна и криптовалют, но для обычного стримера он не представляет практической ценности.</p>
+<h3 id="restream">Restream</h3>
+<p><strong>Сайт:</strong> <a href="https://restream.io" rel="nofollow" target="_blank">restream.io</a></p>
+<p>Restream — не стриминговая платформа, а сервис для мультистриминга: simultaneous-трансляция на 30+ платформ одновременно (YouTube, Twitch, VK, Facebook, LinkedIn и другие). Подходит для максимального охвата.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>одновременный стрим на 30+ платформ;</li>
+<li>объединённый чат;</li>
+<li>аналитика по всем платформам;</li>
+<li>запись и репост;</li>
+<li>планирование трансляций;</li>
+<li>интеграция с OBS.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>платный сервис (от $16/мес);</li>
+<li>зависит от стабильности всех сторонних платформ;</li>
+<li>не имеет собственной аудитории;</li>
+<li>ограниченный бесплатный тариф (только 2 канала);</li>
+<li>высокие требования к скорости интернета для одновременного стрима.</li>
+</ul>
+<p>Restream идеален для тех, кто хочет максимизировать охват: один стрим — на YouTube, VK, Twitch и Facebook одновременно.</p>
+<h3 id="obs-studio-self-hosted">OBS Studio (self-hosted)</h3>
+<p><strong>Сайт:</strong> <a href="https://obsproject.com" rel="nofollow" target="_blank">obsproject.com</a></p>
+<p>OBS Studio — не платформа, а бесплатная программа для захвата и кодирования видео, которую используют для стриминга на любую платформу через RTMP. Стандарт индустрии. Поддерживает плагины, кастомные оверлеи, сцены, профили.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>полностью бесплатный и open-source;</li>
+<li>поддержка всех платформ (Windows, macOS, Linux);</li>
+<li>бесконечная кастомизация через плагины;</li>
+<li>поддержка RTMP-пуша на любую платформу;</li>
+<li>запись локально без стрима;</li>
+<li>активное сообщество и документация.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>сложный для новичков интерфейс с крутой кривой обучения;</li>
+<li>требует ручной настройки кодирования и битрейта;</li>
+<li>не имеет собственной аудитории — это инструмент, а не платформа;</li>
+<li>для self-hosted стрима нужен собственный RTMP-сервер;</li>
+<li>требует мощного железа для трансляции в 1080p60.</li>
+</ul>
+<p>OBS Studio — обязательный инструмент для любого серьёзного стримера. Его возможности практически безграничны благодаря тысячам плагинов: от настраиваемых переходов между сценами до отслеживания FPS и интеграции с донат-сервисами.</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Платформа</th><th>Зрители</th><th>Монетизация</th><th>Запись</th><th>Модерация чата</th><th>Задержка</th><th>Мобильный стрим</th></tr></thead><tbody><tr><td>VK Видео</td><td>100 000+</td><td>Донаты, VK Play</td><td>Да</td><td>Авто + ручная</td><td>10–30 сек</td><td>Да</td></tr><tr><td>Twitch</td><td>Не ограничен</td><td>Подписки, Bits</td><td>Да</td><td>AutoMod, боты</td><td>2–5 сек</td><td>Да</td></tr><tr><td>YouTube Live</td><td>Не ограничен</td><td>Super Chat, Ads</td><td>Да</td><td>Авто + ручная</td><td>10–20 сек</td><td>Да</td></tr><tr><td>Яндекс.Телемост</td><td>Не ограничен</td><td>Нет</td><td>Да</td><td>Базовая</td><td>3–7 сек</td><td>Да</td></tr><tr><td>RuTube Live</td><td>Не ограничен</td><td>Да (программа)</td><td>Да</td><td>Ручная</td><td>15–30 сек</td><td>Да</td></tr><tr><td>Trovo</td><td>Не ограничен</td><td>Super Casts</td><td>Да</td><td>Базовая</td><td>3–7 сек</td><td>Да</td></tr><tr><td>Kick</td><td>Не ограничен</td><td>Подписки (95%)</td><td>Да</td><td>Ручная</td><td>2–5 сек</td><td>Да</td></tr><tr><td>DLive</td><td>Не ограничен</td><td>Крипто (LINO)</td><td>Да</td><td>Слабая</td><td>5–10 сек</td><td>Да</td></tr><tr><td>Restream</td><td>Зависит от платформ</td><td>Нет своей</td><td>Да</td><td>Объединённый</td><td>Зависит</td><td>Нет</td></tr><tr><td>OBS Studio</td><td>Зависит от сервера</td><td>Нет</td><td>Локально</td><td>Нет</td><td>Минимальная</td><td>Нет</td></tr></tbody></table>
+<h2 id="что-выбрать">Что выбрать?</h2>
+<p>Для <strong>российского стримера</strong> в 2026 году лучшим выбором является связка <strong>OBS Studio + VK Видео</strong> для массовой аудитории и <strong>OBS Studio + YouTube Live</strong> для глобального охвата. Если вам нужна <strong>максимальная монетизация</strong> — Kick предлагает 95% от подписок, но аудитория пока мала. Для <strong>бизнес-вебинаров</strong> отлично подойдёт <strong>Яндекс.Телемост</strong> или <strong>YouTube Live</strong>. Для <strong>мультистриминга</strong> на несколько платформ одновременно используйте <strong>Restream</strong>.</p>
+<p>Начинающим рекомендуем VK Видео: низкий порог входа, встроенные инструменты и большая российская аудитория. Продвинутым стримерам — YouTube Live для долгосрочного роста и архивов или Kick для экспериментов с высокой долей дохода.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

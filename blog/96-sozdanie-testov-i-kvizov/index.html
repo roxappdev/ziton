@@ -1,0 +1,407 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор платформ для создания интерактивных тестов и квизов: Яндекс.Формы, Marquiz, Typeform, Interact, Outgrow, LeadQuizzes, Quizify, GetResponse, Тильда и TryInteract."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Сервисы для создания тестов и квизов — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Сервисы для создания тестов и квизов</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>тесты</li><li data-astro-cid-ymihodss>квизы</li><li data-astro-cid-ymihodss>лидогенерация</li><li data-astro-cid-ymihodss>Маркуиз</li><li data-astro-cid-ymihodss>Typeform</li><li data-astro-cid-ymihodss>Тильда</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="зачем-нужны-тесты-и-квизы">Зачем нужны тесты и квизы</h2>
+<p>Интерактивные тесты и квизы — один из самых эффективных инструментов лидогенерации и вовлечения аудитории. Квизы показывают конверсию в 2–3 раза выше, чем статичные лендинги, а результаты тестов дают пользователям персонализированную ценность. В 2026 году сервисы для создания тестов делятся на два типа: универсальные конструкторы форм с функцией тестирования и специализированные платформы для лидогенерационных квизов. В этом обзоре мы рассмотрим десять сервисов по параметрам: типы квизов (персональность, оценка, branching-логика), сбор лидов, email-интеграции, шаринг и встраивание, аналитика и ограничения бесплатного тарифа.</p>
+<h3 id="яндексформы-тесты">Яндекс.Формы (тесты)</h3>
+<p><strong>Сайт:</strong> <a href="https://forms.yandex.ru" rel="nofollow" target="_blank">forms.yandex.ru</a></p>
+<p>Яндекс.Формы — бесплатный сервис создания форм и опросов от Яндекса с функцией создания тестов и квизов. Позволяет настроить правильные ответы, подсчёт баллов и показ результата. Не требует регистрации для прохождения. Интегрируется с Яндекс.Метрикой для отслеживания конверсий.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>полностью бесплатный, без ограничений;</li>
+<li>простой и понятный интерфейс на русском языке;</li>
+<li>настройка правильных ответов и подсчёт баллов;</li>
+<li>branching-логика (показ вопросов по условию);</li>
+<li>интеграция с Яндекс.Метрикой;</li>
+<li>не требует регистрации для прохождения.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>нет готовых шаблонов для бизнес-квизов;</li>
+<li>ограниченные возможности дизайна;</li>
+<li>нет встроенного сбора email-лидов;</li>
+<li>нет интеграции с email-сервисами;</li>
+<li>базовая аналитика;</li>
+<li>нет персональных квизов с результатами-типами.</li>
+</ul>
+<p>Яндекс.Формы — отличный бесплатный инструмент для образовательных тестов и простых опросов. Для бизнес-квизов и лидогенерации функционала недостаточно.</p>
+<h3 id="marquiz">Marquiz</h3>
+<p><strong>Сайт:</strong> <a href="https://marquiz.ru" rel="nofollow" target="_blank">marquiz.ru</a></p>
+<p>Маркуиз — российский конструктор квизов, специализирующийся на лидогенерации для бизнеса. Позиционируется как «квиз-конструктор для увеличения продаж». Предлагает готовые шаблоны по нишам (красота, фитнес, недвижимость, образование и другие), branching-логику и интеграцию с CRM-системами.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>готовые шаблоны по популярным нишам;</li>
+<li>branching-логика (разные пути в зависимости от ответов);</li>
+<li>интеграции с CRM (Битрикс24, amoCRM);</li>
+<li>сбор email и телефонных номеров;</li>
+<li>виджет-попап для сайта;</li>
+<li>конверсионный дизайн.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>бесплатный тариф ограничен (1 квиз, 50 ответов);</li>
+<li>нет экспорта результатов;</li>
+<li>ограниченные настройки дизайна;</li>
+<li>нет A/B-тестирования;</li>
+<li>нет интеграции с зарубежными сервисами;</li>
+<li>интерфейс только на русском.</li>
+</ul>
+<p>Маркуиз — лучший российский конструктор квизов для бизнеса. Готовые шаблоны и интеграция с российскими CRM делают его идеальным для локального рынка.</p>
+<h3 id="typeform">Typeform</h3>
+<p><strong>Сайт:</strong> <a href="https://typeform.com" rel="nofollow" target="_blank">typeform.com</a></p>
+<p>Typeform — один из самых известных международных конструкторов форм и квизов. Отличается уникальным интерфейсом, где каждый вопрос показывается отдельно на полном экране. Поддерживает branching-логику, калькуляторы, персональные квизы и оценочные тесты. Обладает одной из лучших дизайн-систем в классе.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>великолепный дизайн и UX по умолчанию;</li>
+<li>branching-логика и conditions;</li>
+<li>поддержка всех типов квизов;</li>
+<li>интеграции (Mailchimp, HubSpot, Zapier, Slack);</li>
+<li>сбор лидов и email;</li>
+<li>мощная аналитика.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>высокая цена (от $29/месяц);</li>
+<li>бесплатный тариф ограничен (10 ответов/месяц);</li>
+<li>проблемы с загрузкой на медленном интернете;</li>
+<li>ограниченная кастомизация;</li>
+<li>нет A/B-тестирования на базовых тарифах;</li>
+<li>не всегда корректно работает с кириллицей.</li>
+</ul>
+<p>Typeform — лучший выбор для компаний, которым важен премиальный дизайн и seamless UX. Высокая цена оправдана для бизнеса с большими бюджетами на маркетинг.</p>
+<h3 id="interact">Interact</h3>
+<p><strong>Сайт:</strong> <a href="https://tryinteract.com" rel="nofollow" target="_blank">tryinteract.com</a></p>
+<p>Interact (также известный как TryInteract) — конструктор квизов, специализирующийся на персональных квизах (тип личности) и оценочных тестах. Популярен среди блогеров, инфобизнесменов и маркетологов. Предлагает более 800 готовых шаблонов по различным нишам.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>более 800 готовых шаблонов;</li>
+<li>отличный конструктор персональных квизов;</li>
+<li>branching-логика;</li>
+<li>интеграции с email-сервисами (Mailchimp, ConvertKit, AWeber);</li>
+<li>сбор email для лидогенерации;</li>
+<li>оптизация для конверсии.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>высокая цена (от $39/месяц);</li>
+<li>бесплатный тариф очень ограничен (5 ответов/месяц);</li>
+<li>нет оценки по баллам (scored quizzes);</li>
+<li>дизайн шаблонов не всегда современный;</li>
+<li>нет A/B-тестирования;</li>
+<li>нет интеграции с российскими сервисами.</li>
+</ul>
+<p>Interact — лучший выбор для блогеров и контент-маркетологов, которым нужны персональные квизы с捕获 email-адресов.</p>
+<h3 id="outgrow">Outgrow</h3>
+<p><strong>Сайт:</strong> <a href="https://outgrow.co" rel="nofollow" target="_blank">outgrow.co</a></p>
+<p>Outgrow — мощная платформа для создания интерактивного контента: квизов, калькуляторов, опросов и чек-листов. Обладает расширенными возможностями branchinking, продвинутой аналитикой и интеграциями с маркетинговыми инструментами. Позиционируется как инструмент для B2B-лидогенерации.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>поддерживает квизы, калькуляторы и чек-листы;</li>
+<li>продвинутая branching-логика;</li>
+<li>мощная аналитика и отчёты;</li>
+<li>более 1000 шаблонов;</li>
+<li>интеграции с HubSpot, Marketo, Salesforce;</li>
+<li>A/B-тестирование.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>очень высокая цена (от $25/месяц, полноценный план от $95);</li>
+<li>бесплатный тариф ограничен (15 ответов/месяц);</li>
+<li>сложный интерфейс с высокой кривой обучения;</li>
+<li>нет интеграции с российскими сервисами;</li>
+<li>ограниченная кастомизация дизайна;</li>
+<li>может быть медленным.</li>
+</ul>
+<p>Outgrow — мощный инструмент для B2B-компаний, которым нужны не только квизы, но и калькуляторы ROI, оценочные инструменты и сложные ветвления.</p>
+<h3 id="leadquizzes">LeadQuizzes</h3>
+<p><strong>Сайт:</strong> <a href="https://leadquizzes.com" rel="nofollow" target="_blank">leadquizzes.com</a></p>
+<p>LeadQuizzes — платформа, созданная специально для лидогенерации через квизы. Предлагает оптимизированные шаблоны с упором на конверсию, A/B-тестирование вопросов и интеграции с популярными email-сервисами и CRM.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>фокус на лидогенерации и конверсии;</li>
+<li>A/B-тестирование вопросов и вариантов;</li>
+<li>branching-логика;</li>
+<li>интеграции с Mailchimp, HubSpot, Zapier, Salesforce;</li>
+<li>встроенная аналитика воронки;</li>
+<li>готовые шаблоны по отраслям.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>высокая цена (от $42/месяц);</li>
+<li>нет бесплатного тарифа (7-дневный триал);</li>
+<li>дизайн шаблонов уступает Typeform;</li>
+<li>нет интеграции с российскими сервисами;</li>
+<li>ограниченные настройки дизайна;</li>
+<li>нет калькуляторов и чек-листов.</li>
+</ul>
+<p>LeadQuizzes — выбор для маркетологов, которым нужна максимальная конверсия из квизов в лиды. A/B-тестирование вопросов — уникальное преимущество.</p>
+<h3 id="quizify">Quizify</h3>
+<p><strong>Сайт:</strong> <a href="https://quizify.app" rel="nofollow" target="_blank">quizify.app</a></p>
+<p>Quizify — конструктор квизов для Shopify и независимых сайтов. Позиционируется как инструмент для увеличения продаж через интерактивные рекомендации продуктов. Позволяет создавать квизы-рекомендатели, которые направляют пользователя к конкретному товару.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>глубокая интеграция с Shopify;</li>
+<li>квизы-рекомендатели продуктов;</li>
+<li>branching-логика;</li>
+<li>сбор email и телефонных номеров;</li>
+<li>красивые готовые шаблоны;</li>
+<li>встраивание на любой сайт.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>лучший функционал только для Shopify;</li>
+<li>ограниченная бесплатная версия;</li>
+<li>нет интеграции с российскими маркетинговыми сервисами;</li>
+<li>нет A/B-тестирования;</li>
+<li>меньше аналитики, чем у конкурентов;</li>
+<li>интерфейс может быть непривычным.</li>
+</ul>
+<p>Quizify — лучший выбор для интернет-магазинов, особенно на Shopify, которым нужно увеличить конверсию через персональные рекомендации.</p>
+<h3 id="getresponse-квизы">GetResponse (квизы)</h3>
+<p><strong>Сайт:</strong> <a href="https://getresponse.com" rel="nofollow" target="_blank">getresponse.com</a></p>
+<p>GetResponse — комплексная платформа email-маркетинга, включающая конструктор квизов и опросов. Квизы интегрированы в воронку: ответы квиза автоматически сегментируют подписчиков и запускают соответствующие email-цепочки.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>встроен в email-маркетинговую платформу;</li>
+<li>автоматическая сегментация по результатам квиза;</li>
+<li>branching-логика;</li>
+<li>готовые шаблоны квизов;</li>
+<li>A/B-тестирование;</li>
+<li>мощная аналитика.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>квизы — не основной фокус платформы;</li>
+<li>ограниченные настройки дизайна;</li>
+<li>нет персональных квизов (тип личности);</li>
+<li>высокая цена за весь пакет (от $19/месяц);</li>
+<li>нет бесплатного тарифа;</li>
+<li>меньше шаблонов, чем у специализированных сервисов.</li>
+</ul>
+<p>GetResponse — хороший выбор, если вы уже используете платформу для email-маркетинга и хотите добавить квизы в существующую воронку без дополнительных инструментов.</p>
+<h3 id="тильда-квизытесты">Тильда (квизы/тесты)</h3>
+<p><strong>Сайт:</strong> <a href="https://tilda.cc" rel="nofollow" target="_blank">tilda.cc</a></p>
+<p>Тильда — популярный российский конструктор сайтов, включающий функционал для создания квизов и тестов. Квиз создаются с помощью блоков Zero Block и стандартных форм, что позволяет полностью контролировать дизайн. Интеграция с российскими CRM и сервисами рассылок.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>полный контроль над дизайном через Zero Block;</li>
+<li>интеграция с российскими CRM (Битрикс24, amoCRM);</li>
+<li>интеграция с рассылками (Unisender, SendPulse);</li>
+<li>branching-логика через условия показа;</li>
+<li>сбор лидов прямо в квизе;</li>
+<li>встроенная аналитика Тильды + Яндекс.Метрика.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>квизы не являются отдельным инструментом;</li>
+<li>требует навыков работы с Тильдой;</li>
+<li>нет готовых шаблонов квизов;</li>
+<li>настройка branching-логики сложна;</li>
+<li>нет нативной оценки результатов;</li>
+<li>платный тариф (от 750 ₽/месяц).</li>
+</ul>
+<p>Тильда — хороший вариант для тех, кто хочет создать квиз как часть лендинга с полным контролем над дизайном. Не подходит для быстрого создания квизов «из коробки».</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Типы квизов</th><th>Branching</th><th>Лид-захват</th><th>Email-интеграции</th><th>Аналитика</th><th>Бесплатно</th><th>Цена от</th></tr></thead><tbody><tr><td>Яндекс.Формы</td><td>Оценочные</td><td>Да</td><td>Базовый</td><td>Нет</td><td>Базовая</td><td>Да (безлимит)</td><td>Бесплатно</td></tr><tr><td>Маркуиз</td><td>Все типы</td><td>Да</td><td>Да</td><td>РФ CRM</td><td>Базовая</td><td>1 квиз, 50 отв</td><td>500 ₽/мес</td></tr><tr><td>Typeform</td><td>Все типы</td><td>Да</td><td>Да</td><td>50+ сервисов</td><td>Продвинутая</td><td>10 отв/мес</td><td>$29/мес</td></tr><tr><td>Interact</td><td>Персональные, оценочные</td><td>Да</td><td>Да</td><td>Mailchimp и др.</td><td>Хороший</td><td>5 отв/мес</td><td>$39/мес</td></tr><tr><td>Outgrow</td><td>Все типы</td><td>Да</td><td>Да</td><td>50+ сервисов</td><td>Отличная</td><td>15 отв/мес</td><td>$25/мес</td></tr><tr><td>LeadQuizzes</td><td>Все типы</td><td>Да</td><td>Да</td><td>HubSpot, Zapier</td><td>Отличная</td><td>7-дневный триал</td><td>$42/мес</td></tr><tr><td>Quizify</td><td>Рекомендатели, оценочные</td><td>Да</td><td>Да</td><td>Shopify, Zapier</td><td>Хороший</td><td>Ограниченно</td><td>$25/мес</td></tr><tr><td>GetResponse</td><td>Оценочные, опросы</td><td>Да</td><td>Да</td><td>Встроенная</td><td>Отличная</td><td>30-дневный триал</td><td>$19/мес</td></tr><tr><td>Тильда</td><td>Все типы</td><td>Через условия</td><td>Да</td><td>РФ сервисы</td><td>Яндекс.Метрика</td><td>Нет</td><td>750 ₽/мес</td></tr></tbody></table>
+<h2 id="что-выбрать">Что выбрать?</h2>
+<p>Для <strong>бесплатного тестирования и образования</strong> — <strong>Яндекс.Формы</strong>. Для <strong>российского бизнеса и лидогенерации</strong> — <strong>Маркуиз</strong> (быстро и просто) или <strong>Тильда</strong> (полный контроль дизайна). Для <strong>премиального UX и международного рынка</strong> — <strong>Typeform</strong>. Для <strong>блогеров и контент-маркетологов</strong> — <strong>Interact</strong>. Для <strong>B2B-лидогенерации с аналитикой</strong> — <strong>Outgrow</strong> или <strong>LeadQuizzes</strong>. Для <strong>интернет-магазинов</strong> — <strong>Quizify</strong>. Для <strong>email-маркетинга с квизами</strong> — <strong>GetResponse</strong>. Помните: успешный квиз начинается с чёткого понимания цели — хотите ли вы собрать лиды, развлечь аудиторию или получить qualified leads для отдела продаж.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

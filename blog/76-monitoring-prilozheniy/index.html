@@ -1,0 +1,397 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор систем мониторинга — от российских Яндекс.Облако и Selectel до Zabbix, Prometheus+Grafana, Datadog, New Relic, Sentry и Logz.io. Сравнение метрик, алертинга, APM и стоимости."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Сервисы для мониторинга приложений и серверов — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Сервисы для мониторинга приложений и серверов</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>мониторинг</li><li data-astro-cid-ymihodss>APM</li><li data-astro-cid-ymihodss>серверы</li><li data-astro-cid-ymihodss>логи</li><li data-astro-cid-ymihodss>DevOps</li><li data-astro-cid-ymihodss>алертинг</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="зачем-нужен-мониторинг-приложений-и-серверов">Зачем нужен мониторинг приложений и серверов</h2>
+<p>Mониторинг приложений и серверов — это не просто «красивые графики» на дашборде. Это фундаментальная инфраструктурная практика, позволяющая обнаруживать проблемы до того, как они заметят пользователи. Без мониторинга вы узнаёте о падении сервера от разгневанного клиента, а не от системы алертинга.</p>
+<p>Три основных pillars (столпа) наблюдаемости (observability): <strong>метрики</strong> (числовые показатели — CPU, память, запросы в секунду), <strong>логи</strong> (текстовые записи о событиях в системе) и <strong>трейсы</strong> (трассировка распределённых запросов через несколько сервисов). APM (Application Performance Monitoring) добавляет слой мониторинга производительности конкретного кода — медленные SQL-запросы, долгие HTTP-вызовы, утечки памяти. Современный подход — unified observability, когда все три столпа объединены в одной платформе (Datadog, New Relic).</p>
+<h2 id="российские-решения">Российские решения</h2>
+<h3 id="яндексоблако-мониторинг">Яндекс.Облако (мониторинг)</h3>
+<p><strong>Сайт:</strong> <a href="https://cloud.yandex.ru/" rel="nofollow" target="_blank">cloud.yandex.ru</a></p>
+<p>Яндекс.Облако предоставляет встроенный сервис мониторинга для облачных ресурсов. Включает сбор метрик CPU, RAM, диска, сети, а также кастомных метрик. Алертинг поддерживает уведомления через Telegram, email, SMS. Серверы в РФ, данные не покидают страну.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Серверы в РФ — соответствие 152-ФЗ</li>
+<li>Глубокая интеграция с другими сервисами Яндекс.Облака</li>
+<li>Встроенный алертинг с поддержкой Telegram</li>
+<li>Кастомные метрики через API</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Работает только с ресурсами Яндекс.Облака</li>
+<li>Нет APM-функций для трассировки</li>
+<li>Меньше готовых дашбордов, чем у западных конкурентов</li>
+</ul>
+<h3 id="selectel-мониторинг">Selectel (мониторинг)</h3>
+<p><strong>Сайт:</strong> <a href="https://selectel.ru/" rel="nofollow" target="_blank">selectel.ru</a></p>
+<p>Selectel предоставляет базовый мониторинг для облачных серверов и kubernetes-кластеров через панель управления. Включает графики CPU, RAM, диска и сети, а также алертинг через email и Telegram. Для расширенного мониторинга Selectel рекомендует использовать Zabbix или Prometheus.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Серверы в Москве, Санкт-Петербурге, Новосибирске</li>
+<li>Встроенный мониторинг без дополнительной настройки</li>
+<li>Интеграция с объектным хранилищем S3</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченный функционал из коробки</li>
+<li>Нет APM и трассировки</li>
+<li>Нет бесплатного тарифа</li>
+</ul>
+<h2 id="self-hosted-решения">Self-hosted решения</h2>
+<h3 id="zabbix">Zabbix</h3>
+<p><strong>Сайт:</strong> <a href="https://www.zabbix.com/" rel="nofollow" target="_blank">zabbix.com</a></p>
+<p>Zabbix — один из самых популярных open-source систем мониторинга, используемый на тысячах предприятий по всему миру. Zabbix 7.x (актуальная версия 2026 года) поддерживает мониторинг серверов, сетевого оборудования, приложений, баз данных и облачных ресурсов. Полностью бесплатен и неограничен в количестве монитируемых узлов.</p>
+<p>Сравнение 2026 года (Zabbix 7.x vs Prometheus 3.x) показывает, что Zabbix лучше подходит для традиционной инфраструктуры (серверы, сети, SNMP), а Prometheus идеален для облачных и Kubernetes-окружений. Выбор зависит от вашей архитектуры — монолитные серверы или контейнеры.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатный, без ограничений</li>
+<li>Поддержка SNMP, IPMI, JMX, агент Linux/Windows</li>
+<li>Гибкая система триггеров и алертинга</li>
+<li>WEB-интерфейс с дашбордами</li>
+<li>Масштабируется до десятков тысяч узлов</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Сложная первоначальная настройка</li>
+<li>Интерфейс перегружен и несовременен</li>
+<li>Требует собственного сервера для развёртывания</li>
+<li>Обучение занимает время</li>
+</ul>
+<h3 id="prometheus--grafana">Prometheus + Grafana</h3>
+<p><strong>Сайт:</strong> <a href="https://prometheus.io/" rel="nofollow" target="_blank">prometheus.io</a> / <a href="https://grafana.com/" rel="nofollow" target="_blank">grafana.com</a></p>
+<p>Prometheus — система сбора метрик, ставшая стандартом для Kubernetes и облачных окружений. Grafana — платформа визуализации, превращающая метрики Prometheus в красивые дашборды. Вместе они образуют мощный, полностью бесплатный стек мониторинга.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатный open-source</li>
+<li>Стандарт де-факто для Kubernetes</li>
+<li>Богатая экосистема экспортеров (Node Exporter, Blackbox Exporter и сотни других)</li>
+<li>Красивые дашборды в Grafana (тысячи готовых шаблонов)</li>
+<li>PromQL — мощный язык запросов к метрикам</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не хранит данные бесконечно (нужен VictoriaMetrics или Thanos для долгосрочного хранения)</li>
+<li>Сложный для новичков — порог входа высокий</li>
+<li>Требует серверной инфраструктуры</li>
+<li>Нет APM-функций без дополнительных инструментов (Jaeger, Zipkin)</li>
+</ul>
+<h2 id="saas-решения-зарубежные">SaaS-решения (зарубежные)</h2>
+<h3 id="datadog">Datadog</h3>
+<p><strong>Сайт:</strong> <a href="https://www.datadoghq.com/" rel="nofollow" target="_blank">datadoghq.com</a></p>
+<p>Datadog — одна из ведущих платформ наблюдаемости, объединяющая мониторинг инфраструктуры, APM, логи и синтетический мониторинг в едином интерфейсе. Используется тысячами компаний от стартапов до Fortune 500.</p>
+<p>Ценообразование модульное: мониторинг инфраструктуры (Infrastructure) от $15/хост/мес, APM от $31/хост/мес, логи $0.10 за ГБ проиндексированных логов, 500 custom events бесплатно на каждый хост. По обзору 2026 года, реальная стоимость для среднего проекта составляет $200–500/мес.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Все-in-one: метрики, логи, трейсы, синтетический мониторинг</li>
+<li>Огромная интеграция (750+ интеграций из коробки)</li>
+<li>Мощный алертинг с машинным обучением</li>
+<li>Отличный UI и мобильное приложение</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Очень дорогой при масштабировании</li>
+<li>Модульное ценообразование — легко получить неожиданно большой счёт</li>
+<li>Нет серверов в РФ</li>
+<li>Нет бесплатного тарифа (только 14-дневный триал)</li>
+</ul>
+<h3 id="new-relic">New Relic</h3>
+<p><strong>Сайт:</strong> <a href="https://newrelic.com/" rel="nofollow" target="_blank">newrelic.com</a></p>
+<p>New Relic — платформа наблюдаемости с самым щедрым бесплатным тарифом на рынке. Предоставляет 100 ГБ ingest данных в месяц бесплатно — это включает метрики, APM-трейсы, логи и синтетический мониторинг.</p>
+<p>Согласно обзору 2026 года, New Relic — лучший выбор для команд, которым нужна полная observability при ограниченном бюджете. Платные тарифы начинаются при превышении 100 ГБ/мес.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>100 ГБ бесплатных данных каждый месяц</li>
+<li>APM, логи, трейсы, инфраструктурный мониторинг</li>
+<li>Distributed tracing для микросервисов</li>
+<li>New Relic AI — ассистент для анализа проблем</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Бесплатный тариф — 1 пользователь, полные функции только на платных</li>
+<li>Нет серверов в РФ</li>
+<li>Интерфейс может быть запутанным для новичков</li>
+<li>Счёт может быстро вырасти при активном использовании</li>
+</ul>
+<h3 id="appdynamics">AppDynamics</h3>
+<p><strong>Сайт:</strong> <a href="https://www.appdynamics.com/" rel="nofollow" target="_blank">appdynamics.com</a></p>
+<p>AppDynamics (принадлежит Cisco) — enterprise-платформа для мониторинга производительности приложений, используемая крупными корпорациями. Специализируется на APM с глубокой трассировкой кода, мониторингом бизнес-транзакций, анализом производительности баз данных и обнаружением узких мест в распределённых системах.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Лучший APM для enterprise и Java/.NET-приложений</li>
+<li>Глубокий анализ производительности кода до уровня методов</li>
+<li>Интеграция с Cisco SD-WAN и сетевой инфраструктурой</li>
+<li>Business IQ — мониторинг бизнес-метрик</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Дорогой (от сотен долларов в месяц)</li>
+<li>Сложная установка и настройка</li>
+<li>Тяжёлый агент на приложениях</li>
+<li>Избыточен для небольших проектов</li>
+</ul>
+<h3 id="sentry">Sentry</h3>
+<p><strong>Сайт:</strong> <a href="https://sentry.io/" rel="nofollow" target="_blank">sentry.io</a></p>
+<p>Sentry — специализируется на отслеживании ошибок (error tracking) и производительности приложений. В отличие от Datadog и New Relic, Sentry сфокусирован на ошибках в коде — исключения, unhandled promise rejections, крахи мобильных приложений.</p>
+<p>Бесплатный план (Developer) включает 5000 ошибок в месяц для одного пользователя. Team-план от $26/мес (при годовой оплате) — неограниченное число пользователей. Business от $80/мес.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Лучший инструмент для отслеживания ошибок</li>
+<li>Мгновенное уведомление при новых ошибках</li>
+<li>Session Replay — воспроизведение сессии пользователя перед ошибкой</li>
+<li>Поддержка 100+ языков и фреймворков</li>
+<li>Щедрый бесплатный тариф (навсегда)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не заменяет полный мониторинг инфраструктуры</li>
+<li>Бесплатный план ограничен 1 пользователем</li>
+<li>5000 ошибок быстро исчерпываются при активном проекте</li>
+<li>Нет серверов в РФ</li>
+</ul>
+<h3 id="logzio">Logz.io</h3>
+<p><strong>Сайт:</strong> <a href="https://logz.io/" rel="nofollow" target="_blank">logz.io</a></p>
+<p>Logz.io — облачная платформа для управления логами, построенная на open-source стеке (Elasticsearch, Logstash, Kibana). Предоставляет централизованный сбор логов с поиском и аналитикой, а также APM и инфраструктурный мониторинг.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Знакомый Kibana-подобный интерфейс</li>
+<li>Объединение метрик, логов и трейсов</li>
+<li>ELK Stack без необходимости управлять им</li>
+<li>Быстрый поиск по логам</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет бесплатного тарифа</li>
+<li>Цены зависят от объёма логов и могут быть высокими</li>
+<li>Нет серверов в РФ</li>
+<li>Меньше интеграций, чем у Datadog</li>
+</ul>
+<h3 id="papertrail">Papertrail</h3>
+<p><strong>Сайт:</strong> <a href="https://papertrailapp.com/" rel="nofollow" target="_blank">papertrailapp.com</a></p>
+<p>Papertrail — простой и удобный сервис для централизованного сбора логов, входящий в экосистему SolarWinds. Принимает логи по протоколам syslog или HTTPS, хранит и индексирует их для быстрого полнотекстового поиска.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Максимально простой — логи появляются через 5 минут после настройки</li>
+<li>Отличный поиск по логам</li>
+<li>Интеграция с Heroku, AWS, GCP</li>
+<li>Доступные цены</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только логи — нет метрик и APM</li>
+<li>Ограниченное время хранения на дешёвых тарифах</li>
+<li>Нет серверов в РФ</li>
+<li>Минимальные возможности визуализации</li>
+</ul>
+<h2 id="какой-сервис-выбрать">Какой сервис выбрать</h2>
+<p><strong>Для small бизнеса без бюджета</strong> — New Relic (100 ГБ бесплатно) + Sentry (ошибки). Это даст полную observability без затрат. <strong>Для enterprise с бюджетом</strong> — Datadog как единая платформа или AppDynamics для глубокого APM. <strong>Для российских компаний с требованиями 152-ФЗ</strong> — Яндекс.Облако (мониторинг) + self-hosted Zabbix или Prometheus+Grafana на серверах в РФ. <strong>Для DevOps-команд с Kubernetes</strong> — Prometheus + Grafana + Loki (для логов) — полностью бесплатный и невероятно мощный стек, который используют Netflix, Uber и тысячи других компаний. <strong>Для фронтенд-разработчиков</strong> — Sentry для отслеживания JavaScript-ошибок в браузере: stack trace, breadcrumbs, environment info и Session Replay в одном месте.</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Тип</th><th>Метрики</th><th>APM</th><th>Логи</th><th>Бесплатный тариф</th><th>Серверы в РФ</th><th>Цена от</th></tr></thead><tbody><tr><td>Яндекс.Облако</td><td>SaaS (РФ)</td><td>✅</td><td>❌</td><td>Ограниченно</td><td>Ограниченный триал</td><td>✅</td><td>Платное облако</td></tr><tr><td>Selectel</td><td>SaaS (РФ)</td><td>✅ Базовые</td><td>❌</td><td>❌</td><td>Нет</td><td>✅</td><td>~500 ₽/мес</td></tr><tr><td>Zabbix</td><td>Self-hosted</td><td>✅</td><td>❌</td><td>Частично</td><td>✅ Полностью</td><td>Ваш сервер</td><td>$0 (своя ИТ)</td></tr><tr><td>Prometheus + Grafana</td><td>Self-hosted</td><td>✅</td><td>Через плагины</td><td>Loki</td><td>✅ Полностью</td><td>Ваш сервер</td><td>$0 (своя ИТ)</td></tr><tr><td>Datadog</td><td>SaaS</td><td>✅</td><td>✅</td><td>✅</td><td>14 дн. триал</td><td>❌</td><td>~$15/хост/мес</td></tr><tr><td>New Relic</td><td>SaaS</td><td>✅</td><td>✅</td><td>✅</td><td>100 ГБ/мес</td><td>❌</td><td>$0 (100 ГБ)</td></tr><tr><td>AppDynamics</td><td>SaaS/On-prem</td><td>✅</td><td>✅ Глубокий</td><td>✅</td><td>Триал</td><td>❌</td><td>От $ hundreds/мес</td></tr><tr><td>Sentry</td><td>SaaS</td><td>Частично</td><td>✅ Ошибки</td><td>✅</td><td>5K ошибок/мес</td><td>❌</td><td>$0 / $26 Team</td></tr><tr><td>Logz.io</td><td>SaaS</td><td>✅</td><td>✅</td><td>✅</td><td>Нет</td><td>❌</td><td>~$20/мес</td></tr><tr><td>Papertrail</td><td>SaaS</td><td>❌</td><td>❌</td><td>✅</td><td>50 МБ/мес</td><td>❌</td><td>$0 / $7/мес</td></tr></tbody></table></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Сравнение инструментов для проверки скорости загрузки и технического SEO-аудита — PageSpeed Insights, GTmetrix, WebPageTest, Screaming Frog и другие."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Проверка скорости и технического аудита сайтов — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Проверка скорости и технического аудита сайтов</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-03T00:00:00.000Z" data-astro-cid-ymihodss>3 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>скорость сайта</li><li data-astro-cid-ymihodss>Core Web Vitals</li><li data-astro-cid-ymihodss>SEO-аудит</li><li data-astro-cid-ymihodss>техническое SEO</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="почему-скорость-и-технический-аудит--это-база">Почему скорость и технический аудит — это база</h2>
+<p>Скорость загрузки сайта напрямую влияет на позиции в поисковой выдаче и конверсию. Google использует Core Web Vitals (LCP, INP, CLS) как ранжирующий фактор с 2021 года, а Яндекс также учитывает скорость при ранжировании. По исследованиям Google, увеличение времени загрузки с 1 до 3 секунд повышает вероятность отказа на 32%.</p>
+<p>Технический аудит выявляет проблемы, невидимые невооружённым глазом: битые ссылки, дублированные страницы, отсутствие мета-тегов, проблемы с индексацией и сотни других ошибок. Рассмотрим восемь инструментов для решения этих задач.</p>
+<h3 id="pagespeed-insights">PageSpeed Insights</h3>
+<p><strong>Описание:</strong> Официальный инструмент Google для проверки скорости страниц. Использует данные лабораторных тестов (Lighthouse) и реальные данные пользователей из Chrome UX Report (CrUX). Показывает оценку в баллах и конкретные рекомендации по улучшению.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://pagespeed.web.dev" rel="nofollow" target="_blank">pagespeed.web.dev</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатен.</li>
+<li>Использует реальные данные Field Data (CrUX), а не только лабораторные.</li>
+<li>Показывает Core Web Vitals: LCP, INP (заменяет FID с марта 2024), CLS.</li>
+<li>Детальные рекомендации с приоритетами.</li>
+<li>Стандарт де-факто для оценки скорости.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Лабораторные данные могут отличаться от реальных на 20–40%.</li>
+<li>Нет мониторинга (проверяется только по запросу).</li>
+<li>Нет API для массовых проверок в бесплатной версии.</li>
+<li>Не проводит технический SEO-аудит.</li>
+</ul>
+<h3 id="gtmetrix">GTmetrix</h3>
+<p><strong>Описание:</strong> Канадский сервис проверки скорости, использующий движок Lighthouse. Платные тарифы начинаются от $4,99/мес (Cloud Solo, при годовой оплате). Предлагает мониторинг, API и историю тестов.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://gtmetrix.com" rel="nofollow" target="_blank">gtmetrix.com</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Детальный waterfall-отчёт по загрузке каждого ресурса.</li>
+<li>Мониторинг с ежедневными проверками (на платных тарифах).</li>
+<li>Выбор сервера для тестирования (7 локаций).</li>
+<li>Видео загрузки страницы.</li>
+<li>API-доступ для автоматизации.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Бесплатная версия ограничена (один тест за раз, очередь).</li>
+<li>Результаты зависят от сервера тестирования.</li>
+<li>Платные тарифы растут: Growth — $42,50/мес.</li>
+<li>Нет технического SEO-аудита.</li>
+</ul>
+<h3 id="webpagetest">WebPageTest</h3>
+<p><strong>Описание:</strong> Open-source инструмент (ранее принадлежал Google, сейчас развивается independently), считающийся наиболее точным для профессионального анализа скорости. Позволяет тестировать на реальных устройствах и из разных локаций.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://www.webpagetest.org" rel="nofollow" target="_blank">webpagetest.org</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Самый точный инструмент на рынке для глубокой диагностики.</li>
+<li>Тестирование на реальных мобильных устройствах (а не эмуляция).</li>
+<li>Filmstrip-визуализация загрузки по кадрам.</li>
+<li>Расширенные метрики: Speed Index, TTFB, Total Blocking Time.</li>
+<li>Бесплатный API (с ограничениями).</li>
+<li>Open-source: можно развернуть свой экземпляр.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Сложный интерфейс для новичков.</li>
+<li>Очередь на бесплатные тесты может быть долгой.</li>
+<li>Нет мониторинга и алертов.</li>
+<li>Нет SEO-аудита.</li>
+</ul>
+<h3 id="яндексвебмастер-диагностика">Яндекс.Вебмастер (диагностика)</h3>
+<p><strong>Описание:</strong> Бесплатный сервис Яндекса для вебмастеров. Модуль «Диагностика» выявляет технические проблемы сайта: ошибки индексации, некорректные микроразметку, проблемы с robots.txt и sitemap, мобильную адаптивность.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://webmaster.yandex.ru" rel="nofollow" target="_blank">webmaster.yandex.ru</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатен.</li>
+<li>Показывает проблемы именно с точки зрения Яндекса.</li>
+<li>Диагностика проблем индексации, переобхода страниц.</li>
+<li>Проверка мобильной версии и микроразметки.</li>
+<li>Мониторинг в реальном времени.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только проблемы с точки зрения Яндекса (не Google).</li>
+<li>Нет проверки скорости в формате Core Web Vitals.</li>
+<li>Нет масштабирования для крупных сайтов.</li>
+<li>Ограничения на количество проверяемых URL.</li>
+</ul>
+<h3 id="sitechecker">Sitechecker</h3>
+<p><strong>Описание:</strong> Платформа для SEO-аудита и мониторинга позиций. Позволяет провести комплексный технический аудит: битые ссылки, дубли страниц, проблемы с мета-тегами, скорость загрузки и многое другое. По данным G2, рейтинг 4,2/5.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://sitechecker.pro" rel="nofollow" target="_blank">sitechecker.pro</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Комплексный SEO-аудит (300+ проверок).</li>
+<li>Встроенная проверка скорости загрузки.</li>
+<li>Мониторинг позиций и отслеживание изменений.</li>
+<li>По данным кейсов: сокращение технических ошибок на 30–50%.</li>
+<li>Удобный интерфейс с приоритизацией задач.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Платный (бесплатная проверка одной страницы).</li>
+<li>Нет тестирования на реальных устройствах.</li>
+<li>Меньше глубины диагностики, чем у Screaming Frog.</li>
+<li>Ограничения на количество проверяемых URL в базовых тарифах.</li>
+</ul>
+<h3 id="seoпульт-аудит">SEOПульт (аудит)</h3>
+<p><strong>Описание:</strong> Российский сервис SEO-инструментов, включающий модуль технического аудита сайта. Позволяет выявлять ошибки индексации, дубликаты, проблемы с мета-тегами и оптимизацию контента.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://promopult.ru" rel="nofollow" target="_blank">promopult.ru</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Российский сервис — ориентирован на Яндекса и российские реалии.</li>
+<li>Комплексный набор инструментов в одной подписке.</li>
+<li>Автоматическая проверка с регулярными отчётами.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Модуль аудита менее глубокий, чем у Screaming Frog или Sitechecker.</li>
+<li>Нет проверки скорости загрузки (Core Web Vitals).</li>
+<li>Нет API для массовых проверок.</li>
+<li>Тарифы привязаны к полноценной подписке SEOПульта.</li>
+</ul>
+<h3 id="screaming-frog">Screaming Frog</h3>
+<p><strong>Описание:</strong> Десктопный краулер для технического SEO-аудита, установленный стандарт в индустрии. Бесплатная версия сканирует до 500 URL. Лицензия стоит £199/год (около $250/год). Reddit-сообщество единогласно признаёт это лучшее соотношение цены и качества на рынке SEO.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://www.screamingfrog.co.uk" rel="nofollow" target="_blank">screamingfrog.co.uk</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Невероятная глубина аудита: мета-теги, каноникалы, hreflang, schema.org, скрипты, CSS, редиректы.</li>
+<li>Сканирование JavaScript-рендеринга (headless Chrome).</li>
+<li>Интеграция с GA4, GSC, Ahrefs и PageSpeed Insights.</li>
+<li>Экспорт данных в CSV/Excel для кастомного анализа.</li>
+<li>Рейтинг 4/5 на Trustpilot.</li>
+<li>Одна лицензия = все функции, нет ограничений по URL.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Десктопное приложение (требует мощный компьютер для больших сайтов).</li>
+<li>Нет облачного варианта.</li>
+<li>Интерфейс выглядит перегруженным для новичков.</li>
+<li>Нет мониторинга в реальном времени.</li>
+</ul>
+<h3 id="lumar-ранее-deepcrawl">Lumar (ранее Deepcrawl)</h3>
+<p><strong>Описание:</strong> Enterprise-облачная платформа для технического SEO-аудита. Краулит миллионы URL на скоростях до 450 страниц/сек. Цены формируются индивидуально: по данным Reddit, диапазон $30 000–100 000/год. Рейтинг 4,5/5 на G2.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://www.lumar.io" rel="nofollow" target="_blank">lumar.io</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Масштабируемость: аудит сайтов с миллионами URL.</li>
+<li>Высокая скорость краулинга (до 450 стр/сек).</li>
+<li>Глубокий анализ SEO, структуры сайта, индексируемости, Page Experience.</li>
+<li>Облачный: не зависит от мощности компьютера.</li>
+<li>Автоматические отчёты и алерты.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Очень высокая стоимость ($30K–100K/год).</li>
+<li>Нет прозрачного ценообразования.</li>
+<li>Избыточен для небольших и средних сайтов.</li>
+<li>Сложный onboarding.</li>
+</ul>
+<h2 id="core-web-vitals-что-это-и-почему-важно">Core Web Vitals: что это и почему важно</h2>
+<p>Core Web Vitals — набор метрик от Google, оценивающих пользовательский опыт загрузки:</p>
+<ul>
+<li><strong>LCP</strong> (Largest Contentful Paint) — время загрузки основного контента (норма: &#x3C; 2,5 сек).</li>
+<li><strong>INP</strong> (Interaction to Next Paint) — отзывчивость при взаимодействии (норма: &#x3C; 200 мс). Заменил FID в марте 2024 года.</li>
+<li><strong>CLS</strong> (Cumulative Layout Shift) — визуальная стабильность (норма: &#x3C; 0,1).</li>
+</ul>
+<p>PageSpeed Insights — единственный инструмент, который показывает реальные (Field) данные по Core Web Vitals из CrUX. GTmetrix и WebPageTest предоставляют только лабораторные данные.</p>
+<h2 id="mobile-vs-desktop">Mobile vs Desktop</h2>
+<p>Тестирование скорости на мобильных устройствах критически важно: более 60% трафика в России приходит с мобильных. PageSpeed Insights автоматически тестирует мобильную версию. WebPageTest позволяет выбрать конкретное устройство (Moto G4, Pixel и др.). GTmetrix тестирует десктоп и мобильный по отдельности. Screaming Frog и Lumar не проверяют скорость, но анализируют мобильную адаптивность.</p>
+<h2 id="api-доступ">API-доступ</h2>
+<p>Для автоматизации и мониторинга важен API: WebPageTest (бесплатный, с лимитами), GTmetrix (от $4,99/мес), Screaming Frog (CLI с лицензией), Lumar (включён в подписку). PageSpeed Insights можно использовать через Lighthouse CLI. Яндекс.Вебмастер предоставляет API для диагностики.</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Бесплатно</th><th>Core Web Vitals</th><th>SEO-аудит</th><th>Mobile</th><th>API</th><th>Масштаб</th></tr></thead><tbody><tr><td>PageSpeed Insights</td><td>Да</td><td>Field + Lab</td><td>Нет</td><td>Эмуляция</td><td>Нет</td><td>1 страница</td></tr><tr><td>GTmetrix</td><td>Ограниченно</td><td>Lab</td><td>Нет</td><td>Эмуляция</td><td>Да</td><td>Мониторинг</td></tr><tr><td>WebPageTest</td><td>Да</td><td>Lab</td><td>Нет</td><td>Реальные</td><td>Да</td><td>1 страница</td></tr><tr><td>Яндекс.Вебмастер</td><td>Да</td><td>Нет</td><td>Да</td><td>Да</td><td>Да</td><td>До 50K URL</td></tr><tr><td>Sitechecker</td><td>1 страница</td><td>Lab</td><td>Да</td><td>Эмуляция</td><td>Да</td><td>Тарифы</td></tr><tr><td>SEOПульт</td><td>Нет</td><td>Нет</td><td>Частично</td><td>Нет</td><td>Нет</td><td>Тарифы</td></tr><tr><td>Screaming Frog</td><td>500 URL</td><td>Интеграция PSI</td><td>Да</td><td>Нет</td><td>CLI</td><td>Неограниченно</td></tr><tr><td>Lumar</td><td>Нет</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>Миллионы URL</td></tr></tbody></table>
+<h2 id="что-выбрать">Что выбрать?</h2>
+<p>Для <strong>быстрой проверки одной страницы</strong> — PageSpeed Insights (бесплатно, реальные данные). Для <strong>регулярного мониторинга скорости</strong> — GTmetrix (от $4,99/мес). Для <strong>глубокой диагностики производительности</strong> — WebPageTest. Для <strong>технического SEO-аудита</strong> — Screaming Frog (£199/год) для большинства задач. Для <strong>крупных enterprise-сайтов</strong> с миллионами страниц — Lumar. Для <strong>российского рынка</strong> — дополнительно Яндекс.Вебмастер для мониторинга проблем индексации. Оптимальная связка для среднего бизнеса: PageSpeed Insights + Screaming Frog + GTmetrix Pro.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

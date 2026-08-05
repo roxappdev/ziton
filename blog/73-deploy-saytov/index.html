@@ -1,0 +1,395 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор платформ для деплоя сайтов — от российских Timeweb Cloud и Selectel до Vercel, Netlify, Render, Railway и других. Сравнение git push deploy, CI/CD, serverless и бесплатных тарифов."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Платформы для развертывания (деплоя) сайтов — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Платформы для развертывания (деплоя) сайтов</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>деплой</li><li data-astro-cid-ymihodss>хостинг</li><li data-astro-cid-ymihodss>CI/CD</li><li data-astro-cid-ymihodss>serverless</li><li data-astro-cid-ymihodss>Vercel</li><li data-astro-cid-ymihodss>Netlify</li><li data-astro-cid-ymihodss>облако</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="зачем-нужны-платформы-для-деплоя">Зачем нужны платформы для деплоя</h2>
+<p>Развертывание (деплой) сайта — это процесс переноса кода с локальной машины на сервер, где он становится доступен пользователям. Раньше для этого приходилось вручную загружать файлы по FTP или настраивать сервер через SSH. Современные платформы для деплоя автоматизируют этот процесс: достаточно сделать <code>git push</code>, и сайт появится в интернете.</p>
+<p>Ключевые возможности, которые стоит оценивать при выборе платформы: <strong>автоматический деплой из Git</strong>, <strong>CI/CD-пайплайны</strong>, <strong>preview-окружения</strong> (превью каждого pull request), <strong>serverless-функции</strong>, <strong>поддержка кастомных доменов</strong>, <strong>наличие бесплатного тарифа</strong> и <strong>расположение серверов</strong> (для российского трафика критичны серверы в РФ).</p>
+<h2 id="российские-платформы">Российские платформы</h2>
+<h3 id="timeweb-cloud-app-platform">Timeweb Cloud (App Platform)</h3>
+<p><strong>Сайт:</strong> <a href="https://timeweb.cloud/" rel="nofollow" target="_blank">timeweb.cloud</a></p>
+<p>Timeweb Cloud — крупнейший российский облачный провайдер, предлагающий сервис App Platform для автоматического деплоя приложений из GitHub, GitLab и Bitbucket. Платформа создаёт готовое окружение для сборки и запуска проектов без необходимости настраивать сервер вручную.</p>
+<p>Серверы расположены в Москве и Санкт-Петербурге, что обеспечивает низкую задержку для российских пользователей. Timeweb Cloud поддерживает Docker-контейнеры, базу данных как сервис (DBaaS), объектное хранилище S3 и Managed Kubernetes.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Серверы в РФ — низкий пинг для российских пользователей</li>
+<li>Поддержка GitHub, GitLab, Bitbucket</li>
+<li>Встроенная CDN и SSL-сертификаты</li>
+<li>Поддержка 24/7 на русском языке</li>
+<li>Широкая экосистема облачных сервисов (S3, DBaaS, K8s)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>App Platform уступает по функциональности Vercel/Netlify для фронтенд-проектов</li>
+<li>Менее развитая система preview-окружений</li>
+<li>Нет serverless-функций в том виде, как у Vercel</li>
+</ul>
+<h3 id="selectel">Selectel</h3>
+<p><strong>Сайт:</strong> <a href="https://selectel.ru/" rel="nofollow" target="_blank">selectel.ru</a></p>
+<p>Selectel — один из ведущих российских облачных провайдеров, предоставляющий облачные серверы, Managed Kubernetes, объектное хранилище и интеграцию с CI/CD-инструментами. В отличие от App Platform у Timeweb, Selectel предлагает более низкоуровневый подход: вы получаете облачную инфраструктуру и сами настраиваете процесс деплоя через Jenkins, GitLab CI или Terraform.</p>
+<p>По данным кейса на Хабре (апрель 2024), команда Selectel ускорила деплой платформы в 20 раз за счёт оптимизации CI/CD-пайплайнов.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Гибкая облачная инфраструктура</li>
+<li>Managed Kubernetes с SLA</li>
+<li>Интеграция с любыми CI/CD-инструментами</li>
+<li>Серверы в Москве, Санкт-Петербурге, Новосибирске</li>
+<li>Сильная техническая документация</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет готового «one-click deploy» для простых проектов</li>
+<li>Требуются навыки DevOps для настройки</li>
+<li>Нет бесплатного тарифа для тестирования</li>
+</ul>
+<h3 id="regru-хостинг-с-деплоем">Reg.ru (хостинг с деплоем)</h3>
+<p><strong>Сайт:</strong> <a href="https://reg.ru/" rel="nofollow" target="_blank">reg.ru</a></p>
+<p>Reg.ru — крупнейший российский регистратор доменов, также предоставляющий хостинг и облачные VPS. Для деплоя используется классическая схема: хостинг с поддержкой PHP/Python/Node.js, FTP/SFTP-доступ и Web Deploy для проектов на ASP.NET. Автоматический git push deploy отсутствует на стандартном хостинге, но доступен на облачных серверах.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Всё в одном месте: домены, хостинг, SSL</li>
+<li>Доступные цены — хостинг от 99 ₽/мес</li>
+<li>Русскоязычная поддержка 24/7</li>
+<li>Простота для новичков</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет платформенного деплоя из Git на обычном хостинге</li>
+<li>Ограниченные ресурсы на shared-хостинге</li>
+<li>Не подходит для современных фронтенд-фреймворков</li>
+</ul>
+<h2 id="зарубежные-платформы">Зарубежные платформы</h2>
+<h3 id="vercel">Vercel</h3>
+<p><strong>Сайт:</strong> <a href="https://vercel.com/" rel="nofollow" target="_blank">vercel.com</a></p>
+<p>Vercel — платформа деплоя, созданная разработчиками Next.js, и являющаяся стандартом для развёртывания React/Next.js-приложений. Поддерживает автоматический деплой из Git с preview-окружениями для каждого PR, serverless-функции, Edge Functions и встроенную CDN.</p>
+<p>Бесплатный тариф (Hobby) включает безлимитный деплой статических сайтов, 100 ГБ трафика, serverless-функции с ограничением по времени выполнения. Платный Pro-тариф стоит от $20/мес ($20 кредита на расходуемые ресурсы) и снимает ограничения по коммерческому использованию.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Идеальная интеграция с Next.js и React</li>
+<li>Мгновенные preview-окружения для PR</li>
+<li>Edge Functions по всему миру</li>
+<li>Автоматическое масштабирование</li>
+<li>Щедрый бесплатный тариф</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Серверы вне РФ — высокий пинг для российских пользователей</li>
+<li>Платный тариф может быть дорогим при высоких нагрузках</li>
+<li>Vendor lock-in для Next.js-специфичных функций</li>
+</ul>
+<h3 id="netlify">Netlify</h3>
+<p><strong>Сайт:</strong> <a href="https://www.netlify.com/" rel="nofollow" target="_blank">netlify.com</a></p>
+<p>Netlify — один из пионеров платформенного деплоя для статических сайтов и Jamstack-приложений. Предлагает мгновенный деплой из Git, автоматические HTTPS, serverless-функции, формы и аутентификацию. Бесплатный тариф включает 100 ГБ трафика, 300 минут сборки и не требует кредитной карты.</p>
+<p>Платный Personal-тариф стоит $9/мес с увеличенными лимитами (5000 кредитов).</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Простой деплой статических сайтов</li>
+<li>Встроенные формы и аутентификация</li>
+<li>Redirects и headers через файл _redirects</li>
+<li>Щедрый бесплатный тариф (100 ГБ, 300 мин сборки)</li>
+<li>Netlify Functions (serverless)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет серверов в РФ</li>
+<li>Менее мощные serverless-функции, чем у Vercel</li>
+<li>Сборки могут быть медленнее при больших проектах</li>
+</ul>
+<h3 id="render">Render</h3>
+<p><strong>Сайт:</strong> <a href="https://render.com/" rel="nofollow" target="_blank">render.com</a></p>
+<p>Render — платформа, позиционирующая себя как современная альтернатива Heroku. Поддерживает статические сайты, веб-сервисы, background workers, cron jobs, базы данных (PostgreSQL, Redis). Деплой происходит автоматически при push в Git-репозиторий.</p>
+<p>Бесплатный тариф позволяет деплоить статические сайты и бесплатные веб-сервисы (с засыпанием при неактивности). Платные тарифы начинаются с $7/мес за веб-сервис.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Поддержка любых типов приложений (не только фронтенд)</li>
+<li>Встроенные PostgreSQL и Redis</li>
+<li>Persistent disks для хранения данных</li>
+<li>Автоматические SSL и кастомные домены</li>
+<li>Автоскейлинг</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Бесплатные сервисы засыпают через 15 минут неактивности</li>
+<li>Нет серверов в РФ</li>
+<li>Более высокие цены на продакшн, чем у конкурентов</li>
+</ul>
+<h3 id="railway">Railway</h3>
+<p><strong>Сайт:</strong> <a href="https://railway.app/" rel="nofollow" target="_blank">railway.app</a></p>
+<p>Railway — платформа для деплоя с упором на простоту и developer experience. Поддерживает деплой из GitHub, Docker-образов и CLI. Платформа автоматически определяет тип проекта и подбирает окружение.</p>
+<p>Ценовая модель — поминутная оплата ресурсов. Есть 30-дневный триал с $5 кредита, далее от $1/мес. По отзывам на Trustpilot пользователи хвалят простоту, но отмечают периодические инциденты с доступностью (в декабре 2025 был крупный сбой).</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Исключительно простой деплой — «push and go»</li>
+<li>Поминутная оплата — платишь только за реальное использование</li>
+<li>Встроенная база данных (PostgreSQL, MySQL, Redis, MongoDB)</li>
+<li>Монорепозитории и мультиконтейнерные проекты</li>
+<li>Удобный дашборд для мониторинга</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет бесплатного тарифа (только триал)</li>
+<li>Периодические сбои и деградация производительности</li>
+<li>Нет серверов в РФ</li>
+<li>Нет preview-окружений из коробки</li>
+</ul>
+<h3 id="flyio">Fly.io</h3>
+<p><strong>Сайт:</strong> <a href="https://fly.io/" rel="nofollow" target="_blank">fly.io</a></p>
+<p>Fly.io — платформа для деплоя контейнеризированных приложений, максимально приближенная к железу. Запускает ваши приложения на виртуальных машинах (Fly Machines) в 18+ регионах мира с временем загрузки менее 1 секунды.</p>
+<p>Цены начинаются от $2.02/мес за инстанс shared-cpu-1x (256 МБ ОЗУ). Типичное небольшое приложение обходится в $8–25/мес. Бесплатного тарифа нет.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Запуск максимально близко к пользователям (18+ регионов)</li>
+<li>Быстрый старт машин (&#x3C; 1 сек)</li>
+<li>Поддержка Docker и любых языков</li>
+<li>Persistent volumes и база данных</li>
+<li>WireGuard VPN для безопасного подключения</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет бесплатного тарифа</li>
+<li>Сложнее в освоении, чем Vercel/Netlify</li>
+<li>Нет серверов в РФ</li>
+<li>Цены могут расти непредсказуемо</li>
+</ul>
+<h3 id="heroku">Heroku</h3>
+<p><strong>Сайт:</strong> <a href="https://www.heroku.com/" rel="nofollow" target="_blank">heroku.com</a></p>
+<p>Heroku — классическая платформа для деплоя, которая в своё время определила стандарт «git push deploy». Принадлежит Salesforce. Поддерживает множество языков через buildpacks.</p>
+<p>С 2022 года вернул бесплатные dyno через тариф Eco ($5/мес, 1000 часов). Basic-дино стоит $7/мес. Standard-1X — от $25/мес.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Зрелая экосистема с огромным количеством аддонов</li>
+<li>Отличная документация</li>
+<li>Простота деплоя через Git</li>
+<li>Heroku Postgres, Redis и другие управляемые сервисы</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Дорогой по сравнению с современными альтернативами</li>
+<li>Нет серверов в РФ</li>
+<li>Экосистема аддонов сокращается</li>
+<li>Ограниченные ресурсы на дешёвых тарифах</li>
+</ul>
+<h3 id="surge">Surge</h3>
+<p><strong>Сайт:</strong> <a href="https://surge.sh/" rel="nofollow" target="_blank">surge.sh</a></p>
+<p>Surge — минималистичная платформа для деплоя статических сайтов через CLI. Команда <code>surge project myproject.surge.sh</code> разворачивает сайт за секунды. Бесплатный тариф включает деплой на поддомен surge.sh с ограничением в 1 ГБ.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Максимально простой CLI-деплой</li>
+<li>Бесплатно для статических сайтов</li>
+<li>Мгновенный деплой</li>
+<li>Поддержка кастомных доменов ($30/год)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только статические сайты</li>
+<li>Нет CI/CD, preview-окружений, serverless</li>
+<li>Нет серверов в РФ</li>
+<li>Очень ограниченная функциональность</li>
+</ul>
+<h2 id="критерии-выбора-и-рекомендации-по-сценариям">Критерии выбора и рекомендации по сценариям</h2>
+<p>При выборе платформы для деплоя учитывайте несколько ключевых факторов. <strong>Если ваша аудитория находится в России</strong> — критично наличие серверов в РФ (Timeweb Cloud, Selectel). Это особенно важно для Core Web Vitals, где время до первого байта (TTFB) напрямую влияет на позиции в поиске Яндекса и Google.</p>
+<p><strong>Для фронтенд-проектов на React/Next.js</strong> лучшим выбором будет Vercel — тесная интеграция с фреймворком, мгновенные preview-окружения и Edge Functions. Astro-проекты также отлично работают на Vercel и Netlify.</p>
+<p><strong>Если нужен полный бэкенд с базой данных</strong> — Render или Railway. Обе платформы позволяют задеплоить Express/FastAPI/Django-приложение с PostgreSQL за несколько минут.</p>
+<p><strong>Для продакшн-сервисов с высокими требованиями к производительности и стабильности</strong> — Fly.io или Heroku. Fly.io даёт максимальную географическую близость к пользователям, а Heroku обеспечивает проверенную временем стабильность.</p>
+<p><strong>Для быстрого прототипирования статических сайтов</strong> — Surge или Netlify. Оба сервиса позволяют задеплоить лендинг за 30 секунд.</p>
+<p>Стоит помнить, что с 2025 года многие зарубежные платформы ограничили работу с пользователями из РФ (оплата картами, санкции). Поэтому для долгосрочных проектов рекомендуется рассматривать российские решения — Timeweb Cloud и Selectel продолжают активно развивать свои платформы деплоя.</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Платформа</th><th>Серверы в РФ</th><th>Git Push Deploy</th><th>Preview-среды</th><th>Serverless</th><th>Бесплатный тариф</th><th>Цена от</th></tr></thead><tbody><tr><td>Timeweb Cloud</td><td>✅ Москва, СПб</td><td>✅</td><td>Частично</td><td>❌</td><td>Ограниченный</td><td>~300 ₽/мес</td></tr><tr><td>Selectel</td><td>✅ Москва, СПб, НСК</td><td>Через CI/CD</td><td>Через CI/CD</td><td>❌</td><td>Нет</td><td>~500 ₽/мес</td></tr><tr><td>Reg.ru</td><td>✅</td><td>Только VPS</td><td>❌</td><td>❌</td><td>Хостинг от 99 ₽</td><td>99 ₽/мес</td></tr><tr><td>Vercel</td><td>❌</td><td>✅</td><td>✅</td><td>✅ Edge + Serverless</td><td>✅ Hobby</td><td>$0 / $20/мес Pro</td></tr><tr><td>Netlify</td><td>❌</td><td>✅</td><td>✅</td><td>✅ Functions</td><td>✅ 100 ГБ</td><td>$0 / $9/мес</td></tr><tr><td>Render</td><td>❌</td><td>✅</td><td>✅ (paid)</td><td>❌</td><td>✅ (с засыпанием)</td><td>$0 / $7/мес</td></tr><tr><td>Railway</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>Триал $5</td><td>$1/мес</td></tr><tr><td>Fly.io</td><td>❌</td><td>✅ CLI</td><td>✅ CLI</td><td>❌</td><td>Нет</td><td>~$2/мес</td></tr><tr><td>Heroku</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>Eco $5/мес</td><td>$5/мес</td></tr><tr><td>Surge</td><td>❌</td><td>✅ CLI</td><td>❌</td><td>❌</td><td>✅ 1 ГБ</td><td>$0 / $30/год</td></tr></tbody></table></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Сравнение инструментов для создания скриншотов с аннотациями — от бесплатных утилит до профессиональных решений с облачным хранением."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Сервисы для создания скриншотов и аннотаций — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Сервисы для создания скриншотов и аннотаций</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>скриншоты</li><li data-astro-cid-ymihodss>аннотации</li><li data-astro-cid-ymihodss>инструменты</li><li data-astro-cid-ymihodss>производительность</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="зачем-нужны-специализированные-инструменты-для-скриншотов">Зачем нужны специализированные инструменты для скриншотов</h2>
+<p>Скриншоты — повседневный инструмент для дизайнеров, разработчиков, менеджеров и техподдержки. Стандартная комбинация Win+Shift+S или Cmd+Shift+4 покрывает базовые потребности, но когда требуется добавить стрелку, размыть конфиденциальные данные или мгновенно поделиться снимком по ссылке, необходим специализированный инструмент.</p>
+<p>По данным различных опросов, сотрудники тратят в среднем 15–30 минут в день на создание скриншотов и их оформление. Автоматизация этого процесса через специализированные инструменты значительно экономит время. Кроме того, аннотированные скриншоты сокращают количество уточняющих вопросов в переписке с коллегами и клиентами — одна картинка с выделенной областью и стрелкой заменяет десятки строк объяснений.</p>
+<p>В этом обзоре мы рассмотрим десять решений — от бесплатных программ с облачным хранением до мощных десктопных утилит. Ключевые критерии: типы захвата (область, окно, весь экран, прокрутка), набор инструментов аннотации, облачное хранение, скорость работы и цена.</p>
+<h3 id="joxi">Joxi</h3>
+<p><a href="https://joxi.net" rel="nofollow" target="_blank">Joxi</a> — российский бесплатный сервис для создания скриншотов с мгновенной загрузкой в облако и получением ссылки для sharing. Разработан компанией «Сетевые решения» и пользуется популярностью в русскоязычном сегменте.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатен, нет ограничений по количеству скриншотов.</li>
+<li>Мгновенная загрузка в облако и получение ссылки для подел
+ения.</li>
+<li>Базовые инструменты аннотации: стрелки, прямоугольники, текст, маркер.</li>
+<li>Работает на Windows и macOS, есть браузерное расширение.</li>
+<li>Не требует регистрации для базового использования.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченный набор инструментов аннотации — нет размытия, штампов, нумерации.</li>
+<li>Облачное хранение ограничено — старые скриншоты удаляются.</li>
+<li>Нет записи экрана (только снимки).</li>
+<li>Реклама в бесплатной версии.</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно.</p>
+<h3 id="lightshot">Lightshot</h3>
+<p><a href="https://app.prntscr.com" rel="nofollow" target="_blank">Lightshot</a> — один из самых популярных бесплатных инструментов для скриншотов в мире. Легковесное приложение с поддержкой Windows, macOS и браузерных расширений.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Максимально простой интерфейс — минимум настроек.</li>
+<li>Быстрый захват области экрана с возможностью изменения размера выделения.</li>
+<li>Мгновенная загрузка на сервер prntscr.com и получение ссылки.</li>
+<li>Базовые инструменты разметки: линия, стрелка, прямоугольник, текст, маркер.</li>
+<li>Поиск по похожим изображениям в Google.</li>
+<li>Работает даже на слабых компьютерах.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Захват только выделенной области — нет возможности скриншота целого окна или прокрутки.</li>
+<li>Инструменты аннотации минимальны.</li>
+<li>Нет размытия конфиденциальных данных.</li>
+<li>Серверы prntscr.com периодически недоступны.</li>
+<li>Нет десктопного сохранения по умолчанию (нужно выбирать).</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно.</p>
+<h3 id="floomby">Floomby</h3>
+<p><a href="https://floomby.ru" rel="nofollow" target="_blank">Floomby</a> — российский сервис для создания и обмена скриншотами с удобным онлайн-редактором. Позиционируется как замена Lightshot с расширенными возможностями.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Удобный онлайн-редактор аннотаций с интуитивным интерфейсом.</li>
+<li>Захват области, окна и всего экрана.</li>
+<li>Инструменты: стрелки, прямоугольники, текст, маркер,_crop.</li>
+<li>Облачное хранение с историей скриншотов.</li>
+<li>Русскоязычный интерфейс и техподдержка.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Требует создания аккаунта для полного функционала.</li>
+<li>Скорость загрузки на сервер зависит от канала.</li>
+<li>Меньшее сообщество, чем у Lightshot или Joxi.</li>
+<li>Нет версии для macOS (только Windows и расширения для браузеров).</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно.</p>
+<h3 id="awesome-screenshot">Awesome Screenshot</h3>
+<p><a href="https://www.awesomescreenshot.com" rel="nofollow" target="_blank">Awesome Screenshot</a> — расширение для браузера с возможностью захвата видимой области, всей страницы (включая прокрутку) и создания аннотаций. Также доступно десктопное приложение.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Захват страницы с прокруткой — бесценная функция для длинных веб-страниц.</li>
+<li>Запись экрана (видео) с возможностью наложения веб-камеры.</li>
+<li>Облачное хранение с организацией в проекты и папки.</li>
+<li>Сотрудничество: возможность оставлять комментарии на скриншотах.</li>
+<li>Интеграция с Jira, Slack, Trello, Asana.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Бесплатная версия сильно ограничена: 30 записей, лимит на аннотации.</li>
+<li>Платная подписка дорогая для индивидуального пользователя.</li>
+<li>Требует доступа к данным на всех сайтах.</li>
+<li>Не заменяет полноценную десктопную утилиту для системных скриншотов.</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (ограниченно), Pro — $6/мес, Team — $8/мес/пользователь.</p>
+<h3 id="sharex">ShareX</h3>
+<p><a href="https://getsharex.com" rel="nofollow" target="_blank">ShareX</a> — бесплатная open-source утилита для Windows с обширным функционалом. Фаворит энтузиастов и профессионалов благодаря гибкости настроек и поддержке скриптов.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатен и open-source (GPL).</li>
+<li>Захват области, окна, свободной формы, прокрутки, с задержкой.</li>
+<li>Мощный редактор: стрелки, текст, размытие, пикселизация, штампы, нумерация.</li>
+<li>Автоматическая загрузка на 80+ облачных сервисов (Imgur, Google Drive, Dropbox, FTP и др.).</li>
+<li>Запись экрана в GIF и видео.</li>
+<li>Автоматизация через настраиваемые workflows.</li>
+<li>Цветовая пипетка, линейка, генератор QR-кодов.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только для Windows (нет macOS и Linux).</li>
+<li>Высокий порог входа — обилие настроек может отпугнуть новичков.</li>
+<li>Интерфейс не самый современный.</li>
+<li>Нет встроенного облачного хранилища — нужно подключать стороннее.</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно.</p>
+<h3 id="snagit">Snagit</h3>
+<p><a href="https://www.techsmith.com/snagit.html" rel="nofollow" target="_blank">Snagit</a> — профессиональная программа для скриншотов и записи экрана от TechSmith. Стандарт де-факто для корпоративного использования.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Захват всего, что можно себе представить: область, окно, прокрутка, видео, веб-камера.</li>
+<li>Мощнейший редактор аннотаций: стрелки, фигуры, штампы, шаги (step tools), размытие.</li>
+<li>Умное выделение: автоматическое определение элементов интерфейса.</li>
+<li>Шаблоны для документации и обучающих материалов.</li>
+<li>Библиотека скриншотов с поиском по тексту на изображениях (OCR).</li>
+<li>Интеграция с Microsoft Teams, Slack, Google Drive.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Высокая цена — $62,99 за лицензию или $14,99/мес по подписке.</li>
+<li>Только Windows и macOS (нет Linux).</li>
+<li>Относительно тяжёлый — занимает много ресурсов.</li>
+<li>Платные обновления для новых версий.</li>
+</ul>
+<p><strong>Цена:</strong> $62,99 (единовременно) или $14,99/мес (подписка).</p>
+<h3 id="picpick">PicPick</h3>
+<p><a href="https://picpick.app" rel="nofollow" target="_blank">PicPick</a> — бесплатная для личного использования утилита для Windows с удобным редактором изображений и инструментами захвата экрана.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Бесплатна для домашнего использования.</li>
+<li>Захват области, окна, всего экрана, прокрутки, фиксированного размера.</li>
+<li>Встроенный редактор изображений (обрезка, изменение размера, цветокоррекция).</li>
+<li>Аннотации: стрелки, текст, фигуры, размытие, выделение.</li>
+<li>Цветовая пипетка, палитра, линейка, протрактор.</li>
+<li>Автосохранение и именование файлов по шаблонам.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Бесплатна только для личного использования — для бизнеса нужна лицензия.</li>
+<li>Только Windows.</li>
+<li>Нет облачного хранилища или автоматической загрузки.</li>
+<li>Обновления выпускаются нерегулярно.</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (личное использование), Business — $23,99.</p>
+<h3 id="screenpresso">Screenpresso</h3>
+<p><a href="https://www.screenpresso.com" rel="nofollow" target="_blank">Screenpresso</a> — легковесная программа для Windows с акцентом на удобство и автоматизацию. Поддерживает захват области, окна и прокрутки.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Захват прокрутки (scrolling capture) — одна из лучших реализаций.</li>
+<li>Встроенный OCR для распознавания текста на скриншотах.</li>
+<li>Автоматическая загрузка в облако Screenpresso Cloud.</li>
+<li>Аннотации: стрелки, текст, фигуры, размытие, тени.</li>
+<li>Генерация PDF-документов из скриншотов.</li>
+<li>Легковесный — минимальное потребление ресурсов.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Бесплатная версия ограничена: нет прокрутки, нет OCR.</li>
+<li>Только Windows.</li>
+<li>Облачное хранилище ограничено в бесплатной версии.</li>
+<li>Меньше инструментов аннотации, чем у Snagit.</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (Lite), Pro — €28 (единовременно).</p>
+<h3 id="cleanshot-x">CleanShot X</h3>
+<p><a href="https://cleanshot.com" rel="nofollow" target="_blank">CleanShot X</a> — приложение для macOS, считающееся одним из лучших инструментов для скриншотов на Mac. Стильный интерфейс и продвинутые функции.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Захват области, окна, всего экрана, прокрутки, таймером.</li>
+<li>Аннотации: стрелки, текст, размытие, пикселизация, штампы, нумерация.</li>
+<li>Встроенная обрезка и аннотирование прямо после захвата.</li>
+<li>Облачное хранилище CleanShot Cloud с мгновенными ссылками.</li>
+<li>Скриншот-пин: плавающее окно с последним скриншотом (удобно для сравнения).</li>
+<li>Запись экрана и GIF.</li>
+<li>Скрытие Desktop-иконок при захвате.</li>
+<li>Pin-скриншоты на экране поверх других окон.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только macOS (нет Windows и Linux).</li>
+<li>Дорогая единовременная покупка.</li>
+<li>Облачное хранилище — дополнительная платная подписка.</li>
+<li>Нет встроенного редактора изображений (только аннотации).</li>
+</ul>
+<p><strong>Цена:</strong> $29 (единовременно), Cloud — $8/мес.</p>
+<h3 id="flameshot">Flameshot</h3>
+<p><a href="https://flameshot.org" rel="nofollow" target="_blank">Flameshot</a> — бесплатная open-source утилита для скриншотов, доступная на Windows, macOS и Linux. Популярна среди пользователей Linux.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатен и open-source.</li>
+<li>Кроссплатформенный: Windows, macOS, Linux.</li>
+<li>Хорошая набор инструментов аннотации: стрелки, линии, прямоугольники, текст, размытие, нумерация.</li>
+<li>Запуск из командной строки (удобно для автоматизации).</li>
+<li>Поддержка загрузки на Imgur.</li>
+<li>Не требует установки (portable-версия).</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет захвата прокрутки.</li>
+<li>Нет записи экрана или видео.</li>
+<li>Интерфейс менее полированный, чем у коммерческих аналогов.</li>
+<li>Загрузка на облако только через Imgur (ограниченные настройки).</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно.</p>
+<h2 id="какой-сервис-выбрать">Какой сервис выбрать</h2>
+<p>Для быстрого скриншота и ссылки — <strong>Lightshot</strong> или <strong>Joxi</strong>. Оба инструмента идеально подходят для повседневных задач: сделали снимок, добавили стрелку, получили ссылку. Разница в нюансах — Joxi предлагает чуть больше инструментов аннотации, а Lightshot славится минимальным потреблением ресурсов.</p>
+<p>Для продвинутой работы на Windows без затрат — <strong>ShareX</strong>. Это швейцарский нож для скриншотов, который покрывает практически все сценарии. Да, порог входа выше, но потраченное на настройку время окупается многократно.</p>
+<p>Для macOS-пользователей однозначный лидер — <strong>CleanShot X</strong>. Функция скриншот-пин и скрытие иконок Desktop делают его незаменимым для создания презентаций и скринкастов.</p>
+<p>Корпоративным пользователям стоит присмотреться к <strong>Snagit</strong> — инструмент с лучшим редактором аннотаций на рынке и интеграцией с командными мессенджерами.</p>
+<p>А если нужен кроссплатформенный open-source вариант — выбирайте <strong>Flameshot</strong>. Он не такой функциональный, как ShareX или CleanShot X, но отлично работает на всех основных операционных системах.</p>
+<p>Для работы с длинными веб-страницами (скроллинг) лучше всего подойдут <strong>Awesome Screenshot</strong> или <strong>Screenpresso</strong> — оба инструмента корректно захватывают содержимое за пределами видимой области.</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Платформа</th><th>Захват области</th><th>Прокрутка</th><th>Аннотации</th><th>Облако</th><th>Запись видео</th><th>Цена</th></tr></thead><tbody><tr><td><strong>Joxi</strong></td><td>Win/Mac</td><td>Да</td><td>Нет</td><td>Базовые</td><td>Да</td><td>Нет</td><td>Бесплатно</td></tr><tr><td><strong>Lightshot</strong></td><td>Win/Mac</td><td>Да</td><td>Нет</td><td>Базовые</td><td>Да</td><td>Нет</td><td>Бесплатно</td></tr><tr><td><strong>Floomby</strong></td><td>Win</td><td>Да</td><td>Нет</td><td>Средние</td><td>Да</td><td>Нет</td><td>Бесплатно</td></tr><tr><td><strong>Awesome Screenshot</strong></td><td>Браузер/десктоп</td><td>Да</td><td>Да</td><td>Средние</td><td>Да</td><td>Да</td><td>от $6/мес</td></tr><tr><td><strong>ShareX</strong></td><td>Windows</td><td>Да</td><td>Да</td><td>Расширенные</td><td>80+ сервисов</td><td>Да/GIF</td><td>Бесплатно</td></tr><tr><td><strong>Snagit</strong></td><td>Win/Mac</td><td>Да</td><td>Да</td><td>Продвинутые</td><td>Да</td><td>Да</td><td>$62,99</td></tr><tr><td><strong>PicPick</strong></td><td>Windows</td><td>Да</td><td>Да</td><td>Средние</td><td>Нет</td><td>Нет</td><td>Бесплатно (личн.)</td></tr><tr><td><strong>Screenpresso</strong></td><td>Windows</td><td>Да</td><td>Да</td><td>Средние</td><td>Да</td><td>Нет</td><td>от €28</td></tr><tr><td><strong>CleanShot X</strong></td><td>macOS</td><td>Да</td><td>Да</td><td>Расширенные</td><td>Да (платно)</td><td>Да/GIF</td><td>$29</td></tr><tr><td><strong>Flameshot</strong></td><td>Win/Mac/Linux</td><td>Да</td><td>Нет</td><td>Средние</td><td>Imgur</td><td>Нет</td><td>Бесплатно</td></tr></tbody></table></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор платформ для создания и продажи онлайн-курсов: от российских Stepik и GetCourse до зарубежных Teachable и Kajabi. Сравнение функционала, цен и возможностей."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Платформы для онлайн-обучения и создания курсов — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Платформы для онлайн-обучения и создания курсов</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-03T00:00:00.000Z" data-astro-cid-ymihodss>3 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>онлайн-обучение</li><li data-astro-cid-ymihodss>создание курсов</li><li data-astro-cid-ymihodss>LMS</li><li data-astro-cid-ymihodss>e-learning</li><li data-astro-cid-ymihodss>Stepik</li><li data-astro-cid-ymihodss>GetCourse</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="зачем-нужны-платформы-для-онлайн-обучения">Зачем нужны платформы для онлайн-обучения</h2>
+<p>Рынок онлайн-образования в России продолжает расти: по оценкам Reedus и EdTech-аналитиков, объём рынка превысил 400 млрд рублей в 2025 году. Платформы для создания и продажи онлайн-курсов делятся на две основные категории. Первые — это <strong>маркетплейсы курсов</strong>, где вы публикуете курс на готовой платформе с аудиторией (Stepik, Яндекс.Практикум). Вторые — <strong>конструкторы курсов и LMS</strong>, где вы создаёте собственную школу с брендированным интерфейсом, подключаете платёжные системы и управляете маркетингом (GetCourse, CoreApp, АнтиТренинги).</p>
+<p>При выборе платформы стоит оценивать: <strong>конструктор уроков</strong> (видео, текст, тесты, задания с проверкой), <strong>видеохостинг</strong> (встроенный или сторонний), <strong>платёжные интеграции</strong> (приём оплаты, рекуррент), <strong>управление учениками</strong> (прогресс, уведомления, сегментация), <strong>сертификаты</strong>, <strong>маркетинговые инструменты</strong> (воронки, email, вебинары) и <strong>ценовую модель</strong> (подписка, процент с продаж, разовая оплата).</p>
+<h2 id="stepik">Stepik</h2>
+<p><strong>Сайт:</strong> <a href="https://stepik.org" rel="nofollow" target="_blank">stepik.org</a></p>
+<p>Stepik — крупнейшая российская образовательная платформа-маркетплейс, основанная в 2013 году при поддержке Computer Science Center и фондов. Изначально создавалась для IT-курсов, но сейчас охватывает все направления: от программирования до дизайна и гуманитарных наук.</p>
+<p>Для авторов Stepik предлагает бесплатный конструктор курсов с поддержкой видеоуроков, текстовых уроков, тестов с авто-проверкой, заданий с код-ревью и форумов. Платформа отличается мощной системой проверки домашних заданий: peer review (взаимная проверка), автоматические тесты, проверка преподавателем. Сертификаты об окончании выдаются бесплатно.</p>
+<p><strong>Монетизация:</strong> бесплатные курсы — бесплатно. Платные курсы — автор устанавливает цену, Stepik берёт комиссию. Для коммерческих курсов доступна партнёрская программа и корпоративное обучение.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Бесплатный конструктор курсов с мощным функционалом</li>
+<li>Огромная аудитория (миллионы зарегистрированных пользователей)</li>
+<li>Отличная система проверки заданий (тесты, код, peer review)</li>
+<li>Активное сообщество и открытые курсы ведущих вузов</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченные маркетинговые инструменты для авторов</li>
+<li>Нет воронок продаж и встроенного email-маркетинга</li>
+<li>Комиссия с платных курсов</li>
+<li>Брендирование ограничено дизайном Stepik</li>
+</ul>
+<h2 id="getcourse">GetCourse</h2>
+<p><strong>Сайт:</strong> <a href="https://getcourse.ru" rel="nofollow" target="_blank">getcourse.ru</a></p>
+<p>GetCourse — самая популярная в России платформа для создания онлайн-школ и инфобизнеса. Позиционируется как «всё-в-одном»: конструктор лендингов, CRM, email-рассылки, конструктор курсов, вебинарная комната, платёжные шлюзы, партнёрские программы.</p>
+<p>Конструктор курсов поддерживает видеоуроки (встроенное видео из YouTube, Vimeo или загрузка файлов), текстовые уроки, тесты, задания для загрузки файлов. Встроенный видеохостинг позволяет хранить видео на серверах GetCourse. CRM-система отслеживает весь путь ученика: от первого визита до покупки и прохождения курса. Доступны автоматические воронки, сегментация аудитории, триггерные рассылки.</p>
+<p><strong>Ценовая модель:</strong> тарифы от 1 490 ₽/мес («Стартовый») до 4 990 ₽/мес («Профессиональный»). Тариф «Базовый» — 2 490 ₽/мес. Дополнительные услуги: хранение видео, отправка SMS, дополнительные пользователи.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Максимально полный набор инструментов для инфобизнеса</li>
+<li>Мощная CRM с воронками и автоматизацией</li>
+<li>Встроенная вебинарная комната</li>
+<li>Гибкая система скидок, промокодов, рассрочек</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Интерфейс перегружен и требует обучения</li>
+<li>Техническая поддержка медленная (отличается в отзывах на vc.ru)</li>
+<li>Встроенный видеохостинг дорогостоящий при большом объёме</li>
+<li>Высокая стоимость при масштабировании</li>
+</ul>
+<h2 id="антитренинги-antitrenings">АнтиТренинги (Antitrenings)</h2>
+<p><strong>Сайт:</strong> <a href="https://antitrenings.ru" rel="nofollow" target="_blank">antitrenings.ru</a></p>
+<p>АнтиТренинги — платформа для авторов, которые хотят создавать курсы «без воды». Позиционируется как альтернатива GetCourse с упором на качество контента и простоту для учеников. Название отражает философию: только практические знания, без типичных мотивационных тренингов.</p>
+<p>Конструктор включает уроки с видео, текстом и заданиями. Особенность — встроенная система анкетирования и обратной связи от учеников. Платформа обеспечивает контроль качества: ученики могут оценивать каждый урок, что помогает авторам улучшать контент. Доступны сертификаты, автоматические уведомления, базовые воронки продаж.</p>
+<p><strong>Ценовая модель:</strong> для авторов — процент с продаж (около 10–15%). Для учеников — оплата за конкретный курс. Нет ежемесячной подписки для авторов.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Нет ежемесячной платы для авторов — платите только с продаж</li>
+<li>Простота регистрации и начала работы</li>
+<li>Встроенный контроль качества и обратная связь</li>
+<li>Хороший organic-трафик на платформу</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченный маркетинговый функционал по сравнению с GetCourse</li>
+<li>Нет мощной CRM</li>
+<li>Меньшая аудитория, чем у Stepik</li>
+<li>Ограниченные возможности брендирования</li>
+</ul>
+<h2 id="coreapp">CoreApp</h2>
+<p><strong>Сайт:</strong> <a href="https://coreapp.io" rel="nofollow" target="_blank">coreapp.io</a></p>
+<p>CoreApp — российская облачная платформа для создания онлайн-школ. Позиционируется как современная альтернатива GetCourse с более чистым интерфейсом и лучшей технической архитектурой. Появилась на рынке относительно недавно и активно набирает популярность среди авторов, недовольных перегруженностью GetCourse.</p>
+<p>Конструктор курсов поддерживает видеоуроки, тексты, тесты, домашние задания, вебинары. Встроенная CRM, email-рассылки, конструктор лендингов и воронок. Отдельное преимущество — мобильное приложение для учеников (iOS/Android), чего нет у многих конкурентов. Видеохранение включено в тарифы.</p>
+<p><strong>Ценовая модель:</strong> тарифы начинаются от 0 ₽/мес (бесплатный тариф с ограничениями). Платные тарифы — от 2 990 ₽/мес. Доступен тариф «Бизнес» с расширенным функционалом.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Современный чистый интерфейс</li>
+<li>Мобильное приложение для учеников</li>
+<li>Включённое видеохранение в тарифах</li>
+<li>Адекватная техническая поддержка</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Меньше интеграций, чем у GetCourse</li>
+<li>Относительно молодая платформа</li>
+<li>Меньше обучающих материалов и шаблонов</li>
+<li>Некоторые функции ещё в доработке</li>
+</ul>
+<h2 id="сберуниверситет">СберУниверситет</h2>
+<p><strong>Сайт:</strong> <a href="https://sberuniversity.ru" rel="nofollow" target="_blank">sberuniversity.ru</a></p>
+<p>СберУниверситет — образовательная платформа экосистемы Сбера. Предлагает как собственные курсы (профессиональная переподготовка, повышение квалификации), так и возможность для компаний создавать корпоративные программы обучения. Работает в связке с другими сервисами Сбера.</p>
+<p>Для корпоративных клиентов доступна LMS-платформа с конструктором курсов, системой тестирования, отслеживанием прогресса сотрудников, аналитикой обучения. Курсы соответствуют требованиям Минобрнауки, по многим программам выдаются дипломы о профессиональной переподготовке.</p>
+<p><strong>Ценовая модель:</strong> индивидуальные курсы — от 5 000 до 150 000 ₽. Корпоративное обучение — по договору. Есть бесплатные курсы.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Официальные документы об образовании (дипломы, удостоверения)</li>
+<li>Глубокая интеграция с экосистемой Сбера</li>
+<li>Программы от ведущих экспертов и компаний</li>
+<li>Корпоративный LMS с аналитикой</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не подходит для независимых авторов и малых школ</li>
+<li>Нет конструктора для публичных продаж своих курсов</li>
+<li>Высокие цены на многие программы</li>
+<li>Фокус на корпоративный сегмент</li>
+</ul>
+<h2 id="яндекспрактикум">Яндекс.Практикум</h2>
+<p><strong>Сайт:</strong> <a href="https://practicum.yandex.ru" rel="nofollow" target="_blank">practicum.yandex.ru</a></p>
+<p>Яндекс.Практикум — образовательная платформа от Яндекса, специализирующаяся на практическом обучении IT-профессиям: аналитик данных, Python-разработчик, фронтенд-разработчик, тестировщик, Data Scientist и другие направления.</p>
+<p>Формат обучения — это длительные программы (от 6 до 12 месяцев) с наставниками, код-ревью, кросс-чеками (взаимная проверка) и реальными проектами в портфолио. Платформа включает интерактивные задания, встроенную среду для написания кода, вебинары и сообщества в Telegram. Выдаётся сертификат Яндекс.Практикума.</p>
+<p><strong>Ценовая модель:</strong> полная оплата — от 150 000 до 350 000 ₽ за программу. Рассрочка без процентов. Возможна оплата после трудоустройства (доля от зарплаты). Бесплатные вводные курсы.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Глубокая практическая проработка программ</li>
+<li>Система наставничества и код-ревью</li>
+<li>Карьерный центр и помощь с трудоустройством</li>
+<li>Сильный бренд Яндекса на рынке труда</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Узкая специализация (преимущественно IT)</li>
+<li>Высокая стоимость программ</li>
+<li>Не подходит для создания собственных курсов</li>
+<li>Жёсткий график обучения, не всем подходит</li>
+</ul>
+<h2 id="teachable">Teachable</h2>
+<p><strong>Сайт:</strong> <a href="https://teachable.com" rel="nofollow" target="_blank">teachable.com</a></p>
+<p>Teachable — одна из самых известных мировых платформ для создания и продажи онлайн-курсов. Входит в группу Hotmart (ранее принадлежала Teachable Inc.). Позволяет авторам быстро запустить собственную школу с брендированным доменом.</p>
+<p>Конструктор поддерживает видео, аудио, текст, PDF-материалы, квизы и код-ревью. Встроенный видеохостинг с адаптивной доставкой контента. Платёжные интеграции включают Stripe и PayPal. Доступны сертификаты, аффилиатная программа, базовый email-маркетинг и интеграция с Zapier.</p>
+<p><strong>Ценовая модель:</strong> тарифы от $39/мес («Basic») до $399/мес («Business»). Тариф «Pro» — $159/мес. Транзакционная комиссия: от 0% (на дорогих тарифах) до 5% (на базовом).</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Простой и интуитивный интерфейс</li>
+<li>Надёжный видеохостинг</li>
+<li>Гибкая система ценообразования курсов</li>
+<li>Хорошие аналитические данные по продажам</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет CRM-системы уровня GetCourse</li>
+<li>Ограниченные маркетинговые воронки</li>
+<li>Транзакционная комиссия на базовых тарифах</li>
+<li>Платежи через Stripe и PayPal (неудобно для РФ)</li>
+</ul>
+<h2 id="thinkific">Thinkific</h2>
+<p><strong>Сайт:</strong> <a href="https://thinkific.com" rel="nofollow" target="_blank">thinkific.com</a></p>
+<p>Thinkific — канадская платформа для создания онлайн-курсов, аналогичная Teachable. Отличается более прозрачной ценовой моделью (нет транзакционной комиссии ни на одном тарифе) и хорошими возможностями для настройки брендинга.</p>
+<p>Конструктор включает видео, текст, аудио, загрузку файлов, квизы, экзамены, сертификаты. Встроенный видеохостинг, поддержка кастомного домена. Возможность создавать обучающие программы (learning paths) с последовательным разблокированием модулей. Базовый маркетинг: email, купоны, промокоды.</p>
+<p><strong>Ценовая модель:</strong> бесплатный тариф (ограниченный). «Basic» — $49/мес, «Pro» — $99/мес, «Premier» — $199/мес, «Growth» — $399/мес. Без транзакционной комиссии.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Нет транзакционной комиссии на всех тарифах</li>
+<li>Качественный конструктор с learning paths</li>
+<li>Бесплатный тариф для старта</li>
+<li>Хорошие возможности брендирования</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет встроенной CRM</li>
+<li>Ограниченные воронки продаж</li>
+<li>Меньше интеграций, чем у конкурентов</li>
+<li>Платежи через Stripe/PayPal</li>
+</ul>
+<h2 id="podia">Podia</h2>
+<p><strong>Сайт:</strong> <a href="https://podia.com" rel="nofollow" target="_blank">podia.com</a></p>
+<p>Podia — платформа для продажи цифровых продуктов: онлайн-курсов, загрузок (e-book, шаблоны), вебинаров и подписок. Отличается минималистичным дизайном и простотой использования.</p>
+<p>Конструктор курсов базовый: видео, текст, загрузки, квизы. Сильная сторона — возможность продавать разные типы цифровых продуктов с одного аккаунта. Встроенный email-маркетинг, сайт-конструктор, регистрация на вебинары (через интеграцию с Zoom). Сертификаты доступны.</p>
+<p><strong>Ценовая модель:</strong> «Mover» — $39/мес, «Shaker» — $89/мес. Нет транзакционной комиссии. Есть бесплатный тариф для создания одного продукта.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Продажа любых цифровых продуктов в одном месте</li>
+<li>Минималистичный и приятный интерфейс</li>
+<li>Нет транзакционной комиссии</li>
+<li>Встроенный email-маркетинг</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Базовый конструктор курсов</li>
+<li>Нет CRM и сложных воронок</li>
+<li>Меньше функций, чем у Teachable/Thinkific</li>
+<li>Нет русского интерфейса</li>
+</ul>
+<h2 id="kajabi">Kajabi</h2>
+<p><strong>Сайт:</strong> <a href="https://kajabi.com" rel="nofollow" target="_blank">kajabi.com</a></p>
+<p>Kajabi — премиальная платформа «всё-в-одном» для создателей онлайн-курсов, коучей и инфобизнесменов. Позиционируется как полный бизнес-встроенный инструмент: сайт, курсы, email, маркетинг, продажи.</p>
+<p>Конструктор курсов продвинутый: видео, аудио, текст, квизы, community-форум, coaching-сессии. Встроенный видеохостинг, лендинг-конструктор, email-маркетинг с автоматизациями, аффилиатная программа, pipelines (воронки). Поддержка мобильного приложения Kajabi для учеников (iOS/Android).</p>
+<p><strong>Ценовая модель:</strong> «Basic» — $149/мес, «Growth» — $199/мес, «Pro» — $399/мес. Нет транзакционной комиссии. Годовая оплата дешевле.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>По-настоящему «всё-в-одном» без необходимости сторонних сервисов</li>
+<li>Мощный маркетинг: pipelines, email, аффилиаты</li>
+<li>Мобильное приложение для учеников</li>
+<li>Качественный дизайн и шаблоны</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Высокая стоимость (минимум $149/мес)</li>
+<li>Нет бесплатного тарифа</li>
+<li>Сложный для новичков интерфейс</li>
+<li>Нет русского интерфейса и российских платёжных методов</li>
+</ul>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Платформа</th><th>Конструктор курсов</th><th>Видеохостинг</th><th>Платежи (РФ)</th><th>CRM</th><th>Сертификаты</th><th>Цена (от)</th><th>Модель</th></tr></thead><tbody><tr><td>Stepik</td><td>✅</td><td>✅</td><td>✅</td><td>Базовая</td><td>✅</td><td>0 ₽</td><td>Комиссия</td></tr><tr><td>GetCourse</td><td>✅</td><td>✅ (платн.)</td><td>✅</td><td>✅</td><td>✅</td><td>1 490 ₽/мес</td><td>Подписка</td></tr><tr><td>АнтиТренинги</td><td>✅</td><td>✅</td><td>✅</td><td>Базовая</td><td>✅</td><td>0 ₽</td><td>Комиссия</td></tr><tr><td>CoreApp</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>0 ₽/мес</td><td>Подписка</td></tr><tr><td>СберУниверситет</td><td>Корп.</td><td>✅</td><td>✅</td><td>✅</td><td>✅ Диплом</td><td>Индивид.</td><td>Корп.</td></tr><tr><td>Яндекс.Практикум</td><td>—</td><td>✅</td><td>✅</td><td>Базовая</td><td>✅</td><td>0 ₽ (вводн.)</td><td>За курс</td></tr><tr><td>Teachable</td><td>✅</td><td>✅</td><td>❌ (Stripe)</td><td>Базовая</td><td>✅</td><td>$39/мес</td><td>Подписка</td></tr><tr><td>Thinkific</td><td>✅</td><td>✅</td><td>❌ (Stripe)</td><td>Нет</td><td>✅</td><td>0 ₽/мес</td><td>Подписка</td></tr><tr><td>Podia</td><td>✅</td><td>✅</td><td>❌ (Stripe)</td><td>Нет</td><td>✅</td><td>0 ₽</td><td>Подписка</td></tr><tr><td>Kajabi</td><td>✅</td><td>✅</td><td>❌ (Stripe)</td><td>✅</td><td>✅</td><td>$149/мес</td><td>Подписка</td></tr></tbody></table>
+<h2 id="как-выбрать-платформу">Как выбрать платформу</h2>
+<p>Для <strong>независимого эксперта с небольшой аудиторией</strong> оптимальны Stepik или АнтиТренинги — нулевой порог входа, нет ежемесячных платежей. Для <strong>растущей онлайн-школы с воронками и маркетингом</strong> лучше всего GetCourse или CoreApp — полный набор инструментов для масштабирования. Для <strong>корпоративного обучения</strong> подойдёт СберУниверситет или развёрнутый CoreApp. Для <strong>авторов, ориентированных на международный рынок</strong>, стоит рассмотреть Teachable или Thinkific. Для <strong>премиального инфобизнеса с полным маркетинг-набором</strong> — Kajabi, но будьте готовы к высокой стоимости.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

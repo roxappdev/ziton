@@ -1,0 +1,355 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор сервисов для генерации QR-кодов — от российских QR Coder и code-qr.ru до международных Uniqode, QR Tiger и Flowcode. Сравнение статических и динамических QR, кастомизации, аналитики и API."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Сервисы для создания QR-кодов — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Сервисы для создания QR-кодов</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>QR-код</li><li data-astro-cid-ymihodss>генератор</li><li data-astro-cid-ymihodss>маркетинг</li><li data-astro-cid-ymihodss>Uniqode</li><li data-astro-cid-ymihodss>Flowcode</li><li data-astro-cid-ymihodss>QR Tiger</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="зачем-нужны-qr-генераторы">Зачем нужны QR-генераторы</h2>
+<p>QR-коды переживают ренессанс: после пандемии сканирование стало привычным действием для миллионов. QR-коды используют в ресторанах (меню), на упаковке товаров, в рекламных материалах, на визитках и в мероприятиях. По данным Uniqode (2026), компания Beaconstac ребрендировалась в Uniqode и продолжает лидировать среди B2B-решений с динамическими QR-кодами и аналитикой.</p>
+<p>Статический QR-код жёстко закодирован: если URL изменится, придётся генерировать новый код и перетискировать материал. Динамический QR-код содержит короткую ссылку-перенаправление: адрес назначения можно менять в любое время без изменения самого кода. Это критично для ресторанов, мероприятий и рекламы, где контент обновляется регулярно.</p>
+<p>При выборе сервиса стоит оценивать: <strong>статические vs динамические QR-коды</strong>, <strong>кастомизацию дизайна</strong> (логотип, цвета, формы модулей), <strong>аналитику сканирований</strong> (количество, география, устройство, время), <strong>пакетную генерацию</strong> (bulk-создание кодов через CSV), <strong>API</strong> (интеграция в свои системы и CRM), <strong>бесплатные ограничения</strong> (водяной знак, количество кодов, срок действия).</p>
+<h2 id="qr-coder-qrcoderru">QR Coder (qrcoder.ru)</h2>
+<p><strong>Сайт:</strong> <a href="http://qrcoder.ru" rel="nofollow" target="_blank">qrcoder.ru</a></p>
+<p>QR Coder — бесплатный российский сервис создания QR-кодов онлайн. Позволяет закодировать текст, ссылку, номер телефона, SMS, email, визитную карточку (vCard) и координаты Wi-Fi. Простой интерфейс: выбрали тип данных, ввели информацию, скачали PNG или SVG.</p>
+<p>Генерирует только статические QR-коды. Нет аналитики сканирований, нет дизайна, нет API. Работает без регистрации — зашёл на сайт, ввёл данные, скачал. Сервис существует с 2011 года и стабильно работает, что подтверждает его надёжность для базовых задач.</p>
+<p><strong>Цена:</strong> бесплатно.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатный</li>
+<li>Не требует регистрации</li>
+<li>Поддержка PNG и SVG</li>
+<li>Разнообразные типы данных</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только статические QR-коды</li>
+<li>Нет кастомизации дизайна</li>
+<li>Нет аналитики</li>
+<li>Нет API</li>
+</ul>
+<h2 id="code-qrru">code-qr.ru</h2>
+<p><strong>Сайт:</strong> <a href="https://code-qr.ru" rel="nofollow" target="_blank">code-qr.ru</a></p>
+<p>code-qr.ru — ещё один бесплатный российский генератор QR-кодов. Поддерживает текст, ссылки, телефон, email, визитки, Telegram-канал и настройки Wi-Fi. Простой интерфейс с предпросмотром результата.</p>
+<p>Как и QR Coder, генерирует только статические коды. Нет облака, аналитики или продвинутого дизайна. Интерфейс немного современнее, чем у QR Coder, с предпросмотром в реальном времени. Подходит для разовых задач: не нужно регистрироваться и оставлять данные.</p>
+<p><strong>Цена:</strong> бесплатно.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Бесплатный, без регистрации</li>
+<li>Поддержка Telegram-каналов</li>
+<li>Быстрая генерация</li>
+<li>Лёгкий интерфейс</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только статические QR-коды</li>
+<li>Нет аналитики</li>
+<li>Нет дизайна и логотипа</li>
+<li>Нет API</li>
+</ul>
+<h2 id="qr-код-генератор-от-тинькофф">QR-код Генератор от Тинькофф</h2>
+<p><strong>Сайт:</strong> <a href="https://qr.tinkoff.ru" rel="nofollow" target="_blank">qr.tinkoff.ru</a></p>
+<p>Тинькофф предлагает генератор QR-кодов для бизнеса, в первую очередь для оплаты через СБП (система быстрых платежей). Пользователь сканирует код и мгновенно оплачивает товар или услугу. Интегрирован в экосистему Тинькофф Бизнес.</p>
+<p>Это специализированное решение для платежей, а не универсальный генератор QR. Не подходит для ссылок, меню или визиток. QR-код СБП от Тинькофф работает через систему быстрых платежей ЦБ РФ — клиент сканирует код, выбирает банк и оплачивает за секунды.</p>
+<p><strong>Цена:</strong> бесплатно для клиентов Тинькофф Бизнес.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Интеграция с Тинькофф Бизнес</li>
+<li>Мгновенные платежи через СБП</li>
+<li>Уведомления о поступлении</li>
+<li>Бесплатно</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только для платежей</li>
+<li>Не универсальный генератор</li>
+<li>Требует аккаунт Тинькофф</li>
+<li>Нет аналитики сканирований</li>
+</ul>
+<h2 id="qr-code-generator-qr-code-generatorcom">QR Code Generator (qr-code-generator.com)</h2>
+<p><strong>Сайт:</strong> <a href="https://www.qr-code-generator.com" rel="nofollow" target="_blank">qr-code-generator.com</a></p>
+<p>QR Code Generator — один из крупнейших международных сервисов для создания QR-кодов. Предлагает статические и динамические QR-коды, более 20 типов данных (URL, PDF, изображения, меню, приложения, соцсети, события). Кастомизация: логотип, цвета, формы, градиенты.</p>
+<p>Динамические коды позволяют менять целевой URL после создания. Это означает, что если адрес страницы изменится (переехал сайт, сменилось меню), достаточно обновить ссылку в дашборде, а не перетискивать все коды. Аналитика: количество сканирований, местоположение, устройство, время. Пакетная генерация через CSV-загрузку — полезно для розничных сетей, съёмок и мероприятий.</p>
+<p><strong>Цена:</strong> статические — бесплатно, «Basic» — $5,99/мес (3 динамических), «Professional» — $8,99/мес (10 динамических), «Premium» — $17,99/мес (50 динамических, API).</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>20+ типов данных</li>
+<li>Статические и динамические QR</li>
+<li>Кастомизация с логотипом</li>
+<li>Пакетная генерация и API</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Динамические коды только на платных тарифах</li>
+<li>Бесплатные динамические коды ограничены</li>
+<li>Аналитика только для динамических</li>
+<li>Интерфейс может казаться перегруженным</li>
+</ul>
+<h2 id="uniqode-бывш-beaconstac">Uniqode (бывш. Beaconstac)</h2>
+<p><strong>Сайт:</strong> <a href="https://www.uniqode.com" rel="nofollow" target="_blank">uniqode.com</a></p>
+<p>Uniqode (ранее Beaconstac) — профессиональная B2B-платформа для управления QR-кодами и цифровыми визитками. По данным Trustpilot, рейтинг 4,1 из 5. По данным QRForever (июнь 2026), Uniqode стоит $49–99/мес при годовой подписке, но есть бесплатный Starter-план с 50 динамическими QR-кодами — уникальное предложение на рынке, позволяющее опробовать динамические коды без вложений.</p>
+<p>Uniqode обеспечивает продвинутую аналитику (сканирования по дням, география, устройство, уникальные пользователи), кастомизацию дизайна (логотип, фирменные цвета, закруглённые модули), интеграции с CRM и маркетинговыми платформами (HubSpot, Salesforce, Marketo), bulk-генерацию через CSV, API и SSO. Платформа позиционируется как enterprise-решение и подходит для крупных компаний.</p>
+<p><strong>Цена:</strong> «Starter» — бесплатно (50 динамических QR), «Pro» — $15/мес, «Growth» — $49/мес, «Enterprise» — $99/мес.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>50 бесплатных динамических QR-кодов</li>
+<li>Продвинутая аналитика</li>
+<li>API, SSO, bulk-генерация</li>
+<li>Цифровые визитки</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Дорогие тарифы для малого бизнеса</li>
+<li>Годовая привязка на некоторых планах</li>
+<li>Избыточен для простых задач</li>
+<li>Интерфейс сложен для новичков</li>
+</ul>
+<h2 id="qr-tiger">QR Tiger</h2>
+<p><strong>Сайт:</strong> <a href="https://www.qrtiger.com" rel="nofollow" target="_blank">qrtiger.com</a></p>
+<p>QR Tiger — популярный международный сервис для создания QR-кодов с акцентом на дизайн и маркетинг. Поддерживает статические и динамические QR-коды, 20+ типов данных, кастомизацию с логотипами и цветами. Отличается качественным визуальным редактором и предустановленными шаблонами.</p>
+<p>QR Tiger обеспечивает детальную аналитику для динамических кодов (включая уникальные сканирования и карты тепла), пакетную генерацию через CSV и REST API. Также есть отдельное мобильное приложение для сканирования QR-кодов.</p>
+<p><strong>Цена:</strong> «Free» — бесплатно (статические, 3 динамических), «Regular» — $7,99/мес (100 динамических), «Advanced» — $16,99/мес (500 динамических, API).</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Качественный визуальный редактор</li>
+<li>Шаблоны для дизайна</li>
+<li>Мобильное приложение для сканирования</li>
+<li>Доступная цена для динамических кодов</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Бесплатно только статические</li>
+<li>Аналитика только для платных тарифов</li>
+<li>Нет SSO</li>
+<li>Нет цифровых визиток</li>
+</ul>
+<h2 id="flowcode">Flowcode</h2>
+<p><strong>Сайт:</strong> <a href="https://flowcode.com" rel="nofollow" target="_blank">flowcode.com</a></p>
+<p>Flowcode — платформа для создания QR-кодов с акцентом на маркетинг и креатив. Бывший «QR Code Generator» от Deloitte Digital, впоследствии выкупленный и доработанный. Предлагает динамические QR-коды с аналитикой, кастомизацией дизайна (логотип, брендинг, цвета, круглые модули) и интеграциями с HubSpot, Mailchimp, Salesforce.</p>
+<p>Flowcode выделяется качественным дизайном и простотой: минимум настроек, максимум визуального результата. Также предлагает landing pages, короткие ссылки и опросы.</p>
+<p><strong>Цена:</strong> «Free» — бесплатно (статические, 1 динамический), «Growth» — $13,99/мес (25 динамических), «Pro» — $39,99/мес (неограниченные, API).</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Качественный брендинг и дизайн</li>
+<li>Интеграции с маркетинговыми платформами</li>
+<li>Landing pages и короткие ссылки</li>
+<li>Простота использования</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Дорогие тарифы для большого числа кодов</li>
+<li>Бесплатно только 1 динамический QR</li>
+<li>Нет SSO на базовых тарифах</li>
+<li>Нет bulk-генерации на Growth</li>
+</ul>
+<h2 id="bitly-qr-коды">Bitly (QR-коды)</h2>
+<p><strong>Сайт:</strong> <a href="https://bitly.com" rel="nofollow" target="_blank">bitly.com</a></p>
+<p>Bitly — прежде всего сервис коротких ссылок, но также предлагает генерацию QR-кодов для сокращённых ссылок. Каждый короткий URL автоматически получает QR-код. Динамический характер: можно изменить целевой URL без изменения QR-кода.</p>
+<p>Аналитика Bitly — одно из главных преимуществ: клики, рефереры, география, устройства. QR-коды наследуют ту же аналитику, что делает Bitly привлекательным для маркетологов, которым важен отслеживание и по кликам, и по сканированиям.</p>
+<p>Важно понимать: Bitly не позволяет добавить логотип или изменить цвет QR-кода. Дизайн минимальный — стандартный чёрно-белый модуль. Для брендированных QR лучше выбрать Uniqode или QR Tiger.</p>
+<p><strong>Цена:</strong> «Free» — бесплатно (10 ссылок/мес), «Basic» — $8/мес (50 ссылок), «Pro» — $18/мес (неограниченные ссылки, QR, API).</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Короткие ссылки + QR в одном сервисе</li>
+<li>Отличная аналитика кликов и сканирований</li>
+<li>Динамические QR через короткие ссылки</li>
+<li>API для автоматизации</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет продвинутой кастомизации QR</li>
+<li>Нет логотипа в QR на бесплатной версии</li>
+<li>Нет типов данных кроме URL</li>
+<li>Нет пакетной генерации QR</li>
+</ul>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th align="center">Динамические QR</th><th align="center">Дизайн</th><th align="center">Аналитика</th><th align="center">Пакетная генерация</th><th align="center">API</th><th align="center">Бесплатно</th><th>Цена от</th></tr></thead><tbody><tr><td>QR Coder</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Да</td><td>Бесплатно</td></tr><tr><td>code-qr.ru</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Да</td><td>Бесплатно</td></tr><tr><td>Тинькофф QR</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Да</td><td>Бесплатно</td></tr><tr><td>QR Code Generator</td><td align="center">Да (платно)</td><td align="center">Да</td><td align="center">Да</td><td align="center">Да</td><td align="center">Да</td><td align="center">Статические</td><td>$5,99/мес</td></tr><tr><td>Uniqode</td><td align="center">Да</td><td align="center">Да</td><td align="center">Продвинутая</td><td align="center">Да</td><td align="center">Да</td><td align="center">50 динамических</td><td>$15/мес</td></tr><tr><td>QR Tiger</td><td align="center">Да (платно)</td><td align="center">Да</td><td align="center">Да</td><td align="center">Да</td><td align="center">Да</td><td align="center">3 динамических</td><td>$7,99/мес</td></tr><tr><td>Flowcode</td><td align="center">Да (платно)</td><td align="center">Да</td><td align="center">Да</td><td align="center">Нет</td><td align="center">Да</td><td align="center">1 динамический</td><td>$13,99/мес</td></tr><tr><td>Bitly</td><td align="center">Да</td><td align="center">Нет</td><td align="center">Отличная</td><td align="center">Нет</td><td align="center">Да</td><td align="center">10 ссылок/мес</td><td>$8/мес</td></tr></tbody></table>
+<h2 id="что-выбрать">Что выбрать</h2>
+<p>Для <strong>быстрого статического QR-кода</strong> — QR Coder или code-qr.ru (бесплатно, без регистрации). Для <strong>QR-оплаты</strong> — Тинькофф (СБП, интеграция с экосистемой). Для <strong>маркетинга и брендинга</strong> — Flowcode (качественный дизайн, интеграции). Для <strong>B2B и крупного бизнеса</strong> — Uniqode (50 бесплатных динамических, API, SSO). Для <strong>коротких ссылок + QR</strong> — Bitly (единая аналитика). Для <strong>сбалансированного решения</strong> — QR Tiger (доступные динамические коды с аналитикой). Для <strong>универсальности с типами данных</strong> — QR Code Generator (20+ типов, пакетная генерация). Для <strong>быстрого теста и прототипирования</strong> — статические генераторы QR Coder и code-qr.ru не требуют регистрации и выдают результат за секунды.</p>
+<p>Помните: перед печатью тиража обязательно проверяйте каждый QR-код сканером — даже малейшая ошибка в URL сделает код нерабочим, а перетискивание партии обойдётся дорого.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Сравнение инструментов для A/B и мультивариантного тестирования — от бесплатной Яндекс.Метрики до enterprise-решений Optimizely и Kameleoon."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Сервисы для A/B-тестирования: выбираем инструмент — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Сервисы для A/B-тестирования: выбираем инструмент</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-03T00:00:00.000Z" data-astro-cid-ymihodss>3 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>A/B-тестирование</li><li data-astro-cid-ymihodss>CRO</li><li data-astro-cid-ymihodss>конверсия</li><li data-astro-cid-ymihodss>эксперименты</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="почему-ab-тестирование-критически-важно">Почему A/B-тестирование критически важно</h2>
+<p>A/B-тестирование (split-тестирование) — метод сравнения двух или нескольких версий страницы для определения, какая приносит более высокие конверсии. Вместо того чтобы полагаться на интуицию, вы принимаете решения на основе данных.</p>
+<p>В сентябре 2023 года Google закрыл Google Optimize — бесплатный инструмент, которым пользовались сотни тысяч сайтов. Это создало вакуум на рынке и стимулировало развитие альтернатив. В 2026 году выбор широк: от встроенного модуля в Яндекс.Метрике (бесплатно) до enterprise-платформ за десятки тысяч долларов. Рассмотрим восемь ключевых решений.</p>
+<h3 id="яндексметрика-ab-тестирование">Яндекс.Метрика (A/B-тестирование)</h3>
+<p><strong>Описание:</strong> Встроенный модуль A/B-тестирования в Яндекс.Метрику. Позволяет создавать эксперименты с несколькими вариантами страниц и автоматически определять статистически значимого победителя.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://metrica.yandex.ru" rel="nofollow" target="_blank">metrica.yandex.ru</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатен.</li>
+<li>Не требует установки дополнительного кода — работает через счётчик Метрики.</li>
+<li>Автоматический расчёт статистической значимости.</li>
+<li>Интеграция с отчётами Яндекс.Метрики.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченное количество вариантов в одном эксперименте.</li>
+<li>Нет визуального редактора — изменения нужно вносить вручную (или через CMS).</li>
+<li>Нет мультивариантного тестирования (MVT).</li>
+<li>Меньше targeting-опций, чем у специализированных платформ.</li>
+</ul>
+<h3 id="vwo">VWO</h3>
+<p><strong>Описание:</strong> Одна из ведущих платформ для экспериментов, персонализации и оптимизации конверсии. VWO Testing Starter бесплатен для базовых экспериментов. Платные тарифы начинаются от $299/мес (Growth, при годовой оплате за 100K тестовых пользователей). Медианная годовая стоимость по данным Vendr — $18 086.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://vwo.com" rel="nofollow" target="_blank">vwo.com</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Визуальный редактор (WYSIWYG) для создания вариантов без кода.</li>
+<li>Встроенный статистический движок с определением значимости.</li>
+<li>Мультивариантное тестирование (MVT) и split-URL тесты.</li>
+<li>Модули персонализации и поведенческого таргетинга.</li>
+<li>Более 30 готовых интеграций (GA4, Shopify, WordPress и др.).</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Высокая стоимость для малого бизнеса (от $299/мес).</li>
+<li>Сложная панель управления — высокий порог входа.</li>
+<li>Стартовый план (Starter) бесплатен, но сильно ограничен.</li>
+</ul>
+<h3 id="optimizely">Optimizely</h3>
+<p><strong>Описание:</strong> Enterprise-платформа для experimentation, персонализации и управления контентом. Optimizely не публикует цены — всё формируется индивидуально. По данным GoStellar, начальная стоимость около $36 000/год, для enterprise — $65 000–200 000+/год.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://www.optimizely.com" rel="nofollow" target="_blank">optimizely.com</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Самый мощный статистический движок на рынке.</li>
+<li>Full-Stack Experimentation: тесты на сервере, мобильных клиентах и фронтенде.</li>
+<li>Feature flags и progressive delivery.</li>
+<li>Готовые интеграции с enterprise-системами (Salesforce, Adobe, Segment).</li>
+<li>Колоссальный масштаб: миллионы пользователей в экспериментах.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Непрозрачное и очень высокое ценообразование.</li>
+<li>Сложная настройка — требуется выделенная команда.</li>
+<li>Избыточен для малого и среднего бизнеса.</li>
+<li>Долгий процесс onboarding (несколько недель).</li>
+</ul>
+<h3 id="convertcom">Convert.com</h3>
+<p><strong>Описание:</strong> Специализированный инструмент для A/B-тестирования с упором на прозрачность цен и надёжность. Планы начинаются от $399/мес ($299/мес при годовой оплате) за 100K тестовых пользователей. Используется более чем с 2016 года командами CRO-агентств.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://www.convert.com" rel="nofollow" target="_blank">convert.com</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Фиксированная цена (flat rate) без скрытых платежей.</li>
+<li>Высокая скорость загрузки — важный фактор для Core Web Vitals.</li>
+<li>Визуальный редактор, MVT и split-URL тесты.</li>
+<li>Полное соответствие GDPR.</li>
+<li>Отличная техническая поддержка.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Выше минимальная стоимость по сравнению с VWO Starter.</li>
+<li>Нет бесплатного плана (только 15-дневный триал).</li>
+<li>Меньше функций персонализации, чем у Optimizely или Kameleoon.</li>
+</ul>
+<h3 id="ab-tasty">AB Tasty</h3>
+<p><strong>Описание:</strong> Французская платформа для экспериментов, персонализации и оптимизации пользовательского опыта. Входит в число лидеров в магическом квадрате Gartner. Стоимость начинается от $35 000/год.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://www.abtasty.com" rel="nofollow" target="_blank">abtasty.com</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Feature Management + Experimentation в одной платформе.</li>
+<li>Сильные возможности персонализации и сегментации.</li>
+<li>AI-рекомендации по приоритизации тестов.</li>
+<li>Готовые интеграции с российскими и международными платформами.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Высокая стоимость входа (от $35 000/год).</li>
+<li>Сложный интерфейс для начинающих.</li>
+<li>Ценообразование не прозрачное.</li>
+</ul>
+<h3 id="split">Split</h3>
+<p><strong>Описание:</strong> Платформа feature flags и feature experimentation от Split.io. Фокусируется на server-side экспериментах и feature management для product-команд. Использует seat-based модель ценообразования.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://www.split.io" rel="nofollow" target="_blank">split.io</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Мощный server-side experimentation SDK.</li>
+<li>Feature flags с гранулярными правилами таргетинга.</li>
+<li>Измерение impacto экспериментов на бизнес-метрики.</li>
+<li>Поддержка множества языков (JavaScript, Python, Java, Go, Ruby и др.).</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Seat-based ценообразование дорого для больших команд.</li>
+<li>Слабый визуальный редактор для фронтенд-тестов.</li>
+<li>Не подходит для маркетинговых команд без технических навыков.</li>
+</ul>
+<h3 id="kameleoon">Kameleoon</h3>
+<p><strong>Описание:</strong> Французская платформа для experimentation и feature management. Предлагает A/B-тесты на клиенте и сервере, персонализацию и AI-оптимизацию.</p>
+<ul>
+<li><strong>Сайт:</strong> <a href="https://www.kameleoon.com" rel="nofollow" target="_blank">kameleoon.com</a></li>
+</ul>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Гибридный подход: client-side и server-side тесты.</li>
+<li>AI-алгоритм для автоматической оптимизации трафика.</li>
+<li>Кастомные модели атрибуции.</li>
+<li>Готовые интеграции с GA4, Amplitude, Segment и др.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Высокая стоимость — сопоставима с AB Tasty и Optimizely.</li>
+<li>Медленная настройка тестов.</li>
+<li>Дополнительные расходы за продвинутые функции.</li>
+</ul>
+<h2 id="статистические-движки">Статистические движки</h2>
+<p>Качество статистического движка — ключевой фактор при выборе. Optimizely исторически считается лидером (разработан на базе фреймворка от группы statisticians). VWO и Convert.com используют стандартные байесовские и частотные подходы с корректировкой на множественные сравнения. Яндекс.Метрика применяет базовый критерий значимости, которого достаточно для простых A/B-тестов, но недостаточно для сложных многофакторных экспериментов.</p>
+<h2 id="простота-настройки">Простота настройки</h2>
+<p>Самый простой старт — Яндекс.Метрика (счётчик уже установлен, эксперимент создаётся в 3 клика). Из платных решений проще всего — Convert.com и VWO (визуальный редактор без кода). Optimizely, AB Tasty и Kameleoon требуют технической настройки и обучения. Split ориентирован исключительно на разработчиков.</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Бесплатно</th><th>Визуальный редактор</th><th>MVT</th><th>Server-side</th><th>Статистика</th><th>Тариф от</th></tr></thead><tbody><tr><td>Яндекс.Метрика</td><td>Да</td><td>Нет</td><td>Нет</td><td>Нет</td><td>Базовая</td><td>Бесплатно</td></tr><tr><td>VWO</td><td>Starter</td><td>Да</td><td>Да</td><td>Да</td><td>Продвинутая</td><td>$299/мес</td></tr><tr><td>Optimizely</td><td>Нет</td><td>Да</td><td>Да</td><td>Да</td><td>Лучшая</td><td>~$36K/год</td></tr><tr><td>Convert.com</td><td>Нет</td><td>Да</td><td>Да</td><td>Частично</td><td>Хорошая</td><td>$299/мес</td></tr><tr><td>AB Tasty</td><td>Нет</td><td>Да</td><td>Да</td><td>Да</td><td>Хорошая</td><td>~$35K/год</td></tr><tr><td>Split</td><td>Нет</td><td>Нет</td><td>Нет</td><td>Да</td><td>Продвинутая</td><td>По запросу</td></tr><tr><td>Kameleoon</td><td>Нет</td><td>Да</td><td>Да</td><td>Да</td><td>Хорошая</td><td>По запросу</td></tr></tbody></table>
+<h2 id="что-выбрать">Что выбрать?</h2>
+<p>Для <strong>бесплатного старта и простых тестов</strong> — модуль A/B в Яндекс.Метрике. Для <strong>маркетинговых команд среднего бизнеса</strong> — VWO или Convert.com (прозрачные цены, визуальный редактор). Для <strong>крупного enterprise</strong> с выделенной экспериментационной командой — Optimizely или AB Tasty. Для <strong>product-команд</strong> с server-side экспериментами — Split или Kameleoon. Важно помнить: лучший инструмент — тот, который ваша команда реально будет использовать, а не самый дорогой.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Сравниваем сервисы таргетированной рекламы — VK Реклама, Telegram Ads, Яндекс.Директ (товарная), Facebook/Instagram Ads, TargetHunter, eLama, Церебро и Leads.su. Разбираем аудитории, форматы, бюджеты и ROI."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Таргетированная реклама в соцсетях: обзор сервисов — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Таргетированная реклама в соцсетях: обзор сервисов</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-03T00:00:00.000Z" data-astro-cid-ymihodss>3 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>таргетированная реклама</li><li data-astro-cid-ymihodss>соцсети</li><li data-astro-cid-ymihodss>VK</li><li data-astro-cid-ymihodss>Telegram</li><li data-astro-cid-ymihodss>реклама</li></ul></header><div class="prose" data-astro-cid-ymihodss><p>Таргетированная реклама позволяет показывать объявления точно определённой аудитории на основе демографии, интересов, поведения и других параметров. В отличие от контекстной рекламы, которая отвечает на поисковый запрос пользователя, таргетинг «находит» клиента сам — в ленте соцсети, мессенджере или на партнёрском сайте. По данным исследований 2025–2026 годов, таргетированная реклама во ВКонтакте обеспечивает средний CTR 1,5–3%, а стоимость лида варьируется от 200 рублей в массовых нишах до десятков тысяч в B2B-сегменте. В этом материале мы разберём ключевые площадки и инструменты для таргетированной рекламы в 2026 году.</p>
+<h2 id="vk-реклама-бывший-mytarget">VK Реклама (бывший myTarget)</h2>
+<h3 id="описание">Описание</h3>
+<p>VK Реклама — основная платформа таргетированной рекламы на российском рынке. Объединяет рекламные возможности ВКонтакте, Одноклассников, Mail.ru и партнёрских приложений. Ранее сервис назывался myTarget, но в 2022 году был полностью интегрирован в экосистему VK. По данным на 2026 год, стоимость лида варьируется от 200 до 100 000+ рублей в зависимости от ниши и объёма бюджета.</p>
+<p>Сайт: <a href="https://ads.vk.com" rel="nofollow" target="_blank">ads.vk.com</a></p>
+<h3 id="варианты-таргетинга">Варианты таргетинга</h3>
+<p>VK Реклама предлагает более 20 критериев таргетинга: география (вплоть до конкретного района), возраст, пол, образование, семейное положение, интересы, устройства, поведение (посещения сообществ, действия на сайте через пиксель), по спискам контактов, look-alike-аудитории и пользовательские сегменты. В 2025–2026 годах активно развиваются алгоритмы машинного обучения, которые сами подбирают оптимальную аудиторию при заданном CPA.</p>
+<h3 id="форматы-объявлений">Форматы объявлений</h3>
+<p>Поддерживаются: изображения, карусели, видеореклама, нативные посты в ленте, сторис, мини-приложения, промо-виджеты, смарт-баннеры и объявления в сообщениях. Для e-commerce доступна динамическая ретаргетинг-реклама на основе товарного фида.</p>
+<h3 id="минимальные-бюджеты-и-roi">Минимальные бюджеты и ROI</h3>
+<p>Минимальный бюджет для запуска — от 300 рублей. Для тестирования кампаний рекомендуемый бюджет — от 5 000–10 000 рублей в неделю. Инструменты ROI: встроенная аналитика, интеграция с Яндекс.Метрикой и Google Analytics, UTM-метки, пиксель VK для отслеживания конверсий на сайте.</p>
+<h3 id="плюсы-и-минусы">Плюсы и минусы</h3>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Самый большой охват русскоязычной аудитории</li>
+<li>Гибкие настройки таргетинга</li>
+<li>Низкий порог входа по бюджету</li>
+<li>Интеграция с CRM</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Растущая стоимость клика и лида</li>
+<li>Периодические изменения алгоритмов, влияющие на результаты</li>
+<li>Блокировка рекламных кабинетов за нарушения</li>
+</ul>
+<h2 id="telegram-ads">Telegram Ads</h2>
+<h3 id="описание-1">Описание</h3>
+<p>Telegram Ads — официальная рекламная платформа мессенджера Telegram. С 2025 года доступна рекламодателям из России напрямую. Аукцион работает по модели CPM (оплата за 1000 показов). Минимальная цена — 0,7 евро за 1000 показов во всех тематиках. Добавлены новые плейсменты: поиск Telegram, in-stream видео и реклама в ботах.</p>
+<p>Сайт: <a href="https://ads.telegram.org" rel="nofollow" target="_blank">ads.telegram.org</a></p>
+<h3 id="варианты-таргетинга-1">Варианты таргетинга</h3>
+<p>Таргетинг ограничен по сравнению с VK: география, язык, тематика канала, устройство и операционная система. Нет детального behavioural-таргетинга. Зато доступна реклама в конкретных каналах — можно выбрать каналы вручную или позволить алгоритму распределить показы.</p>
+<h3 id="форматы-объявлений-1">Форматы объявлений</h3>
+<p>Текстовые сообщения до 160 символов + кнопка. Поддерживается один мультимедийный элемент: изображение, видео (до 5 минут) или emoji-стикер. Формат минималистичный, но это часть его эффективности — объявления выглядят как обычные посты.</p>
+<h3 id="минимальные-бюджеты-и-roi-1">Минимальные бюджеты и ROI</h3>
+<p>Минимальная ставка — 50 Stars за 1000 показов (~0,92 евро). Реальный CPM на практике начинается от 1–2 евро и может достигать 10+ евро в популярных каналах. Минимальный пополнение баланса — около 10 евро. Средний CTR составляет 2–5%, что выше, чем у классического медийного баннера.</p>
+<h3 id="плюсы-и-минусы-1">Плюсы и минусы</h3>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Аудитория Telegram — взрослая, платежеспособная</li>
+<li>Высокий CTR по сравнению с медийной рекламой</li>
+<li>Нет рекламной усталости (небольшой объём рекламы в каналах)</li>
+<li>Быстрый запуск</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченные возможности таргетинга</li>
+<li>Высокая стоимость для узких ниш</li>
+<li>Нет пикселя для отслеживания конверсий на сайте</li>
+</ul>
+<h2 id="яндексдирект-товарная-реклама">Яндекс.Директ (товарная реклама)</h2>
+<h3 id="описание-2">Описание</h3>
+<p>Хотя Яндекс.Директ — это прежде всего система контекстной рекламы, его товарная кампания работает по принципам, близким к таргетированной. Объявления с фото, ценой и названием товара показываются в поиске Яндекса, на Маркете, в РСЯ и в умных устройствах Алисы. Товарные кампании автоматически формируются на основе товарного фида (YML-файла).</p>
+<p>Сайт: <a href="https://direct.yandex.ru" rel="nofollow" target="_blank">direct.yandex.ru</a></p>
+<h3 id="таргетинг-и-форматы">Таргетинг и форматы</h3>
+<p>Таргетинг строится на основе товарного фида и поисковых запросов: система автоматически подбирает товар к запросу пользователя. В сетях работает ретаргетинг — показ товаров, которые пользователь просматривал. Форматы: карточки товаров с изображением, ценой и рейтингом, а также баннеры с динамической подстановкой товаров.</p>
+<h3 id="минимальные-бюджеты-и-roi-2">Минимальные бюджеты и ROI</h3>
+<p>Минимальный бюджет для товарной кампании — от 300 рублей в день. Средний CPA для e-commerce составляет 150–500 рублей в зависимости от категории. Инструменты ROI: Яндекс.Метрика, отслеживание конверсий (добавление в корзину, покупка), интеграция с CRM через e-commerce API.</p>
+<h3 id="плюсы-и-минусы-2">Плюсы и минусы</h3>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Автоматическая генерация объявлений из товарного фида</li>
+<li>Широкий охват (поиск + сети + Маркет + Алиса)</li>
+<li>Высокийintent-трафик</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Требуется поддержка актуального товарного фида</li>
+<li>Высокая конкуренция в популярных категориях</li>
+<li>Подходит только для e-commerce</li>
+</ul>
+<h2 id="facebookinstagram-ads-через-агентства">Facebook/Instagram Ads (через агентства)</h2>
+<h3 id="описание-3">Описание</h3>
+<p>С сентября 2025 года в России запрещена реклама на площадках Meta (Facebook и Instagram), признанных экстремистскими. Однако для бизнеса, ориентированного на зарубежные рынки, Facebook и Instagram Ads остаются одними из самых эффективных каналов. Работа возможна через зарубежные агентства или при наличии иностранной карты и VPN.</p>
+<p>Сайт: <a href="https://facebook.com/business" rel="nofollow" target="_blank">facebook.com/business</a></p>
+<h3 id="таргетинг-и-форматы-1">Таргетинг и форматы</h3>
+<p>Meta Ads предлагает самый широкий набор параметров таргетинга в мире: демография, интересы, поведение, look-alike, Custom Audiences, Advantage+ (алгоритмический оптимизатор). Форматы: фото, видео, карусели, сторис, Reels, коллекции, Lead Ads, Messenger Ads и Advantage+ Shopping.</p>
+<h3 id="минимальные-бюджеты-и-roi-3">Минимальные бюджеты и ROI</h3>
+<p>Минимальный дневной бюджет — $1. Рекомендуемый для тестирования — от $10–20 в день. CPA сильно зависит от географии и ниши: в США от $5–50, в Европе от $3–30. Мощные инструменты аналитики: Meta Pixel, Conversions API, Attribution.</p>
+<h3 id="плюсы-и-минусы-3">Плюсы и минусы</h3>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Самый широкий охват в мире (3+ млрд пользователей)</li>
+<li>Несравненная глубина таргетинга</li>
+<li>Лучшие инструменты автоматизации (Advantage+)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Запрещено для использования из России</li>
+<li>Требует агентства или обходных путей оплаты</li>
+<li>Непредсказуемые изменения алгоритмов</li>
+</ul>
+<h2 id="targethunter">TargetHunter</h2>
+<h3 id="описание-4">Описание</h3>
+<p>TargetHunter — популярный российский сервис для парсинга (сбора) целевой аудитории из ВКонтакте. Предлагает более 90 различных параметров для поиска аудитории: по участникам сообществ, по подписчикам конкурентов, по контенту постов и комментариям. Собранные сегменты загружаются в рекламный кабинет VK.</p>
+<p>Сайт: <a href="https://targethunter.ru" rel="nofollow" target="_blank">targethunter.ru</a></p>
+<h3 id="возможности">Возможности</h3>
+<p>Поиск аудитории по сообществам, постам и комментариям, анализ конкурентов (какие сообщества закупает), AI-генерация изображений через интеграцию с DALL-E. Также есть «Экспертный клуб» с расширенными возможностями парсинга и генераций. Цены: от 1225 рублей в зависимости от тарифа.</p>
+<h3 id="плюсы-и-минусы-4">Плюсы и минусы</h3>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Более 90 параметров поиска аудитории</li>
+<li>Анализ стратегий конкурентов</li>
+<li>AI-генерация креативов</li>
+<li>Доступная цена</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Работает только с аудиторией ВКонтакте</li>
+<li>Парсинг может нарушать правила ВК (риск блокировки кабинета)</li>
+<li>Требует понимания принципов парсинга</li>
+</ul>
+<h2 id="elama-для-таргетированной-рекламы">eLama (для таргетированной рекламы)</h2>
+<h3 id="описание-5">Описание</h3>
+<p>eLama — платформа автоматизации, которая позволяет управлять таргетированной рекламой в VK Рекламе и Telegram Ads из единого интерфейса. Помимо контекстной рекламы, eLama автоматизирует настройку таргетированных кампаний: подбор аудитории, создание объявлений и управление бюджетом.</p>
+<p>Сайт: <a href="https://elama.ru" rel="nofollow" target="_blank">elama.ru</a></p>
+<h3 id="инструменты-roi">Инструменты ROI</h3>
+<p>Сквозная аналитика по всем каналам, включая таргетированную рекламу. Интеграция с CRM для отслеживания стоимости лида и окупаемости. eLama Index — бенчмарки по рыночным показателям CTR, CPC и CPA.</p>
+<h3 id="плюсы-и-минусы-5">Плюсы и минусы</h3>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Управление VK и Telegram из одного окна</li>
+<li>Единая аналитика по всем каналам</li>
+<li>Бесплатный тариф</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не заменяет полноценный рекламный кабинет</li>
+<li>Ограниченная функциональность на бесплатном тарифе</li>
+</ul>
+<h2 id="церебро-таргет">Церебро Таргет</h2>
+<h3 id="описание-6">Описание</h3>
+<p>Церебро Таргет — сервис для поиска и анализа целевой аудитории в ВКонтакте. В отличие от TargetHunter, делает акцент на автоматическом поиске релевантных сегментов аудитории и работе с рекламными кабинетами. Более 200 000 участников в официальном сообществе сервиса.</p>
+<p>Сайт: <a href="https://cerebro.target" rel="nofollow" target="_blank">cerebro.target</a></p>
+<h3 id="возможности-1">Возможности</h3>
+<p>Парсинг аудитории сообществ, анализ конкурентов, ретаргетинг по базе email/телефонов, массовые действия с рекламными кабинетами. Есть собственная платформа для размещения рекламы с лучшими ценами на клик (от 20 рублей). Сервис позволяет оптимизировать бюджет за счёт точного подбора аудитории.</p>
+<h3 id="плюсы-и-минусы-6">Плюсы и минусы</h3>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Большое сообщество пользователей и материалы для обучения</li>
+<li>Платформа для размещения рекламы с выгодными ставками</li>
+<li>Широкий инструментарий парсинга</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только ВКонтакте</li>
+<li>Платные тарифы могут быть дороги для новичков</li>
+<li>Интерфейс требует привыкания</li>
+</ul>
+<h2 id="leadssu">Leads.su</h2>
+<h3 id="описание-7">Описание</h3>
+<p>Leads.su — российская CPA-сеть (Cost Per Action), ведущий агрегатор в сфере финансов и HR. Основана в 2010 году. Платформа объединяет рекламодателей (банки, микрофинансовые организации, HR-компании) и арбитражников (вебмастеров), которые приводят лиды за процент от сделки.</p>
+<p>Сайт: <a href="https://leads.su" rel="nofollow" target="_blank">leads.su</a></p>
+<h3 id="модель-работы">Модель работы</h3>
+<p>Leads.su работает по CPA-модели: рекламодатель платит за конкретное целевое действие (заявка на кредит, регистрация, заполнение анкеты). Вебмастер получает процент — от нескольких сотен до нескольких тысяч рублей за лид. Платформа предоставляет собственные инструменты для работы с трафиком, CRM для ведения проектов.</p>
+<h3 id="плюсы-и-минусы-7">Плюсы и минусы</h3>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Лидер в финансовых и HR-вертикалях</li>
+<li>Оплата только за результат (CPA)</li>
+<li>Большой выбор офферов</li>
+<li>Собственная экосистема инструментов</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Подходит в первую очередь для арбитражников, не для прямых рекламодателей</li>
+<li>Фокус на финансовых нишах</li>
+<li>Высокие требования к качеству трафика</li>
+</ul>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Площадки</th><th>Мин. бюджет</th><th>Таргетинг</th><th>Форматы</th><th>ROI-инструменты</th></tr></thead><tbody><tr><td>VK Реклама</td><td>VK, OK, Mail.ru</td><td>300 ₽</td><td>20+ параметров</td><td>Изображения, видео, карусели, сторис</td><td>Встроенная аналитика, пиксель</td></tr><tr><td>Telegram Ads</td><td>Telegram</td><td>~0,7 €/CPM</td><td>Гео, язык, тема, устройство</td><td>Текст + 1 медиа</td><td>Нет пикселя, отчёты в кабинете</td></tr><tr><td>Яндекс.Директ (товарная)</td><td>Поиск, РСЯ, Маркет</td><td>300 ₽/день</td><td>По товарам, ретаргетинг</td><td>Товарные карточки</td><td>Яндекс.Метрика, e-commerce API</td></tr><tr><td>Facebook/Instagram Ads</td><td>Meta (через агентства)</td><td>$1/день</td><td>1000+ параметров</td><td>Фото, видео, Reels, Lead Ads</td><td>Meta Pixel, Conversions API</td></tr><tr><td>TargetHunter</td><td>ВКонтакте (парсер)</td><td>От 1225 ₽/мес</td><td>90+ параметров парсинга</td><td>Загрузка в VK Ads</td><td>Анализ конкурентов</td></tr><tr><td>eLama</td><td>VK, Telegram</td><td>Бесплатно</td><td>Зависит от площадки</td><td>Зависит от площадки</td><td>Сквозная аналитика, eLama Index</td></tr><tr><td>Церебро Таргет</td><td>ВКонтакте (парсер)</td><td>Индивидуально</td><td>Парсинг, ретаргетинг</td><td>Загрузка в VK Ads</td><td>Встроенная платформа размещения</td></tr><tr><td>Leads.su</td><td>CPA-сеть</td><td>Нет (оплата за лид)</td><td>По офферам</td><td>Лендинги, баннеры</td><td>CRM, отчёты по лидам</td></tr></tbody></table>
+<h2 id="как-выбрать-площадку">Как выбрать площадку</h2>
+<p>Для массового охвата русскоязычной аудитории лучшим выбором остаётся VK Реклама — она обеспечивает максимальную глубину таргетинга и разнообразие форматов. Telegram Ads стоит подключать как дополнительный канал для B2B и экспертных ниш. Для e-commerce обязательно настройте товарную кампанию в Яндекс.Директе. Если вы работаете на зарубежные рынки — Meta Ads через агентство. Для качественного подбора аудитории в ВК используйте TargetHunter или Церебро Таргет. Leads.su подойдёт, если вы занимаетесь арбитражем трафика в финансовых вертикалях.</p>
+<p>Общий совет: не ограничивайтесь одной площадкой. Комбинация поискового контекста (Яндекс.Директ) и таргетированной рекламы (VK) даёт наилучший результат за счёт покрытия разных этапов воронки — от осознания потребности до повторной конверсии.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

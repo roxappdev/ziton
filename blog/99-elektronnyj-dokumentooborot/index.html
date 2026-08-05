@@ -1,0 +1,310 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор операторов электронного документооборота: Контур.Диадок, СБИС.ЭДО, Яндекс.ЭДО, СберКорус и другие. Сравнение по ФЗ-63, сетям контрагентов и стоимости."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Электронный документооборот (ЭДО): сервисы для бизнеса — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Электронный документооборот (ЭДО): сервисы для бизнеса</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>ЭДО</li><li data-astro-cid-ymihodss>электронный документооборот</li><li data-astro-cid-ymihodss>УПД</li><li data-astro-cid-ymihodss>фискализация</li><li data-astro-cid-ymihodss>бизнес</li><li data-astro-cid-ymihodss>учёт</li></ul></header><div class="prose" data-astro-cid-ymihodss><p>Электронный документооборот (ЭДО) — обязательный инструмент для российского бизнеса, работающего с юрлицами. С 2022 года использование электронных накладных (УПД, УКД) становится всё более массовым, а с 2025 года расширяются требования к обязательному ЭДО для отдельных категорий налогоплательщиков. В этой статье разберём десять ключевых операторов ЭДО на российском рынке.</p>
+<h2 id="что-такое-эдо-и-зачем-он-нужен">Что такое ЭДО и зачем он нужен</h2>
+<p>Электронный документооборот — это обмен юридически значимыми электронными документами между контрагентами через аккредитованных операторов. Ключевые преимущества:</p>
+<ul>
+<li><strong>Скорость</strong> — документы доставляются за секунды, не нужно курьеров и почту</li>
+<li><strong>Экономия</strong> — отсутствие затрат на бумагу, печать, envelopes и курьерскую доставку</li>
+<li><strong>Безопасность</strong> — криптографическая защита и электронная подпись (КЭП) по ФЗ-63</li>
+<li><strong>Хранение</strong> — организованный архив документов с поиском</li>
+<li><strong>Интеграция</strong> — связь с 1С, бухгалтерскими системами и ERP</li>
+</ul>
+<h3 id="нормативная-база">Нормативная база</h3>
+<p>Все операторы работают в рамках:</p>
+<ul>
+<li><strong>ФЗ-63</strong> «Об электронной подписи» — определяет юридическую силу электронной подписи</li>
+<li><strong>ФЗ-402</strong> «О бухгалтерском учёте» — допускает электронные первичные документы</li>
+<li><strong>Приказы ФНС</strong> — регламентируют форматы УПД, УКД и других документов</li>
+</ul>
+<h2 id="операторы-эдо">Операторы ЭДО</h2>
+<h3 id="контурдиадок">Контур.Диадок</h3>
+<p><strong>Контур.Диадок</strong> — крупнейший оператор ЭДО в России от компании СКБ Контур, с сетью более 4 млн организаций.</p>
+<ul>
+<li><strong>Описание</strong>: Флагманский продукт СКБ Контур, предлагающий полный набор инструментов для электронного документооборота: УПД, УКД, счета-фактуры, акты сверки, договоры, доверенности. Глубоко интегрирован с 1С, поддерживает работу через веб-интерфейс и API. Сеть контрагентов Diadoc — одна из самых больших на рынке.</li>
+<li><strong>Плюсы</strong>: Крупнейшая сеть контрагентов (4 млн+); бесплатное подключение и техподдержка; отличная интеграция с 1С (плагин один клик); удобный веб-интерфейс и мобильное приложение; API для автоматизации; быстрая обработка документов; образовательные материалы и вебинары</li>
+<li><strong>Минусы</strong>: Стоимость исчисляется за каждый документ (от 8 ₽/док); на больших объёмах расходы растут; мобильное приложение ограничено в функционале; нет единой фиксированной подписки</li>
+<li><strong>Ссылка</strong>: <a href="https://diadoc.kontur.ru" rel="nofollow" target="_blank">diadoc.kontur.ru</a></li>
+</ul>
+<h3 id="сбисэдо">СБИС.ЭДО</h3>
+<p><strong>СБИС.ЭДО</strong> — оператор ЭДО от компании Тензор (группа СБИС), второй по размеру сети контрагентов в России.</p>
+<ul>
+<li><strong>Описание</strong>: СБИС.ЭДО входит в экосистему СБИС, которая включает аналитику, электронную отчётность, CRM и коммуникации. Оператор обеспечивает обмен УПД, УКД, счетами-фактурами и неформализованными документами. Сеть — более 3 млн организаций.</li>
+<li><strong>Плюсы</strong>: Интеграция в экосистему СБИС (аналитика контрагентов, отчётность); большая сеть контрагентов; поддержка УПД, УКД, накладных; API для интеграции; мобильное приложение СБИС; государственные закупки (44-ФЗ, 223-ФЗ)</li>
+<li><strong>Минусы</strong>: Интерфейс СБИС может показаться перегруженным; техподдержка не всегда оперативна; тарифы зависят от объёма; стоимостная модель сложна для понимания</li>
+<li><strong>Ссылка</strong>: <a href="https://sbis.ru" rel="nofollow" target="_blank">sbis.ru</a></li>
+</ul>
+<h3 id="яндексэдо">Яндекс.ЭДО</h3>
+<p><strong>Яндекс.ЭДО</strong> — оператор электронного документооборота от Яндекса, интегрированный с экосистемой сервисов компании.</p>
+<ul>
+<li><strong>Описание</strong>: Сервис предлагает обмен электронными документами (УПД, счета-фактуры, договоры) через удобный веб-интерфейс. Отличается простотой подключения и понятным тарифом. Интегрируется с 1С и другими учётными системами.</li>
+<li><strong>Плюсы</strong>: Простой и понятный интерфейс в стиле Яндекса; фиксированный тариф (от 1 990 ₽/мес); интеграция с 1С и Яндекс.Бухгалтерией; бесплатное подключение; мобильный доступ; УПД, УКД и неформализованные документы</li>
+<li><strong>Минусы</strong>: Сеть контрагентов меньше, чем у Диадока и СБИС; меньше форматов документов; нет расширенной аналитики контрагентов; функционал ограничен по сравнению с лидерами</li>
+<li><strong>Ссылка</strong>: <a href="https://yandex.ru/products/edo" rel="nofollow" target="_blank">yandex.ru/products/edo</a></li>
+</ul>
+<h3 id="сберкорус-эдо">СберКорус ЭДО</h3>
+<p><strong>СберКорус ЭДО</strong> — оператор ЭДО от группы Сбера, предлагающий документооборот внутри экосистемы СберКорпоративный.</p>
+<ul>
+<li><strong>Описание</strong>: Сервис интегрирован с банком Сбер, что обеспечивает удобную работу с подписями, электронной коммерцией и корпоративными финансами. Поддерживает все основные форматы электронных документов.</li>
+<li><strong>Плюсы</strong>: Интеграция с экосистемой Сбера; бесплатная qualified подпись для клиентов банка; УПД, УКД, счета-фактуры; API для автоматизации; сеть контрагентов Сбера; поддержка корпоративных клиентов</li>
+<li><strong>Минусы</strong>: Сеть контрагентов уступает Диадоку; функционал зависит от использования других сервисов Сбера; интерфейс менее интуитивен; fewer форматы поддерживаются</li>
+<li><strong>Ссылка</strong>: <a href="https://sbercorus.ru" rel="nofollow" target="_blank">sbercorus.ru</a></li>
+</ul>
+<h3 id="калуга-астрал-эдо-лайт">Калуга Астрал (ЭДО Лайт)</h3>
+<p><strong>ЭДО Лайт</strong> — продукт компании Калуга Астрал (входит в ГК «Сфера»), позиционируемый как простой и доступный оператор ЭДО.</p>
+<ul>
+<li><strong>Описание</strong>: ЭДО Лайт ориентирован на малый и средний бизнес, предлагая минимально необходимый функционал по доступной цене. Обмен УПД и УКД, интеграция с 1С, простое подключение.</li>
+<li><strong>Плюсы</strong>: Доступная цена; простота подключения (два шага); интеграция с 1С через готовый модуль; УПД и УКД; API; подходит для небольших компаний с небольшим документооборотом</li>
+<li><strong>Минусы</strong>: Ограниченный набор форматов документов; небольшая сеть контрагентов; fewer интеграции; нет расширенных функций (электронные подписи договоров, роуминг)</li>
+<li><strong>Ссылка</strong>: <a href="https://www.astral.ru" rel="nofollow" target="_blank">astral.ru</a></li>
+</ul>
+<h3 id="тензор-сбис">Тензор (СБИС)</h3>
+<p><strong>Тензор</strong> — материнская компания СБИС, предоставляющая оператора ЭДО в составе комплексной системы для бизнеса.</p>
+<ul>
+<li><strong>Описание</strong>: Тензор объединяет ЭДО, электронную отчётность, аналитику контрагентов, коммуникации и CRM в единую платформу. Оператор ЭДО работает в рамках экосистемы СБИС, обеспечивая обмен любыми типами юридически значимых документов.</li>
+<li><strong>Плюсы</strong>: Комплексная платформа (ЭДО + аналитика + CRM + отчётность); единый интерфейс для всех задач; большая сеть контрагентов; API для автоматизации; постоянные обновления законодательства</li>
+<li><strong>Минусы</strong>: Высокая стоимость при полном наборе модулей; сложный интерфейс для новичков; зависимость от экосистемы СБИС; навязчивые продажи доп. модулей</li>
+<li><strong>Ссылка</strong>: <a href="https://tensor.ru" rel="nofollow" target="_blank">tensor.ru</a></li>
+</ul>
+<h3 id="такском">Такском</h3>
+<p><strong>Такском</strong> — один из старейших операторов ЭДО в России, входящий в группу компаний Ростелеком-Цифровые сервисы.</p>
+<ul>
+<li><strong>Описание</strong>: Аккредитованный ФНС оператор, обеспечивающий электронный документооборот, отчётность и доверительное управление. Работает с крупными корпоративными клиентами и госсектором.</li>
+<li><strong>Плюсы</strong>: Аккредитация ФНС и опыт работы с госсектором; УПД, УКД, счета-фактуры; интеграция с 1С, SAP и другими ERP; высокая надёжность инфраструктуры; поддержка 44-ФЗ, 223-ФЗ</li>
+<li><strong>Минусы</strong>: Устаревший интерфейс; сложный процесс подключения (onboarding); высокая стоимость для малого бизнеса; fewer инновации в продукте</li>
+<li><strong>Ссылка</strong>: <a href="https://www.takskom.ru" rel="nofollow" target="_blank">takskom.ru</a></li>
+</ul>
+<h3 id="оптидок-оптимакс">ОптиДок (Оптимакс)</h3>
+<p><strong>ОптиДок</strong> — оператор электронного документооборота от компании Оптимакс, ориентированный на средний и крупный бизнес.</p>
+<ul>
+<li><strong>Описание</strong>: Специализируется на комплексных решениях для документооборота, включая УПД/УКД, неформализованные документы, согласование договоров и работу с электронными подписями. Активно развивает интеграционный функционал.</li>
+<li><strong>Плюсы</strong>: Гибкая система тарифов; УПД, УКД, счета-фактуры; API для интеграции; поддержка нескольких УЦ; хорошие отзывы за техподдержку; работает с SAP, Oracle, 1С</li>
+<li><strong>Минусы</strong>: Меньшая сеть контрагентов по сравнению с лидерами; меньше маркетингового присутствия; fewer готовых решений для микро-бизнеса</li>
+<li><strong>Ссылка</strong>: <a href="https://www.optimax.ru" rel="nofollow" target="_blank">optimax.ru</a></li>
+</ul>
+<h3 id="1с-эдо">1С-ЭДО</h3>
+<p><strong>1С-ЭДО</strong> — оператор электронного документооборота, разработанный непосредственно компанией 1С.</p>
+<ul>
+<li><strong>Описание</strong>: Нативный оператор для пользователей программ 1С, обеспечивающий отправку и получение электронных документов (УПД, УКД, счета-фактуры) непосредственно из интерфейса 1С. Настройка минимальна — достаточно заключить договор и активировать сервис.</li>
+<li><strong>Плюсы</strong>: Встроен в 1С — не нужны дополнительные плагины; простейшее подключение для пользователей 1С; единая техподдержка 1С; УПД, УКД, счета-фактуры; автоматическая отправка из 1С</li>
+<li><strong>Минусы</strong>: Работает только с 1С (нет самостоятельного веб-интерфейса); меньше функций, чем у специализированных операторов; сеть контрагентов растёт, но пока уступает Диадоку и СБИС; нет мобильного приложения</li>
+<li><strong>Ссылка</strong>: <a href="https://1c.ru/edo" rel="nofollow" target="_blank">1c.ru/edo</a></li>
+</ul>
+<h3 id="myoffice-эдо">MyOffice (ЭДО)</h3>
+<p><strong>MyOffice</strong> — отечественный офисный пакет, включающий модуль электронного документооборота.</p>
+<ul>
+<li><strong>Описание</strong>: MyOffice предлагает комплексную платформу: текстовый редактор, таблицы, почту, календарь и ЭДО. Модуль ЭДО обеспечивает обмен юридически значимыми документами, согласование и подписание в рамках экосистемы MyOffice.</li>
+<li><strong>Плюсы</strong>: Единая экосистема (офис + почта + ЭДО); импортозамещённое решение; поддерживает УПД, УКД; интеграция с 1С; подходит для госструктур и компаний с требованиями к импортозамещению</li>
+<li><strong>Минусы</strong>: Модуль ЭДО менее функционален, чем у специализированных операторов; небольшая сеть контрагентов; fewer интеграции; дороже при большом числе пользователей</li>
+<li><strong>Ссылка</strong>: <a href="https://myoffice.ru" rel="nofollow" target="_blank">myoffice.ru</a></li>
+</ul>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Оператор</th><th>Сеть контрагентов</th><th>УПД/УКД</th><th>API</th><th>Тариф от</th><th>Модель оплаты</th></tr></thead><tbody><tr><td>Контур.Диадок</td><td>4 млн+</td><td>Да</td><td>Да</td><td>8 ₽/док</td><td>За документ</td></tr><tr><td>СБИС.ЭДО</td><td>3 млн+</td><td>Да</td><td>Да</td><td>Индивидуально</td><td>Абонент + док.</td></tr><tr><td>Яндекс.ЭДО</td><td>~500 тыс.</td><td>Да</td><td>Да</td><td>1 990 ₽/мес</td><td>Фикс. подписка</td></tr><tr><td>СберКорус ЭДО</td><td>~1 млн</td><td>Да</td><td>Да</td><td>Индивидуально</td><td>Абонент</td></tr><tr><td>ЭДО Лайт</td><td>~300 тыс.</td><td>Да</td><td>Да</td><td>1 500 ₽/мес</td><td>Фикс. подписка</td></tr><tr><td>Тензор (СБИС)</td><td>3 млн+</td><td>Да</td><td>Да</td><td>Индивидуально</td><td>Абонент + док.</td></tr><tr><td>Такском</td><td>~1 млн</td><td>Да</td><td>Да</td><td>Индивидуально</td><td>Абонент</td></tr><tr><td>ОптиДок</td><td>~200 тыс.</td><td>Да</td><td>Да</td><td>Индивидуально</td><td>Абонент + док.</td></tr><tr><td>1С-ЭДО</td><td>~800 тыс.</td><td>Да</td><td>Нет</td><td>1 500 ₽/мес</td><td>Фикс. подписка</td></tr><tr><td>MyOffice ЭДО</td><td>~100 тыс.</td><td>Да</td><td>Да</td><td>Индивидуально</td><td>Абонент</td></tr></tbody></table>
+<h2 id="процесс-подключения-к-эдо">Процесс подключения к ЭДО</h2>
+<p>Подключение к оператору ЭДО обычно занимает от одного до нескольких дней и включает следующие шаги:</p>
+<ol>
+<li><strong>Выбор оператора и тарифа</strong> — определитесь с объёмом документооборота и нужными функциями</li>
+<li><strong>Заключение договора</strong> — большинство операторов предлагают онлайн-подписание</li>
+<li><strong>Получение КЭП</strong> — квалифицированная электронная подпись выдаётся аккредитованным удостоверяющим центром (УЦ). Некоторые операторы предоставляют бесплатную КЭП при подключении</li>
+<li><strong>Настройка ПО</strong> — установка плагина для 1С или настройка API-интеграции</li>
+<li><strong>Тестовый обмен</strong> — отправка тестовых документов для проверки работоспособности</li>
+<li><strong>Роуминг</strong> — проверка, что ваши контрагенты доступны через роуминговые соглашения</li>
+</ol>
+<h2 id="рекомендации-по-выбору">Рекомендации по выбору</h2>
+<ul>
+<li><strong>Для малого бизнеса на 1С</strong> — 1С-ЭДО для максимальной простоты подключения или Яндекс.ЭДО за понятный фиксированный тариф.</li>
+<li><strong>Для среднего бизнеса с большим объёмом документов</strong> — Контур.Диадок за крупнейшую сеть контрагентов и гибкую оплату за документ, либо СБИС.ЭДО за комплексную аналитику.</li>
+<li><strong>Для клиентов Сбера</strong> — СберКорус ЭДО, особенно если нужна бесплатная КЭП и интеграция с банковскими сервисами.</li>
+<li><strong>Для госструктур и импортозамещения</strong> — MyOffice или Такском как проверенные отечественные решения.</li>
+<li><strong>Для микробизнеса</strong> — ЭДО Лайт (Калуга Астрал) за доступную цену и простоту.</li>
+</ul>
+<p>При выборе оператора ЭДО ключевым фактором часто является <strong>сеть контрагентов</strong> — ваш оператор должен иметь роуминговые соглашения с операторами ваших поставщиков и покупателей. Убедитесь, что текущие контрагенты доступны через выбранного оператора, прежде чем подписывать договор. Также учитывайте стоимость на масштабе: модели «за документ» выгодны при небольшом объёме, а абонентские тарифы — при стабильном потоке.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

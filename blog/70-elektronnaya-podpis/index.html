@@ -1,0 +1,373 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор сервисов электронной подписи и ЭДО: от квалифицированных УКЭП на USB-токенах до облачных решений для документооборота."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Электронная подпись (ЭЦП): сервисы получения и управления — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Электронная подпись (ЭЦП): сервисы получения и управления</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>электронная подпись</li><li data-astro-cid-ymihodss>ЭЦП</li><li data-astro-cid-ymihodss>ЭДО</li><li data-astro-cid-ymihodss>криптография</li><li data-astro-cid-ymihodss>документооборот</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="что-такое-электронная-подпись-и-зачем-она-нужна">Что такое электронная подпись и зачем она нужна</h2>
+<p>Электронная подпись (ЭП) — это криптографический инструмент, позволяющий подтвердить авторство и целостность электронного документа. В России используется три основных вида подписи: простая (ПЭП), усиленная неквалифицированная (УНЭП) и усиленная квалифицированная (УКЭП). Для сдачи государственной отчётности, работы с ЭДО и подписания юридически значимых документов требуется именно квалифицированная подпись.</p>
+<p>Выбор между USB-токеном и облачным хранением ключей — один из главных вопросов при получении ЭП. Токен обеспечивает максимальную безопасность: закрытый ключ хранится на физическом устройстве и не покидает его. Облачные решения удобнее в работе, но требуют доверия к провайдеру. В этом обзоре мы разберём десять ключевых решений на рынке электронной подписи и документооборота.</p>
+<h3 id="контурдиадок">Контур.Диадок</h3>
+<p><a href="https://diadoc.kontur.ru" rel="nofollow" target="_blank">diadoc.kontur.ru</a></p>
+<p>Контур.Диадок — один из крупнейших операторов электронного документооборота в России, входящий в экосистему СКБ «Контур». Сервис позволяет обмениваться юридически значимыми электронными документами с контрагентами, подписывать их электронной подписью и хранить в облачном архиве. Диадок предлагает собственную квалифицированную электронную подпись по цене от 4 000 рублей за 12 месяцев. Базовый тариф ЭДО стоит от 2 950 рублей в год за 250 документов. По отзывам пользователей, ценовое предложение Диадока считается одним из самых доступных на рынке, а интеграция с 1С и другими учётными системами работает стабильно.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Широкая сеть роуминга с другими операторами ЭДО</li>
+<li>Выгодные тарифы для малого и среднего бизнеса</li>
+<li>Удобная интеграция с 1С, бухгалтерскими системами и CRM</li>
+<li>Облачный архив документов с неограниченным хранением</li>
+<li>Квалифицированная подпись в комплекте с ЭДО</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Тарифы растут при увеличении объёма документов</li>
+<li>Интерфейс требует обучения для новых пользователей</li>
+<li>Поддержка по сложным техническим вопросам бывает медленной</li>
+<li>Облачная подпись не подходит для всех видов государственной отчётности</li>
+</ul>
+<h3 id="яндексэдо">Яндекс.ЭДО</h3>
+<p><a href="https://edo.yandex.ru" rel="nofollow" target="_blank">edo.yandex.ru</a></p>
+<p>Яндекс.ЭДО — оператор электронного документооборота, интегрированный в экосистему Яндекса. Сервис ориентирован на businesses, работающие с маркетплейсами (Яндекс Маркет, Яндекс Такси), и предлагает удобный обмен документами через личный кабинет. Тарифы начинаются от 696 рублей в год за 25 исходящих документов. ЭДО Яндекса поддерживает роуминг с крупнейшими операторами, включая Контур.Диадок и СБИС. Важное ограничение: сервис работает только для резидентов Российской Федерации.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Низкий порог входа по цене (от 696 ₽/год)</li>
+<li>Интеграция с экосистемой Яндекса и маркетплейсами</li>
+<li>Простой и интуитивный интерфейс</li>
+<li>Быстрая регистрация и настройка</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченный функционал по сравнению с Диадоком и СБИС</li>
+<li>Не выдаёт собственную квалифицированную подпись — нужна сторонняя</li>
+<li>Обработка входящих документов от самого Яндекса не поддерживается</li>
+<li>Меньше возможностей для интеграции с корпоративными системами</li>
+</ul>
+<h3 id="сберкорус-эдо">СберКорус (ЭДО)</h3>
+<p><a href="https://sbercorus.ru" rel="nofollow" target="_blank">sbercorus.ru</a></p>
+<p>СберКорус — оператор ЭДО от экосистемы Сбера, предлагающий комплексное решение для электронного документооборота. Сервис выделяется максимальным охватом пользователей: благодаря интеграции со Сбербанком, многие контрагенты уже подключены к платформе. Тарифы начинаются от 696 рублей в год при наличии расчётного счёта в Сбере, иначе стоимость выше. СберКорус обеспечивает обмен УПД, счетами-фактурами, актами и другими юридически значимыми документами. В 2026 году сервис входит в топ-4 операторов ЭДО в России по числу пользователей.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Максимальный охват контрагентов благодаря связи со Сбербанком</li>
+<li>Выгодные тарифы для клиентов Сбера</li>
+<li>Полный набор документов: УПД, счёта-фактуры, накладные, договоры</li>
+<li>Надёжная инфраструктура и высокий уровень доступности</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Наиболее выгодные условия только для клиентов Сбербанка</li>
+<li>Интерфейс менее гибкий, чем у Контура и СБИС</li>
+<li>Сложная процедура настройки для пользователей без счёта в Сбере</li>
+<li>Отдельная плата за электронную подпись</li>
+</ul>
+<h3 id="калуга-астрал-эдо">Калуга Астрал (ЭДО)</h3>
+<p><a href="https://astral.ru" rel="nofollow" target="_blank">astral.ru</a></p>
+<p>Калуга Астрал — один из старейших операторов ЭДО в России, предлагающий решение «Орион» для электронного документооборота. Компания также обеспечивает обмен электронными перевозочными документами, что особенно важно для логистических компаний. В 2024 году Астрал расширил возможности роуминга с операторами Контур и Тензор (СБИС), что значительно увеличило сеть доступных контрагентов. Тарифы зависят от объёма документов и набора функций, средняя стоимость для малого бизнеса — от 3 000 до 8 000 рублей в год.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Долголетний опыт на рынке ЭДО</li>
+<li>Расширенный роуминг с крупнейшими операторами</li>
+<li>Специализация на перевозочных документах для логистики</li>
+<li>Интеграция с 1С:Предприятие</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Интерфейс выглядит устаревшим по сравнению с конкурентами</li>
+<li>Документация и обучающие материалы скудные</li>
+<li>Цена выше среднего для базовых функций</li>
+<li>Меньше облачных функций, упор на десктопные решения</li>
+</ul>
+<h3 id="тензор-сбис-эдо">Тензор (СБИС ЭДО)</h3>
+<p><a href="https://sbis.ru" rel="nofollow" target="_blank">sbis.ru</a></p>
+<p>Тензор — компания, стоящая за экосистемой СБИС, которая включает ЭДО, CRM, электронную подпись и другие бизнес-инструменты. Оператор ЭДО от Тензора обеспечивает роуминг с крупнейшими игроками рынка и поддерживает полный набор юридически значимых документов. Стоимость начинается от 4 900 рублей в год (базовый тариф), что делает СБИС одним из более дорогих решений для малого бизнеса. Однако функционал шире, чем у многих конкурентов: помимо ЭДО, платформа включает CRM, управление задачами и аналитику.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Широкая функциональность за пределами ЭДО (CRM, аналитика)</li>
+<li>Роуминг с основными операторами</li>
+<li>Единая экосистема для управления бизнесом</li>
+<li>Хороший мобильный клиент</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Более высокая цена по сравнению с аналогами</li>
+<li>Сложный интерфейс с высоким порогом входа</li>
+<li>Избыточный функционал для компаний, которым нужен только ЭДО</li>
+<li>Поддержка работает с переменным качеством</li>
+</ul>
+<h3 id="simplecrypt">SimpleCrypt</h3>
+<p><a href="https://simplecrypt.ru" rel="nofollow" target="_blank">simplecrypt.ru</a></p>
+<p>SimpleCrypt — российский сервис для работы с электронной подписью, предлагающий как облачные, так и локальные решения. Сервис специализируется на упрощении процесса подписания документов: пользователи могут подписывать PDF-файлы с помощью квалифицированной подписи без установки дополнительного программного обеспечения. SimpleCrypt предлагает как выпуск новых сертификатов подписи, так и управление существующими. Цены зависят от типа подписи и объёма использования, начиная от 2 000 рублей в год за облачную подпись.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Простота использования — подпись в несколько кликов</li>
+<li>Облачное решение без установки ПО</li>
+<li>Поддержка различных типов подписей</li>
+<li>Доступная цена для базового использования</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Менее известный бренд на рынке</li>
+<li>Ограниченная интеграция с ЭДО-операторами</li>
+<li>Меньше функций для корпоративного использования</li>
+<li>Не подходит для сдачи государственной отчётности</li>
+</ul>
+<h3 id="криптопро">КриптоПро</h3>
+<p><a href="https://cryptopro.ru" rel="nofollow" target="_blank">cryptopro.ru</a></p>
+<p>КриптоПро — ведущий российский разработчик криптографического программного обеспечения. Продукт КриптоПро CSP является стандартом де-факто для работы с квалифицированной электронной подписью в России. Лицензия на КриптоПро CSP стоит от 2 350 рублей, а для юридических лиц — от 3 100 рублей. Это не онлайн-сервис в привычном смысле, а программное обеспечение, которое устанавливается на компьютер и обеспечивает создание и проверку электронных подписей. КриптоПро необходим для работы с УКЭП на USB-токенах, сдачи отчётности в ФНС и использования государственных порталов.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Стандарт отрасли для работы с УКЭП в России</li>
+<li>Сертифицировано ФСБ и ФСТЭК</li>
+<li>Поддержка всех типов носителей и сертификатов</li>
+<li>Полная совместимость с государственными системами</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Требует установки и настройки на каждом компьютере</li>
+<li>Сложная процедура установки для неспециалистов</li>
+<li>Платная лицензия, требующая продления</li>
+<li>Нет облачного документооборота — только криптопровайдер</li>
+</ul>
+<h3 id="рутокен">Рутокен</h3>
+<p><a href="https://rutoken.ru" rel="nofollow" target="_blank">rutoken.ru</a></p>
+<p>Рутокен — линейка USB-токенов и смарт-карт для хранения ключей электронной подписи, производимых компанией «Актив». Рутокен Lite — базовый USB-токен стоимостью около 1 500–2 500 рублей, сертифицированный ФСТЭК. Рутокен ЭЦП (Flash) — более продвинутое устройство с поддержкой биометрии и расширенной памятью. Для работы с токеном необходимо установить КриптоПро CSP или аналогичный криптопровайдер. Рутокен является самым распространённым носителем УКЭП в России и поддерживается всеми основными операторами ЭДО и государственными системами.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Самый популярный носитель УКЭП в России</li>
+<li>Высокий уровень безопасности (ФСТЭК-сертификация)</li>
+<li>Широкая совместимость с ПО и государственными системами</li>
+<li>Различные модификации под разные задачи</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Физическое устройство — можно потерять или повредить</li>
+<li>Требует установки драйверов и КриптоПро</li>
+<li>Неудобно использовать на нескольких компьютерах</li>
+<li>Дополнительные расходы на криптопровайдер</li>
+</ul>
+<h3 id="itoken">iToken</h3>
+<p><a href="https://itoken.ru" rel="nofollow" target="_blank">itoken.ru</a></p>
+<p>iToken — облачный сервис хранения и управления ключами электронной подписи. В отличие от USB-токенов, iToken позволяет работать с квалифицированной подписью с любого устройства через браузер, без установки программного обеспечения. Сервис сертифицирован ФСБ и обеспечивает юридическую значимость подписанных документов. Облачный подход значительно упрощает работу: нет нужды покупать токен, устанавливать драйверы и переносить ключи между компьютерами. Стоимость зависит от тарифа и начинается от 3 000 рублей в год.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Облачный доступ с любого устройства</li>
+<li>Нет необходимости в USB-токене и установке ПО</li>
+<li>Сертифицирован ФСБ — юридическая значимость гарантирована</li>
+<li>Удобно для командной работы и удалённых сотрудников</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Зависимость от интернет-соединения</li>
+<li>Вопросы доверия к облачному хранению ключей</li>
+<li>Не все государственные системы поддерживают облачную подпись</li>
+<li>Стоимость сопоставима с покупкой физического токена</li>
+</ul>
+<h3 id="vipnet">ViPNet</h3>
+<p><a href="https://infotecs.ru" rel="nofollow" target="_blank">infotecs.ru</a></p>
+<p>ViPNet — продукт компании «ИнфоТеКС», включающий программное обеспечение ViPNet CSP (криптопровайдер, альтернатива КриптоПро) и инфраструктуру ViPNet Local Signature Service для корпоративного использования. ViPNet CSP позволяет работать с квалифицированными сертификатами, подписывать документы и проверять подписи. В корпоративной среде ViPNet часто используется как часть комплексного решения для защиты информации. Стоимость лицензии — от 3 000 рублей, корпоративные тарифы обсуждаются индивидуально.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Сертифицированный альтернативный криптопровайдер</li>
+<li>Подходит для корпоративного развёртывания</li>
+<li>Высокий уровень криптографической защиты</li>
+<li>Интеграция с системами ViPNet для защищённой связи</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Более высокая цена по сравнению с КриптоПро</li>
+<li>Меньше документации и обучающих материалов</li>
+<li>Основной фокус — на корпоративном сегменте</li>
+<li>Сложнее найти специалистов по настройке</li>
+</ul>
+<h2 id="квалифицированная-vs-простая-подпись">Квалифицированная vs простая подпись</h2>
+<p>Простая электронная подпись (ПЭП) — это логин и пароль, код из SMS или PIN-код. Она подходит для внутренней переписки и не имеет юридической силы при спорах. Усиленная неквалифицированная подпись (УНЭП) создаётся с помощью криптографии, но сертификат не аккредитован — это промежуточный вариант. Квалифицированная подпись (УКЭП) — единственный вид, который по закону приравнивается к собственноручной. Для работы с ЭДО, ФНС, Госуслугами и судами нужна именно УКЭП.</p>
+<h2 id="usb-токен-vs-облако">USB-токен vs облако</h2>
+<p>USB-токен (Рутокен, JaCarta) обеспечивает максимальную безопасность: закрытый ключ физически не покидает устройство. Но это неудобно при удалённой работе — токен нужно переносить между компьютерами. Облачные решения (iToken, облачная подпись в Диадоке) решают эту проблему, но требуют доверия к провайдеру. Для индивидуальных предпринимателей и малого бизнеса облачная подпись обычно предпочтительнее. Для крупных компаний и госструктур — обязательны физические токены.</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Тип</th><th>УКЭП</th><th>Облако/Токен</th><th>Цена (от, год)</th><th>ЭДО</th></tr></thead><tbody><tr><td>Контур.Диадок</td><td>Оператор ЭДО</td><td>Да</td><td>Оба</td><td>2 950 ₽</td><td>Да</td></tr><tr><td>Яндекс.ЭДО</td><td>Оператор ЭДО</td><td>Нет</td><td>Облако</td><td>696 ₽</td><td>Да</td></tr><tr><td>СберКорус</td><td>Оператор ЭДО</td><td>Да</td><td>Оба</td><td>696 ₽</td><td>Да</td></tr><tr><td>Калуга Астрал</td><td>Оператор ЭДО</td><td>Да</td><td>Оба</td><td>3 000 ₽</td><td>Да</td></tr><tr><td>Тензор (СБИС)</td><td>Экосистема</td><td>Да</td><td>Оба</td><td>4 900 ₽</td><td>Да</td></tr><tr><td>SimpleCrypt</td><td>Подпись</td><td>Да</td><td>Облако</td><td>2 000 ₽</td><td>Нет</td></tr><tr><td>КриптоПро</td><td>Криптопровайдер</td><td>Да</td><td>Токен</td><td>2 350 ₽</td><td>Нет</td></tr><tr><td>Рутокен</td><td>Носитель</td><td>—</td><td>Токен</td><td>1 500 ₽</td><td>Нет</td></tr><tr><td>iToken</td><td>Облако ЭП</td><td>Да</td><td>Облако</td><td>3 000 ₽</td><td>Нет</td></tr><tr><td>ViPNet</td><td>Криптопровайдер</td><td>Да</td><td>Токен</td><td>3 000 ₽</td><td>Нет</td></tr></tbody></table>
+<h2 id="итог">Итог</h2>
+<p>Если вам нужен полный пакет — электронная подпись плюс документооборот с контрагентами — лучший выбор among российских операторов: Контур.Диадок для среднего бизнеса (оптимальное соотношение цены и функционала), Яндекс.ЭДО или СберКорус для минимальных расходов. Для работы с государственной отчётностью потребуется КриптоПро + USB-токен (Рутокен). Если хотите обойтись без физических носителей — обратите внимание на iToken или облачную подпись в Диадоке. ViPNet и Калуга Астрал подойдут корпоративным пользователям с повышенными требованиями к безопасности.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор бирж фриланса: от российских Kwork и FL.ru до международных Upwork и Fiverr. Сравнение комиссий, безопасности платежей и конкуренции."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Биржи фриланса и удалённой работы — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Биржи фриланса и удалённой работы</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-03T00:00:00.000Z" data-astro-cid-ymihodss>3 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>фриланс</li><li data-astro-cid-ymihodss>удалённая работа</li><li data-astro-cid-ymihodss>Kwork</li><li data-astro-cid-ymihodss>FL.ru</li><li data-astro-cid-ymihodss>Upwork</li><li data-astro-cid-ymihodss>биржа фриланса</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="как-работают-биржи-фриланса">Как работают биржи фриланса</h2>
+<p>Биржи фриланса — это площадки, соединяющие заказчиков и исполнителей удалённой работы. Рынок фриланса в России активно растёт: по данным исследований, число фрилансеров в стране превышает 15 млн человек. После 2022 года, когда многие специалисты потеряли работу в крупных компаниях, поток на фриланс-биржи увеличился многократно, что повысило конкуренцию, но и расширило выбор для заказчиков.</p>
+<p>При выборе биржи стоит оценивать несколько ключевых параметров: <strong>комиссия площадки</strong> (сколько забирает биржа с каждой сделки), <strong>безопасность платежей</strong> (эскроу-счёт, удержание средств до приёмки работы), <strong>разрешение споров</strong> (арбитраж, возврат средств), <strong>категории проектов</strong> (дизайн, разработка, тексты, маркетинг и т.д.), <strong>уровень конкуренции</strong> (сколько исполнителей откликаются на типичный проект), <strong>стоимость для заказчиков</strong> (дополнительные комиссии, подписки) и <strong>наличие мобильных приложений</strong>.</p>
+<h2 id="kwork">Kwork</h2>
+<p><strong>Сайт:</strong> <a href="https://kwork.ru" rel="nofollow" target="_blank">kwork.ru</a></p>
+<p>Kwork — крупнейшая российская биржа фриланса с уникальной моделью «kwork» (аналог gig на Fiverr). Исполнитель создаёт «кворк» — конкретную услугу с фиксированной ценой (от 500 ₽). Заказчик покупает кворк, исполнитель выполняет работу, Kwork выступает гарантом сделки.</p>
+<p>Модель площадки: фиксированные услуги вместо свободных проектов. Это упрощает процесс для обеих сторон — исполнитель заранее описывает, что входит в услугу, а заказчик точно знает, за что платит. Дополнительные опции (срочность, дополнительные правки, исходники) оплачиваются отдельно.</p>
+<p>Категории: дизайн, тексты и перевод, программирование, маркетинг и реклама, аудио и видео, бизнес и помощь, обучение и консультации.</p>
+<p><strong>Комиссия:</strong> для исполнителя — 20% с каждого кворка. Для заказчика — комиссия при пополнении счёта (зависит от способа оплаты, обычно 0–5%).</p>
+<p><strong>Безопасность:</strong> эскроу-система. Деньги удерживаются на счёте Kwork до подтверждения заказчиком. Арбитраж при спорах.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Простой и понятный формат</li>
+<li>Гарантия оплаты через эскроу</li>
+<li>Большой поток заказчиков</li>
+<li>Низкий порог входа для новичков</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Высокая комиссия для исполнителей (20%)</li>
+<li>Фиксированный формат не подходит для крупных проектов</li>
+<li>Конкуренция очень высока (тысячи исполнителей в каждой категории)</li>
+<li>Цены часто демпинговые</li>
+</ul>
+<h2 id="flru">FL.ru</h2>
+<p><strong>Сайт:</strong> <a href="https://fl.ru" rel="nofollow" target="_blank">fl.ru</a></p>
+<p>FL.ru — старейшая и одна из крупнейших бирж фриланса в России (основана в 2005 году как Free-lance.ru). Классическая модель: заказчик публикует проект, исполнители подают заявки, заказчик выбирает исполнителя.</p>
+<p>Модель площадки: проекты и конкурсы. Проект — прямая работа с выбранным исполнителем. Конкурс — заказчик получает варианты от нескольких исполнителей и выбирает лучший (платит только победителю). Также есть раздел «Фрилансеры» — каталог профилей для прямого контакта.</p>
+<p>Категории: программирование, веб-разработка, дизайн, копирайтинг и переводы, маркетинг, аудио и видео, администрирование, бизнес.</p>
+<p><strong>Комиссия:</strong> для заказчика — 10% от суммы проекта (минимум 300 ₽). Для исполнителя — вывод средств с комиссией (зависит от способа). ПРО-аккаунт для исполнителей — от 990 ₽/мес (расширенные возможности подачи заявок).</p>
+<p><strong>Безопасность:</strong> «Безопасная сделка» (эскроу). Заказчик переводит деньги на счёт FL.ru, деньги замораживаются, исполнитель получает оплату после приёмки. Арбитраж.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Огромная база проектов и исполнителей</li>
+<li>Формат конкурсов для выбора лучшего результата</li>
+<li>Долгая история и репутация площадки</li>
+<li>Разнообразие категорий и сложных проектов</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Для исполнителей нужен платный ПРО-аккаунт</li>
+<li>Высокая конкуренция по популярным категориям</li>
+<li>Интерфейс устарел</li>
+<li>Комиссия 10% для заказчиков</li>
+</ul>
+<h2 id="хабр-фриланс">Хабр Фриланс</h2>
+<p><strong>Сайт:</strong> <a href="https://freelance.habr.com" rel="nofollow" target="_blank">freelance.habr.com</a></p>
+<p>Хабр Фриланс — IT-ориентированная биржа фриланса от команды Хабра. В отличие от FL.ru и Kwork, фокусируется исключительно на технических проектах: разработка, дизайн, DevOps, аналитика данных.</p>
+<p>Модель площадки: классическая — проекты с подачей заявок исполнителями. Заказчики — преимущественно IT-компании и стартапы, что обеспечивает более высокий средний чек и качественные проекты.</p>
+<p>Категории: веб-разработка, мобильная разработка, дизайн интерфейсов, системное администрирование, аналитика и данные, автоматизация, тестирование.</p>
+<p><strong>Комиссия:</strong> для заказчика — 10% от суммы. Для исполнителя — вывод средств (комиссия платёжной системы). ПРО-аккаунт — от 2 990 ₽/мес (расширенные лимиты заявок).</p>
+<p><strong>Безопасность:</strong> Безопасная сделка с эскроу. Арбитражная комиссия.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Качественные IT-проекты с хорошим бюджетом</li>
+<li>Профессиональное сообщество</li>
+<li>Высокий средний чек</li>
+<li>Престижная площадка для IT-специалистов</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только IT-проекты</li>
+<li>Нужен платный ПРО-аккаунт для активной работы</li>
+<li>Меньше проектов, чем на FL.ru и Kwork</li>
+<li>Высокие требования к исполнителям</li>
+</ul>
+<h2 id="youdo">YouDo</h2>
+<p><strong>Сайт:</strong> <a href="https://youdo.com" rel="nofollow" target="_blank">youdo.com</a></p>
+<p>YouDo — российская платформа для поиска исполнителей на бытовые и бизнес-задачи. Отличается от классических фриланс-бирж тем, что охватывает не только удалённую работу, но и локальные услуги (ремонт, клининг, переезд, репетиторы).</p>
+<p>Модель площадки: заказчик описывает задачу (с указанием локации или «удалённо»), исполнители откликаются и предлагают цену. Платформа работает и как локальный сервис, и как фриланс-биржа.</p>
+<p>Категории: ремонт и стройка, уборка, переезд, компьютерная помощь, дизайн, тексты, маркетинг, веб-разработка, репетиторы, юридические услуги.</p>
+<p><strong>Комиссия:</strong> для заказчика — 0% (кроме платного продвижения задачи). Для исполнителя — 10% с каждого заказа. ПРО-аккаунт — от 590 ₽/мес.</p>
+<p><strong>Безопасность:</strong> безопасная сделка доступна (оплата через платформу с удержанием до выполнения). Однако многие сделки закрываются напрямую.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Широкий спектр задач (от ремонта до веб-разработки)</li>
+<li>Бесплатно для заказчиков</li>
+<li>Низкий порог входа</li>
+<li>Работает для локальных и удалённых задач</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Много бытовых задач, IT-фокус слабый</li>
+<li>Безопасная сделка не обязательна (много обманов)</li>
+<li>Низкое качество откликов по техническим задачам</li>
+<li>Высокая конкуренция по простым задачам</li>
+</ul>
+<h2 id="яндексуслуги">Яндекс.Услуги</h2>
+<p><strong>Сайт:</strong> <a href="https://yandex.ru/services" rel="nofollow" target="_blank">yandex.ru/services</a></p>
+<p>Яндекс.Услуги — сервис от Яндекса для поиска специалистов и исполнителей. Аналог YouDo, но с трафиком из поисковика Яндекса и интеграцией с Яндекс.Картами для локальных услуг.</p>
+<p>Модель: каталог специалистов с рейтингами, отзывами и ценами. Заказчик выбирает исполнителя и связывается напрямую (или через платформу). Фокус — локальные услуги, но есть разделы для удалённой работы.</p>
+<p><strong>Комиссия:</strong> для исполнителей — платное размещение в каталоге (от 500 ₽/мес для продвижения). Для заказчиков — бесплатно.</p>
+<p><strong>Безопасность:</strong> нет встроенной безопасной сделки. Оплата напрямую исполнителю.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Огромный органический трафик из Яндекса</li>
+<li>Интеграция с Яндекс.Картами</li>
+<li>Бесплатно для заказчиков</li>
+<li>Широкий охват</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет безопасной сделки</li>
+<li>Нет гарантий для заказчика</li>
+<li>Слабо подходит для IT-фриланса</li>
+<li>Нет эскроу и арбитража</li>
+</ul>
+<h2 id="upwork-кратко">Upwork (кратко)</h2>
+<p><strong>Сайт:</strong> <a href="https://upwork.com" rel="nofollow" target="_blank">upwork.com</a></p>
+<p>Upwork — крупнейшая в мире биржа фриланса. После ухода из РФ в 2022 году российские пользователи могут работать через VPN и иностранные платёжные системы, но для большинства пользователей это затруднительно.</p>
+<p>Модель: проекты с заявками, долгосрочные контракты (hourly rate), Enterprise-подбор.</p>
+<p><strong>Комиссия:</strong> для исполнителя — 5–20% (уменьшается с ростом общей суммы заработка с конкретным клиентом: 20% до $500, 10% от $500 до $10 000, 5% свыше $10 000). Для заказчика — 3% processing fee.</p>
+<p><strong>Безопасность:</strong> escrow (для фиксированных проектов), hourly protection (для почасовых), Resolution Center.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Мировой рынок, высокие чеки</li>
+<li>Лучший в мире механизм защиты платежей</li>
+<li>Долгосрочные контракты с крупными клиентами</li>
+<li>Огромная база проектов</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Доступ из РФ ограничен</li>
+<li>Международные платёжные системы</li>
+<li>Высокая комиссия для начинающих (20%)</li>
+<li>Высокая конкуренция</li>
+</ul>
+<h2 id="fiverr-кратко">Fiverr (кратко)</h2>
+<p><strong>Сайт:</strong> <a href="https://fiverr.com" rel="nofollow" target="_blank">fiverr.com</a></p>
+<p>Fiverr — международная биржа с моделью «gig» (аналог Kwork). Исполнитель создаёт gig с фиксированной ценой, заказчик покупает. Название от «five dollars» — исторически услуги стоили от $5.</p>
+<p><strong>Комиссия:</strong> для исполнителя — 20% с каждого заказа. Для заказчика — service fee 5.5% + $2.75.</p>
+<p><strong>Безопасность:</strong> оплата удерживается до подтверждения заказа. Resolution Center.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Простой формат, аналогичный Kwork</li>
+<li>Международный рынок</li>
+<li>Отлично для дизайнеров и копирайтеров</li>
+<li>Пассивный формат (клиенты находят сами)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Доступ из РФ затруднён</li>
+<li>Высокая комиссия (20%)</li>
+<li>Цены в долларах</li>
+<li>Международные платежи</li>
+</ul>
+<h2 id="freelancecom-кратко">Freelance.com (кратко)</h2>
+<p><strong>Сайт:</strong> <a href="https://freelance.com" rel="nofollow" target="_blank">freelance.com</a></p>
+<p>Freelance.com — одна из старейших международных фриланс-платформ (основана в 1999 году). Меньше, чем Upwork и Fiverr, но имеет свою аудиторию, особенно в Европе.</p>
+<p>Модель: классические проекты с подачей заявок.</p>
+<p><strong>Комиссия:</strong> для исполнителя — 10% project fee + 3% processing. Для заказчика — $5–$25 за размещение проекта.</p>
+<p><strong>Безопасность:</strong> Milestone Payment System.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Старая и проверенная площадка</li>
+<li>Европейская аудитория</li>
+<li>Стабильный поток проектов</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Доступ из РФ ограничен</li>
+<li>Меньше проектов, чем на Upwork</li>
+<li>Высокая комиссия</li>
+<li>Устаревший интерфейс</li>
+</ul>
+<h2 id="туду-todo">Туду (Todo)</h2>
+<p><strong>Сайт:</strong> <a href="https://todo.is" rel="nofollow" target="_blank">todo.is</a> / аналогичные сервисы</p>
+<p>В контексте российских фриланс-площадок стоит упомянуть сервисы нового типа, которые позиционируются как альтернативы классическим биржам. Платформы типа «Туду» (Todo) или аналогичные локальные решения объединяют задачи, микрозадачи и услуги в одном месте.</p>
+<p>Формат: микрозадачи (пиксели, расшифровка, moderation), мелкие услуги, совместная работа. Часто используется как дополнение к основным биржам.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Простые задачи для быстрого заработка</li>
+<li>Низкий порог входа</li>
+<li>Гибкий формат</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Небольшие суммы заработка</li>
+<li>Нестабильный поток задач</li>
+<li>Не подходит для профессиональных фрилансеров</li>
+</ul>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Биржа</th><th>Комиссия исп.</th><th>Эскроу</th><th>Арбитраж</th><th>Категории</th><th>Конкуренция</th><th>Для заказч. (от)</th><th>Моб. приложение</th></tr></thead><tbody><tr><td>Kwork</td><td>20%</td><td>✅</td><td>✅</td><td>Широкий</td><td>Высокая</td><td>0 ₽</td><td>✅</td></tr><tr><td>FL.ru</td><td>10% (заказч.)</td><td>✅</td><td>✅</td><td>Широкий</td><td>Высокая</td><td>10% проекта</td><td>✅</td></tr><tr><td>Хабр Фриланс</td><td>10% (заказч.)</td><td>✅</td><td>✅</td><td>IT</td><td>Средняя</td><td>10% проекта</td><td>✅</td></tr><tr><td>YouDo</td><td>10%</td><td>Частично</td><td>✅</td><td>Шир.+быт</td><td>Высокая</td><td>0 ₽</td><td>✅</td></tr><tr><td>Яндекс.Услуги</td><td>Подписка</td><td>❌</td><td>❌</td><td>Шир.+быт</td><td>Средняя</td><td>0 ₽</td><td>✅</td></tr><tr><td>Upwork</td><td>5–20%</td><td>✅</td><td>✅</td><td>Все</td><td>Очень выс.</td><td>3% fee</td><td>✅</td></tr><tr><td>Fiverr</td><td>20%</td><td>✅</td><td>✅</td><td>Все</td><td>Высокая</td><td>5.5%+$2.75</td><td>✅</td></tr><tr><td>Freelance.com</td><td>10%+3%</td><td>✅</td><td>✅</td><td>Все</td><td>Средняя</td><td>$5–$25</td><td>✅</td></tr></tbody></table>
+<h2 id="как-выбрать-биржу">Как выбрать биржу</h2>
+<p>Для <strong>начинающего фрилансера</strong> лучше всего Kwork — низкий порог входа, простой формат, гарантия оплаты. Для <strong>опытного IT-специалиста</strong> — Хабр Фриланс (качественные проекты, профессиональное сообщество). Для <strong>разнообразных задач и бытовых услуг</strong> — YouDo. Для <strong>проектов с хорошим бюджетом</strong> — FL.ru. Для <strong>международного рынка</strong> — Upwork (при возможности VPN и иностранных платежей). Для <strong>продажи конкретных услуг без участия в тендерах</strong> — Kwork или Fiverr (гиг-модель).</p>
+<p>Оптимальная стратегия для российского фрилансера — регистрация на 2–3 площадках: Kwork для быстрого старта и пассивных заказов + Хабр Фриланс или FL.ru для активного поиска крупных IT-проектов. Параллельно стоит развивать личный бренд и прямых клиентов, чтобы снижать зависимость от бирж и их комиссий.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

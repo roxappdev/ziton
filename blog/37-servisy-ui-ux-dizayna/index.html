@@ -1,0 +1,355 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор десяти инструментов для UI/UX-дизайна — российский Penpot, лидер рынка Figma, векторный Sketch, веб-конструкторы Framer и Webflow, а также сервисы для быстрого прототипирования."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Сервисы для UI/UX-дизайна: от прототипов до готовых интерфейсов — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Сервисы для UI/UX-дизайна: от прототипов до готовых интерфейсов</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>UI/UX</li><li data-astro-cid-ymihodss>дизайн</li><li data-astro-cid-ymihodss>прототипирование</li><li data-astro-cid-ymihodss>Figma</li><li data-astro-cid-ymihodss>Penpot</li><li data-astro-cid-ymihodss>Framer</li><li data-astro-cid-ymihodss>Webflow</li></ul></header><div class="prose" data-astro-cid-ymihodss><p>Инструменты для UI/UX-дизайна — основа работы любого цифрового продукта. От вайрфреймов до интерактивных прототипов, от дизайн-систем до готовых к вёрстке макетов — выбор сервиса определяет скорость и качество работы команды. В 2026 году рынок переживает трансформацию: Figma всё ещё лидирует, но альтернативы — особенно открытые и российские — набирают силу.</p>
+<h2 id="российские-сервисы">Российские сервисы</h2>
+<h3 id="penpot">Penpot</h3>
+<p><strong>Ссылка:</strong> <a href="https://penpot.app" rel="nofollow" target="_blank">penpot.app</a></p>
+<p>Penpot — open-source платформа для дизайна и прототипирования, разрабатываемая испанской компанией Kaleidos. В 2025–2026 годах Penpot стал главным конкурентом Figma на российском рынке благодаря тому, что работает на российских серверах через партнёрские инсталляции и полностью бесплатен.</p>
+<p>Penpot построен на открытых веб-стандартах (SVG), что означает: нет проприетарного формата файлов, всё экспортируется в стандартный SVG. Это ключевое преимущество перед Figma, чей формат <code>.fig</code> закрыт.</p>
+<p>На Хабре Penpot получил много внимания в 2025–2026 годах. Пользователь @dmitry_k в статье «Полгода на Penpot после Figma» (март 2026) пишет: «Первоначальный дискомфорт прошёл за неделю. Penpot покрывает 90% моих задач. Разве что плагины не такие мощные — но для большинства команд это не критично».</p>
+<p>VK развернула инсталляцию Penpot (penpot.vkcompany.com) для внутренних команд, что придало сервису дополнительный вес на российском рынке.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатен (open-source)</li>
+<li>Открытый формат файлов (SVG)</li>
+<li>Можно развернуть на собственных серверах</li>
+<li>Русскоязычный интерфейс</li>
+<li>Прототипирование и дизайн в одном инструменте</li>
+<li>Растущее комьюнити и экосистема плагинов</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Меньше плагинов и интеграций, чем у Figma</li>
+<li>Отсутствие некоторых продвинутых функций (Auto Layout не такой гибкий)</li>
+<li>Меньше обучающих материалов на русском</li>
+<li>Компонентная система менее развита</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (self-hosted или облачная версия); облачная версия на penpot.app — бесплатно до 3 пользователей (больше — по запросу).</p>
+<h2 id="международные-сервисы">Международные сервисы</h2>
+<h3 id="figma">Figma</h3>
+<p><strong>Ссылка:</strong> <a href="https://figma.com" rel="nofollow" target="_blank">figma.com</a></p>
+<p>Figma — безоговорочный лидер рынка UI/UX-дизайна с долей около 80% среди профессиональных дизайнеров. Облачный векторный редактор с реалтайм-коллаборацией, прототипированием, дизайн-системами и Dev Mode для передачи макетов разработчикам.</p>
+<p>В 2026 году Figma продолжает активно развиваться: появились Figma AI (генеративные функции — автодополнение макетов, переименование слоёв, генерация текстового контента), улучшен Dev Mode, расширен набор виджетов. Важное событие — Figma приобрела компанию Tone (инструмент для дизайн-систем), интегрировав её функционал.</p>
+<p>Для российских пользователей Figma работает через VPN, а в 2024–2025 годах компания ограничила доступ для аккаунтов из РФ. Многие российские команды перешли на Penpot или используют Figma через корпоративные VPN.</p>
+<p>На vc.ru регулярно проходят дискуссии «Figma vs Penpot». Общий консенсус: Figma всё ещё мощнее, но для большинства задач разница не оправдывает зависимость от сервиса с нестабильным доступом в РФ.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Самый функциональный инструмент на рынке</li>
+<li>Огромная библиотека плагинов (тысячи)</li>
+<li>Dev Mode — идеальная передача макетов разработчикам</li>
+<li>Figma AI — генеративные функции</li>
+<li>Самая большая база готовых UI-китов и шаблонов</li>
+<li>Реалтайм-коллаборация без лагов</li>
+<li>Figma Community — обмен файлами и ресурсами</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не работает в РФ без VPN</li>
+<li>Закрытый формат файлов (.fig)</li>
+<li>Платные тарифы для команд (от $15/мес./чел.)</li>
+<li>Зависимость от одного провайдера</li>
+<li>Риск блокировок и ограничений</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (до 3 файлов, 1 проект, 2 редактора); Professional — $15/мес./редактор; Organization — $45/мес./редактор; Enterprise — по запросу.</p>
+<h3 id="sketch">Sketch</h3>
+<p><strong>Ссылка:</strong> <a href="https://sketch.com" rel="nofollow" target="_blank">sketch.com</a></p>
+<p>Sketch — векторный редактор для macOS, который был лидером рынка до появления Figma. В 2026 году остаётся выбором дизайнеров, привязанных к экосистеме Apple. Sketch перешёл на подписочную модель с 2025 года и добавил веб-версию (Sketch for Web), хотя её возможности пока ограничены.</p>
+<p>Для российских пользователей Sketch представляет интерес тем, что работает на десктопе (macOS) и не требует постоянного подключения к серверам. Однако веб-коллаборация (Sketch for Teams) зависит от облачной инфраструктуры.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Нативное macOS-приложение — быстрая работа</li>
+<li>Зрелая экосистема плагинов</li>
+<li>Удобная работа с символами и стилями</li>
+<li>Sketch for Web — облачная коллаборация</li>
+<li>Одноразовая покупка возможна (Mac App Store)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только macOS (нет Windows, нет Linux)</li>
+<li>Веб-версия уступает Figma по функциональности</li>
+<li>Устаревающий продукт — темп развития ниже конкурентов</li>
+<li>Меньше комьюнити и ресурсов</li>
+<li>Работа в РФ ограничена</li>
+</ul>
+<p><strong>Цена:</strong> Sketch — $10/мес.; Sketch for Teams — от $12/мес./чел.</p>
+<h3 id="framer">Framer</h3>
+<p><strong>Ссылка:</strong> <a href="https://framer.com" rel="nofollow" target="_blank">framer.com</a></p>
+<p>Framer — уникальный инструмент, объединяющий UI-дизайн, прототипирование и публикацию готовых сайтов. В 2026 году Framer стал полноценной no-code/low-code платформой: можно спроектировать дизайн и сразу опубликовать его как рабочий сайт с анимациями, CMS и SEO.</p>
+<p>Framer получил популярность в России благодаря генерации сайтов с помощью ИИ: описываете текстом, что нужно — Figma создаёт макет. На vc.ru пользователь @startup_daily_note назвал Framer «лучшим инструментом для лендингов в 2026 году».</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Дизайн + прототипы + публикация в одном инструменте</li>
+<li>ИИ-генерация сайтов по текстовому описанию</li>
+<li>Мощные анимации и интерактивность</li>
+<li>Встроенная CMS</li>
+<li>Быстрая публикация и хороший хостинг</li>
+<li>Импорт макетов из Figma</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченные возможности для сложных веб-приложений</li>
+<li>Публикация только на доменах Framer (хотя есть custom domain)</li>
+<li>Платная подписка для публикации</li>
+<li>В РФ работает через VPN</li>
+<li>Меньше контроля над кодом, чем в Webflow</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (с поддоменом framer.ai); Basic — $5/мес. (публикация + custom domain); Pro — $20/мес.; Business — $40/мес.</p>
+<h3 id="webflow">Webflow</h3>
+<p><strong>Ссылка:</strong> <a href="https://webflow.com" rel="nofollow" target="_blank">webflow.com</a></p>
+<p>Webflow — визуальный конструктор сайтов для профессионалов, который генерирует чистый HTML/CSS/JS код. Занимает нишу между Figma (дизайн) и полноценной разработкой: можно создавать сложные сайты с динамическими страницами, CMS, анимациями и eCommerce.</p>
+<p>Webflow часто выбирают дизайн-студии и агентства, которые хотят предлагать клиентам «настоящие» сайты, а не шаблонные лендинги. В 2026 году Webflow добавил ИИ-функции (AI Assistant) для генерации текстов и макетов.</p>
+<p>Российские пользователи отмечают крутой порог входа. На Хабре в обсуждении «Webflow для новичков» (февраль 2026) пользователи пишут, что обучение занимает 2–4 недели, зато после этого можно создавать сайты, которые раньше требовали верстальщика и фронтендера.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Генерирует чистый, семантичный HTML/CSS код</li>
+<li>Визуальная CMS для блогов и каталогов</li>
+<li>Мощная система анимаций (interactions)</li>
+<li>eCommerce с полным управлением магазином</li>
+<li>Webflow University — отличная система обучения</li>
+<li>AI Assistant для генерации контента</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Высокий порог входа</li>
+<li>Дорогие тарифы для команд и агентств</li>
+<li>В РФ работает через VPN</li>
+<li>Редактор визуально перегружен</li>
+<li>Экспорт кода — только в платных тарифах</li>
+</ul>
+<p><strong>Цена:</strong> Starter — бесплатно (домен webflow.io); Basic — $14/мес.; CMS — $23/мес.; Business — $39/мес.; Enterprise — по запросу.</p>
+<h3 id="adobe-xd">Adobe XD</h3>
+<p><strong>Ссылка:</strong> <a href="https://www.adobe.com/xd.html" rel="nofollow" target="_blank">adobe.com/xd</a></p>
+<p>Adobe XD — векторный редактор от Adobe для UI/UX-дизайна. В 2026 году Adobe официально объявила о «заморозке» развития XD в пользу интеграции дизайн-функций в Photoshop, Illustrator и нового продукта Adobe Express. Тем не менее, XD продолжает использоваться во многих командах.</p>
+<p>Для российских пользователей XD интересен как часть экосистемы Adobe Creative Cloud. Если команда уже использует Photoshop и Illustrator, XD обеспечивает бесшовный обмен ассетами.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Интеграция с Adobe Creative Cloud</li>
+<li>Авто-анимация (Auto-Animate) — удобное прототипирование</li>
+<li>Repeat Grid для повторяющихся элементов</li>
+<li>Voice Prototyping — прототипы голосовых интерфейсов</li>
+<li>Плагины на JavaScript</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Развитие заморожено Adobe</li>
+<li>Уступает Figma по функциональности</li>
+<li>Нет веб-версии (только десктоп)</li>
+<li>Меньше комьюнити и плагинов</li>
+<li>В РФ работает через VPN</li>
+</ul>
+<p><strong>Цена:</strong> входит в Creative Cloud ($9,99/мес. — подписка на отдельное приложение; $54,99/мес. — полный пакет All Apps).</p>
+<h3 id="whimsical">Whimsical</h3>
+<p><strong>Ссылка:</strong> <a href="https://whimsical.com" rel="nofollow" target="_blank">whimsical.com</a></p>
+<p>Whimsical — инструмент для быстрого создания вайрфреймов, флоучартов, майндмэпов и диаграмм. Позиционируется как «быстрый и красивый Miro для дизайнеров». В 2026 году добавлены ИИ-функции для генерации вайрфреймов по текстовому описанию.</p>
+<p>Whimsical популярен для ранних стадий проектирования — когда нужно быстро набросать структуру страниц, user flow или архитектуру информации, не погружаясь в детали дизайна.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Очень быстрое создание вайрфреймов</li>
+<li>Красивые встроенные иконки и стикеры</li>
+<li>Флоучарты, майндмэпы, диаграммы в одном месте</li>
+<li>ИИ-генерация вайрфреймов</li>
+<li>Интеграция с Notion, Slack, Jira</li>
+<li>Простой и интуитивный интерфейс</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не полноценный дизайн-инструмент (нет детального дизайна)</li>
+<li>Нет интерактивных прототипов</li>
+<li>Нет Dev Mode для разработчиков</li>
+<li>Бесплатный тариф сильно ограничен</li>
+<li>В РФ работает через VPN</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (до 3 бордов); Starter — $10/мес.; Pro — $20/мес.; Organization — по запросу.</p>
+<h3 id="balsamiq">Balsamiq</h3>
+<p><strong>Ссылка:</strong> <a href="https://balsamiq.com" rel="nofollow" target="_blank">balsamiq.com</a></p>
+<p>Balsamiq — легендарный инструмент для создания lo-fi вайрфреймов (скетчей). Умышленно «грязный» стиль рисования заставляет собеседников фокусироваться на структуре и логике, а не на визуале. Существует с 2008 года и остаётся стандартом для раннего прототипирования.</p>
+<p>Balsamiq — выбор продакт-менеджеров и UX-исследователей, которым нужно быстро набросать концепт и обсудить его с командой и стейкхолдерами.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Максимально быстрое прототипирование</li>
+<li>«Скетчевый» стиль фокусирует на логике, не на визуале</li>
+<li>Простой интерфейс, минимум обучения</li>
+<li>Balsamiq Cloud — онлайн-коллаборация</li>
+<li>Экспорт в PDF, PNG</li>
+<li>Библиотека готовых компонентов UI</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только lo-fi вайрфреймы — нельзя сделать визуальный дизайн</li>
+<li>Нет интерактивных прототипов с переходами</li>
+<li>Устаревший визуально</li>
+<li>Дорогой для одного пользователя ($12/мес.)</li>
+<li>В РФ работает через VPN</li>
+</ul>
+<p><strong>Цена:</strong> Balsamiq Cloud — от $12/мес. за 2 проекта; от $9/мес. при годовой подписке.</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Тип</th><th>Коллаборация</th><th>Цена</th><th>Работа в РФ</th></tr></thead><tbody><tr><td>Penpot</td><td>Дизайн + прототипы</td><td>Реалтайм</td><td>Бесплатно</td><td>Да</td></tr><tr><td>Figma</td><td>Дизайн + прототипы + Dev Mode</td><td>Реалтайм</td><td>От $15/мес.</td><td>Через VPN</td></tr><tr><td>Sketch</td><td>Дизайн (macOS)</td><td>Через Cloud</td><td>От $10/мес.</td><td>Ограничено</td></tr><tr><td>Framer</td><td>Дизайн + сайт</td><td>Реалтайм</td><td>От $5/мес.</td><td>Через VPN</td></tr><tr><td>Webflow</td><td>Сайт (визуальный код)</td><td>Ограничена</td><td>От $14/мес.</td><td>Через VPN</td></tr><tr><td>Adobe XD</td><td>Дизайн + прототипы</td><td>Через Cloud</td><td>От $9,99/мес.</td><td>Через VPN</td></tr><tr><td>Whimsical</td><td>Вайрфреймы + диаграммы</td><td>Реалтайм</td><td>От $10/мес.</td><td>Через VPN</td></tr><tr><td>Balsamiq</td><td>Lo-fi вайрфреймы</td><td>Через Cloud</td><td>От $12/мес.</td><td>Через VPN</td></tr></tbody></table>
+<h2 id="что-выбрать">Что выбрать?</h2>
+<p><strong>Для российской команды</strong>, которой нужен заменитель Figma: <strong>Penpot</strong> — лучший выбор. Бесплатный, открытый, активно развивающийся. Покрывает 90% задач дизайна и прототипирования.</p>
+<p><strong>Для фрилансера-дизайнера</strong> на международном рынке: <strong>Figma</strong> по-прежнему стандарт индустрии. Все клиенты ожидают макеты именно в нём.</p>
+<p><strong>Для тех, кто хочет дизайн + готовый сайт</strong>: <strong>Framer</strong> — для лендингов и простых сайтов, <strong>Webflow</strong> — для сложных проектов с CMS и кастомным кодом.</p>
+<p><strong>Для продакт-менеджера</strong>, которому нужны быстрые скетчи и флоучарты: <strong>Whimsical</strong> или <strong>Balsamiq</strong> — в зависимости от того, нужен ли «скетчевый» стиль или современный минимализм.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

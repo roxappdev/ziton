@@ -1,0 +1,464 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор десяти онлайн-фоторедакторов — от полноценных Photoshop-альтернатив до инструментов для быстрой обработки: Photopea, Pixlr, Adobe Express, Fotor и другие."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Фоторедакторы онлайн: обработка фото прямо в браузере — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Фоторедакторы онлайн: обработка фото прямо в браузере</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-03T00:00:00.000Z" data-astro-cid-ymihodss>3 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>фоторедактор</li><li data-astro-cid-ymihodss>онлайн</li><li data-astro-cid-ymihodss>Photopea</li><li data-astro-cid-ymihodss>Pixlr</li><li data-astro-cid-ymihodss>Adobe Express</li><li data-astro-cid-ymihodss>обработка фото</li><li data-astro-cid-ymihodss>Canva</li></ul></header><div class="prose" data-astro-cid-ymihodss><p>Онлайн-фоторедакторы переживают ренессанс. Ещё пять лет назад казалось, что серьёзную обработку фото можно делать только в десктопных программах. Сегодня браузерные инструменты достигли уровня, который покрывает 90% задач большинства пользователей — от ретуши портретов до работы со слоями и масками. В этой статье мы сравним десять сервисов, от отечественных решений до международных лидеров.</p>
+<h2 id="российские-сервисы">Российские сервисы</h2>
+<h3 id="р7-фоторедактор">Р7-Фоторедактор</h3>
+<p><strong>Ссылка:</strong> <a href="https://myoffice.ru" rel="nofollow" target="_blank">myoffice.ru</a></p>
+<p>Р7-Фоторедактор — часть экосистемы МойОфис, разработанной «Новыми Облачными Технологиями». Входит в реестр отечественного ПО и предназначен для пользователей, которым нужен российский аналог Adobe Photoshop.</p>
+<p>Редактор поддерживает базовый набор инструментов: обрезка, поворот, цветокоррекция (яркость, контраст, насыщенность), фильтры, наложение текста, работа с простыми слоями. Интерфейс привычный для пользователей, знакомых с Photoshop — панели слоёв, инструментов, свойств. Поддерживаются форматы JPEG, PNG, BMP, WEBP.</p>
+<p>На практике Р7-Фоторедактор подходит для простых задач: подготовка изображений для документов, базовая ретушь, добавление текстовых водяных знаков. Для профессиональной работы с фотографиями функционала недостаточно — нет сложных масок, RAW-поддержки, продвинутых фильтров.</p>
+<p>Отзывы пользователей на vc.ru указывают, что Р7-Фоторедактор полезен как часть офисного пакета, но как самостоятельный инструмент уступает даже бесплатным онлайн-альтернативам.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Входит в реестр отечественного ПО</li>
+<li>Знакомый интерфейс в стиле Photoshop</li>
+<li>Не требует VPN</li>
+<li>Интеграция с МойОфис</li>
+<li>Поддержка слоёв</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченный набор инструментов</li>
+<li>Нет RAW-поддержки</li>
+<li>Нет сложных масок и продвинутых фильтров</li>
+<li>Работает медленнее аналогов</li>
+<li>Нет мобильного приложения</li>
+</ul>
+<p><strong>Цена:</strong> входит в МойОфис (от 2 400 ₽/год за 1 рабочее место).</p>
+<h2 id="международные-сервисы">Международные сервисы</h2>
+<h3 id="фотошоп-онлайн-adobe-express">Фотошоп онлайн (Adobe Express)</h3>
+<p><strong>Ссылка:</strong> <a href="https://express.adobe.com" rel="nofollow" target="_blank">express.adobe.com</a></p>
+<p>Adobe Express (ранее Adobe Spark) — упрощённый веб-редактор от Adobe, который позиционируется как «Photoshop для всех». В 2025–2026 годах Adobe значительно расширил функционал: добавлены ИИ-инструменты на базе Adobe Firefly — генеративная заливка (Generative Fill), удаление объектов, расширение фона.</p>
+<p>Adobe Express не является полноценным Photoshop в браузере — это скорее Canva-подобный конструктор с фото-инструментами. Однако доступ к Adobe Firefly ИИ делает его мощным для быстрой обработки: удалите лишний объект, замените фон, добавьте текст — всё за несколько кликов.</p>
+<p>Библиотека шаблонов огромна, шрифты — профессиональные (Adobe Fonts). Интеграция с Creative Cloud позволяет переносить ассеты между Photoshop, Illustrator и Express.</p>
+<p>Для российских пользователей Adobe Express работает через VPN. Кроме того, в 2024–2025 годах Adobe ограничила доступ к сервисам для аккаунтов из РФ.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Доступ к Adobe Firefly ИИ (генеративная заливка)</li>
+<li>Огромная библиотека шаблонов и шрифтов</li>
+<li>Интеграция с Adobe Creative Cloud</li>
+<li>Простота использования</li>
+<li>Мобильное приложение</li>
+<li>Генерация изображений по тексту</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не полноценный Photoshop — нет продвинутых слоёв и масок</li>
+<li>Работает в РФ через VPN</li>
+<li>Платные ИИ-кредиты ограничены на бесплатном тарифе</li>
+<li>Нет RAW-поддержки</li>
+<li>Загрузка с водяным знаком на бесплатном тарифе</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (с ограничениями); Premium — $9,99/мес.</p>
+<h3 id="pixlr">Pixlr</h3>
+<p><strong>Ссылка:</strong> <a href="https://pixlr.com" rel="nofollow" target="_blank">pixlr.com</a></p>
+<p>Pixlr — один из старейших и самых популярных онлайн-фоторедакторов. Существует с 2008 года и за это время вырос от простого фильтр-приложения до полноценного редактора с несколькими модулями: Pixlr X (быстрый редактор), Pixlr E (расширенный редактор) и Pixlr AI (ИИ-инструменты).</p>
+<p>Pixlr E — ближайший к Photoshop онлайн-редактор. Поддерживает слои, маски, инструменты выделения (магическая палочка, лассо), кривые, уровни, цветовые каналы. Интерфейс напоминает Photoshop, но адаптирован для браузера. Работает быстро благодаря оптимизации для WebGL.</p>
+<p>В 2026 году Pixlr активно развивает ИИ-направление: удаление фона, замена неба, удаление объектов, цветокоррекция в один клик, генеративная заливка. ИИ-инструменты доступны на всех тарифах, но с лимитами на бесплатном.</p>
+<p>Пользователи ценят Pixlr за баланс между функциональностью и простотой. Это не Photopea по уровню продвинутости, но для большинства задач — более чем достаточно, и интерфейс дружелюбнее.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Два режима: быстрый (X) и расширенный (E)</li>
+<li>Слои, маски, продвинутая цветокоррекция</li>
+<li>Мощные ИИ-инструменты</li>
+<li>Быстрая работа в браузере</li>
+<li>Мобильные приложения (iOS, Android)</li>
+<li>Щедрый бесплатный тариф</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет RAW-поддержки в бесплатной версии</li>
+<li>Реклама на бесплатном тарифе</li>
+<li>ИИ-инструменты с лимитами</li>
+<li>Работает в РФ с перебоями</li>
+<li>Меньше плагинов, чем у десктопных аналогов</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (с рекламой и лимитами); Pixlr Plus — $4,90/мес.; Pixlr Pro — $7,99/мес. (RAW-поддержка, безлимитный ИИ).</p>
+<h3 id="photopea">Photopea</h3>
+<p><strong>Ссылка:</strong> <a href="https://photopea.com" rel="nofollow" target="_blank">photopea.com</a></p>
+<p>Photopea — феноменальный проект: полноценный Photoshop-клон, работающий прямо в браузере. Разработан одним чешским программистом Ивана Куттром. Интерфейс практически идентичен Photoshop, поддерживает PSD-файлы, работает со слоями, масками, фильтрами, каналами, путями, 3D-объектами.</p>
+<p>Photopea открывает PSD, XCF, Sketch, XD, CDR и десятки других форматов. Поддерживает RAW (CR2, NEF, ARW и другие), работает с векторной графикой (SVG), имеет скриптинг на JavaScript. По функциональности это, пожалуй, самый мощный бесплатный онлайн-фоторедактор.</p>
+<p>Проект финансируется за счёт рекламы на сайте — нет подписок, нет премиум-версий. Все функции доступны бесплатно. Это делает Photopea уникальным на рынке.</p>
+<p>На Хабре Photopea регулярно упоминается как «лучший бесплатный Photoshop в браузере». Пользователи отмечают, что для 90% задач по обработке фото Photopea полностью заменяет десктопный Photoshop.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Почти полный клон Photoshop — бесплатные</li>
+<li>Открывает PSD и десятки других форматов</li>
+<li>Слои, маски, фильтры, каналы, пути</li>
+<li>RAW-поддержка</li>
+<li>JavaScript-скриптинг</li>
+<li>Полностью бесплатно (финансируется рекламой)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Интерфейс перегружен для новичков</li>
+<li>Реклама на сайте (можно блокировать)</li>
+<li>Требует мощного браузера</li>
+<li>Нет мобильного приложения</li>
+<li>Обучение необходимо — порог входа высок</li>
+<li>Работает в РФ, но возможны перебои</li>
+</ul>
+<p><strong>Цена:</strong> полностью бесплатно.</p>
+<h3 id="canva-фото">Canva (фото)</h3>
+<p><strong>Ссылка:</strong> <a href="https://canva.com" rel="nofollow" target="_blank">canva.com</a></p>
+<p>Canva — в первую очередь дизайнерский конструктор, но его фото-инструменты заслуживают отдельного внимания. В 2026 году Canva предлагает базовый набор инструментов для обработки фото: обрезка, поворот, цветокоррекция (яркость, контраст, насыщенность, размытие), фильтры (более 100), рамки, наложение текста.</p>
+<p>Canva отлично подходит для подготовки изображений для социальных сетей: есть встроенные шаблоны размеров для каждого формата (Instagram, VK, Telegram, YouTube). Можно добавить текст, логотип, рамку — и готовый пост готов.</p>
+<p>ИИ-инструменты Canva включают Magic Edit (замену участков изображения), Background Remover (удаление фона), Magic Expand (расширение изображения). Работают они хорошо, но платно на тарифе Canva Free (нужно платить за каждый элемент).</p>
+<p>Для профессиональной обработки фото Canva не подойдёт — нет слоёв в привычном понимании, нет масок, нет кривых. Но для быстрой подготовки контента для соцсетей — один из лучших инструментов.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Идеален для подготовки фото для соцсетей</li>
+<li>Более 100 фильтров и эффектов</li>
+<li>ИИ-инструменты (Magic Edit, Background Remover)</li>
+<li>Огромная библиотека графики и шаблонов</li>
+<li>Мобильное приложение</li>
+<li>Простота использования</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет продвинутых инструментов (слои, маски, кривые)</li>
+<li>Нет RAW-поддержки</li>
+<li>ИИ-функции платные на бесплатном тарифе</li>
+<li>Не подходит для профессиональной обработки</li>
+<li>Работает в РФ через VPN</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно; Canva Pro — $12,99/мес.</p>
+<h3 id="fotor">Fotor</h3>
+<p><strong>Ссылка:</strong> <a href="https://fotor.com" rel="nofollow" target="_blank">fotor.com</a></p>
+<p>Fotor — популярный онлайн-фоторедактор с акцентом на простоту и скорость. Предлагает три основных режима: «Редактировать» (ручная обработка), «Дизайн» (создание графики по шаблонам) и «Коллаж» (создание коллажей).</p>
+<p>В режиме «Редактировать» доступна цветокоррекция (кривые, уровни, HSL), фильтры, кадрирование, клонирование, коррекция красных глаз. Fotor поддерживает RAW-файлы на платном тарифе и предлагает пакетный режим обработки.</p>
+<p>В 2026 году Fotor значительно расширил ИИ-функции: генерация изображений по тексту, удаление фона, замена фона, удаление объектов, ИИ-ретушь портретов, улучшение качества фото (AI Enhance). ИИ-инструменты работают быстро и дают качественный результат.</p>
+<p>Fotor имеет мобильные приложения для iOS и Android с практически полным набором функций десктопной версии.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Простой и интуитивный интерфейс</li>
+<li>Мощные ИИ-инструменты для фото</li>
+<li>Коллаж-конструктор</li>
+<li>Пакетная обработка</li>
+<li>RAW-поддержка (платно)</li>
+<li>Мобильные приложения</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет слоёв и масок</li>
+<li>Бесплатный тариф сильно ограничен (водяные знаки)</li>
+<li>RAW только на платном тарифе</li>
+<li>Агрессивная монетизация</li>
+<li>Работает в РФ с перебоями</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (с водяными знаками и ограничениями); Fotor Pro — $8,99/мес.; Fotor Pro+ — $19,99/мес.</p>
+<h3 id="befunky">BeFunky</h3>
+<p><strong>Ссылка:</strong> <a href="https://befunky.com" rel="nofollow" target="_blank">befunky.com</a></p>
+<p>BeFunky — онлайн-фоторедактор с акцентом на креативные эффекты и художественные фильтры. Существует с 2007 года и специализируется на преобразовании фотографий в картины, эскизы, поп-арт и другие стили.</p>
+<p>BeFunky предлагает три инструмента: Photo Editor (основной редактор), Collage Maker (коллажи) и Graphic Designer (графический дизайнер). В Photo Editor доступна базовая цветокоррекция, более 300 фильтров и эффектов (включая художественные), инструменты ретуши (клон, сглаживание кожи), добавление рамок, текста, стикеров.</p>
+<p>BeFunky выделяется качеством художественных эффектов — они действительно выглядят хорошо, а не как дешёвые Instagram-фильтры. Oil Painting, Watercolor, Cartoon, Charcoal — каждый эффект настраивается интенсивностью.</p>
+<p>Для профессиональной обработки BeFunky не подходит — нет слоёв, нет RAW, нет масок. Но для творческих задач и соцсетей — отличный инструмент.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Более 300 качественных фильтров и эффектов</li>
+<li>Художественные стилизация (картины, эскизы)</li>
+<li>Коллаж-конструктор</li>
+<li>Простой интерфейс</li>
+<li>Мобильные приложения</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет слоёв и масок</li>
+<li>Нет RAW-поддержки</li>
+<li>Бесплатный тариф ограничен (HD-экспорт платный)</li>
+<li>Реклама</li>
+<li>Работает в РФ с перебоями</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (SD-качество); BeFunky Plus — $9,99/мес. (HD-качество, без рекламы).</p>
+<h3 id="lunapic">LunaPic</h3>
+<p><strong>Ссылка:</strong> <a href="https://lunapic.com" rel="nofollow" target="_blank">lunapic.com</a></p>
+<p>LunaPic — полностью бесплатный онлайн-фоторедактор, существующий с 2005 года. Не самый красивый интерфейс, но впечатляющий набор функций для бесплатного инструмента.</p>
+<p>LunaPic поддерживает анимации (GIF), базовую цветокоррекцию, фильтры, обрезку, поворот, наложение текста, удаление фона. Уникальная особенность — работа с анимированными GIF: можно редактировать кадры, добавлять текст, применять эффекты к анимации.</p>
+<p>Также LunaPic предлагает инструменты для создания мемов, добавления рамок, эффекта калейдоскопа, поп-арт эффекта (в стиле Энди Уорхола) и других творческих функций.</p>
+<p>LunaPic финансируется за счёт рекламы. Интерфейс устаревший, но все функции полностью бесплатны — нет премиум-версии, нет подписок.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатно, нет подписок</li>
+<li>Работа с анимированными GIF</li>
+<li>Большое количество фильтров и эффектов</li>
+<li>Инструменты для мемов</li>
+<li>Не требует регистрации</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Устаревший интерфейс</li>
+<li>Нет слоёв и масок</li>
+<li>Нет RAW-поддержки</li>
+<li>Много рекламы</li>
+<li>Нет мобильного приложения</li>
+<li>Медленная работа с большими файлами</li>
+</ul>
+<p><strong>Цена:</strong> полностью бесплатно.</p>
+<h3 id="polarr">Polarr</h3>
+<p><strong>Ссылка:</strong> <a href="https://polarr.com" rel="nofollow" target="_blank">polarr.com</a></p>
+<p>Polarr — фоторедактор с акцентом на продвинутую цветокоррекцию и ИИ-инструменты. Доступен как веб-приложение и мобильное приложение. Выделяется качеством цветокоррекции: HSL-панель, кривые, уровни, цветовые тонировки — на уровне Lightroom.</p>
+<p>Polarr предлагает ИИ-автоулучшение (AI Auto Enhance), которое анализирует фото и применяет оптимальные настройки. ИИ-маски позволяют выделять сложные объекты (небо, лицо, волосы) для точной коррекции. Пакетный режим позволяет обрабатывать сразу несколько фото с одними настройками.</p>
+<p>В 2026 году Polarr добавил ИИ-генерацию изображений и Copilots — текстовые подсказки для редактирования (например, «сделай фон теплее и добавь виньетирование»). Также доступна функция переноса стиля с одного фото на другое.</p>
+<p>Polarr — отличный выбор для фотографов, которым нужна качественная цветокоррекция в браузере без установки Lightroom.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Продвинутая цветокоррекция (HSL, кривые, уровни)</li>
+<li>ИИ-автоулучшение и ИИ-маски</li>
+<li>Пакетная обработка</li>
+<li>Качественные пресеты</li>
+<li>Мобильные приложения (iOS, Android)</li>
+<li>Поларроид-стиль эффектов</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет слоёв и сложных масок</li>
+<li>Нет RAW-поддержки в веб-версии</li>
+<li>Платные ИИ-функции</li>
+<li>Работает в РФ с перебоями</li>
+<li>Меньше инструментов, чем в Photopea</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (с ограничениями); Polarr Pro — $7,99/мес. (десктопная версия и расширенные ИИ-функции).</p>
+<h3 id="removebg-фото-редактор">Remove.bg (фото-редактор)</h3>
+<p><strong>Ссылка:</strong> <a href="https://remove.bg" rel="nofollow" target="_blank">remove.bg</a></p>
+<p>Remove.bg — специализированный сервис для удаления фона с фото. Хотя это не полноценный фоторедактор, он выполняет одну задачу настолько хорошо, что заслуживает упоминания. Нейросеть удаляет фон за 5 секунд, включая сложные объекты (волосы, сетки, прозрачные элементы).</p>
+<p>В 2026 году Remove.bg расширил функционал: помимо удаления фона, доступны замена фона (библиотека готовых фонов или загрузка своего), добавление тени, изменение размера и пропорций. Но это всё — не полноценный редактор.</p>
+<p>Remove.bg также предлагает API для интеграции в другие сервисы и приложения. API используется сотнями компаний для автоматической обработки фотографий.</p>
+<p>Для быстрого удаления фона Remove.bg — лучший инструмент. Для чего-то большего нужен отдельный фоторедактор.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Лучшее качество удаления фона</li>
+<li>Работает за 5 секунд</li>
+<li>Отлично справляется со сложными объектами (волосы)</li>
+<li>API для разработчиков</li>
+<li>Не требует регистрации</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не полноценный фоторедактор</li>
+<li>Бесплатно только превью-качество</li>
+<li>Пакетная обработка платная</li>
+<li>Нет инструментов ретуши</li>
+<li>Работает в РФ с перебоями</li>
+</ul>
+<p><strong>Цена:</strong> 1 фото бесплатно (превью); подписка от $9/мес. (40 фото); API — от $0,05/фото.</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Слои</th><th>Маски</th><th>RAW</th><th>Фильтры</th><th>ИИ</th><th>Мобильное приложение</th><th>Бесплатно</th></tr></thead><tbody><tr><td>Р7-Фоторедактор</td><td>Да</td><td>Базовые</td><td>Нет</td><td>Базовые</td><td>Нет</td><td>Нет</td><td>Нет</td></tr><tr><td>Adobe Express</td><td>Нет</td><td>Нет</td><td>Нет</td><td>Хорошие</td><td>Firefly</td><td>Да</td><td>Ограниченно</td></tr><tr><td>Pixlr E</td><td>Да</td><td>Да</td><td>Платно</td><td>Хорошие</td><td>Да</td><td>Да</td><td>Да (с рекламой)</td></tr><tr><td>Photopea</td><td>Да</td><td>Да</td><td>Да</td><td>Отличные</td><td>Нет</td><td>Нет</td><td>Полностью</td></tr><tr><td>Canva</td><td>Нет</td><td>Нет</td><td>Нет</td><td>100+</td><td>Magic Edit</td><td>Да</td><td>Да (с ограничениями)</td></tr><tr><td>Fotor</td><td>Нет</td><td>Нет</td><td>Платно</td><td>Хорошие</td><td>Да</td><td>Да</td><td>С водяным знаком</td></tr><tr><td>BeFunky</td><td>Нет</td><td>Нет</td><td>Нет</td><td>300+</td><td>Нет</td><td>Да</td><td>SD-качество</td></tr><tr><td>LunaPic</td><td>Нет</td><td>Нет</td><td>Нет</td><td>Много</td><td>Нет</td><td>Нет</td><td>Полностью</td></tr><tr><td>Polarr</td><td>Нет</td><td>ИИ-маски</td><td>Нет</td><td>Отличные</td><td>Да</td><td>Да</td><td>Ограниченно</td></tr><tr><td>Remove.bg</td><td>Нет</td><td>Нет</td><td>Нет</td><td>Нет</td><td>Удаление фона</td><td>Нет</td><td>1 фото</td></tr></tbody></table>
+<h2 id="что-выбрать">Что выбрать?</h2>
+<p><strong>Для профессиональной обработки в браузере:</strong> <strong>Photopea</strong> — полный клон Photoshop, бесплатно, открывает PSD и RAW. Нет аналогов по соотношению «функциональность / цена».</p>
+<p><strong>Для баланса мощности и простоты:</strong> <strong>Pixlr E</strong> — слои, маски, ИИ-инструменты, быстрый интерфейс. Отличный компромисс.</p>
+<p><strong>Для быстрой обработки фото для соцсетей:</strong> <strong>Canva</strong> или <strong>Fotor</strong> — шаблоны, ИИ-улучшения, подготовка под конкретные форматы.</p>
+<p><strong>Для продвинутой цветокоррекции:</strong> <strong>Polarr</strong> — кривые, HSL, ИИ-маски на уровне Lightroom.</p>
+<p><strong>Для художественных эффектов:</strong> <strong>BeFunky</strong> — 300+ фильтров, стилизации под картины и эскизы.</p>
+<p><strong>Для российской организации:</strong> <strong>Р7-Фоторедактор</strong> — сертифицированное отечественное ПО, но будьте готовы к ограниченной функциональности.</p>
+<p><strong>Для быстрого удаления фона:</strong> <strong>Remove.bg</strong> — 5 секунд, лучшее качество на рынке. Подробное сравнение сервисов удаления фона — в нашей следующей статье.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

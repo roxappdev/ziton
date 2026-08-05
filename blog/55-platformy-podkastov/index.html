@@ -1,0 +1,381 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор платформ для создания и хостинга подкастов — от российских Яндекс.Музыки и VK до международных Podbean, Buzzsprout и Spotify for Podcasters. Сравнение хранилища, RSS, аналитики и монетизации."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Платформы для создания и хостинга подкастов — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Платформы для создания и хостинга подкастов</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>подкасты</li><li data-astro-cid-ymihodss>хостинг</li><li data-astro-cid-ymihodss>RSS</li><li data-astro-cid-ymihodss>Яндекс.Музыка</li><li data-astro-cid-ymihodss>VK</li><li data-astro-cid-ymihodss>Spotify</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="почему-важен-правильный-хостинг-подкастов">Почему важен правильный хостинг подкастов</h2>
+<p>Рынок подкастов в России и мире продолжает расти. По данным Quasa.io (август 2026), для попадания в каталоги Яндекс.Музыки, Apple Podcasts, VK Музыки и других платформ нужен корректный RSS-поток. Именно его обеспечивает подкаст-хостинг — специализированный сервис для хранения аудиофайлов, генерации RSS-ленты и дистрибуции по платформам.</p>
+<p>При выборе платформы стоит оценивать: <strong>объём хранилища</strong> (сколько часов аудио можно загрузить), <strong>бесплатный лимит</strong> (есть ли тариф без оплаты), <strong>RSS-фид</strong> (автоматическая генерация и обновление), <strong>аналитику</strong> (число слушателей, прослушивания, география), <strong>монетизацию</strong> (реклама, подписки, донаты), <strong>инструменты записи</strong> (встроенный рекордер) и <strong>дистрибуцию</strong> (автоматическая отправка на платформы).</p>
+<h2 id="яндексмузыка-подкасты">Яндекс.Музыка (подкасты)</h2>
+<p><strong>Сайт:</strong> <a href="https://music.yandex.ru/chart/podcasts" rel="nofollow" target="_blank">music.yandex.ru</a></p>
+<p>Яндекс.Музыка — одна из крупнейших платформ для прослушивания подкастов в России. Для авторов Яндекс предоставляет каталог с чартами подкастов, возможность подачи RSS-потока для автоматической публикации выпусков, а также аналитику через подключение Yandex DataLens. Подкасты интегрированы в общую подписку «Яндекс Плюс», что даёт доступ к огромной аудитории.</p>
+<p>Однако Яндекс.Музыка не является хостингом: автор загружает аудио на сторонний хостинг, формирует RSS и отправляет его в Яндекс на модерацию. Модерация занимает несколько рабочих дней. Для аналитики платформы доступно подключение «Подкасты Аналитика» в Yandex DataLens.</p>
+<p><strong>Цена:</strong> прослушивание — от 299 ₽/мес (Яндекс Плюс); для авторов — подача RSS бесплатна.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Огромная российская аудитория</li>
+<li>Интеграция в экосистему Яндекса (Алиса, Кинопоиск, Яндекс.Браузер)</li>
+<li>Аналитика через Yandex DataLens</li>
+<li>Чарты и редакционная подборка</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не является хостингом — нужен внешний сервис для хранения</li>
+<li>Модерация занимает время</li>
+<li>Нет встроенных инструментов записи</li>
+<li>Нет встроенной монетизации для авторов</li>
+</ul>
+<h2 id="vk-музыка-подкасты">VK Музыка (подкасты)</h2>
+<p><strong>Сайт:</strong> <a href="https://vk.com/podcasts" rel="nofollow" target="_blank">vk.com/podcasts</a></p>
+<p>VK Музыка (бывший сервис «Звук») включает раздел подкастов с собственной витриной, эксклюзивным контентом и редакционной курацией. Подкасты доступны внутри VK, что позволяет легко делиться выпусками в сообществах и личных сообщениях. По данным podcasts.ru (август 2025), у VK есть отдельный главный редактор подкастов и аудиокниг.</p>
+<p>Как и Яндекс, VK не является полноценным хостингом. Авторы подают RSS-поток для добавления подкаста в каталог. Также возможно прямое загрузка аудио через инструменты VK Студии для авторов.</p>
+<p><strong>Цена:</strong> для слушателей — VK Музыка включена в VK Комбо (от 299 ₽/мес); для авторов — подача RSS бесплатна.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Интеграция с социальной сетью VK (сообщества, репосты)</li>
+<li>Большая аудитория в России и СНГ</li>
+<li>Редакционная курация и эксклюзивы</li>
+<li>Встроенный плеер для встраивания</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не является хостингом — нужен внешний сервис</li>
+<li>Ограниченная аналитика для авторов</li>
+<li>Нет встроенных инструментов записи и монтажа</li>
+<li>Нет системы монетизации</li>
+</ul>
+<h2 id="mubert-ai-генерация-музыки-для-подкастов">Mubert (AI-генерация музыки для подкастов)</h2>
+<p><strong>Сайт:</strong> <a href="https://mubert.com" rel="nofollow" target="_blank">mubert.com</a></p>
+<p>Mubert — российский сервис ИИ-генерации музыки. Не является платформой для подкастов, но полезен как инструмент создания фоновой музыки и вступительных тем для подкастов. По данным Product Hunt и обзоров 2026 года, Mubert генерирует треки по текстовому описанию, обеспечивает роялти-фри лицензию и адаптирует музыку под формат контента.</p>
+<p>Mubert Render позволяет сгенерировать трек определённой длительности, жанра и настроения — идеально для джинглов, интро и фонового сопровождения подкаста.</p>
+<p><strong>Цена:</strong> бесплатно (ограниченно), «Creator» — $14,99/мес, «Business» — $49/мес.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Уникальная AI-генерированная музыка</li>
+<li>Роялти-фри для YouTube, подкастов, рекламы</li>
+<li>Быстрая генерация по текстовому запросу</li>
+<li>API для автоматизации</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не является подкаст-хостингом</li>
+<li>Качество музыки не всегда идеальное</li>
+<li>Нет распознавания речи или монтажа</li>
+<li>Высокая цена Business-тарифа</li>
+</ul>
+<h2 id="spotify-for-podcasters-бывш-anchor">Spotify for Podcasters (бывш. Anchor)</h2>
+<p><strong>Сайт:</strong> <a href="https://podcasters.spotify.com" rel="nofollow" target="_blank">podcasters.spotify.com</a></p>
+<p>Spotify for Podcasters (ранее Anchor) — бесплатная платформа для хостинга и распространения подкастов от Spotify. Предоставляет неограниченное хранилище, автоматическую дистрибуцию по всем основным платформам (Apple Podcasts, Google Podcasts, Amazon Music и др.), встроенные инструменты записи и базовую аналитику. По данным Reddit (июнь 2025), это популярный стартовый вариант для новичков.</p>
+<p>Включает видеоподкасты, интерактивные элементы (опросы, Q&#x26;A) и монетизацию через подписки и рекламу Spotify. Однако аналитика менее детальная, чем у платных конкурентов.</p>
+<p><strong>Цена:</strong> бесплатно (неограниченное хранилище).</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатно, неограниченное хранилище</li>
+<li>Автоматическая дистрибуция по всем платформам</li>
+<li>Встроенный рекордер</li>
+<li>Монетизация через рекламу и подписки Spotify</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченная аналитика</li>
+<li>Зависимость от экосистемы Spotify</li>
+<li>Нет продвинутых инструментов монтажа</li>
+<li>Поддержка на русском языке ограничена</li>
+</ul>
+<h2 id="buzzsprout">Buzzsprout</h2>
+<p><strong>Сайт:</strong> <a href="https://buzzsprout.com" rel="nofollow" target="_blank">buzzsprout.com</a></p>
+<p>Buzzsprout — один из самых популярных подкаст-хостингов в мире. Отличается простым интерфейсом, отличной поддержкой и качественной аналитикой. По данным Reddit, многие подкастеры называют Buzzsprout своим фаворитом благодаря поддержке. Автоматическая дистрибуция по всем основным платформам, магия аудио (нормализация, транскодирование), встроенный плеер для встраивания на сайт.</p>
+<p>Бесплатный тариф ограничен 2 часами загруженного аудио в месяц (хранение 90 дней). Платные тарифы начинаются от $9/мес за 3 часа, $12/мес за 6 часов.</p>
+<p><strong>Цена:</strong> бесплатно (2 часа/мес, 90 дней хранения), от $9/мес (3 часа), $12/мес (6 часов), $24/мес (12 часов).</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Отличная поддержка пользователей</li>
+<li>Простота интерфейса</li>
+<li>Автоматическая дистрибуция</li>
+<li>Магия аудио (оптимизация звука)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Дороговато для больших объёмов</li>
+<li>Бесплатный тариф сильно ограничен</li>
+<li>Нет встроенного многодорожечного рекордера</li>
+<li>Нет монетизации напрямую</li>
+</ul>
+<h2 id="podbean">Podbean</h2>
+<p><strong>Сайт:</strong> <a href="https://podbean.com" rel="nofollow" target="_blank">podbean.com</a></p>
+<p>Podbean — полнофункциональная платформа для подкастов с хостингом, дистрибуцией, монетизацией и даже живыми трансляциями. Входит в топ-5 подкаст-платформ по данным QuillPodcasting (июнь 2026). Предоставляет неограниченное хранилище на платных тарифах, патронажную систему, поддержку видео-подкастов и монетизацию через рекламную сеть Podbean и премиум-подписки.</p>
+<p>Встроенный рекордер позволяет записывать прямо в браузере или приложении. Есть приложение для слушателей с чатами и комментариями.</p>
+<p><strong>Цена:</strong> бесплатно (5 часов, ограниченная аналитика), «Unlimited Audio» — $9/мес, «Unlimited Plus» — $14/мес (видео, живые трансляции).</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Неограниченное хранилище на платных тарифах</li>
+<li>Встроенная монетизация (реклама, подписки, донаты)</li>
+<li>Живые трансляции и видео-подкасты</li>
+<li>Приложение для слушателей с соцфункциями</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Интерфейс может казаться перегруженным</li>
+<li>Бесплатный тариф ограничен 5 часами</li>
+<li>Обновления дистрибуции иногда замедлены</li>
+<li>Аналитика менее детальная, чем у Simplecast</li>
+</ul>
+<h2 id="transistor">Transistor</h2>
+<p><strong>Сайт:</strong> <a href="https://transistor.fm" rel="nofollow" target="_blank">transistor.fm</a></p>
+<p>Transistor — современный подкаст-хостинг с чистым интерфейсом и продвинутой аналитикой. Позиционируется как альтернатива Simplecast. Поддерживает несколько подкастов на одном аккаунте, приватные подкасты (для компаний и обучения), динамическую рекламную вставку и автоматическую дистрибуцию.</p>
+<p>Transistor отлично подходит для команд и компаний: можно управлять несколькими шоу с одного дашборда, предоставлять приватный доступ сотрудникам или клиентам.</p>
+<p><strong>Цена:</strong> от $19/мес (2 подкаста, неограниченные выпуски), $49/мес (10 подкастов, приватные подкасты).</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Несколько подкастов на одном аккаунте</li>
+<li>Приватные подкасты для бизнеса</li>
+<li>Продвинутая аналитика</li>
+<li>Чистый современный интерфейс</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет бесплатного тарифа (только 14-дневный trial)</li>
+<li>Дороже конкурентов при одном подкасте</li>
+<li>Нет встроенной монетизации</li>
+<li>Нет живых трансляций</li>
+</ul>
+<h2 id="simplecast">Simplecast</h2>
+<p><strong>Сайт:</strong> <a href="https://simplecast.com" rel="nofollow" target="_blank">simplecast.com</a></p>
+<p>Simplecast — профессиональный подкаст-хостинг, известный качественной аналитикой и надёжностью. По данным QuillPodcasting, входит в список лучших платформ 2026 года. Предоставляет детальную статистику: количество слушателей, прослушивания, уникальные слушатели, устройства, локации. Автоматическая дистрибуция по всем основным платформам, кастомный веб-сайт для подкаста.</p>
+<p>Simplecast часто выбирают медиакомпании и профессиональные подкастеры благодаря точности аналитики и стабильности работы.</p>
+<p><strong>Цена:</strong> «Basic» — $15/мес, «Essential» — $25/мес (расширенная аналитика).</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Лучшая аналитика на рынке</li>
+<li>Стабильность и надёжность</li>
+<li>Автоматическая дистрибуция</li>
+<li>Кастомные страницы для подкаста</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет бесплатного тарифа</li>
+<li>Дороже многих конкурентов</li>
+<li>Нет встроенного рекордера</li>
+<li>Нет монетизации</li>
+</ul>
+<h2 id="castos">Castos</h2>
+<p><strong>Сайт:</strong> <a href="https://castos.com" rel="nofollow" target="_blank">castos.com</a></p>
+<p>Castos — подкаст-хостинг с акцентом на интеграцию с WordPress. Плагин Seriously Simple Podcasting позволяет вести подкаст прямо из WordPress-сайта. Также доступен отдельный веб-интерфейс. Castos обеспечивает автоматическую дистрибуцию, приватные подкасты, видео-подкасты и базовую аналитику.</p>
+<p>По данным обзоров 2026 года, Castos — лучший выбор для тех, у кого уже есть сайт на WordPress и хочется управлять подкастом из привычной админки.</p>
+<p><strong>Цена:</strong> «Starter» — $19/мес, «Growth» — $49/мес (видео, приватные подкасты).</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Глубокая интеграция с WordPress</li>
+<li>Приватные подкасты для обучения</li>
+<li>Видео-подкасты</li>
+<li>Качественная поддержка</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет бесплатного тарифа</li>
+<li>Интеграция с WordPress нужна не всем</li>
+<li>Аналитика менее детальная, чем у Simplecast</li>
+<li>Нет встроенного рекордера</li>
+</ul>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Хранилище</th><th align="center">RSS-фид</th><th align="center">Аналитика</th><th align="center">Монетизация</th><th align="center">Запись</th><th align="center">Дистрибуция</th><th>Цена от</th></tr></thead><tbody><tr><td>Яндекс.Музыка</td><td>Нет (каталог)</td><td align="center">Нужен внешний</td><td align="center">Через DataLens</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">—</td><td>Бесплатно</td></tr><tr><td>VK Музыка</td><td>Нет (каталог)</td><td align="center">Нужен внешний</td><td align="center">Ограниченная</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">—</td><td>Бесплатно</td></tr><tr><td>Mubert</td><td>N/A</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">N/A</td><td>$14,99/мес</td></tr><tr><td>Spotify for Podcasters</td><td>Неограниченное</td><td align="center">Да</td><td align="center">Базовая</td><td align="center">Да</td><td align="center">Да</td><td align="center">Автоматическая</td><td>Бесплатно</td></tr><tr><td>Buzzsprout</td><td>2 ч–12 ч/мес</td><td align="center">Да</td><td align="center">Хорошая</td><td align="center">Нет</td><td align="center">Базовая</td><td align="center">Автоматическая</td><td>$9/мес</td></tr><tr><td>Podbean</td><td>5 ч–неогранич.</td><td align="center">Да</td><td align="center">Средняя</td><td align="center">Да</td><td align="center">Да</td><td align="center">Автоматическая</td><td>$9/мес</td></tr><tr><td>Transistor</td><td>Неограниченное</td><td align="center">Да</td><td align="center">Продвинутая</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Автоматическая</td><td>$19/мес</td></tr><tr><td>Simplecast</td><td>Неограниченное</td><td align="center">Да</td><td align="center">Отличная</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Автоматическая</td><td>$15/мес</td></tr><tr><td>Castos</td><td>Неограниченное</td><td align="center">Да</td><td align="center">Средняя</td><td align="center">Нет</td><td align="center">Нет</td><td align="center">Автоматическая</td><td>$19/мес</td></tr></tbody></table>
+<h2 id="что-выбрать">Что выбрать</h2>
+<p>Для <strong>бесплатного старта</strong> — Spotify for Podcasters (неограниченное хранилище, дистрибуция, встроенная запись). Для <strong>российской аудитории</strong> — подача RSS в Яндекс.Музыку и VK Музыку (бесплатно, но нужен внешний хостинг). Для <strong>профессиональной аналитики</strong> — Simplecast (лучшие метрики). Для <strong>бизнеса и команд</strong> — Transistor (несколько подкастов, приватные выпуски). Для <strong>монетизации</strong> — Podbean (рекламная сеть, подписки, донаты). Для <strong>WordPress-сайтов</strong> — Castos (плагин для WordPress). Для <strong>фономой музыки</strong> — Mubert (ИИ-генерация роялти-фри треков).</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

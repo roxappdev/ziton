@@ -1,0 +1,391 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор десяти сервисов для создания изображений с помощью ИИ — российские Kandinsky и Шедеврум от Яндекса, международные Midjourney, DALL-E, Stable Diffusion, Adobe Firefly и другие. Сравниваем качество, стиль и цены."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Нейросети для генерации изображений: от Шедеврума до Midjourney — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Нейросети для генерации изображений: от Шедеврума до Midjourney</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>нейросети</li><li data-astro-cid-ymihodss>генерация изображений</li><li data-astro-cid-ymihodss>ИИ</li><li data-astro-cid-ymihodss>дизайн</li><li data-astro-cid-ymihodss>Kandinsky</li><li data-astro-cid-ymihodss>Midjourney</li><li data-astro-cid-ymihodss>DALL-E</li><li data-astro-cid-ymihodss>Шедеврум</li></ul></header><div class="prose" data-astro-cid-ymihodss><p>Генерация изображений с помощью искусственного интеллекта совершила революцию в дизайне, маркетинге и контент-производстве. За два года технологии прошли от забавных экспериментов до полноценного рабочего инструмента, которым пользуются дизайнеры, иллюстраторы и SMM-специалисты. Разберём десять сервисов — от доступных российских решений до профессиональных международных платформ.</p>
+<h2 id="российские-сервисы">Российские сервисы</h2>
+<h3 id="шедеврум-яндекс">Шедеврум (Яндекс)</h3>
+<p><strong>Ссылка:</strong> <a href="https://shedevrum.ai" rel="nofollow" target="_blank">shedevrum.ai</a></p>
+<p>Шедеврум — мобильное приложение и веб-сервис от <strong>Яндекса</strong> для генерации изображений, видео и текстов по текстовому описанию. Запущен в апреле 2023 года и быстро набрал миллионы загрузок благодаря бесплатности, простоте использования и интеграции с экосистемой Яндекса. Под капотом — модели <strong>YandexART</strong> (генерация изображений и видео) и <strong>YandexGPT</strong> (генерация текстов и улучшение понимания запросов).</p>
+<p>Ключевое отличие Шедеврума от конкурентов — это не просто инструмент для генерации картинок, а полноценная <strong>соцсеть для нейрохудожников</strong>, напоминающая Instagram. Внутри есть алгоритмическая лента, возможность подписываться на авторов, ставить лайки и оставлять комментарии. Под каждой публикацией виден промпт, по которому сгенерирована картинка (если автор не скрыл его), что делает Шедеврум удобной площадкой для обучения промпт-инжинирингу.</p>
+<p>За два года сервис прошёл серьёзную эволюцию. Если в 2023 году первая версия создавала абстрактные и примитивные образы, то к 2025–2026 году качество заметно выросло: нейросеть научилась лучше понимать контекст, работать со сложными композициями и освещением. RBC в обзоре «Чему научилась нейросеть Шедеврум за два года» (февраль 2025) отмечает явный прогресс: сцены стали реалистичными и насыщенными, а алгоритмы улучшились настолько, что модель справляется с детализацией, недоступной ранним версиям.</p>
+<p>В 2024–2026 годах Яндекс внедрил в Шедеврум ряд крупных обновлений: линейку моделей YandexART 2.5 и 2.5 Pro, генерацию коротких видео до 8 секунд (по тексту и «оживление» загруженных фото), функцию «фильтрумы» (стилизация загруженных фотографий), генерацию текстов через YandexGPT, а также тестирование визуальных моделей от DeepSeek. Появилась платная подписка <strong>«Шедеврум Про»</strong> (входит в Яндекс Плюс), которая расширяет лимиты и даёт доступ к расширенным возможностям.</p>
+<p><strong>Отзывы пользователей:</strong></p>
+<p>На irecommend.ru средний рейтинг приложения составляет 3,7 из 5 (88 голосов). Пользователи выделяют два главных плюса: бесплатность и развитие фантазии. Пользователь Елена0010 описывает, как создаёт с помощью Шедеврума «фантастические фильмы» и детские развивающие книги. На Partnerkin авторы отмечают, что «нейросеть всё время обучается и с каждым запросом выдает всё более точные изображения», советуя «подробно и детально писать запрос, указывать такие нюансы как чёткая прорисовка и реалистичность».</p>
+<p>В то же время критические отзывы фокусируются на нескольких моментах. Пользователь Dudls отмечает «слишком много запретов» и странные художественные решения. Автор elfovella, купив платную версию, заявила, что «никакого удовольствия от генераций не получила». Tinkoff Journal в обзоре за январь 2026 года делает честный вывод: «Пока Шедеврум хорошо справляется с иллюстрациями, а вот фотореализма добиться сложно».</p>
+<p>На RuStore приложение набрало более 1 600 отзывов (оценка 4,2 из 5). В целом пользователи сходятся во мнении, что Шедеврум — отличный бесплатный инструмент для контент-маркетинга, SMM и творческих экспериментов, но для профессионального дизайна его качества пока недостаточно.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Базовые функции бесплатно (до 70 картинок и 10 видео в сутки)</li>
+<li>Простой интерфейс, мобильное приложение и веб-версия</li>
+<li>Работает на базе YandexART 2.5 и 2.5 Pro</li>
+<li>Полноценная соцсеть с лентой, подписками и комментариями</li>
+<li>Видны промпты под картинками — удобно учиться</li>
+<li>Генерация видео, текстов и стилизация фото («фильтрумы»)</li>
+<li>Отличное понимание запросов на русском языке</li>
+<li>Серверы в РФ, быстрая работа без VPN</li>
+<li>Регистрация через Яндекс ID</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Фотореализм уступает Midjourney и DALL-E 3</li>
+<li>Нет API для разработчиков (только приложение и сайт)</li>
+<li>Лимиты на бесплатном тарифе</li>
+<li>Нет точного контроля над композицией и позой</li>
+<li>Некоторые пользователи отмечают лишние ограничения на контент</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно с лимитами; «Шедеврум Про» — в подписке Яндекс Плюс.</p>
+<h3 id="kandinsky">Kandinsky</h3>
+<p><strong>Ссылка:</strong> <a href="https://fusionbrain.ai" rel="nofollow" target="_blank">fusionbrain.ai</a></p>
+<p>Kandinsky — мощная модель генерации изображений от Сбера, доступная через API на платформе FusionBrain. Это отдельный продукт для разработчиков и продвинутых пользователей, который предоставляет доступ к последним версиям модели (Kandinsky 3.1 на начало 2026 года).</p>
+<p>Kandinsky 3.1 значительно превзошёл предыдущие версии по качеству и реалистичности. На тестах, проведённых vc.ru (сравнение генераторов, октябрь 2025), Kandinsky 3.1 показал результаты, близкие к DALL-E 3 в задачах генерации реалистичных портретов и пейзажей на русском языке.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Высокое качество генерации для российской модели</li>
+<li>Поддержка русского языка для промптов</li>
+<li>API для интеграции в продукты</li>
+<li>Доступны веса модели для самостоятельного развёртывания</li>
+<li>Серверы в РФ</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>API платный при высоких объёмах</li>
+<li>Для работы с API нужны технические навыки</li>
+<li>Меньше комьюнити и гайдов по сравнению с Stable Diffusion</li>
+<li>В сложных композициях уступает Midjourney</li>
+</ul>
+<p><strong>Цена:</strong> на FusionBrain — бесплатно для тестирования; для продакшена — по запросу (tariffs на сайте).</p>
+<h3 id="yandexart">YandexART</h3>
+<p><strong>Ссылка:</strong> доступна через <a href="https://yandex.ru/images/" rel="nofollow" target="_blank">Яндекс.Картинки</a> и API Yandex Cloud</p>
+<p>YandexART — генеративная модель от Яндекса, которая является основой для Шедеврума, а также доступна самостоятельно через интерфейс Яндекс.Картинок и API Yandex Cloud. Пользователь вводит текстовый запрос, и Яндекс генерирует несколько вариантов изображений. В 2025–2026 годах линейка моделей YandexART 2.5 и 2.5 Pro показывает впечатляющие результаты в фотореализме и дизайнерской графике.</p>
+<p>На профильных ресурсах пользователи отмечают, что YandexART 2.5 особенно хороша для генерации иллюстраций в «яндексовском» стиле — чистых, современных и подходящих для коммерческого использования. В отличие от Шедеврума, через API Yandex Cloud модель доступна разработчикам для интеграции в свои продукты.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Интеграция с Яндекс.Картинками и экосистемой</li>
+<li>Хорошее понимание запросов на русском языке</li>
+<li>Фотореалистичный режим и стилизованный</li>
+<li>API через Yandex Cloud</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Доступна не во всех интерфейсах Яндекса</li>
+<li>Ограниченные настройки генерации</li>
+<li>Меньше контроля над результатом, чем в Midjourney</li>
+<li>Нет отдельного мобильного приложения</li>
+</ul>
+<p><strong>Цена:</strong> через Яндекс.Картинки — бесплатно с лимитами; API — тарифицируется по запросам.</p>
+<h2 id="международные-сервисы">Международные сервисы</h2>
+<h3 id="midjourney">Midjourney</h3>
+<p><strong>Ссылка:</strong> <a href="https://midjourney.com" rel="nofollow" target="_blank">midjourney.com</a></p>
+<p>Midjourney — признанный лидер по качеству генерируемых изображений. Работает через Discord и собственный веб-интерфейс (доступен в полной версии). Версия 6.1 (2026) выдаёт фотореалистичные изображения, которые трудно отличить от настоящих фотографий.</p>
+<p>Российские дизайнеры массово используют Midjourney через VPN. На vc.ru в комментариях к обзору нейросетей-2026 Midjourney стабильно занимает первое место по качеству. Пользователь @design_pro_notes пишет: «Для презентаций, мудбордов и концепт-арта Midjourney не имеет равных. Да, нужен VPN и платная подписка, но результат того стоит».</p>
+<p>Особенность Midjourney — продвинутый контроль через параметры (аргументы промпта): <code>--ar</code> для соотношения сторон, <code>--s</code> за стилизацию, <code>--c</code> за креативность, <code>--no</code> для исключения элементов.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Лучшее качество генерации на рынке</li>
+<li>Версия 6.1 — фотореализм высочайшего уровня</li>
+<li>Большое и активное комьюнити</li>
+<li>Гибкий контроль через параметры</li>
+<li>Постоянные обновления и улучшения</li>
+<li>Character Reference и Style Reference для консистентности</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не работает в РФ без VPN</li>
+<li>Работает через Discord (хотя есть и веб-версия)</li>
+<li>Подписка от $10/мес.</li>
+<li>Долгое обучение промпт-инжинирингу</li>
+<li>Нет свободного коммерческого использования в базовой подписке</li>
+</ul>
+<p><strong>Цена:</strong> Basic — $10/мес. (~200 генераций); Standard — $30/мес. (~15 часов быстрых генераций); Pro — $60/мес.; Mega — $120/мес.</p>
+<h3 id="dall-e-3-openai">DALL-E 3 (OpenAI)</h3>
+<p><strong>Ссылка:</strong> доступна через <a href="https://chatgpt.com" rel="nofollow" target="_blank">ChatGPT</a></p>
+<p>DALL-E 3 — генератор изображений от OpenAI, встроенный в ChatGPT. Третья версия получила значительное улучшение: модель стала лучше понимать сложные промпты и точнее следовать текстовым инструкциям. Уникальная особенность — генерация текста на изображениях (вывод надписей на картинки).</p>
+<p>Главное преимущество DALL-E 3 — простота. Не нужно учить промпт-инжиниринг: достаточно описать на естественном языке, что вы хотите получить. Это делает DALL-E 3 идеальным выбором для нетехнических пользователей.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Простейший интерфейс — просто опишите, что нужно</li>
+<li>Лучшая на рынке генерация текста на изображениях</li>
+<li>Интеграция с ChatGPT для итеративной работы</li>
+<li>Хорошо следует сложным промптам</li>
+<li>Адекватная работа с русскоязычными запросами</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Худшее качество по сравнению с Midjourney 6.1</li>
+<li>Ограниченные настройки (нет параметров как у Midjourney)</li>
+<li>Только через ChatGPT (нужна подписка Plus)</li>
+<li>В РФ работает только через VPN</li>
+<li>Меньше художественных стилей</li>
+</ul>
+<p><strong>Цена:</strong> входит в ChatGPT Plus ($20/мес.); API — от $0,04 за изображение (стандартное), $0,08 (HD).</p>
+<h3 id="stable-diffusion">Stable Diffusion</h3>
+<p><strong>Ссылка:</strong> <a href="https://stability.ai" rel="nofollow" target="_blank">stability.ai</a> и <a href="https://civitai.com" rel="nofollow" target="_blank">civitai.com</a></p>
+<p>Stable Diffusion — открытая модель генерации изображений от Stability AI. Её ключевая особенность — возможность запуска на собственном оборудовании (при наличии мощной видеокарты). На платформе CivitAI создана огромная библиотека пользовательских моделей и LoRA-адаптаций.</p>
+<p>Stable Diffusion — выбор продвинутых пользователей, которым нужен полный контроль над генерацией. Через интерфейсы Automatic1111, ComfyUI или Forge можно настраивать буквально всё: от композиции и позы (ControlNet) до точной цветовой палитры.</p>
+<p>Российское комьюнити Stable Diffusion очень активно. На Хабре есть серия туториалов «SD для начинающих», а в Telegram-каналах регулярно делятся промптами и моделями.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатен при локальном запуске</li>
+<li>Абсолютный контроль над генерацией</li>
+<li>Огромная библиотека моделей на CivitAI</li>
+<li>ControlNet для точной компоновки</li>
+<li>Работает без интернета (локально)</li>
+<li>Нет ограничений по контенту</li>
+<li>Инпейнтинг, аутпейнтинг, апскейл</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Требует мощной видеокарты (от 8 ГБ VRAM для комфортной работы)</li>
+<li>Сложная настройка и обучение</li>
+<li>Качество «из коробки» ниже, чем у Midjourney</li>
+<li>Нужно много времени на изучение</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (open-source); облачные сервисы (RunPod, Leonardo) — от $10/мес.</p>
+<h3 id="adobe-firefly">Adobe Firefly</h3>
+<p><strong>Ссылка:</strong> <a href="https://firefly.adobe.com" rel="nofollow" target="_blank">firefly.adobe.com</a></p>
+<p>Adobe Firefly — генеративная модель от Adobe, интегрированная в Photoshop, Illustrator и другие продукты Creative Cloud. Главное преимущество — Firefly обучалась на легально полученных данных, что делает все генерируемые изображения безопасными для коммерческого использования.</p>
+<p>В Photoshop 2026 Firefly используется через инструмент Generative Fill — можно выделить область и описать, что туда нужно дорисовать. Это революционно для ретушёров и фоторедакторов.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Безопасность для коммерческого использования (обучена на лицензионных данных)</li>
+<li>Глубокая интеграция с Photoshop, Illustrator, Express</li>
+<li>Generative Fill — дорисовка частей изображения</li>
+<li>Стилевые ссылки (Style Reference)</li>
+<li>Структура (Structure Reference) для сохранения композиции</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Требует подписку Adobe Creative Cloud (от $9,99/мес.)</li>
+<li>В РФ работает через VPN</li>
+<li>Качество уступает Midjourney в художественных задачах</li>
+<li>Меньше художественных стилей</li>
+<li>Ограниченное количество генеративных кредитов</li>
+</ul>
+<p><strong>Цена:</strong> 25 генеративных кредитов/мес. в подписке Creative Cloud ($9,99/мес.); отдельная подписка Firefly Premium — $4,99/мес. (100 кредитов).</p>
+<h3 id="leonardoai">Leonardo.ai</h3>
+<p><strong>Ссылка:</strong> <a href="https://leonardo.ai" rel="nofollow" target="_blank">leonardo.ai</a></p>
+<p>Leonardo.ai — веб-платформа для генерации изображений с богатым интерфейсом и множеством моделей. Позиционируется как «Midjourney для тех, кто не любит Discord». В 2026 году платформа предлагает доступ к собственным моделям (Leonardo Diffusion XL, Kino XL, Dynamo) и к моделям Stable Diffusion.</p>
+<p>Leonardo.ai получил положительные отзывы на vc.ru за удобный интерфейс и щедрый бесплатный тариф: 150 токенов ежедневно, чего хватает на 15–30 генераций.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Удобный веб-интерфейс (не нужен Discord)</li>
+<li>Щедрый бесплатный тариф (150 токенов/день)</li>
+<li>Множество моделей на выбор</li>
+<li>Realtime Canvas — рисование в реальном времени с ИИ</li>
+<li>Motion — генерация видео из изображений</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Качество немного уступает Midjourney</li>
+<li>В РФ работает через VPN</li>
+<li>Бесплатный тариф ограничен 150 токенами в день</li>
+<li>Меньше комьюнити, чем у Midjourney и Stable Diffusion</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (150 токенов/день); Apprentice — $12/мес. (8500 токенов); Artisan — $30/мес. (25 000 токенов).</p>
+<h3 id="flux-black-forest-labs">Flux (Black Forest Labs)</h3>
+<p><strong>Ссылка:</strong> <a href="https://blackforestlabs.ai" rel="nofollow" target="_blank">blackforestlabs.ai</a></p>
+<p>Flux — модель от Black Forest Labs, основанной создателями Stable Diffusion. Выпущена в 2024 году и быстро стала одним из главных конкурентов Midjourney. Flux Pro (платная версия) показывает выдающееся качество, особенно в фотореализме и текстурировании. Версия Flux Dev и Flux Schnell доступны открыто.</p>
+<p>Для российских пользователей Flux интересен тем, что открытые версии можно запускать локально, как и Stable Diffusion.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Отличное качество генерации, сравнимое с Midjourney</li>
+<li>Открытые версии (Dev, Schnell) для локального запуска</li>
+<li>Хорошая генерация текста на изображениях</li>
+<li>Активное развитие</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Требует мощного железа для локального запуска</li>
+<li>Меньше готовых настроек и экосистемы, чем у Stable Diffusion</li>
+<li>Pro-версия — платная и через API</li>
+<li>Молодой сервис, меньше документации</li>
+</ul>
+<p><strong>Цена:</strong> Flux Schnell и Dev — бесплатно (open-source); Flux Pro — через API (тарификация на сайте).</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Качество</th><th>Цена</th><th>Русский язык</th><th>API</th><th>Работа в РФ</th></tr></thead><tbody><tr><td>Шедеврум</td><td>Среднее+</td><td>Бесплатно*</td><td>Да</td><td>Нет</td><td>Да</td></tr><tr><td>Kandinsky</td><td>Хорошее</td><td>От бесплатно</td><td>Да</td><td>Да</td><td>Да</td></tr><tr><td>YandexART (в Шедевруме)</td><td>Хорошее</td><td>Бесплатно*</td><td>Да</td><td>Да</td><td>Да</td></tr><tr><td>Midjourney</td><td>Лучшее</td><td>От $10/мес.</td><td>Через перевод</td><td>Нет</td><td>Через VPN</td></tr><tr><td>DALL-E 3</td><td>Хорошее</td><td>$20/мес. (ChatGPT)</td><td>Да</td><td>Да</td><td>Через VPN</td></tr><tr><td>Stable Diffusion</td><td>Отличное</td><td>Бесплатно*</td><td>Через перевод</td><td>—</td><td>Да (локально)</td></tr><tr><td>Adobe Firefly</td><td>Хорошее</td><td>От $4,99/мес.</td><td>Средне</td><td>Да</td><td>Через VPN</td></tr><tr><td>Leonardo.ai</td><td>Хорошее</td><td>Бесплатно</td><td>Через перевод</td><td>Да</td><td>Через VPN</td></tr><tr><td>Flux</td><td>Отличное</td><td>Бесплатно*</td><td>Через перевод</td><td>Да</td><td>Да (локально)</td></tr></tbody></table>
+<p>*При локальном запуске (нужна видеокарта от 8 ГБ VRAM). ** Бесплатно с лимитами; расширенные возможности — по подписке Яндекс Плюс.</p>
+<h2 id="что-выбрать">Что выбрать?</h2>
+<p><strong>Для SMM-специалиста в РФ</strong>, которому нужны быстрые картинки для постов: <strong>Шедеврум</strong> — бесплатно, просто и с социальной составляющей (соцсеть нейрохудожников), или <strong>Kandinsky</strong> через FusionBrain — для более качественных результатов на русском языке.</p>
+<p><strong>Для профессионального дизайнера</strong>: <strong>Midjourney</strong> — безоговорочный лидер по качеству, или <strong>Stable Diffusion</strong> — если нужен полный контроль и работа с клиентами, требующими уникальный стиль.</p>
+<p><strong>Для фоторетушёра и работы с фотографиями</strong>: <strong>Adobe Firefly</strong> через Generative Fill в Photoshop.</p>
+<p><strong>Для разработчика, интегрирующего ИИ в продукт</strong>: <strong>Kandinsky</strong> (российские серверы) или <strong>DALL-E 3 API</strong> (если допустима передача данных за рубеж).</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

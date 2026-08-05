@@ -1,0 +1,260 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор облачных АТС и IP-телефонии — Mango Office, Zadarma, Мегафон.Облако, UIS, FreeSwitch, 3CX, RingCentral. Сравнение по настройке, записям, IVR и ценам."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Виртуальные АТС и IP-телефония для бизнеса — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Виртуальные АТС и IP-телефония для бизнеса</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-03T00:00:00.000Z" data-astro-cid-ymihodss>3 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>АТС</li><li data-astro-cid-ymihodss>IP-телефония</li><li data-astro-cid-ymihodss>облачная АТС</li><li data-astro-cid-ymihodss>Mango Office</li><li data-astro-cid-ymihodss>Zadarma</li></ul></header><div class="prose" data-astro-cid-ymihodss><p>Виртуальная АТС (облачная АТС, ВАТС) заменяет традиционную телефонную станцию в офисе. Согласно обзору CNews за 2026 год, российские облачные АТС значительно продвинулись по функциональности, аналитике и уровню безопасности. Подключение занимает от нескольких минут до пары дней, не требует покупки оборудования — достаточно SIP-телефонов или софтфонов на компьютерах сотрудников. Мы рассмотрим девять решений для телефонизации бизнеса: от простых облачных сервисов до self-hosted платформ.</p>
+<h2 id="на-что-обращать-внимание-при-выборе-атс">На что обращать внимание при выборе АТС</h2>
+<p><strong>Сложность настройки.</strong> Облачные АТС настраиваются через веб-интерфейс за 15–30 минут. Self-hosted решения требуют системного администратора и несколько дней.</p>
+<p><strong>Запись разговоров.</strong> Базовая функция для большинства сервисов, но у некоторых она платная или ограничена по объёму хранилища.</p>
+<p><strong>IVR (голосовое меню).</strong> Позволяет маршрутизировать звонки («нажмите 1 для отдела продаж, 2 для поддержки»). Наличие конструктора сценариев значительно упрощает настройку.</p>
+<p><strong>Интеграция с CRM.</strong> Связь с amoCRM, Битрикс24, RetailCRM и другими CRM системами — критичный параметр для продаж.</p>
+<p><strong>Цены.</strong> Облачные АТС обычно берут абонентскую плату + плату за минуты и номера. Self-hosted решения имеют фиксированную стоимость лицензии, но требуют сервер.</p>
+<h3 id="mango-office">Mango Office</h3>
+<p>Mango Office — один из старейших провайдеров облачных АТС в России (на рынке с 2000 года). Виртуальная АТС входит в состав экосистемы, включающей контакт-центр, речевую аналитику и омниканальную коммуникацию.</p>
+<p>Стоимость АТС — от 1100 ₽/мес (базовый тариф). Тариф «Базовая» начинается от 1600 ₽/мес. Интеграция с CRM — дополнительно от 695 ₽/мес. В марте 2026 года Mango Office обновил ИИ-конспектирование диалогов в модуле «Речевая аналитика». Минуты на городские и мобильные номера тарифицируются отдельно.</p>
+<p>Функционал: IVR с конструктором сценариев, запись разговоров, голосовое приветствие, перевод звонков, встречные звонки, статистика и аналитика, SIP-линии, мобильное приложение Mango Talker. Поддерживается интеграция с amoCRM, Битрикс24, 1С и десятками других систем.</p>
+<p><strong>Плюсы:</strong> проверенный временем провайдер, стабильность сети 99.97%, богатая аналитика, ИИ-конспектирование, мобильное приложение.
+<strong>Минусы:</strong> цены выше среднего, CRM-интеграция за отдельную плату, сложная тарифная сетка.
+<strong>Ссылка:</strong> <a href="https://www.mango-office.ru" rel="nofollow" target="_blank">mango-office.ru</a></p>
+<h3 id="zadarma">Zadarma</h3>
+<p>Zadarma — международный провайдер IP-телефонии с бесплатной виртуальной АТС. Поддерживает виртуальные номера в 110 странах. АТС бесплатна — плата берётся только за номера и минуты. Тарификация посекундная, есть безлимитные тарифы.</p>
+<p>Функционал: IVR, запись разговоров, голосовое меню, сценарии маршрутизации, коллтрекинг, речевая аналитика, встроенная CRM (бесплатная). Дополнительный пользователь АТС — от $2/мес. Исходящие звонки — от $0.02/мин. Есть тариф «Office» со 100 бесплатными минутами ИИ-аналитики.</p>
+<p>Настройка через веб-интерфейс занимает 5 минут. Поддерживаются физические и юридические лица. Приложение Zadarma доступно для iOS и Android. Интеграция с 30+ CRM через бесплатные модули.</p>
+<p><strong>Плюсы:</strong> бесплатная АТС, посекундная тарификация, номера в 110 странах, встроенная CRM, щедрые бесплатные функции.
+<strong>Минусы:</strong> зарубежный провайдер (хотя есть представительство в РФ), интерфейс на английском/русском, поддержка может быть медленной.
+<strong>Ссылка:</strong> <a href="https://zadarma.com" rel="nofollow" target="_blank">zadarma.com</a></p>
+<h3 id="мегафоноблако-атс-20">Мегафон.Облако (АТС 2.0)</h3>
+<p>Мегафон.Облако — облачная виртуальная АТС 2.0 от оператора связи «МегаФон». Минимальная стоимость — от 1000 ₽/мес, тестовый период — 7 дней бесплатно. Тариф «Старт» от 1500 ₽/мес, «Бизнес» от 1500 ₽/мес, «Бизнес+» — дороже.</p>
+<p>Платформа предлагает гибкие тарифы на связь, интеграцию с 1С, Битрикс24 и другими системами. Функционал: IVR, запись разговоров, голосовое меню, маршрутизация, статистика звонков. Преимущество операторской АТС — единый биллинг и высокое качество связи за счёт собственной сети.</p>
+<p><strong>Плюсы:</strong> качество связи оператора, тестовый период 7 дней, единый биллинг с мобильной связью, стабильность.
+<strong>Минусы:</strong> привязка к оператору, выше цены для небольших компаний, меньше гибкости в настройках.
+<strong>Ссылка:</strong> <a href="https://moscow.megafon.ru/corporate/services/vats" rel="nofollow" target="_blank">megafon.ru/corporate/services/vats</a></p>
+<h3 id="зеленая-точка">Зеленая точка</h3>
+<p>В ходе исследования выяснилось, что «Зелёная точка» (zelenaya.net) — это российский интернет-провайдер, предоставляющий домашний интернет и цифровое телевидение в 16 городах России. Сервис облачной АТС или IP-телефонии под этим брендом не обнаружен. Вероятно, название попало в список по ошибке — возможно, имелся в виду другой провайдер (например, Zadarma или онлайн-АТС от ростовских операторов). Если вы знаете о компании «Зелёная точка» в контексте телефонии, уточните название — возможно, это региональный провайдер, не имеющий широкого покрытия.</p>
+<h3 id="uis-юис">UIS (ЮИС)</h3>
+<p>UIS (Unique Intelligent Services) — российская платформа омниканальных коммуникаций для бизнеса. На рынке с 1999 года. Предлагает виртуальную АТС, IP-телефонию, коллтрекинг, виртуальные номера (в т.ч. 8-800) и контакт-центр.</p>
+<p>Стоимость виртуальной АТС — от 480 ₽/мес по данным аналогичных сервисов, конкретные тарифы доступны после регистрации. Техподдержка работает 24/7 со средним временем ответа 26 секунд. Стабильность сети — 99.97%. Функционал: IVR (автоинформатор), запись разговоров, голосовое приветствие, мобильный офис, приём звонков через приложение.</p>
+<p>Примечание: в списке услуг также указан «UIS Komandirovka», однако отдельного продукта с таким названием у UIS не обнаружено. UIS специализируется на телефонии и коммуникациях, а не на организации командировок. Возможно, это внутренний модуль или название устарело.</p>
+<p><strong>Плюсы:</strong> стабильность 99.97%, 24/7 поддержка (26 сек ответ), на рынке с 1999 года, омниканальная платформа.
+<strong>Минусы:</strong> цены не видны до регистрации, сложный сайт для newcomers, нет прозрачного тарифного калькулятора.
+<strong>Ссылка:</strong> <a href="https://www.uiscom.ru" rel="nofollow" target="_blank">uiscom.ru</a></p>
+<h3 id="flashphoner-web-call-server">FlashPhoner (Web Call Server)</h3>
+<p>FlashPhoner Web Call Server — платформа для создания приложений реал-тайм стриминга и видеосвязи, разработанная российской компанией. Реализована на Java, поддерживает WebRTC, RTMP, RTSP, SIP. Доступна в marketplace Yandex Cloud.</p>
+<p>Это не готовая АТС, а серверная платформа для разработчиков. Позволяет создавать видео-чаты, вебинары, потоковые трансляции и IP-телефонию. Не требует установки плагинов в браузере (WebRTC). Требуется собственный сервер или облачный хостинг.</p>
+<p><strong>Плюсы:</strong> гибкая платформа для кастомных решений, WebRTC без плагинов, российская разработка, есть в Yandex Cloud.
+<strong>Минусы:</strong> не готовая АТС — требует разработки, нет готового веб-интерфейса управления, нужен разработчик.
+<strong>Ссылка:</strong> <a href="https://flashphoner.com" rel="nofollow" target="_blank">flashphoner.com</a></p>
+<h3 id="freeswitch-self-hosted">FreeSwitch (self-hosted)</h3>
+<p>FreeSWITCH — открытая платформа телефонии, превращающая один сервер в полноценную телеком-платформу: маршрутизация звонков, видеомосты, транскодирование медиа, соединение протоколов. FreeSWITCH — это «движок», поверх которого обычно разворачивают FreePBX или FusionPBX для получения веб-интерфейса.</p>
+<p>FreeSWITCH полностью бесплатен (лицензия MPL). Требует собственного сервера и администратора. FreePBX предоставляет дружелюбный веб-интерфейс с модулями IVR, записи разговоров, маршрутизации. На 2026 год FreePBX — самая популярная open-source АТС в мире по числу установок.</p>
+<p><strong>Плюсы:</strong> бесплатно, полный контроль, неограниченная масштабируемость, поддержка любых SIP-операторов, огромная база знаний.
+<strong>Минусы:</strong> требуется системный администратор, нет официальной техподдержки, обновления и безопасность — на вашей совести, настройка занимает от 1–2 дней.
+<strong>Ссылка:</strong> <a href="https://freeswitch.org" rel="nofollow" target="_blank">freeswitch.org</a></p>
+<h3 id="ringcentral">RingCentral</h3>
+<p>RingCentral — американская облачная платформа коммуникаций для бизнеса, объединяющая АТС, видеоконференции и командный мессенджер. Более 600 000 компаний-клиентов. Тарифы: Essentials от $19.95/пользователя/мес, Pro от $24.95/пользователя/мес, Pro Plus от $29.95/пользователя/мес (при помесячной оплате). При годовой оплате цены ниже.</p>
+<p>Функционал: IVR, запись разговоров, автосекретарь, совместная работа, видео-конференции, SMS-рассылки, интеграция с Salesforce, HubSpot, Zoho. Мобильное приложение для iOS и Android. В 2026 году RingCentral активно развивает ИИ для автоматизации звонков.</p>
+<p><strong>Плюсы:</strong> comprehensive all-in-one платформа, зрелый продукт, 600K+ клиентов, сильные ИИ-функции.
+<strong>Минусы:</strong> дорогой ($20–30/пользователя/мес), данные за рубежом, нет поддержки из РФ, избыточен для малого бизнеса.
+<strong>Ссылка:</strong> <a href="https://www.ringcentral.com" rel="nofollow" target="_blank">ringcentral.com</a></p>
+<h3 id="3cx">3CX</h3>
+<p>3CX — программная IP-АТС, которую можно развёртывать как в облаке (включая бесплатный хостинг от 3CX), так и на собственном сервере. Уникальная модель лицензирования: оплата за одновременные звонки (simultaneous calls, SC), а не за пользователей.</p>
+<p>С января 2026 года актуальные тарифы: SMB Free — бесплатно до 10 пользователей с хостингом. Basic — от $575/год (4 SC). Professional — от $350/год (8 SC), до $34 995/год (1024 SC). Enterprise — от $17 395/год. С апреля 2026 года лицензирование было реструктурировано: Free, Basic, PRO, AI.</p>
+<p>Функционал: IVR, запись разговоров, видеосвязь, чат, контакт-центр, интеграция с CRM (Salesforce, HubSpot, Битрикс24, amoCRM). Мобильные приложения для iOS и Android, веб-клиент. Поддержка SIP-транков любых провайдеров.</p>
+<p><strong>Плюсы:</strong> бесплатный тариф до 10 пользователей, лицензирование по SC (не за пользователя), self-hosted вариант, богатый функционал, 3CX StartUP бесплатен навсегда.
+<strong>Минусы:</strong> self-hosted требует администрирования, платные тарифы растут в 2026 году, документация преимущественно на английском.
+<strong>Ссылка:</strong> <a href="https://www.3cx.ru" rel="nofollow" target="_blank">3cx.ru</a></p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Сложность настройки</th><th>Запись звонков</th><th>IVR</th><th>Интеграция CRM</th><th>Цена от</th><th>Мобильное приложение</th></tr></thead><tbody><tr><td>Mango Office</td><td>Низкая</td><td>Да</td><td>Да</td><td>30+ CRM</td><td>1100 ₽/мес</td><td>Да</td></tr><tr><td>Zadarma</td><td>Низкая</td><td>Да</td><td>Да</td><td>30+ CRM</td><td>Бесплатно (АТС)</td><td>Да</td></tr><tr><td>Мегафон.Облако</td><td>Низкая</td><td>Да</td><td>Да</td><td>Битрикс24, 1С</td><td>1000 ₽/мес</td><td>Да</td></tr><tr><td>Зеленая точка</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Не АТС-провайдер</td><td>—</td></tr><tr><td>UIS</td><td>Низкая</td><td>Да</td><td>Да</td><td>Есть</td><td>480 ₽/мес</td><td>Да</td></tr><tr><td>FlashPhoner</td><td>Высокая</td><td>Через API</td><td>Через API</td><td>Custom</td><td>От $0 (self)</td><td>Нет (SDK)</td></tr><tr><td>FreeSWITCH</td><td>Высокая</td><td>Да (FreePBX)</td><td>Да</td><td>FreePBX модули</td><td>Бесплатно</td><td>Через софтфон</td></tr><tr><td>RingCentral</td><td>Низкая</td><td>Да</td><td>Да</td><td>Salesforce, HubSpot</td><td>~$20/польз./мес</td><td>Да</td></tr><tr><td>3CX</td><td>Средняя</td><td>Да</td><td>Да</td><td>Битрикс24, amoCRM</td><td>Бесплатно (10 польз.)</td><td>Да</td></tr></tbody></table>
+<h2 id="что-важно-знать-о-self-hosted-атс">Что важно знать о self-hosted АТС</h2>
+<p>Развёртывание собственной АТС (FreeSWITCH, 3CX on-premise) даёт полный контроль над данными и неограниченную масштабируемость. Однако это требует системного администратора, сервера (от 5000 ₽/мес за VPS) и регулярного обновления. Для компаний из регулируемых отраслей (финансы, медицина) self-hosted — часто единственный вариант соответствия требованиям безопасности. Для остальных случаев облачные решения выгоднее по совокупной стоимости владения.</p>
+<h2 id="итоги">Итоги</h2>
+<p>Для малого бизнеса без технической экспертизы оптимальны <strong>Zadarma</strong> (бесплатная АТС, минимум затрат) и <strong>UIS</strong> (от 480 ₽/мес, стабильность 99.97%). Для компаний, нуждающихся в аналитике и контакт-центре — <strong>Mango Office</strong> (от 1100 ₽/мес). Если уже есть связь от МегаФона — логично рассмотреть <strong>Мегафон.Облако</strong> для единого биллинга. Для технически подготовленных команд — <strong>3CX</strong> (бесплатно до 10 пользователей, модель SC) или <strong>FreeSWITCH</strong> с FreePBX (полностью бесплатно, полный контроль). <strong>RingCentral</strong> — выбор для международных компаний с бюджетом от $20/пользователя/мес.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

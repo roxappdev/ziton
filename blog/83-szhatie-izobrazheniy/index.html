@@ -1,0 +1,402 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор инструментов для оптимизации изображений — от онлайн-сервисов до десктопных программ с поддержкой WebP, AVIF и API."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Сервисы для сжатия изображений без потери качества — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Сервисы для сжатия изображений без потери качества</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>изображения</li><li data-astro-cid-ymihodss>оптимизация</li><li data-astro-cid-ymihodss>WebP</li><li data-astro-cid-ymihodss>производительность сайта</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="зачем-сжимать-изображения">Зачем сжимать изображения</h2>
+<p>Размер изображений — одна из главных причин медленной загрузки веб-страниц. По статистике HTTP Archive, изображения составляют более 50% веса средней веб-страницы. Несжатые JPEG-фотографии с камер смартфонов могут весить 5–10 МБ каждый, а для сайта с десятками изображений это означает загрузку в течение нескольких секунд даже при быстром соединении.</p>
+<p>Google использует скорость загрузки как один из факторов ранжирования, поэтому оптимизация изображений напрямую влияет на SEO. Сжатие без видимой потери качества позволяет ускорить загрузку сайта, снизить потребление трафика и улучшить позиции в поисковой выдаче. Современные форматы WebP и AVIF обеспечивают сжатие на 30–50% лучше JPEG при том же визуальном качестве. AVIF, формат от альянса Alliance for Open Media, показывает ещё более впечатляющие результаты, но его поддержка браузерами пока не стопроцентная.</p>
+<p>Рассмотрим десять инструментов для оптимизации — от простых онлайн-сервисов до десктопных программ и API-решений для автоматизации. При выборе стоит обращать внимание не только на степень сжатия, но и на поддерживаемые форматы (особенно WebP и AVIF), наличие API, ограничения бесплатного тарифа и удобство интеграции в рабочие процессы.</p>
+<h3 id="squoosh">Squoosh</h3>
+<p><a href="https://squoosh.app" rel="nofollow" target="_blank">Squoosh</a> — онлайн-сервис от Google, также доступный как десктопное PWA-приложение. Позволяет сжимать изображения в форматы JPEG, PNG, WebP и AVIF с тонкой настройкой параметров.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатный и безлимитный.</li>
+<li>Поддержка современных форматов: WebP, AVIF, MozJPEG, OxiPNG.</li>
+<li>Визуальное сравнение «до/после» в реальном времени.</li>
+<li>Тонкая настройка: качество, усилие сжатия, уменьшение палитры.</li>
+<li>Работает оффлайн как PWA-приложение.</li>
+<li>Никаких ограничений на размер файла.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Обработка происходит в браузере — большие изображения могут замедлять работу.</li>
+<li>Нет пакетной обработки (batch processing).</li>
+<li>Нет API для автоматизации.</li>
+<li>Не подходит для серверной оптимизации.</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно.</p>
+<h3 id="tinypng">TinyPNG</h3>
+<p><a href="https://tinypng.com" rel="nofollow" target="_blank">TinyPNG</a> — один из самых популярных онлайн-сервисов для сжатия JPEG и PNG. Использует интеллектуальный алгоритм сжатия без потери визуального качества, а также автоматически конвертирует PNG в WebP.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Отличная степень сжатия: в среднем 60–70% для PNG, 40–50% для JPEG.</li>
+<li>Поддержка WebP и JPEG.</li>
+<li>WordPress-плагин TinyPNG — один из самых популярных для оптимизации.</li>
+<li>API для разработчиков (500 запросов/мес бесплатно).</li>
+<li>Пакетная загрузка до 20 файлов одновременно.</li>
+<li>Простой и удобный интерфейс.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Бесплатный лимит: не более 20 файлов за раз, макс. 5 МБ каждый.</li>
+<li>Нет поддержки AVIF.</li>
+<li>Нет десктопного приложения.</li>
+<li>Платный тариф довольно дорогой для больших объёмов.</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (до 20 файлов), Pro — $25/год (500 файлов/мес), API — от $0,005/изображение.</p>
+<h3 id="compressorio">Compressor.io</h3>
+<p><a href="https://compressor.io" rel="nofollow" target="_blank">Compressor.io</a> — онлайн-сервис от一家 Compressor, поддерживающий JPEG, PNG, GIF, SVG и WebP. Отличается удобным интерфейсом и визуальным сравнением результатов.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Поддержка нескольких режимов: Normal, Plus, Strong, Maximum.</li>
+<li>Визуальное сравнение оригинала и результата (side by side).</li>
+<li>Поддержка форматов JPEG, PNG, GIF, SVG, WebP.</li>
+<li>Без регистрации для базового использования.</li>
+<li>Показывает процент сжатия для каждого изображения.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Бесплатный лимит — не более 10 файлов за сессию.</li>
+<li>Максимальный размер файла — 10 МБ (бесплатно).</li>
+<li>Нет AVIF.</li>
+<li>Нет API.</li>
+<li>Пакетная обработка доступна только в платной версии.</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (ограниченно), Pro — $6/мес.</p>
+<h3 id="shortpixel">ShortPixel</h3>
+<p><a href="https://shortpixel.com" rel="nofollow" target="_blank">ShortPixel</a> — сервис оптимизации изображений, ориентированный на владельцев сайтов. Предлагает WordPress-плагин, API и онлайн-инструмент с поддержкой WebP и AVIF.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Отличная степень сжатия (lossy, lossless, glossy).</li>
+<li>Поддержка AVIF — один из первых сервисов с этим форматом.</li>
+<li>WordPress-плагин с автоматической оптимизацией при загрузке.</li>
+<li>CDN для доставки оптимизированных изображений.</li>
+<li>API с щедрым бесплатным тарифом (100 изображений/мес).</li>
+<li>Пакетная обработка.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Бесплатный лимит невелик (100 изображений/мес).</li>
+<li>Интерфейс онлайн-инструмента менее интуитивен, чем у TinyPNG.</li>
+<li>На платных тарифах — ограничения по количеству кредитов.</li>
+<li>Нет десктопного приложения.</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (100/img/мес), от $3,98/мес (5 000 кредитов), API — те же тарифы.</p>
+<h3 id="krakenio">Kraken.io</h3>
+<p><a href="https://kraken.io" rel="nofollow" target="_blank">Kraken.io</a> — профессиональный сервис оптимизации изображений с API, ориентированный на разработчиков и агентства. Поддерживает JPEG, PNG, GIF и WebP.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Высокая степень сжатия с настройкой качества.</li>
+<li>Мощный REST API с вебхуками.</li>
+<li>Поддержка пакетной обработки через API.</li>
+<li>Плагины для WordPress, Magento, Shopify.</li>
+<li>Режимы: lossy, lossless и intelligent lossy.</li>
+<li>CDN-доставка оптимизированных изображений.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет бесплатного онлайн-инструмента — только платный.</li>
+<li>Цены выше, чем у конкурентов (от $5/мес).</li>
+<li>Нет поддержки AVIF.</li>
+<li>Документация API на английском.</li>
+</ul>
+<p><strong>Цена:</strong> от $5/мес (Free: 100 МБ), Pro — $9/мес (1 ГБ), Enterprise — от $49/мес.</p>
+<h3 id="iloveimg">iLoveIMG</h3>
+<p><a href="https://www.iloveimg.com" rel="nofollow" target="_blank">iLoveIMG</a> — набор инструментов для работы с изображениями от компании iLovePDF. Включает сжатие, обрезку, изменение размера, конвертацию и водяные знаки.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Комплексный набор инструментов в одном месте.</li>
+<li>Поддержка JPEG, PNG, WebP.</li>
+<li>Пакетная обработка до 15 файлов.</li>
+<li>Простой и понятный интерфейс.</li>
+<li>Доступно на русском языке.</li>
+<li>Мобильное приложение.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Бесплатный лимит ограничен (15 файлов/день, макс. 5 МБ каждый).</li>
+<li>Нет AVIF.</li>
+<li>Нет API на бесплатном тарифе.</li>
+<li>Степень сжатия средняя — уступает TinyPNG и ShortPixel.</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (ограниченно), Premium — $6/мес.</p>
+<h3 id="imageoptim">ImageOptim</h3>
+<p><a href="https://imageoptim.com" rel="nofollow" target="_blank">ImageOptim</a> — десктопное приложение для macOS, использующее набор оптимизаторов (pngquant, MozJPEG, zopfli, gifsicle) для максимального сжатия без потери качества.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатно и open-source.</li>
+<li>Отличная степень сжатия благодаря комбинации нескольких алгоритмов.</li>
+<li>Работает полностью оффлайн — приватность данных гарантирована.</li>
+<li>Пакетная обработка (drag &#x26; drop папок).</li>
+<li>Не требует настройки — работает «из коробки».</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Только macOS (есть Windows-аналог ImageOptimista, но менее функциональный).</li>
+<li>Нет WebP и AVIF (в базовой версии).</li>
+<li>Нет API.</li>
+<li>Нет веб-интерфейса.</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно.</p>
+<h3 id="jpegmini">JPEGmini</h3>
+<p><a href="https://www.jpegmini.com" rel="nofollow" target="_blank">JPEGmini</a> — проприетарный алгоритм сжатия JPEG от ICVT. Отличается тем, что визуальное качество сохраняется практически идеально — алгоритм подбирает оптимальные параметры квантования.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Лучшее в классе сохранение визуального качества JPEG.</li>
+<li>Типичное сжатие: 3–5 раз без видимых потерь.</li>
+<li>Десктопное приложение (Mac/Windows) и серверное решение.</li>
+<li>Плагин для Lightroom.</li>
+<li>Пакетная обработка.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Поддерживает только JPEG (нет PNG, WebP, AVIF).</li>
+<li>Довольно дорогой: от $3,99/мес.</li>
+<li>Нет бесплатной версии — только пробный период.</li>
+<li>Нет API на доступных тарифах.</li>
+</ul>
+<p><strong>Цена:</strong> от $3,99/мес, Pro — $11,99/мес.</p>
+<h3 id="caesium">Caesium</h3>
+<p><a href="https://caesiumapp.com" rel="nofollow" target="_blank">Caesium</a> — бесплатное десктопное приложение для Windows, macOS и Linux с открытым исходным кодом. Поддерживает JPEG, PNG и WebP.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатно и open-source.</li>
+<li>Кроссплатформенный (Windows, macOS, Linux).</li>
+<li>Пакетная обработка с сохранением структуры папок.</li>
+<li>Поддержка WebP.</li>
+<li>Легковесный и быстрый.</li>
+<li>Интерфейс с предпросмотром.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Степень сжатия уступает TinyPNG и ShortPixel.</li>
+<li>Нет AVIF.</li>
+<li>Нет веб-версии или API.</li>
+<li>Реже обновляется по сравнению с аналогами.</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно.</p>
+<h3 id="яндекскартинки-сжатие">Яндекс.Картинки (сжатие)</h3>
+<p>Яндекс не предоставляет отдельный инструмент для сжатия, однако встроенная оптимизация изображений при загрузке на Яндекс.Диск и использование CDN Яндекса позволяют существенно уменьшить размер файлов. Кроме того, Яндекс.Browser автоматически сжимает изображения при веб-серфинге через Turbo-режим.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Встроено в экосистему Яндекса.</li>
+<li>Turbo-режим Яндекса экономит до 70% трафика.</li>
+<li>Не требует установки дополнительных инструментов.</li>
+<li>Работает автоматически.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не отдельный инструмент — нет контроля над параметрами.</li>
+<li>Нет API для разработчиков.</li>
+<li>Нет ручной настройки качества.</li>
+<li>Подходит только для базовых нужд.</li>
+</ul>
+<p><strong>Цена:</strong> бесплатно (в рамках сервисов Яндекса).</p>
+<h2 id="какой-сервис-выбрать">Какой сервис выбрать</h2>
+<p>Для разовой оптимизации пары фотографий — <strong>Squoosh</strong> (бесплатно, любой формат, включая AVIF). Это лучший вариант, если нужно быстро конвертировать изображение и оценить результат визуально.</p>
+<p>Для регулярной работы с сайтом на WordPress — <strong>ShortPixel</strong> (AVIF, плагин, API). Плагин автоматически оптимизирует все загружаемые изображения и даже создаёт WebP/AVIF-копии для современных браузеров. Альтернатива — <strong>TinyPNG</strong> с его WordPress-плагином и проверенным годами алгоритмом.</p>
+<p>Для максимального сжатия JPEG — <strong>JPEGmini</strong>. Если вы фотограф и загружаете на сайт полноразмерные фотографии, JPEGmini сократит их размер в 3–5 раз без визуальных потерь.</p>
+<p>Для автоматизации на сервере — <strong>TinyPNG API</strong> или <strong>Kraken.io API</strong>. Оба сервиса предлагают надёжное API с хорошей документацией. TinyPNG проще в начале, а Kraken.io предоставляет больше настроек и вебхуки.</p>
+<p>Если важна приватность — <strong>ImageOptim</strong> (офлайн). Все данные остаются на вашем компьютере, что критично при работе с конфиденциальными материалами.</p>
+<p>Для кроссплатформенной десктопной работы — <strong>Caesium</strong>. Бесплатный, открытый, работает на всех основных ОС.</p>
+<p>Для комплексной работы с изображениями (сжатие, обрезка, изменение размера) — <strong>iLoveIMG</strong>. Набор инструментов в одном месте и русский интерфейс.</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Форматы</th><th>Пакетная обработка</th><th>API</th><th>WordPress-плагин</th><th>Бесплатный лимит</th><th>Типичная степень сжатия</th></tr></thead><tbody><tr><td><strong>Squoosh</strong></td><td>JPEG, PNG, WebP, AVIF</td><td>Нет</td><td>Нет</td><td>Нет</td><td>Безлимит</td><td>30–60%</td></tr><tr><td><strong>TinyPNG</strong></td><td>JPEG, PNG, WebP</td><td>До 20 файлов</td><td>Да</td><td>Да</td><td>20 файлов/раз</td><td>50–70%</td></tr><tr><td><strong>Compressor.io</strong></td><td>JPEG, PNG, GIF, SVG, WebP</td><td>Нет (Pro)</td><td>Нет</td><td>Нет</td><td>10 файлов/сессия</td><td>40–60%</td></tr><tr><td><strong>ShortPixel</strong></td><td>JPEG, PNG, WebP, AVIF</td><td>Да</td><td>Да</td><td>Да</td><td>100 img/мес</td><td>50–70%</td></tr><tr><td><strong>Kraken.io</strong></td><td>JPEG, PNG, GIF, WebP</td><td>Да (API)</td><td>Да</td><td>Да</td><td>100 МБ/мес</td><td>50–65%</td></tr><tr><td><strong>iLoveIMG</strong></td><td>JPEG, PNG, WebP</td><td>До 15 файлов</td><td>Да (Premium)</td><td>Нет</td><td>15 файлов/день</td><td>40–50%</td></tr><tr><td><strong>ImageOptim</strong></td><td>JPEG, PNG</td><td>Да</td><td>Нет</td><td>Нет</td><td>Безлимит</td><td>30–50%</td></tr><tr><td><strong>JPEGmini</strong></td><td>JPEG</td><td>Да</td><td>Нет</td><td>Нет</td><td>Пробный период</td><td>60–80%</td></tr><tr><td><strong>Caesium</strong></td><td>JPEG, PNG, WebP</td><td>Да</td><td>Нет</td><td>Нет</td><td>Безлимит</td><td>30–50%</td></tr><tr><td><strong>Яндекс (Turbo)</strong></td><td>Все</td><td>Авто</td><td>Нет</td><td>Нет</td><td>Безлимит</td><td>До 70%</td></tr></tbody></table></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

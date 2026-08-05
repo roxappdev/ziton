@@ -1,0 +1,394 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор сервисов аналитики для продавцов на маркетплейсах: от бесплатных инструментов до платформ уровня MPSTATS с анализом продаж, ключевых слов и конкурентами."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Инструменты для работы с маркетплейсами (Озон, Wildberries) — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Инструменты для работы с маркетплейсами (Озон, Wildberries)</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>маркетплейсы</li><li data-astro-cid-ymihodss>Ozon</li><li data-astro-cid-ymihodss>Wildberries</li><li data-astro-cid-ymihodss>аналитика</li><li data-astro-cid-ymihodss>MPSTATS</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="почему-продавцам-нужна-внешняя-аналитика">Почему продавцам нужна внешняя аналитика</h2>
+<p>Внутренняя статистика Wildberries и Ozon показывает продажи вашего магазина, но не даёт полной картины рынка. Сколько продает конкурент? Какие ключевые слова приносят трафик? Как меняются цены на категорию? Ответы на эти вопросы предоставляют внешние сервисы аналитики маркетплейсов.</p>
+<p>По данным T-Bank Secrets (январь 2025) и Skillbox Media (апрель 2024), рынок таких сервисов активно растёт: селлерам всё чаще нужны не просто графики, а инструменты для поиска ниш, анализа ключевых слов и финансового планирования. Ниже — обзор десяти основных платформ.</p>
+<h2 id="российские-сервисы-аналитики">Российские сервисы аналитики</h2>
+<h3 id="mpstats">MPSTATS</h3>
+<p><strong>Сайт:</strong> <a href="https://mpstats.io" rel="nofollow" target="_blank">mpstats.io</a></p>
+<p>Крупнейшая платформа аналитики для продавцов на маркетплейсах. По данным с главной страницы, тарифы начинаются от 6 495 ₽/мес за комплект из 15 инструментов. Поддерживает Wildberries, Ozon, Яндекс.Маркет, Мегамаркет, Ламода и AliExpress Россия.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Самая глубокая база данных по продажам и ключевым словам</li>
+<li>Анализ позиций товара в поиске по каждой фразе</li>
+<li>Финансовая аналитика с учётом всех комиссий, логистики и штрафов</li>
+<li>Поиск ниш и трендов, аудит ключевых слов конкурента</li>
+<li>Репрайсинг и мониторинг цен</li>
+<li>Модуль управления рекламой (расширенные ставки)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Высокая цена входа: от 6 495 ₽/мес, продвинутые тарифы — 16 929 ₽/мес и выше</li>
+<li>Перегруженный интерфейс, высокий порог обучения</li>
+<li>Нет бесплатного тарифа, только пробный период</li>
+<li>По отзывам на vc.ru, данные по продажам могут отличаться от реальности на 10-15%</li>
+</ul>
+<h3 id="marketguru">MarketGuru</h3>
+<p><strong>Сайт:</strong> <a href="https://marketguru.ru" rel="nofollow" target="_blank">marketguru.ru</a></p>
+<p>Сервис аналитики от Т-Банка (Тинькофф), интегрированный с экосистемой банка. Работает с Wildberries и Ozon. Тарифы от 2 495 ₽/мес, по данным T-Bank Secrets.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Интеграция с Т-Банком: анализ оборачиваемости, кредитование под залог товара</li>
+<li>Простота интерфейса, быстрый старт</li>
+<li>Анализ ключевых слов и трекинг позиций</li>
+<li>Финансовая аналитика с учётом расходов на рекламу и логистику</li>
+<li>Поддержка обоих основных маркетплейсов (WB и Ozon)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Меньше глубины данных по сравнению с MPSTATS</li>
+<li>Нет репрайсинга</li>
+<li>Функционал ограничен по сравнению с MPSTATS (нет расширений для других маркетплейсов)</li>
+<li>Привязка к экосистеме Т-Банка может быть неудобна для некоторых пользователей</li>
+</ul>
+<h3 id="маяк-mayakbz">Маяк (mayak.bz)</h3>
+<p><strong>Сайт:</strong> <a href="https://mayak.bz" rel="nofollow" target="_blank">mayak.bz</a></p>
+<p>Сервис аналитики для продавцов на Wildberries и Ozon. По информации с сайта, Маяк создан для поиска топовых товаров через анализ количества продаж конкурентов и их упущенных возможностей. Позиционируется как простой инструмент для селлеров с оборотом от 1 до 30 млн ₽/мес.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Поиск топовых товаров и упущенных возможностей конкурентов</li>
+<li>Простой интерфейс, не перегруженный функциями</li>
+<li>Анализ категорий и подкатегорий, поиск свободных ниш</li>
+<li>Трекинг позиций по ключевым словам</li>
+<li>Доступные тарифы по сравнению с MPSTATS</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Фокус только на Wildberries и Ozon</li>
+<li>Меньше аналитических инструментов, чем у MPSTATS или MarketGuru</li>
+<li>Нет модуля управления рекламой</li>
+<li>Нет финансовой аналитики с полной разбивкой расходов</li>
+</ul>
+<h3 id="statsmp">Stats.mp</h3>
+<p><strong>Сайт:</strong> <a href="https://stats.mp" rel="nofollow" target="_blank">stats.mp</a></p>
+<p>Аналитическая платформа для продавцов на маркетплейсах. Предоставляет данные по продажам, оценкам и отзывам товаров на Wildberries и Ozon. Позиционируется как доступная альтернатива дорогим решениям.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Доступные тарифы, ниже среднего по рынку</li>
+<li>Анализ продаж и рейтингов товаров</li>
+<li>Поиск товаров-лидеров в категории</li>
+<li>Трекинг позиций по ключевым словам</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченная глубина аналитики</li>
+<li>Меньше ключевых слов в базе по сравнению с MPSTATS</li>
+<li>Нет репрайсинга и управления рекламой</li>
+<li>Интерфейс менее polished, чем у конкурентов</li>
+</ul>
+<h3 id="sellerfox">SellerFOX</h3>
+<p><strong>Сайт:</strong> <a href="https://sellerfox.ru" rel="nofollow" target="_blank">sellerfox.ru</a></p>
+<p>Сервис аналитики с поддержкой шести маркетплейсов: Wildberries, Ozon, Яндекс.Маркет, Мегамаркет, Казань Экспресс, AliExpress Россия. По данным Skillbox Media (апрель 2024), SellerFOX выделяется широким покрытием площадок.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Шесть маркетплейсов в одном интерфейсе</li>
+<li>Анализ продаж, ключевых слов и конкуренции</li>
+<li>Финансовая аналитика: расчёт маржинальности с учётом всех комиссий</li>
+<li>Мониторинг отзывов и рейтингов</li>
+<li>Доступная цена по сравнению с MPSTATS</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Меньше глубины данных по каждому отдельному маркетплейсу</li>
+<li>Нет репрайсинга</li>
+<li>Нет модуля автоматического управления рекламой</li>
+<li>По отзывам, обновление данных может запаздывать</li>
+</ul>
+<h3 id="хантёр-mphunter">Хантёр (MPHunter)</h3>
+<p><strong>Сайт:</strong> <a href="https://mphunter.ru" rel="nofollow" target="_blank">mphunter.ru</a></p>
+<p>Сервис для автоматизации работы селлеров на маркетплейсах. Предоставляет инструменты для анализа ниш, мониторинга конкурентов и управления ценами. Название говорит о фокусе на «охоте» за прибыльными нишами.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Поиск прибыльных ниш с анализом конкуренции</li>
+<li>Мониторинг цен конкурентов и автоматический репрайсинг</li>
+<li>Анализ ключевых слов и семантического ядра</li>
+<li>Расчёт юнит-экономики</li>
+<li>Поддержка Wildberries и Ozon</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Менее известный бренд, меньше обучающих материалов</li>
+<li>Ограниченный функционал по сравнению с MPSTATS</li>
+<li>Нет глубокой финансовой аналитики</li>
+<li>Меньше интеграций со сторонними сервисами</li>
+</ul>
+<h3 id="естьап-estat">ЕстьАп (Estat)</h3>
+<p><strong>Сайт:</strong> <a href="https://estat.ru" rel="nofollow" target="_blank">estat.ru</a></p>
+<p>Инструмент для аналитики и автоматизации продаж на маркетплейсах. Фокус на анализе эффективности карточек товаров и оптимизации SEO-показателей на Wildberries и Ozon.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Глубокий анализ SEO-параметров карточек товаров</li>
+<li>Аудит контента: названия, описания, характеристики</li>
+<li>Трекинг позиций по ключевым словам</li>
+<li>Мониторинг остатков и аналитика продаж</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Узкая специализация — в основном SEO-анализ</li>
+<li>Нет финансовой аналитики и репрайсинга</li>
+<li>Нет поддержки маркетплейсов кроме WB и Ozon</li>
+<li>Менее популярный сервис, меньше отзывов от пользователей</li>
+</ul>
+<h3 id="shopstat">Shopstat</h3>
+<p><strong>Сайт:</strong> <a href="https://shopstat.ru" rel="nofollow" target="_blank">shopstat.ru</a></p>
+<p>Бесплатный сервис аналитики, собирающий данные с Wildberries и Ozon. По данным academy-e.com, Shopstat позволяет анализировать продажи без оплаты, что делает его отличной стартовой точкой для начинающих селлеров.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Бесплатный доступ к базовой аналитике</li>
+<li>Анализ продаж и рейтингов по категориям</li>
+<li>Простой интерфейс, не требует обучения</li>
+<li>Поддержка Wildberries и Ozon</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченная глубина данных по сравнению с платными аналогами</li>
+<li>Нет трекинга ключевых слов и репрайсинга</li>
+<li>Нет финансовой аналитики</li>
+<li>Реклама и ограничения в бесплатной версии</li>
+</ul>
+<h3 id="marketpapa">MarketPapa</h3>
+<p><strong>Сайт:</strong> <a href="https://marketpapa.ru" rel="nofollow" target="_blank">marketpapa.ru</a></p>
+<p>Сервис аналитики для продавцов на маркетплейсах с фокусом на автоматизацию рутинных задач. Предоставляет инструменты для анализа ниш, мониторинга конкурентов и управления ассортиментом.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Анализ ниш с оценкой конкуренции и спроса</li>
+<li>Мониторинг цен и остатков конкурентов</li>
+<li>Инструменты для управления ассортиментом</li>
+<li>Уведомления об изменении цен и появлении новых конкурентов</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Меньше данных по ключевым словам, чем у лидеров рынка</li>
+<li>Нет встроенного модуля реклам</li>
+<li>Ограниченная поддержка маркетплейсов</li>
+<li>Меньше пользовательских отзывов для оценки качества</li>
+</ul>
+<h3 id="lampa">Lampa</h3>
+<p><strong>Сайт:</strong> <a href="https://lampa.io" rel="nofollow" target="_blank">lampa.io</a></p>
+<p>Платформа для аналитики и управления продажами на маркетплейсах. Предоставляет дашборды с ключевыми метриками, анализ финансовых показателей и инструменты для оптимизации карточек.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Наглядные дашборды с ключевыми метриками</li>
+<li>Финансовая аналитика: прибыль, расходы, маржинальность</li>
+<li>Мониторинг позиций и анализ ключевых слов</li>
+<li>API для интеграции с внутренними системами</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Относительно новый сервис на рынке</li>
+<li>Меньше базовых данных по сравнению с MPSTATS</li>
+<li>Нет репрайсинга и модуля рекламы</li>
+<li>Ограниченное число маркетплейсов</li>
+</ul>
+<h2 id="ключевые-функции-и-на-что-обращать-внимание">Ключевые функции и на что обращать внимание</h2>
+<p>При выборе сервиса аналитики стоит обращать внимание на несколько критических параметров. Во-первых, <strong>глубина базы ключевых слов</strong>. MPSTATS хранит миллионы поисковых запросов, а более дешёвые сервисы — лишь десятки тысяч. Во-вторых, <strong>точность данных о продажах</strong>. Ни один внешний сервис не имеет доступа к реальным данным маркетплейсов — все оценки строятся на парсинге, extrapolation и математических моделях. По отзывам на vc.ru, погрешность может составлять 10-20%. В-третьих, <strong>скорость обновления данных</strong>. MPSTATS обновляет данные несколько раз в день, более дешёвые сервисы — раз в сутки или реже.</p>
+<p>Отдельный вопрос — <strong>репрайсинг</strong> (автоматическое изменение цен). В 2026 году на Wildberries и Ozon комиссии выросли (до 35% на WB и до 27% на Ozon по данным uniseller.io, июль 2026), и ручное управление ценами стало неэффективным. Репрайсинг есть у MPSTATS и Хантёра, остальные сервисы предлагают лишь мониторинг цен без автоматического изменения.</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Маркетплейсы</th><th>Аналитика продаж</th><th>Ключевые слова</th><th>Репрайсинг</th><th>Фин. аналитика</th><th>Мин. цена (мес)</th></tr></thead><tbody><tr><td>MPSTATS</td><td>WB, Ozon, Яндекс, Мега, Ламода, Ali</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td><td>6 495 ₽</td></tr><tr><td>MarketGuru</td><td>WB, Ozon</td><td>Да</td><td>Да</td><td>Нет</td><td>Да</td><td>2 495 ₽</td></tr><tr><td>Маяк</td><td>WB, Ozon</td><td>Да</td><td>Да</td><td>Нет</td><td>Частично</td><td>от 1 490 ₽</td></tr><tr><td>Stats.mp</td><td>WB, Ozon</td><td>Да</td><td>Да</td><td>Нет</td><td>Нет</td><td>от 990 ₽</td></tr><tr><td>SellerFOX</td><td>6 площадок</td><td>Да</td><td>Да</td><td>Нет</td><td>Да</td><td>от 1 990 ₽</td></tr><tr><td>Хантёр</td><td>WB, Ozon</td><td>Да</td><td>Да</td><td>Да</td><td>Частично</td><td>от 1 490 ₽</td></tr><tr><td>ЕстьАп</td><td>WB, Ozon</td><td>Частично</td><td>Да</td><td>Нет</td><td>Нет</td><td>от 990 ₽</td></tr><tr><td>Shopstat</td><td>WB, Ozon</td><td>Да</td><td>Нет</td><td>Нет</td><td>Нет</td><td>0 ₽</td></tr><tr><td>MarketPapa</td><td>WB, Ozon</td><td>Да</td><td>Да</td><td>Нет</td><td>Частично</td><td>от 1 490 ₽</td></tr><tr><td>Lampa</td><td>WB, Ozon</td><td>Да</td><td>Да</td><td>Нет</td><td>Да</td><td>от 1 990 ₽</td></tr></tbody></table>
+<h2 id="что-выбрать">Что выбрать</h2>
+<p><strong>Начинающим селлерам</strong> — Shopstat (бесплатно) или Маяк (доступные тарифы). Оба сервиса дают базовое понимание рынка без крупных вложений.</p>
+<p><strong>Селлерам с оборотом от 500 тыс. ₽/мес</strong> — MarketGuru или SellerFOX. Хорошее соотношение цены и функциональности, финансовая аналитика.</p>
+<p><strong>Профессиональным селлерам и агентствам</strong> — MPSTATS. Самая глубокая база данных, максимальный набор инструментов, но за высокую цену. По отзывам на vc.ru, окупается при обороте от 3-5 млн ₽/мес.</p>
+<p><strong>Для SEO-оптимизации карточек</strong> — ЕстьАп. Узкая специализация на контенте карточек и поисковых позициях.</p>
+<p><strong>Для мультимаркетплейсной стратегии</strong> — SellerFOX. Единый интерфейс для шести площадок.</p>
+<p><strong>Для автоматического управления ценами</strong> — MPSTATS или Хантёр. Только эти два сервиса из рассмотренных предоставляют полноценный репрайсинг с заданием правил и порогов.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

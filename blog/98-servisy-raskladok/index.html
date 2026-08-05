@@ -1,0 +1,318 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор систем онлайн-записи и планирования: Dikidi, YClients, Calendly, Cal.com и другие. Сравнение функций бронируемых страниц, синхронизации календарей и платёжных интеграций."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Сервисы для расписаний и планирования (для салонов, врачей, обучения) — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Сервисы для расписаний и планирования (для салонов, врачей, обучения)</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>онлайн-запись</li><li data-astro-cid-ymihodss>расписание</li><li data-astro-cid-ymihodss>бронирование</li><li data-astro-cid-ymihodss>салоны</li><li data-astro-cid-ymihodss>врачи</li><li data-astro-cid-ymihodss>планирование</li></ul></header><div class="prose" data-astro-cid-ymihodss><p>Онлайн-запись стала стандартом для салонов красоты, медицинских клиник, репетиторов, фитнес-студий и образовательных центров. Клиенты ожидают возможности записаться в пару кликов, а владельцы бизнеса — автоматизации уведомлений, синхронизации с календарём и приёма предоплат. В этой статье разберём десять ключевых решений на рынке, начиная с отечественных.</p>
+<h2 id="зачем-бизнесу-система-онлайн-записи">Зачем бизнесу система онлайн-записи?</h2>
+<p>Сервисы расписаний решают несколько задач одновременно:</p>
+<ul>
+<li><strong>Устраниют телефонные звонки</strong> — клиент бронирует время самостоятельно 24/7</li>
+<li><strong>Снижают количество пропусков</strong> — автоматические SMS- и email-напоминания</li>
+<li><strong>Собирают предоплату</strong> — встроенная оплата уменьшает неявки</li>
+<li><strong>Синхронизируют календари</strong> — запись автоматически отображается в Google Calendar, Outlook, Apple Calendar</li>
+<li><strong>Управляют командой</strong> — расписание нескольких специалистов в одном интерфейсе</li>
+<li><strong>Работают с часовыми поясами</strong> — для удалённых консультаций и международных клиентов</li>
+</ul>
+<h2 id="отечественные-сервисы">Отечественные сервисы</h2>
+<h3 id="dikidi">Dikidi</h3>
+<p><strong>Dikidi</strong> — самая популярная в России бесплатная система онлайн-записи, созданная специально для салонов красоты, барбершопов и студий.</p>
+<ul>
+<li><strong>Описание</strong>: Платформа, которая насчитывает миллионы записей ежемесячно. Включает страницу записи (widget), CRM-функции, программу лояльности, онлайн-кассу и каталог клиентов. Доступна мобильная версия для мастеров.</li>
+<li><strong>Плюсы</strong>: Полностью бесплатный базовый функционал; встроенный каталог для привлечения клиентов (dikidi.app); SMS-напоминания; онлайн-оплата через ЮKassa, СберPay; виджет для встраивания на сайт; мобильное приложение для клиентов и мастеров; интеграция с Instagram и VK</li>
+<li><strong>Минусы</strong>: Ограниченная кастомизация страницы записи; аналитика на платных тарифах; нет глубокой интеграции с Google Calendar; функционал CRM базовый</li>
+<li><strong>Ссылка</strong>: <a href="https://dikidi.ru" rel="nofollow" target="_blank">dikidi.ru</a></li>
+</ul>
+<h3 id="yclients">YClients</h3>
+<p><strong>YClients</strong> — комплексная система управления для салонов красоты, клиник и фитнес-клубов, включающая онлайн-запись, CRM, складской учёт и аналитику.</p>
+<ul>
+<li><strong>Описание</strong>: Один из лидеров рынка в России и СНГ. Объединяет онлайн-запись, CRM, CRM-маркетинг, онлайн-кассу, электронные чеки и склад в единую платформу. Существует Marketplace с готовыми интеграциями.</li>
+<li><strong>Плюсы</strong>: Мощная CRM с историей клиентов и тегами; маркетинговые инструменты (рассылки, акции, промокоды); онлайн-касса и электронные чеки; интеграции с 1С, Google Calendar, Telegram, WhatsApp; мобильные приложения для клиентов и администратора; расширенная аналитика и отчёты</li>
+<li><strong>Минусы</strong>: Платный функционал от 800 ₽/мес; интерфейс может показаться перегруженным для небольших студий; обучение занимает время; техподдержка иногда медленно отвечает на бесплатных тарифах</li>
+<li><strong>Ссылка</strong>: <a href="https://yclients.com" rel="nofollow" target="_blank">yclients.com</a></li>
+</ul>
+<h2 id="международные-сервисы">Международные сервисы</h2>
+<h3 id="calendly">Calendly</h3>
+<p><strong>Calendly</strong> — один из самых известных мировых сервисов для само-записи, ставший стандартом для B2B-встреч, консультаций и демо-сессий.</p>
+<ul>
+<li><strong>Описание</strong>: Платформа позволяет создать персональную страницу записи с доступными слотами, которые синхронизируются с вашими календарями. Клиент выбирает удобное время — встреча автоматически создаётся в Google Calendar, Outlook или Office 365.</li>
+<li><strong>Плюсы</strong>: Исключительно простой интерфейс; автоматическая синхронизация с Google, Outlook, Office 365; поддержка нескольких часовых поясов; round-robin-распределение для команд; встроенные вопросы при записи (name, email, custom fields); интеграции с Zoom, Google Meet, Microsoft Teams, Salesforce, HubSpot</li>
+<li><strong>Минусы</strong>: Бесплатный тариф ограничен одним типом встречи; нет предоплаты на базовом тарифе; работа в России ограничена (требуется VPN для оплаты); нет встроенной онлайн-кассы</li>
+<li><strong>Ссылка</strong>: <a href="https://calendly.com" rel="nofollow" target="_blank">calendly.com</a></li>
+</ul>
+<h3 id="calcom">Cal.com</h3>
+<p><strong>Cal.com</strong> — open-source альтернатива Calendly, набирающая популярность благодаря прозрачности и гибкости.</p>
+<ul>
+<li><strong>Описание</strong>: Сервис с открытым исходным кодом, предлагающий аналогичный Calendly функционал, но с возможностью self-hosted развёртывания. Поддерживает round-robin, групповые встречи и сложную логику маршрутизации.</li>
+<li><strong>Плюсы</strong>: Open-source и self-hosted вариант; поддержка нескольких часовых поясов; round-robin и коллективные типы встреч; API для полной кастомизации; интеграции с Google Calendar, Outlook, Zoom; красивые страницы записи с брендированием; активное сообщество разработчиков</li>
+<li><strong>Минусы</strong>: Меньше готовых интеграций, чем у Calendly; нет встроенной оплаты; self-hosted требует технических знаний; мобильное приложение ограничено</li>
+<li><strong>Ссылка</strong>: <a href="https://cal.com" rel="nofollow" target="_blank">cal.com</a></li>
+</ul>
+<h3 id="acuity-scheduling">Acuity Scheduling</h3>
+<p><strong>Acuity Scheduling</strong> — мощный сервис онлайн-записи, популярный среди коучей, консультантов, фотографов и медицинских специалистов.</p>
+<ul>
+<li><strong>Описание</strong>: Обеспечивает гибкую настройку типов встреч, автоматические напоминания, встроенные формы согласия и предоплату. Поглощён компанией Squarespace, но продолжает развиваться отдельно. Отличается обширными возможностями кастомизации.</li>
+<li><strong>Плюсы</strong>: Глубокая кастомизация страницы записи; встроенная предоплата (Stripe, PayPal); автоматические напоминания (SMS, email); формы согласия (hipaa-compliant опции); интеграции с Zoom, Google Calendar, Mailchimp, QuickBooks; Gift certificates и пакеты занятий</li>
+<li><strong>Минусы</strong>: Интерфейс может показаться сложным; от $16/мес за базовый план; работа из РФ затруднена; нет бесплатного тарифа (только 7-дневный триал)</li>
+<li><strong>Ссылка</strong>: <a href="https://acuityscheduling.com" rel="nofollow" target="_blank">acuityscheduling.com</a></li>
+</ul>
+<h3 id="setmore">Setmore</h3>
+<p><strong>Setmore</strong> — бюджетный сервис онлайн-записи с щедрым бесплатным тарифом, подходящий для малого бизнеса.</p>
+<ul>
+<li><strong>Описание</strong>: Простая и доступная платформа, позволяющая создать страницу записи для одного или нескольких специалистов. Включает видеовстречи (Setmore Video), SMS-напоминания и базовую аналитику.</li>
+<li><strong>Плюсы</strong>: Щедрый бесплатный тариф (4 сотрудника, 20 бронирований/мес); встроенные видеовстречи; SMS-напоминания на платном плане; оплата через Square или Stripe; мобильные приложения (iOS/Android); виджет для встраивания на сайт</li>
+<li><strong>Минусы</strong>: Ограниченный функционал кастомизации; бесплатный тариф включает branding Setmore; нет глубокой CRM; интеграции ограничены по сравнению с конкурентами; нет round-robin на бесплатном плане</li>
+<li><strong>Ссылка</strong>: <a href="https://www.setmore.com" rel="nofollow" target="_blank">setmore.com</a></li>
+</ul>
+<h3 id="appointlet">Appointlet</h3>
+<p><strong>Appointlet</strong> — сервис онлайн-записи, интегрированный с экосистемой Google и заточенный под B2B-встречи.</p>
+<ul>
+<li><strong>Описание</strong>: Минималистичный инструмент, создающий страницу записи, которая органично встраивается в ваш сайт. Работает поверх Google Calendar и поддерживает одну из лучших интеграций с Google Workspace.</li>
+<li><strong>Плюсы</strong>: Прямая интеграция с Google Calendar; round-robin для команд; сбор предоплат через Stripe; автоматические напоминания; настраиваемые поля формы; встраивание виджета на любой сайт</li>
+<li><strong>Минусы</strong>: Нет синхронизации с Outlook на базовом тарифе; ограниченные настройки стиля страницы записи; нет видеовстреч в платформе (только через интеграции); бесплатный тариф ограничен одним пользователем</li>
+<li><strong>Ссылка</strong>: <a href="https://www.appointlet.com" rel="nofollow" target="_blank">appointlet.com</a></li>
+</ul>
+<h3 id="simplybook">SimplyBook</h3>
+<p><strong>SimplyBook</strong> — универсальная система бронирования, подходящая для широкого спектра бизнесов: от салонов до аренды оборудования и образовательных курсов.</p>
+<ul>
+<li><strong>Описание</strong>: Гибкая платформа с модульной архитектурой, позволяющая подключать нужные функции: онлайн-оплату, SMS, кастомные поля, gift cards и многое другое. Широко используется в Европе и СНГ.</li>
+<li><strong>Плюсы</strong>: Модульная система — платишь только за нужные функции; более 40 интеграций (Zoom, Google, Stripe, PayPal); настраиваемая страница записи с собственным доменом; многоязычность; API для разработчиков; поддерживает групповые занятия и классы</li>
+<li><strong>Минусы</strong>: Платные модули быстро удорожают тариф; интерфейс настройки может запутать; бесплатные функции минимальны (10 бронирований/мес); нет мобильного приложения для клиентов</li>
+<li><strong>Ссылка</strong>: <a href="https://simplybook.me" rel="nofollow" target="_blank">simplybook.me</a></li>
+</ul>
+<h3 id="10to8">10to8</h3>
+<p><strong>10to8</strong> — британская платформа онлайн-записи с акцентом на снижение количества пропусков (no-shows).</p>
+<ul>
+<li><strong>Описание</strong>: Сервис делает упор на автоматические напоминания через несколько каналов (SMS, email, голосовые вызовы), чтобы свести к минимуму неявки клиентов. Подходит для медицинских клиник, салонов и консалтинговых компаний.</li>
+<li><strong>Плюсы</strong>: Мультиканальные напоминания (SMS, email, голос); встроенная видео-конференция; интеграции с Google Calendar, Outlook, Zoom, Salesforce; два-way синхронизация с календарём; API и вебхуки</li>
+<li><strong>Минусы</strong>: Интерфейс устаревший по сравнению с конкурентами; от $9.60/мес за платный план; нет встроенной онлайн-кассы для российского рынка; ограниченная кастомизация виджета</li>
+<li><strong>Ссылка</strong>: <a href="https://10to8.com" rel="nofollow" target="_blank">10to8.com</a></li>
+</ul>
+<h3 id="timify">TIMIFY</h3>
+<p><strong>TIMIFY</strong> — европейская платформа бронирования, популярная в сфере услуг, образования и спорта.</p>
+<ul>
+<li><strong>Описание</strong>: Немецкий сервис, предлагающий удобную страницу записи с поддержкой нескольких локаций, команд и услуг. Широко используется в фитнес-студиях, автосервисах, медицинских центрах и школах.</li>
+<li><strong>Плюсы</strong>: Поддержка нескольких локаций и команд; встроенный CRM с клиентской базой; автоматические напоминания; интеграции с Google Calendar, Outlook, Stripe; настраиваемая страница записи; мультиязычность (включая русский)</li>
+<li><strong>Минусы</strong>: Нет бесплатного тарифа (только 14-дневный триал); от €9.90/мес; ограниченные возможности API; нет встроенных видеовстреч</li>
+<li><strong>Ссылка</strong>: <a href="https://www.timify.com" rel="nofollow" target="_blank">timify.com</a></li>
+</ul>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Бесплатный тариф</th><th>Онлайн-оплата</th><th>Часовые пояса</th><th>Напоминания</th><th>Мобильное приложение</th><th>Цена от (мес.)</th></tr></thead><tbody><tr><td>Dikidi</td><td>Полный базовый</td><td>ЮKassa, СберPay</td><td>Нет</td><td>SMS, push</td><td>iOS/Android</td><td>Бесплатно</td></tr><tr><td>YClients</td><td>Ограничен</td><td>ЮKassa, Тинькофф</td><td>Нет</td><td>SMS, email, push</td><td>iOS/Android</td><td>800 ₽</td></tr><tr><td>Calendly</td><td>1 тип встречи</td><td>Stripe, PayPal</td><td>Да</td><td>Email</td><td>iOS/Android</td><td>Бесплатно</td></tr><tr><td>Cal.com</td><td>Полный</td><td>Stripe</td><td>Да</td><td>Email</td><td>Ограничено</td><td>Бесплатно</td></tr><tr><td>Acuity</td><td>7 дней триал</td><td>Stripe, PayPal</td><td>Да</td><td>SMS, email</td><td>iOS/Android</td><td>$16</td></tr><tr><td>Setmore</td><td>4 сотрудника</td><td>Square, Stripe</td><td>Нет</td><td>SMS</td><td>iOS/Android</td><td>Бесплатно</td></tr><tr><td>Appointlet</td><td>1 пользователь</td><td>Stripe</td><td>Да</td><td>Email</td><td>Нет</td><td>Бесплатно</td></tr><tr><td>SimplyBook</td><td>10 бронирований</td><td>Stripe, PayPal</td><td>Да</td><td>SMS, email</td><td>Нет</td><td>Бесплатно</td></tr><tr><td>10to8</td><td>40 бронирований</td><td>Stripe</td><td>Да</td><td>SMS, голос, email</td><td>iOS/Android</td><td>Бесплатно</td></tr><tr><td>TIMIFY</td><td>14 дней триал</td><td>Stripe</td><td>Да</td><td>Email</td><td>Нет</td><td>€9.90</td></tr></tbody></table>
+<h2 id="что-выбрать">Что выбрать?</h2>
+<ul>
+<li><strong>Для салона красоты или барбершопа в России</strong> — Dikidi при бюджете «бесплатно» или YClients, если нужна полноценная CRM с маркетингом и аналитикой.</li>
+<li><strong>Для удалённых B2B-консультаций и демо</strong> — Calendly или Cal.com. Оба отлично работают с Google Calendar и поддерживают часовые пояса.</li>
+<li><strong>Для коуча, психолога или репетитора</strong> — Acuity Scheduling с его формами согласия, пакетами занятий и предоплатой.</li>
+<li><strong>Для малого бизнеса с ограниченным бюджетом</strong> — Setmore с его щедрым бесплатным тарифом и встроенными видеовстречами.</li>
+<li><strong>Для образовательных курсов и классов</strong> — SimplyBook с поддержкой групповых занятий и модульной архитектурой.</li>
+<li><strong>Для медицинского центра</strong> — 10to8 с мультиканальными напоминаниями или YClients для российского рынка.</li>
+</ul>
+<h2 id="рекомендации-по-внедрению">Рекомендации по внедрению</h2>
+<p>Чтобы система онлайн-записи оправдала ожидания, стоит учесть несколько моментов при внедрении:</p>
+<ul>
+<li><strong>Кастомизация страницы записи</strong> — добавьте логотип, фирменные цвета и описание услуг. Это повышает доверие клиентов и конверсию.</li>
+<li><strong>Настройте напоминания</strong> — SMS за 24 часа и за 1 час до приёма снижают неявки на 60–80%. Настройте email-подтверждения сразу после записи.</li>
+<li><strong>Синхронизируйте календари</strong> — подключите Google Calendar или Outlook, чтобы избежать двойных бронирований и видеть расписание в привычном интерфейсе.</li>
+<li><strong>Настройте предоплату</strong> — даже символическая предоплата (100–500 ₽) значительно сокращает количество неявок.</li>
+<li><strong>Обучите команду</strong> — убедитесь, что все сотрудники умеют пользоваться системой и понимают, как обновлять расписание.</li>
+<li><strong>Добавьте ссылку на запись</strong> — разместите виджет или ссылку на сайт, в профиль Instagram, VK, Telegram и в подпись email.</li>
+</ul>
+<h2 id="итоги">Итоги</h2>
+<p>Выбор системы онлайн-записи зависит от специфики бизнеса, объёма клиентского потока и потребности в дополнительных функциях вроде CRM и маркетинговых инструментов.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор платформ для создания корпоративных и командных баз знаний: Битрикс24, Notion, Confluence, GitBook, ReadMe, Slite, Coda, Slab, Tettra, Document360."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Платформы для создания базы знаний — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Платформы для создания базы знаний</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>база знаний</li><li data-astro-cid-ymihodss>вики</li><li data-astro-cid-ymihodss>документация</li><li data-astro-cid-ymihodss>Notion</li><li data-astro-cid-ymihodss>Confluence</li><li data-astro-cid-ymihodss>GitBook</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="зачем-нужна-база-знаний">Зачем нужна база знаний</h2>
+<p>База знаний — это структурированное хранилище информации, которое помогает командам сохранять, организовывать и находить необходимые знания. В 2026 году без базы знаний не обходится ни одна серьёзная компания: она сокращает время онбординга новых сотрудников, снижает нагрузку на техподдержку и предотвращает потерю знаний при увольнении ключевых специалистов. В этом обзоре мы рассмотрим десять платформ по ключевым параметрам: качество поиска, поддержка Markdown, наличие API, возможности совместной работы, история версий, интеграции, цена за пользователя и возможность self-hosted развёртывания.</p>
+<h3 id="битрикс24-база-знаний">Битрикс24 (база знаний)</h3>
+<p><strong>Сайт:</strong> <a href="https://bitrix24.ru" rel="nofollow" target="_blank">bitrix24.ru</a></p>
+<p>Битрикс24 — российская комплексная платформа для управления бизнесом, включающая модуль базы знаний (Компания wiki). Позволяет создавать структурированные статьи с поддержкой богатого текстового редактора, вложений, тегов и категорий. Интегрирована с CRM, задачами, чатами и другими модулями Битрикс24.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>встроена в комплексную ERP-систему;</li>
+<li>полная поддержка русского языка;</li>
+<li>данные хранятся на серверах в РФ;</li>
+<li>бесплатный тариф для небольших команд (до 5 ГБ);</li>
+<li>интеграция с CRM, задачами, чатами;</li>
+<li>гибкие права доступа к статьям.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>поиск по базе знаний посредственный;</li>
+<li>редактор уступает специализированным решениям;</li>
+<li>нет поддержки Markdown;</li>
+<li>нет API специально для базы знаний;</li>
+<li>ограниченная история версий;</li>
+<li>интерфейс перегружен функционалом.</li>
+</ul>
+<p>Битрикс24 — оптимальный выбор для российских компаний, уже использующих экосистему Битрикс24. Как самостоятельная база знаний проигрывает специализированным решениям, но выигрышна в контексте единой бизнес-платформы.</p>
+<h3 id="notion-wiki">Notion (wiki)</h3>
+<p><strong>Сайт:</strong> <a href="https://notion.so" rel="nofollow" target="_blank">notion.so</a></p>
+<p>Notion — универсальная платформа для заметок, документов и баз данных, получившая широкое распространение как инструмент для создания баз знаний и вики. Блочная структура позволяет комбинировать текст, таблицы, доски Канбан, календари и вложения в одном документе. Notion Wiki — шаблон для командной базы знаний с навигацией и иерархией страниц.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>невероятная гибкость и кастомизация;</li>
+<li>мощный поиск по всему контенту;</li>
+<li>поддержка Markdown (сокращённый синтаксис);</li>
+<li>отличные интеграции (Slack, GitHub, Google Drive);</li>
+<li>доступно API с обширной документацией;</li>
+<li>бесплатный тариф для небольших команд.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>нет self-hosted варианта;</li>
+<li>история версий только на платных тарифах;</li>
+<li>при большом объёме данных замедляется;</li>
+<li>нет нативной поддержки кириллицы в URL;</li>
+<li>зависимость от интернета (офлайн-режим ограничен);</li>
+<li>цены растут с каждым годом.</li>
+</ul>
+<p>Notion — самый популярный и универсальный инструмент для баз знаний. Подходит командам любого размера, но требует дисциплины в поддержании структуры.</p>
+<h3 id="confluence">Confluence</h3>
+<p><strong>Сайт:</strong> <a href="https://atlassian.com/software/confluence" rel="nofollow" target="_blank">atlassian.com/software/confluence</a></p>
+<p>Confluence — классическая корпоративная wiki-платформа от Atlassian, де-факто стандарт для крупных компаний. С tightly-интегрирована с Jira, Trello и другими продуктами Atlassian. Обладает мощным поиском, макросами, шаблонами и продвинутыми правами доступа.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>золотой стандарт корпоративных wiki;</li>
+<li>мощнейший полнотекстовый поиск;</li>
+<li>глубокая интеграция с Jira и экосистемой Atlassian;</li>
+<li>поддержка Markdown (вставка и экспорт);</li>
+<li>продвинутые права доступа и аудит;</li>
+<li>Data Center (self-hosted) вариант доступен.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>высокая цена (от $6/пользователь в месяц);</li>
+<li>тяжёлый и перегруженный интерфейс;</li>
+<li>долгое время загрузки при большом объёме;</li>
+<li>требует обучения для новых пользователей;</li>
+<li>облачная версия зависит от серверов Atlassian;</li>
+<li>редактор менее интуитивен, чем у Notion.</li>
+</ul>
+<p>Confluence — лучший выбор для крупных компаний, уже использующих Jira. Для небольших команд избыточен как по функционалу, так и по цене.</p>
+<h3 id="gitbook">GitBook</h3>
+<p><strong>Сайт:</strong> <a href="https://gitbook.com" rel="nofollow" target="_blank">gitbook.com</a></p>
+<p>GitBook — платформа для создания красивой и структурированной документации, изначально созданная для технической документации и API-документации, но сейчас используемая и для общих баз знаний. Редактор поддерживает Markdown, а результат выглядит как профессионально оформленный сайт с навигацией и поиском.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>великолепный дизайн оформления по умолчанию;</li>
+<li>нативная поддержка Markdown;</li>
+<li>мощный полнотекстовый поиск с Algolia;</li>
+<li>API для управления контентом;</li>
+<li>интеграция с GitHub и GitLab;</li>
+<li>публичные пространства бесплатно.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>ограниченные возможности совместного редактирования;</li>
+<li>нет self-hosted варианта;</li>
+<li>дорогой для больших команд (от $8/пользователь);</li>
+<li>узкая специализация — в первую очередь документация;</li>
+<li>слабые права доступа по сравнению с Confluence;</li>
+<li>нет баз данных и сложных представлений.</li>
+</ul>
+<p>GitBook — идеальный выбор для технической документации, API-гайдов и публичных knowledge base. Для внутренней корпоративной wiki лучше подойдёт Notion или Confluence.</p>
+<h3 id="readme">ReadMe</h3>
+<p><strong>Сайт:</strong> <a href="https://readme.com" rel="nofollow" target="_blank">readme.com</a></p>
+<p>ReadMe — платформа, специализирующаяся на создании документации для API и разработчиков. Предлагает интерактивные API-песочницы, встраивание Swagger/OpenAPI и красивое оформление. Используется тысячами технологических компаний для документирования своих продуктов.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>лучший инструмент для API-документации;</li>
+<li>интерактивная песочница для тестирования API;</li>
+<li>поддержка OpenAPI/Swagger;</li>
+<li>красивые кастомные домены;</li>
+<li>встроенная аналитика использования документации;</li>
+<li>поддержка Markdown.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>узкая специализация (документация для разработчиков);</li>
+<li>не подходит для общей базы знаний;</li>
+<li>высокая цена (от $199/месяц для команд);</li>
+<li>нет self-hosted варианта;</li>
+<li>ограниченные возможности совместной работы;</li>
+<li>нет баз данных.</li>
+</ul>
+<p>ReadMe — безальтернативный выбор для компаний, которым нужна красивая и функциональная документация для API. Для всего остального — смотрите Notion или GitBook.</p>
+<h3 id="slite">Slite</h3>
+<p><strong>Сайт:</strong> <a href="https://slite.com" rel="nofollow" target="_blank">slite.com</a></p>
+<p>Slite — минималистичная платформа для командной базы знаний с акцентом на простоту использования и скорость. Дизайн ориентирован на написание и чтение контента, без отвлечений. Встроенный AI-ассистент помогает находить ответы на вопросы, основываясь на содержимом базы знаний.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>минималистичный и чистый интерфейс;</li>
+<li>быстрый поиск с AI-усилением;</li>
+<li>поддержка Markdown;</li>
+<li>доступно API;</li>
+<li>интеграции со Slack, Notion, GitHub;</li>
+<li>reasonable pricing (от $8/пользователь).</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>нет self-hosted варианта;</li>
+<li>меньше интеграций, чем у конкурентов;</li>
+<li>ограниченные возможности кастомизации;</li>
+<li>нет баз данных (как в Notion);</li>
+<li>сравнительно небольшое сообщество;</li>
+<li>история версий ограничена на базовом тарифе.</li>
+</ul>
+<p>Slite — отличный выбор для небольших и средних команд, которые ценят простоту и скорость. AI-ассистент делает поиск особенно эффективным.</p>
+<h3 id="coda-docs">Coda (docs)</h3>
+<p><strong>Сайт:</strong> <a href="https://coda.io" rel="nofollow" target="_blank">coda.io</a></p>
+<p>Coda — мощная платформа, объединяющая возможности документов, баз данных и приложений. Позволяет создавать интерактивные базы знаний с таблицами, кнопками, автоматизациями и встроенными представлениями. По гибкости сопоставима с Notion, но имеет более продвинутые возможности автоматизации.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>невероятная мощь и гибкость;</li>
+<li>встроенные автоматизации ( Packs );</li>
+<li>поддержка Markdown;</li>
+<li>API для расширения функциональности;</li>
+<li>множество интеграций (Slack, GitHub, Google);</li>
+<li>бесплатный тариф для команд до 5 человек.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>высокий порог входа;</li>
+<li>нет self-hosted варианта;</li>
+<li>поиск не всегда точен;</li>
+<li>кривая обучения довольно крутая;</li>
+<li>мобильное приложение уступает десктопному;</li>
+<li>при сложных документах замедляется.</li>
+</ul>
+<p>Coda — выбор для продвинутых команд, готовых инвестировать время в настройку. Идеальна, если база знаний должна быть не просто хранилищем статей, а интерактивным инструментом.</p>
+<h3 id="slab">Slab</h3>
+<p><strong>Сайт:</strong> <a href="https://slab.com" rel="nofollow" target="_blank">slab.com</a></p>
+<p>Slab — платформа для внутренней базы знаний с акцентом на дизайн, скорость и удобство использования. Интерфейс минималистичен, типографика отточена, а поиск работает быстро и точно. Slab позиционирует себя как «база знаний, которую пользователи действительно будут использовать».</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>превосходный дизайн и типографика;</li>
+<li>очень быстрый полнотекстовый поиск;</li>
+<li>поддержка Markdown;</li>
+<li>API доступно;</li>
+<li>глубокие интеграции (Slack, GitHub, Jira, Notion);</li>
+<li>грамотная система организации контента (темы, коллекции).</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>нет self-hosted варианта;</li>
+<li>нет бесплатного тарифа (только 14-дневный триал);</li>
+<li>ограниченная кастомизация;</li>
+<li>нет баз данных и сложных представлений;</li>
+<li>нет автоматизаций;</li>
+<li>дороговато для небольших команд ($6,67/пользователь).</li>
+</ul>
+<p>Slab — один из самых красивых инструментов для базы знаний. Подходит командам, которые готовы платить за качество интерфейса и опыт использования.</p>
+<h3 id="tettra">Tettra</h3>
+<p><strong>Сайт:</strong> <a href="https://tettra.com" rel="nofollow" target="_blank">tettra.com</a></p>
+<p>Tettra — платформа для базы знаний, специально созданная для интеграции с Slack. Основная идея — ответы на вопросы прямо в Slack через бота, который ищет релевантные статьи в базе знаний. Tettra позиционирует себя как внутренний FAQ для команды.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>тесная интеграция со Slack;</li>
+<li>AI-поиск ответов в Slack;</li>
+<li>поддержка Markdown;</li>
+<li>простая система вопросов и ответов;</li>
+<li>API доступно;</li>
+<li>интеграция с GitHub и Google Drive.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>нет self-hosted варианта;</li>
+<li>сильно зависит от Slack;</li>
+<li>ограниченные возможности редактора;</li>
+<li>нет баз данных и сложных структур;</li>
+<li>нет бесплатного тарифа (от $8,33/пользователь);</li>
+<li>меньше функций, чем у Notion или Confluence.</li>
+</ul>
+<p>Tettra — идеальна для команд, работающих в Slack и нуждающихся в простом инструменте для FAQ. Если ваша команда не использует Slack — выбирайте другой сервис.</p>
+<h3 id="document360">Document360</h3>
+<p><strong>Сайт:</strong> <a href="https://document360.com" rel="nofollow" target="_blank">document360.com</a></p>
+<p>Document360 — платформа для создания профессиональных баз знаний и технической документации. Обладает мощным редактором с поддержкой Markdown, категоризацией статей, версионированием и продвинутой аналитикой. Часто используется для создания публичных knowledge base и help-центров.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>профессиональный редактор с Markdown;</li>
+<li>категоризация и навигация по умолчанию;</li>
+<li>версионирование статей с возможностью отката;</li>
+<li>мощный полнотекстовый поиск;</li>
+<li>API для управления контентом;</li>
+<li>self-hosted вариант (Document360 On-Premise) доступен.</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>высокая цена (от $149/проект в месяц);</li>
+<li>нет бесплатного тарифа;</li>
+<li>интерфейс сложнее, чем у Slite или Slab;</li>
+<li>нет встроенных баз данных;</li>
+<li>ограниченные возможности совместного редактирования;</li>
+<li>ориентирован скорее на документацию, чем на wiki.</li>
+</ul>
+<p>Document360 — мощное решение для компаний, которым нужна профессиональная публичная база знаний. Self-hosted вариант важен для компаний с жёсткими требованиями к хранению данных.</p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Поиск</th><th>Markdown</th><th>API</th><th>Совместная работа</th><th>Версии</th><th>Self-hosted</th><th>Цена от</th></tr></thead><tbody><tr><td>Битрикс24</td><td>Средний</td><td>Нет</td><td>Да</td><td>Да</td><td>Базовая</td><td>Да</td><td>Бесплатно</td></tr><tr><td>Notion</td><td>Хороший</td><td>Частично</td><td>Да</td><td>Отличная</td><td>Платный</td><td>Нет</td><td>Бесплатно</td></tr><tr><td>Confluence</td><td>Отличный</td><td>Частично</td><td>Да</td><td>Отличная</td><td>Отличная</td><td>Да (Data Center)</td><td>$6/мес</td></tr><tr><td>GitBook</td><td>Отличный</td><td>Да</td><td>Да</td><td>Хорошая</td><td>Да</td><td>Нет</td><td>Бесплатно (публичные)</td></tr><tr><td>ReadMe</td><td>Хороший</td><td>Да</td><td>Да</td><td>Средняя</td><td>Да</td><td>Нет</td><td>$199/мес</td></tr><tr><td>Slite</td><td>Хороший (AI)</td><td>Да</td><td>Да</td><td>Хорошая</td><td>Базовая</td><td>Нет</td><td>$8/мес</td></tr><tr><td>Coda</td><td>Средний</td><td>Да</td><td>Да</td><td>Отличная</td><td>Базовая</td><td>Нет</td><td>Бесплатно</td></tr><tr><td>Slab</td><td>Отличный</td><td>Да</td><td>Да</td><td>Хорошая</td><td>Да</td><td>Нет</td><td>$6,67/мес</td></tr><tr><td>Tettra</td><td>Средний</td><td>Да</td><td>Да</td><td>Средняя</td><td>Да</td><td>Нет</td><td>$8,33/мес</td></tr><tr><td>Document360</td><td>Отличный</td><td>Да</td><td>Да</td><td>Средняя</td><td>Отличная</td><td>Да</td><td>$149/мес</td></tr></tbody></table>
+<h2 id="что-выбрать">Что выбрать?</h2>
+<p>Для <strong>малых команд и стартапов</strong> — <strong>Notion</strong> за гибкость и бесплатный тариф. Для <strong>крупных компаний с Jira</strong> — <strong>Confluence</strong> как стандарт индустрии. Для <strong>российских компаний с требованиями к локализации данных</strong> — <strong>Битрикс24</strong>. Для <strong>технической документации</strong> — <strong>GitBook</strong> или <strong>ReadMe</strong>. Для <strong>команд в Slack</strong> — <strong>Tettra</strong>. Для <strong>публичных help-центров</strong> — <strong>Document360</strong>. Для <strong>красивой и простой внутренней wiki</strong> — <strong>Slab</strong> или <strong>Slite</strong>. Помните: лучшая база знаний — та, которую команда реально использует, а не та, у которой больше функций.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

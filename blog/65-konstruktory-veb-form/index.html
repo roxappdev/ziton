@@ -1,0 +1,397 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор конструкторов форм и опросов: от бесплатных решений Яндекса и Google до продвинутых платформ с условной логикой, приёмом платежей и интеграцией с CRM."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Сервисы для создания форм и опросов на сайте — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Сервисы для создания форм и опросов на сайте</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-04T00:00:00.000Z" data-astro-cid-ymihodss>4 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>формы</li><li data-astro-cid-ymihodss>опросы</li><li data-astro-cid-ymihodss>конструкторы</li><li data-astro-cid-ymihodss>сбор лидов</li><li data-astro-cid-ymihodss>CRM</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="зачем-нужны-онлайн-формы-и-какие-бывают">Зачем нужны онлайн-формы и какие бывают</h2>
+<p>Онлайн-формы — один из ключевых инструментов любого сайта: через них клиенты оставляют заявки, регистрируются на мероприятия, проходят опросы и оплачивают услуги. Разница между простой контактной формой и полноценным конструктором колоссальна: современные сервисы поддерживают условную логику (ветвление вопросов), загрузку файлов, приём оплат, защиту от спама и глубокую интеграцию с CRM.</p>
+<p>Ниже мы рассмотрим десять популярных сервисов — от бесплатных российских решений до платформ бизнес-уровня.</p>
+<h2 id="российские-сервисы">Российские сервисы</h2>
+<h3 id="яндексформы">Яндекс.Формы</h3>
+<p><strong>Сайт:</strong> <a href="https://forms.yandex.ru" rel="nofollow" target="_blank">forms.yandex.ru</a></p>
+<p>Бесплатный сервис от Яндекса для создания опросов и форм сбора заявок. Поддерживает более десятка типов вопросов: короткий и длинный текст, выбор одного или нескольких вариантов, шкала, дата, время, загрузка файла. Удобен для опросов внутри компании и сбора обратной связи.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатный, без ограничений на количество форм и ответов</li>
+<li>Интеграция с Яндекс 360 для корпоративных пользователей</li>
+<li>Шаблоны для типовых задач: регистрация на мероприятие, обратная связь, заказ</li>
+<li>Простой и понятный интерфейс, быстрое создание формы</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет условной логики (невможно показать/скрыть вопрос в зависимости от ответа)</li>
+<li>Нет приёма платежей</li>
+<li>Ограниченные возможности интеграции с внешними CRM</li>
+<li>Файлы принимаются только в формате Google-подобной связки, без тонкой настройки</li>
+</ul>
+<h3 id="тильда-блок-формы-и-кнопки">Тильда (блок «Формы и кнопки»)</h3>
+<p><strong>Сайт:</strong> <a href="https://tilda.cc" rel="nofollow" target="_blank">tilda.cc</a></p>
+<p>В конструкторе сайтов Тильда встроен мощный блок форм, который позволяет создавать контактные формы, формы записи, квизы и опросы. Формы легко встраиваются в любой блок страницы, поддерживают стилизацию под дизайн сайта и интегрируются с десятками сервисов: CRM, рассыльщики, мессенджеры.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Глубокая кастомизация дизайна прямо в редакторе Тильды</li>
+<li>Интеграция с amoCRM, Битрикс24, Roistat, SendPulse и многими другими</li>
+<li>Поддержка условной логики в платных тарифах (квизы с ветвлением)</li>
+<li>Приём платежей через ЮKassa, Робокасса, Тинькофф</li>
+<li>Защита от спама (Google reCAPTCHA, honeypot)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Формы привязаны к сайту на Тильде, отдельного использования нет</li>
+<li>Квизы и сложная логика доступны только на тарифах от 750 ₽/мес</li>
+<li>Нет самостоятельного сервиса — нужен подписка на Тильду</li>
+</ul>
+<h3 id="первая-форма">Первая Форма</h3>
+<p><strong>Сайт:</strong> <a href="https://pervayaforma.ru" rel="nofollow" target="_blank">pervayaforma.ru</a></p>
+<p>Российский конструктор веб-форм для бизнеса. Позиционируется как инструмент для сбора лидов с сайтов, лендингов и в социальных сетях. Поддерживает многошаговые формы, условную логику, калькуляторы стоимости, загрузку файлов и интеграцию с популярными CRM.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полноценная условная логика и многошаговые формы</li>
+<li>Калькулятор стоимости — уникальная функция для расчёта цены по параметрам</li>
+<li>Интеграция с amoCRM, Битрикс24, МойСклад, PlanFix</li>
+<li>Загрузка файлов, валидация полей</li>
+<li>Российская техподдержка, данные на серверах в РФ</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Интерфейс менее современный, чем у Typeform или Tally</li>
+<li>Бесплатный тариф сильно ограничен (лимит на 50 заявок в месяц)</li>
+<li>Меньше готовых шаблонов по сравнению с конкурентами</li>
+<li>Нет встроенного приёма платежей — только через интеграции</li>
+</ul>
+<h3 id="formdesigner">FormDesigner</h3>
+<p><strong>Сайт:</strong> <a href="https://formdesigner.ru" rel="nofollow" target="_blank">formdesigner.ru</a></p>
+<p>Онлайн-конструктор веб-форм, опросов и квизов. По отзывам на CRMindex (средний рейтинг 8/10), пользователи отмечают простоту интерфейса и гибкость интеграций. Сервис поддерживает более 30 типов элементов форм, включая слайдеры, рейтинги, матрицы ответов.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Более 30 элементов форм: слайдеры, шкалы, матрицы, рейтинги</li>
+<li>Гибкие интеграции с CRM: если нужной нет — добавляют по запросу</li>
+<li>Калькулятор стоимости, многошаговые формы</li>
+<li>Быстрая техподдержка, отзывы на CRMindex подтверждают оперативность</li>
+<li>Условная логика и валидация данных</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Дизайн форм выглядит несколько устаревшим</li>
+<li>Нет встроенного приёма платежей</li>
+<li>Меньше вариантов встраивания (в основном через iframe или код)</li>
+<li>Платные тарифы начинаются от 490 ₽/мес, что дороже некоторых аналогов</li>
+</ul>
+<h2 id="международные-сервисы">Международные сервисы</h2>
+<h3 id="typeform">Typeform</h3>
+<p><strong>Сайт:</strong> <a href="https://typeform.com" rel="nofollow" target="_blank">typeform.com</a></p>
+<p>Один из самых известных конструкторов форм с диалоговым интерфейсом: вопросы появляются по одному, создавая эффект живого интервью. Широко используется для опросов, квизов, сбора лидов и регистрации на мероприятия.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Уникальный диалоговый интерфейс с высокой конверсией заполнения</li>
+<li>Продвинутая условная логика (jump logic), переменные, piping</li>
+<li>Интеграции с 100+ сервисами (HubSpot, Mailchimp, Slack, Zapier)</li>
+<li>Загрузка файлов, приём платежей через Stripe</li>
+<li>Красивые шаблоны и брендирование</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Дорогой: от $29/мес (около 2900 ₽) за 100 ответов в месяц</li>
+<li>Бесплатный тариф ограничен 10 ответами</li>
+<li>Нет поддержки кириллических доменов в некоторых сценариях</li>
+<li>Медленная загрузка форм на слабых устройствах из-за анимаций</li>
+</ul>
+<h3 id="google-forms">Google Forms</h3>
+<p><strong>Сайт:</strong> <a href="https://forms.google.com" rel="nofollow" target="_blank">forms.google.com</a></p>
+<p>Бесплатный сервис от Google. Простой и функциональный инструмент для создания опросов, тестов и форм регистрации. Интегрируется с Google Sheets для автоматического сбора ответов в таблицу.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Полностью бесплатный, без ограничений на количество ответов</li>
+<li>Автоматический экспорт в Google Sheets</li>
+<li>Простой интерфейс, быстрое создание</li>
+<li>Интеграция с Google Workspace (Google Classroom, Gmail)</li>
+<li>Тесты с автоматической проверкой ответов</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет условной логики (можно лишь перейти к разделу)</li>
+<li>Очень ограниченная кастомизация дизайна</li>
+<li>Нет загрузки файлов в бесплатной версии</li>
+<li>Нет приёма платежей</li>
+<li>Данные хранятся на серверах Google, что может быть критично для некоторых компаний</li>
+</ul>
+<h3 id="tally">Tally</h3>
+<p><strong>Сайт:</strong> <a href="https://tally.so" rel="nofollow" target="_blank">tally.so</a></p>
+<p>Молодой конструктор форм, быстро набравший популярность благодаря щедрому бесплатному тарифу. По данным обзоров 2026 года (Koji.so, CustomJS), Tally предлагает неограниченное количество форм и ответов бесплатно, что делает его одним из самых generosity-orientated инструментов на рынке.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Бесплатный тариф без ограничений на формы и ответы</li>
+<li>Условная логика, вычисления, переменные</li>
+<li>Интеграция с Notion, Google Sheets, Zapier, Airtable</li>
+<li>Загрузка файлов, сбор платежей через Stripe</li>
+<li>Современный интерфейс, блочный подход к конструированию</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Меньше готовых шаблонов, чем у Typeform или Jotform</li>
+<li>Нет встроенной аналитики ответов</li>
+<li>Менее известный бренд, чем Google Forms или Typeform</li>
+<li>Некоторые продвинутые функции только в PRO (от $29/мес)</li>
+</ul>
+<h3 id="getform">Getform</h3>
+<p><strong>Сайт:</strong> <a href="https://getform.io" rel="nofollow" target="_blank">getform.io</a></p>
+<p>Сервис, заточенный под разработчиков и создателей сайтов. Идеально подходит для приёма данных с статических сайтов (Hugo, Astro, Gatsby) и HTML-форм без бэкенда. Формы создаются на вашем HTML-коде, а Getform обрабатывает отправку.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Идеален для статических сайтов без бэкенда</li>
+<li>Загрузка файлов (до 10 МБ), защита от спама</li>
+<li>Интеграции с Zapier, Slack, Google Sheets, Airtable, Webhooks</li>
+<li>Бесплатный тариф: 50 заявок/мес, 1 форма</li>
+<li>REST API для программного доступа к заявкам</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет визуального конструктора — нужно писать HTML</li>
+<li>Нет условной логики и квизов</li>
+<li>Нет приёма платежей</li>
+<li>Бесплатный тариф очень ограничен</li>
+</ul>
+<h3 id="fillout">Fillout</h3>
+<p><strong>Сайт:</strong> <a href="https://fillout.com" rel="nofollow" target="_blank">fillout.com</a></p>
+<p>Относительно новый конструктор форм с акцентом на интеграцию с базами данных. По результатам собственного сравнения 2026 года, Fillout выделяется возможностью напрямую синхронизировать ответы с Airtable, Notion и SQL-базами.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Прямая синхронизация с Airtable, Notion, Google Sheets, PostgreSQL</li>
+<li>Условная логика, вычисления, валидация</li>
+<li>Приём платежей через Stripe, загрузка файлов, файловый хостинг</li>
+<li>Современный интерфейс с drag-and-drop</li>
+<li>Гибкие настройки совместной работы команды</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Менее известный бренд на рынке</li>
+<li>Дороже конкурентов: от $46/мес за расширенные функции</li>
+<li>Меньше интеграций из коробки по сравнению с Typeform</li>
+</ul>
+<h3 id="surveymonkey">SurveyMonkey</h3>
+<p><strong>Сайт:</strong> <a href="https://surveymonkey.com" rel="nofollow" target="_blank">surveymonkey.com</a></p>
+<p>Один из старейших и наиболее известных сервисов для проведения опросов. Позиционируется как инструмент для маркетинговых исследований, HR-опросов и анализа обратной связи от клиентов.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Огромная база готовых шаблонов опросов по отраслям</li>
+<li>Мощная аналитика: кросс-табуляция, сегментация, тренды</li>
+<li>Условная логика, randomization вопросов, A/B-тестирование</li>
+<li>Интеграция с Salesforce, HubSpot, Tableau</li>
+<li>Масштабируемость для корпоративных опросов (сотни тысяч респондентов)</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Дорогой: от $25/мес за базовый план</li>
+<li>Интерфейс перегружен функциями, порог входа выше</li>
+<li>Бесплатный тариф сильно урезан (10 вопросов, 100 ответов)</li>
+<li>Дизайн форм выглядит несколько устаревшим</li>
+</ul>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Бесплатный тариф</th><th>Условная логика</th><th>Загрузка файлов</th><th>Приём платежей</th><th>Интеграция с CRM</th><th>Мин. цена (мес)</th></tr></thead><tbody><tr><td>Яндекс.Формы</td><td>Безлимит</td><td>Нет</td><td>Да (огранич.)</td><td>Нет</td><td>Нет</td><td>0 ₽</td></tr><tr><td>Тильда (формы)</td><td>До 50 заявок</td><td>На платных</td><td>Да</td><td>Да</td><td>Да</td><td>750 ₽</td></tr><tr><td>Первая Форма</td><td>50 заявок/мес</td><td>Да</td><td>Да</td><td>Через интегр.</td><td>Да</td><td>от 490 ₽</td></tr><tr><td>FormDesigner</td><td>Ограничен</td><td>Да</td><td>Да</td><td>Нет</td><td>Да</td><td>от 490 ₽</td></tr><tr><td>Typeform</td><td>10 ответов</td><td>Да</td><td>Да</td><td>Stripe</td><td>Да</td><td>$29 (~2900 ₽)</td></tr><tr><td>Google Forms</td><td>Безлимит</td><td>Базовая</td><td>Нет</td><td>Нет</td><td>Нет</td><td>0 ₽</td></tr><tr><td>Tally</td><td>Безлимит</td><td>Да</td><td>Да</td><td>Stripe</td><td>Через Zapier</td><td>$29 (~2900 ₽)</td></tr><tr><td>Getform</td><td>50 заявок</td><td>Нет</td><td>Да</td><td>Нет</td><td>Через Zapier</td><td>$19 (~1900 ₽)</td></tr><tr><td>Fillout</td><td>100 ответов</td><td>Да</td><td>Да</td><td>Stripe</td><td>Да</td><td>$46 (~4600 ₽)</td></tr><tr><td>SurveyMonkey</td><td>100 ответов</td><td>Да</td><td>Да</td><td>Нет</td><td>Да</td><td>$25 (~2500 ₽)</td></tr></tbody></table>
+<h2 id="защита-от-спама-и-compliance">Защита от спама и compliance</h2>
+<p>Важный аспект, который часто упускают при выборе конструктора форм — защита от автоматических заполнений. Практически все рассмотренные сервисы поддерживают Google reCAPTCHA v2/v3 или Cloudflare Turnstile. FormDesigner и Первая Форма дополнительно предлагают honeypot-поля (скрытые поля, которые заполняет только бот). Typeform и Tally используют собственные механизмы фильтрации.</p>
+<p>Для российских компаний, работающих с персональными данными, стоит учитывать местонахождение серверов. Яндекс.Формы, Первая Форма и FormDesigner хранят данные в России, что упрощает соблюдение 152-ФЗ. Международные сервисы (Typeform, Tally, Getform, Fillout, SurveyMonkey) — на зарубежных серверах, что требует заключения договора обработки данных.</p>
+<h2 id="что-выбрать">Что выбрать</h2>
+<p><strong>Для простых опросов без бюджета</strong> — Яндекс.Формы или Google Forms. Оба сервиса бесплатны и не требуют обучения.</p>
+<p><strong>Для бизнеса с сайтом на Тильде</strong> — встроенные формы Тильды на тарифе Personal или выше. Они идеально вписываются в дизайн и легко интегрируются с CRM.</p>
+<p><strong>Для сложных форм с логикой и расчётами</strong> — Первая Форма или FormDesigner. Оба российских сервиса поддерживают калькуляторы и условную логику, а данные хранятся в РФ.</p>
+<p><strong>Для красивых квизов и опросов с высокой конверсией</strong> — Typeform. Диалоговый интерфейс действительно увеличивает процент заполнения.</p>
+<p><strong>Для разработчиков статических сайтов</strong> — Getform или Tally. Getform для HTML-форм без бэкенда, Tally для быстрого создания без кода.</p>
+<p><strong>Для маркетинговых исследований</strong> — SurveyMonkey. Мощнейшая аналитика и огромная база шаблонов компенсируют высокую цену.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

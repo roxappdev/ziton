@@ -1,0 +1,245 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Сравнение мессенджеров для бизнес-коммуникаций — от Telegram и WhatsApp Business до Пачки и Mattermost. Боты, группы, безопасность и 152-ФЗ."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Мессенджеры для бизнеса: какой выбрать — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Мессенджеры для бизнеса: какой выбрать</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-03T00:00:00.000Z" data-astro-cid-ymihodss>3 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>мессенджеры</li><li data-astro-cid-ymihodss>бизнес</li><li data-astro-cid-ymihodss>Telegram</li><li data-astro-cid-ymihodss>безопасность</li><li data-astro-cid-ymihodss>152-ФЗ</li></ul></header><div class="prose" data-astro-cid-ymihodss><p>Корпоративный мессенджер — это не просто чат. Для бизнеса важны возможности автоматизации через ботов, лимиты групп и файлов, уровень безопасности и соответствие российскому законодательству. С 2025 года Роскомнадзор активно штрафует компании за передачу персональных данных через иностранные мессенджеры, что делает выбор платформы, соответствующей 152-ФЗ, не просто рекомендацией, а необходимостью.</p>
+<h2 id="почему-152-фз-важен-при-выборе-мессенджера">Почему 152-ФЗ важен при выборе мессенджера</h2>
+<p>Федеральный закон «О персональных данных» (152-ФЗ) требует, чтобы персональные данные граждан РФ обрабатывались с использованием баз данных, расположенных на территории России. В 2025 году были ужесточены штрафы — до 18 млн рублей за повторные нарушения. В июле 2025 года российский банк был оштрафован за передачу персональных данных через WhatsApp. Это означает, что использование Telegram, WhatsApp, Viber и Discord для обмена клиентскими данными несёт юридические риски. Выбор российского мессенджера или self-hosted решения сводит эти риски к минимуму.</p>
+<h3 id="telegram">Telegram</h3>
+<p>Telegram — самый популярный мессенджер в России с более чем 90 млн пользователей. Для бизнеса привлекательны мощные возможности ботов через Bot API, группы до 200 000 участников, каналы для рассылок, отправка файлов до 2 ГБ (4 ГБ в Premium). Боты поддерживают до 100 команд, инлайн-режим, платежи через Telegram Pay и глубокие клавиатуры.</p>
+<p>Однако Telegram не соответствует 152-ФЗ — серверы находятся за рубежом. Бот API имеет ограничения по скорости отправки (около 30 сообщений/сек в одном чате). Для работы с клиентскими данными (номера телефонов, адреса, заказы) использование Telegram несёт юридические риски. Тем не менее для внутренней коммуникации и оповещений он остаётся инструментом №1 в России.</p>
+<p><strong>Плюсы:</strong> мощнейший Bot API, огромная аудитория в РФ, группы до 200 000 чел., файлы до 2 ГБ, каналы для вещания.
+<strong>Минусы:</strong> несоответствие 152-ФЗ, серверы за рубежом, ограничения Bot API при высокой нагрузке, нет SLA для бизнеса.
+<strong>Ссылка:</strong> <a href="https://telegram.org" rel="nofollow" target="_blank">telegram.org</a></p>
+<h3 id="whatsapp-business">WhatsApp Business</h3>
+<p>WhatsApp Business — версия мессенджера Meta* для малого бизнеса. Бесплатное приложение позволяет создать бизнес-профиль с каталогом товаров, автоответы и метки для чатов. WhatsApp Business API (через BSP-провайдеров) позволяет автоматизировать рассылки и интегрировать с CRM.</p>
+<p>С 2025 года модель ценообразования WhatsApp Business API изменилась — переход от оплаты за беседу к оплате за шаблонное сообщение. В 2026 году Meta ввела новые лимиты на портфельном уровне и ужесточила проверки качества. Группы WhatsApp поддерживают до 1024 участников, файлы до 2 ГБ.</p>
+<p>Критическая проблема: WhatsApp/Meta* заблокирована в России. Использование для передачи персональных данных клиентов прямо нарушает 152-ФЗ. Для компаний, работающих на международном рынке, WhatsApp Business API через BSP-провайдеров (Wazzup, Chatfuel, SendPulse) всё ещё может быть полезен, но для внутреннего рынка рискован.</p>
+<p><strong>Плюсы:</strong> огромная мировая аудитория, Business API с автоматизацией, каталог товаров, метки и автоответы.
+<strong>Минусы:</strong> Meta* заблокирована в РФ, нарушение 152-ФЗ при передаче ПДн, платный API, сложная модель ценообразования.
+<strong>Ссылка:</strong> <a href="https://business.whatsapp.com" rel="nofollow" target="_blank">business.whatsapp.com</a></p>
+<h3 id="vk-мессенджер">VK Мессенджер</h3>
+<p>VK Мессенджер — часть экосистемы ВКонтакте, объединяющая личные сообщения, диалоги с сообществами и бизнес-чаты. Группы ВК поддерживают до 25 000 участников, обмен файлами, опросы, истории. Для бизнеса доступны сообщения сообщества, встроенный бот-конструктор и интеграции через VK API.</p>
+<p>В 2022 году VK запустил отдельное приложение «VK Звонки» с функциями видеоконференций. Серверы VK расположены в России, что обеспечивает соответствие 152-ФЗ. Для малых компаний VK Мессенджер может заменить и чат, и инструмент видеосвязи. Однако по функциональности ботов и интеграций уступает Telegram.</p>
+<p><strong>Плюсы:</strong> серверы в РФ, соответствие 152-ФЗ, видеозвонки, бесплатный, интеграция с экосистемой VK.
+<strong>Минусы:</strong> менее развитый Bot API по сравнению с Telegram, меньшая аудитория для бизнес-коммуникаций, ограниченные интеграции с CRM.
+<strong>Ссылка:</strong> <a href="https://vk.com" rel="nofollow" target="_blank">vk.com</a></p>
+<h3 id="сберкорус-сберчат">СберКорус (СберЧат)</h3>
+<p>СберКорус — корпоративный мессенджер, ранее известный как СберЧат, от экосистемы Сбера. Предназначен для внутренних коммуникаций крупных компаний и госструктур. Функционал включает приватные и групповые чаты, каналы (публичные и приватные), обмен файлами, видеозвонки, боты, интеграцию с корпоративными системами.</p>
+<p>Платформа полностью соответствует 152-ФЗ, данные хранятся на территории РФ. Поддерживается гостевой доступ для внешних участников. Используется более чем 400 организациями, включая госструктуры. Мессенджер рассчитан на enterprise-сегмент — подключение обсуждается индивидуально с представителями Сбера.</p>
+<p><strong>Плюсы:</strong> полное соответствие 152-ФЗ, enterprise-уровень безопасности, интеграция с системами Сбера, гостевой доступ.
+<strong>Минусы:</strong> закрытая платформа (нет публичного тарифа), ориентирован на крупный бизнес, нет self-service регистрации.
+<strong>Ссылка:</strong> <a href="https://sbercorus.ru" rel="nofollow" target="_blank">sbercorus.ru</a></p>
+<h3 id="пачка">Пачка</h3>
+<p>Пачка — российский корпоративный мессенджер, используемый более чем 1000 компаний из IT, телекома и финансов. Отличается разделением рабочего и личного общения. Функционал: чаты со сквозными тредами (темами), видеозвонки до 100 человек, встроенный менеджер задач, публичные каналы, функция «Входящие» (аналог почтового инкбокса для новых сообщений).</p>
+<p>Доступны десктопное приложение, веб-версия и мобильные клиенты. Данные хранятся на серверах в России, сервис соответствует 152-ФЗ. Платформа поддерживает интеграции через API и вебхуки. Интерфейс простой и интуитивный — по отзывам пользователей, новичок разбирается за несколько минут.</p>
+<p><strong>Плюсы:</strong> российская разработка, 152-ФЗ, встроенные задачи, треды, видеозвонки до 100 чел., простота.
+<strong>Минусы:</strong> меньше интеграций по сравнению со Slack, аудитория в основном IT-сектор, нет публичного бесплатного тарифа.
+<strong>Ссылка:</strong> <a href="https://pachca.com" rel="nofollow" target="_blank">pachca.com</a></p>
+<h3 id="slack">Slack</h3>
+<p>Slack — один из самых популярных корпоративных мессенджеров в мире. Бесплатный тариф поддерживает до 90 дней истории сообщений и ограниченное количество интеграций. Платные тарифы: Pro — от $7.25/пользователя/мес (при годовой оплате), Business+ — от $12.50/пользователя/мес. В 2025 году Slack расширил доступ к ИИ-функциям и функциям безопасности Salesforce.</p>
+<p>Функционал: каналы и треды, хаддлы (голосовые мини-созвоны), совместная работа с файлами, более 2000 интеграций через App Directory, Workflow Builder для автоматизации. Загрузка файлов до 1 ГБ в бесплатном тарифе. Поддерживается импорт из Microsoft Teams.</p>
+<p><strong>Плюсы:</strong> лучшая в классе экосистема интеграций, мощная автоматизация (Workflow Builder), хаддлы, зрелая платформа.
+<strong>Минусы:</strong> данные за рубежом, несоответствие 152-ФЗ, платный тариф быстро становится обязательным (90 дней истории), цены растут.
+<strong>Ссылка:</strong> <a href="https://slack.com" rel="nofollow" target="_blank">slack.com</a></p>
+<h3 id="discord-для-бизнеса">Discord (для бизнеса)</h3>
+<p>Discord изначально создавался для геймеров, но всё чаще используется бизнес-командами. Серверы поддерживают до 500 каналов, текстовые и голосовые каналы, экранное демо. Бесплатный тариф: загрузка файлов до 10 МБ, Nitro Basic — до 50 МБ, Nitro — до 500 МБ.</p>
+<p>Для бизнеса Discord привлекает бесплатностью, удобными голосовыми каналами и простотой настройки ролей и разрешений. Однако платформа не предназначена для корпоративного использования — нет SLA, нет интеграций с CRM, нет соответствия стандартам безопасности. Discord официально заявлял, что не планирует развивать бизнес-направление.</p>
+<p><strong>Плюсы:</strong> бесплатный, удобные голосовые каналы, гибкая система ролей, простота создания серверов.
+<strong>Минусы:</strong> нет корпоративных функций, ограничение файлов (10 МБ бесплатно), данные за рубежом, игровой имидж, нет SLA.
+<strong>Ссылка:</strong> <a href="https://discord.com" rel="nofollow" target="_blank">discord.com</a></p>
+<h3 id="microsoft-teams-чат">Microsoft Teams (чат)</h3>
+<p>Microsoft Teams — не только сервис видеоконференций, но и полноценный корпоративный мессенджер. Входит в Microsoft 365. Бесплатная версия включает неограниченные чаты, 5 ГБ хранилища на пользователя, 10 ГБ общее. Платные тарифы: Essentials от $4/пользователя/мес, Business Basic от $6/пользователя/мес.</p>
+<p>Функционал чата: каналы и треды, прямые сообщения, интеграция с SharePoint и OneDrive, совместное редактирование документов Office, боты и соединители. Гостевой доступ для внешних участников. Поддерживается импорт из Slack. Ограничение на загрузку файлов — до 15 ГБ в платных тарифах.</p>
+<p><strong>Плюсы:</strong> комплексное решение, интеграция с Office 365, гостевой доступ, generous free tier для чатов.
+<strong>Минусы:</strong> перегруженный интерфейс, данные за рубежом, несоответствие 152-ФЗ, ресурсоёмкий клиент.
+<strong>Ссылка:</strong> <a href="https://teams.microsoft.com" rel="nofollow" target="_blank">teams.microsoft.com</a></p>
+<h3 id="mattermost">Mattermost</h3>
+<p>Mattermost — корпоративная платформа для командных коммуникаций с открытым исходным кодом. Ключевое преимущество: self-hosted развёртывание — вы полностью контролируете данные и можете разместить серверы на территории РФ. Текущая стабильная версия — v11.5 (март 2026). Поддерживает импорт истории из Slack и Microsoft Teams.</p>
+<p>Бесплатная Enterprise Edition (self-hosted) включает каналы, треды, прямые сообщения, совместный доступ к файлам, вебхуки и интеграцию. Платные подписки Professional и Enterprise добавляют расширенную аналитику, SSO, гостевой доступ и приоритетную поддержку. Mattermost известен сильными DevOps-интеграциями — Jira, GitLab, Jenkins, Prometheus.</p>
+<p><strong>Плюсы:</strong> open source, self-hosted (полный контроль данных, 152-ФЗ), мощные DevOps-интеграции, бесплатная Enterprise Edition.
+<strong>Минусы:</strong> требуется собственный сервер и администрирование, менее дружелюбный интерфейс для не-технических пользователей, меньшая экосистема по сравнению со Slack.
+<strong>Ссылка:</strong> <a href="https://mattermost.com" rel="nofollow" target="_blank">mattermost.com</a></p>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Мессенджер</th><th>Боты/API</th><th>Макс. размер группы</th><th>Файлы</th><th>Безопасность / 152-ФЗ</th><th>Бесплатный тариф</th></tr></thead><tbody><tr><td>Telegram</td><td>Bot API, 100 команд</td><td>200 000</td><td>2 ГБ</td><td>Нет (серверы за рубежом)</td><td>Полный</td></tr><tr><td>WhatsApp Business</td><td>Business API</td><td>1 024</td><td>2 ГБ</td><td>Нет (Meta* заблокирована)</td><td>Полный (приложение)</td></tr><tr><td>VK Мессенджер</td><td>VK API</td><td>25 000</td><td>До 200 МБ</td><td>Да (серверы в РФ)</td><td>Полный</td></tr><tr><td>СберКорус</td><td>Да</td><td>По договору</td><td>По договору</td><td>Да (enterprise)</td><td>Нет (enterprise)</td></tr><tr><td>Пачка</td><td>API, вебхуки</td><td>По тарифу</td><td>По тарифу</td><td>Да (серверы в РФ)</td><td>Нет (demo)</td></tr><tr><td>Slack</td><td>2000+ интеграций</td><td>Не ограничено</td><td>1 ГБ (free)</td><td>Нет (за рубежом)</td><td>90 дней истории</td></tr><tr><td>Discord</td><td>Bot API</td><td>500 каналов</td><td>10 МБ (free)</td><td>Нет (за рубежом)</td><td>Полный</td></tr><tr><td>Microsoft Teams</td><td>Боты, соединители</td><td>По тарифу</td><td>5 ГБ/чел. (free)</td><td>Нет (за рубежом)</td><td>Чаты бесплатно</td></tr><tr><td>Mattermost</td><td>Webhooks, API</td><td>Не ограничено</td><td>50 МБ (default)</td><td>Да (self-hosted)</td><td>Полный (self-hosted)</td></tr></tbody></table>
+<h2 id="итоги">Итоги</h2>
+<p>Для внутренней коммуникации без чувствительных данных <strong>Telegram</strong> остаётся лидером. Если нужен корпоративный мессенджер с соблюдением 152-ФЗ — <strong>Пачка</strong> (малый и средний бизнес) или <strong>СберКорус</strong> (enterprise). Для технических команд, готовых к self-hosted развёртыванию, <strong>Mattermost</strong> — лучший выбор по соотношению контроля и функциональности. Иностранные решения (Slack, Teams) подходят только компаниям, не обрабатывающим персональные данные российских граждан в мессенджере, или с развёрнутыми на территории РФ инстанциями.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

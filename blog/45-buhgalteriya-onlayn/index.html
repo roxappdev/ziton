@@ -1,0 +1,417 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="description" content="Обзор облачных бухгалтерских сервисов для ИП и малого бизнеса: МойСклад, Контур.Эльба, Мое дело, 1С:Онлайн-бухгалтерия и другие."><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f7"><title>Онлайн-бухгалтерия: сервисы для малого и среднего бизнеса — Ziton</title><style>/* Inter Variable — latin */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-3100e775e861.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Inter Variable — latin-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-34b9c504cab7.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Inter Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-ca157063339a.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 900;
+  src: url('/fonts/inter-71d5ee93cc1e.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Newsreader Variable — latin */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-62981321d9a3.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Variable — latin-ext */
+@font-face {
+  font-family: 'Newsreader Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 200 800;
+  src: url('/fonts/newsreader-ac6fa9ed5332.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — latin */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-18be452724bf.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* JetBrains Mono Variable — latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-79bfdab9ba46.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* JetBrains Mono Variable — cyrillic + cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-593ccd6fe36e.woff2') format('woff2-variations');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: optional;
+  font-weight: 100 800;
+  src: url('/fonts/jetbrains-mono-d274604c4075.woff2') format('woff2-variations');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</style><link rel="preload" href="/fonts/inter-71d5ee93cc1e.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/newsreader-62981321d9a3.woff2" as="font" type="font/woff2" crossorigin><style>:root{--bg:#faf9f7;--bg-accent:#f2efe9;--surface:#fff;--ink:#1a1815;--ink-soft:#57534e;--ink-faint:#6d6861;--line:#e7e3dc;--accent:#b4492c;--accent-strong:#93351e;--accent-soft:#faeae4;--max-width:1100px;--radius:14px;--shadow-sm:0 1px 2px #1a18150d;--shadow-md:0 10px 30px -12px #1a18152e;--font-serif:"Newsreader Variable", Georgia, "Times New Roman", serif;--font-sans:"Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;font-family:var(--font-sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;flex-direction:column;margin:0;font-size:16.5px;line-height:1.7;display:flex}main{flex-direction:column;flex:1 0 auto;display:flex}.site-footer{flex-shrink:0}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-strong)}img{max-width:100%;height:auto}::selection{background:var(--accent-soft);color:var(--accent-strong)}.site-header{z-index:20;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);background:#faf9f7d9;position:sticky;top:0}.nav{max-width:var(--max-width);justify-content:space-between;align-items:center;gap:1.5rem;height:68px;margin:0 auto;padding:0 1.5rem;display:flex}.brand{font-family:var(--font-sans);letter-spacing:-.01em;color:var(--ink);align-items:center;gap:.6rem;font-size:1.05rem;font-weight:600;display:inline-flex}.brand:hover{color:var(--ink)}.brand-mark{background:linear-gradient(135deg, var(--accent), var(--accent-strong));color:#fff;width:34px;height:34px;font-family:var(--font-serif);box-shadow:var(--shadow-sm);border-radius:9px;place-items:center;font-size:1.1rem;font-weight:600;display:inline-grid}.site-footer{border-top:1px solid var(--line);background:var(--bg-accent)}.footer-inner{max-width:var(--max-width);color:var(--ink-faint);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin:0 auto;padding:2.5rem 1.5rem;font-size:.9rem;display:flex}.page{max-width:var(--max-width);margin:0 auto;padding:3.5rem 1.5rem 5rem}.breadcrumb{color:var(--ink-faint);align-items:center;gap:.4rem;margin-bottom:2.5rem;font-size:.9rem;display:inline-flex}.breadcrumb a{color:var(--accent);font-weight:500}.prose{font-family:var(--font-serif);color:var(--ink);font-size:1.225rem;line-height:1.75}.prose h1,.prose h2,.prose h3,.prose h4{font-family:var(--font-serif);letter-spacing:-.015em;margin-top:2.4em;margin-bottom:.6em;font-weight:600;line-height:1.2}.prose h2{font-size:1.7em}.prose h3{font-size:1.35em}.prose p{margin:0 0 1.4em}.prose a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.prose ul,.prose ol{margin:0 0 1.4em;padding-left:1.4em}.prose li{margin-bottom:.4em}.prose blockquote{border-left:3px solid var(--accent);color:var(--ink-soft);margin:0 0 1.4em;padding:.2em 0 .2em 1.2em;font-style:italic}.prose code:not(pre code){font-family:var(--font-mono);background:var(--bg-accent);border:1px solid var(--line);border-radius:6px;padding:.1em .4em;font-size:.82em}.prose pre{font-family:var(--font-mono);border-radius:var(--radius);border:1px solid var(--line);margin:0 0 1.6em;font-size:.88rem;line-height:1.6;overflow-x:auto}.prose pre code{background:0 0;border:none;padding:0}
+.post-page[data-astro-cid-ymihodss]{max-width:760px;padding-top:2rem}.post-header[data-astro-cid-ymihodss]{border-bottom:1px solid var(--line);margin-bottom:3rem;padding-bottom:2.5rem}.post-header[data-astro-cid-ymihodss] h1[data-astro-cid-ymihodss]{font-family:var(--font-serif);letter-spacing:-.02em;margin:0 0 1.25rem;font-size:clamp(2.2rem,5vw,3.3rem);font-weight:600;line-height:1.12}.post-meta[data-astro-cid-ymihodss]{color:var(--ink-faint);flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:1.25rem;font-size:.95rem;display:flex}.post-tags[data-astro-cid-ymihodss]{flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none;display:flex}.post-tags[data-astro-cid-ymihodss] li[data-astro-cid-ymihodss]{background:var(--bg-accent);color:var(--ink-soft);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;font-weight:500}
+</style></head><body><header class="site-header"><nav class="nav" aria-label="Основная навигация"><a class="brand" href="/"><span class="brand-mark">Z</span>Ziton</a></nav></header><main><article class="page post-page" data-astro-cid-ymihodss><nav class="breadcrumb" aria-label="Хлебные крошки" data-astro-cid-ymihodss><a href="/" data-astro-cid-ymihodss>Главная</a><span aria-hidden="true" data-astro-cid-ymihodss>/</span><span data-astro-cid-ymihodss>Статья</span></nav><header class="post-header" data-astro-cid-ymihodss><h1 data-astro-cid-ymihodss>Онлайн-бухгалтерия: сервисы для малого и среднего бизнеса</h1><div class="post-meta" data-astro-cid-ymihodss><time datetime="2026-08-03T00:00:00.000Z" data-astro-cid-ymihodss>3 августа 2026 г.</time><span aria-hidden="true" data-astro-cid-ymihodss>·</span><span data-astro-cid-ymihodss>4 мин чтения</span></div><ul class="post-tags" data-astro-cid-ymihodss><li data-astro-cid-ymihodss>бухгалтерия</li><li data-astro-cid-ymihodss>онлайн-бухгалтерия</li><li data-astro-cid-ymihodss>налоги</li><li data-astro-cid-ymihodss>малый бизнес</li><li data-astro-cid-ymihodss>ЕНС</li><li data-astro-cid-ymihodss>электронная отчётность</li></ul></header><div class="prose" data-astro-cid-ymihodss><h2 id="зачем-бизнесу-онлайн-бухгалтерия">Зачем бизнесу онлайн-бухгалтерия</h2>
+<p>Облачная бухгалтерия — это SaaS-решение, которое позволяет вести учёт, сдавать отчётность и считать налоги без установки программ на компьютер и без найма штатного бухгалтера. Для малого бизнеса, индивидуальных предпринимателей и микрокомпаний это зачастую единственный разумный вариант: штатный бухгалтер стоит от 60 000 ₽ в месяц, а онлайн-сервис — от 0 до 5 000 ₽.</p>
+<p>Современные онлайн-бухгалтерии закрывают ключевые потребности: <strong>расчёт налогов</strong> (ЕНС, НДС, НДФЛ, страховые взносы), <strong>формирование и отправка отчётности</strong> в ФНС, ПФР и ФСС через электронные каналы (ЭДО), <strong>интеграция с банками</strong> для автоматической загрузки выписок и разнесения платежей, <strong>начисление зарплаты</strong> сотрудникам, <strong>работа с актами и счетами-фактурами</strong>, а также <strong>отслеживание изменений в законодательстве</strong> и автоматическое обновление под актуальные формы отчётности.</p>
+<p>Ниже рассмотрим восемь популярных сервисов, а в конце сведём их в сравнительную таблицу.</p>
+<h2 id="мойсклад">МойСклад</h2>
+<p><strong>Сайт:</strong> <a href="https://moysklad.ru" rel="nofollow" target="_blank">moysklad.ru</a></p>
+<p>МойСклад — прежде всего сервис управления складом и торговлей, но его бухгалтерский модуль получил значительное развитие. Позиционируется как комплексное решение для торговли и учёта.</p>
+<p><strong>Налоги и отчётность:</strong> поддерживает ОСНО, УСН, ЕНВД, ПСН. Автоматический расчёт налогов, формирование КУДиР, деклараций по УСН и НДС. Отправка отчётности через ЭДО. Поддержка ЕНС (единый налоговый счёт) — с 2023 года сервис адаптирован под новые правила уплаты налогов.</p>
+<p><strong>Банковская интеграция:</strong> прямая интеграция с более чем 60 банками. Автозагрузка выписок, распознавание платежей, сверка с документами.</p>
+<p><strong>Зарплата и кадры:</strong> модуль расчёта зарплаты доступен на тарифах от «Базовый» и выше. Поддерживает начисление, удержания, расчёт НДФЛ и взносов, формирование расчётных листков.</p>
+<p><strong>Акты и первичка:</strong> создание и отправка электронных актов, накладных, счётов-фактур через контрагентам с ЭДО. Поддержка стандартов СБИС, Диадок и других.</p>
+<p><strong>Цены:</strong> от 2 990 ₽/мес (тариф «Базовый»). Тариф «Продвинутый» — 5 990 ₽/мес, «Профессиональный» — 14 990 ₽/мес.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Мощный складской и торговый учёт</li>
+<li>Глубокая интеграция с маркетплейсами (Ozon, Wildberries, Яндекс.Маркет)</li>
+<li>Широкая банковская интеграция</li>
+<li>Отличная экосистема дополнений и API</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Бухгалтерский функционал уступает специализированным сервисам</li>
+<li>Цены выше, чем у многих конкурентов</li>
+<li>Сложноват для неспециалистов</li>
+<li>Модуль зарплаты платный и не самый удобный</li>
+</ul>
+<h2 id="контурэльба">Контур.Эльба</h2>
+<p><strong>Сайт:</strong> <a href="https://elba.kontur.ru" rel="nofollow" target="_blank">elba.kontur.ru</a></p>
+<p>Контур.Эльба — один из самых популярных онлайн-бухгалтерских сервисов для ИП и малого бизнеса от компании «СКБ Контур». Отличается простотой интерфейса и ориентирован на предпринимателей без бухгалтерского образования.</p>
+<p><strong>Налоги и отчётность:</strong> ОСНО, УСН, ПСН, НПД (самозанятые). Автоматический расчёт всех налогов, формирование и отправка деклараций в ФНС. Полная поддержка ЕНС с автокалькуляцией и рекомендациями по распределению платежей. НДС-учёт с книгой покупок и продаж.</p>
+<p><strong>Банковская интеграция:</strong> более 100 банков. Автозагрузка выписок, интеллектуальное разнесение платежей (система обучается на ваших действиях).</p>
+<p><strong>Зарплата и кадры:</strong> модуль «Зарплата» — отдельная опция. Расчёт зарплаты до 5 сотрудников включён в базовый тариф, далее — доплата. Полный расчёт НДФЛ, взносов, больничных, отпускных.</p>
+<p><strong>Акты и первичка:</strong> создание и печать первичных документов. ЭДО через Контур.Диадок (встроенный).</p>
+<p><strong>Цены:</strong> тариф «Предприниматель» — 3 888 ₽/год (324 ₽/мес при оплате за год), «Бухгалтерия» — 6 888 ₽/год. Тариф «Зарплата» — от 2 784 ₽/год.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Очень простой и понятный интерфейс</li>
+<li>Полная поддержка ЕНС и актуального законодательства</li>
+<li>Встроенный Контур.Диадок для ЭДО</li>
+<li>Одни из самых низких цен на рынке</li>
+<li>Отличная служба поддержки</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Нет складского учёта</li>
+<li>Ограниченные возможности для ООО с НДС</li>
+<li>Модуль зарплаты ограничен на базовых тарифах</li>
+<li>Не подходит для среднего бизнеса</li>
+</ul>
+<h2 id="мое-дело-moedelo">Мое дело (Moedelo)</h2>
+<p><strong>Сайт:</strong> <a href="https://moedelo.org" rel="nofollow" target="_blank">moedelo.org</a></p>
+<p>Мое дело — облачная бухгалтерия, созданная специально для малого бизнеса и ИП. Позиционируется как максимально автоматизированное решение, которое сводит ручной труд к минимуму.</p>
+<p><strong>Налоги и отчётность:</strong> ОСНО, УСН, ПСН, НПД, ЕНВД. Автоматический расчёт налогов, КУДиР, декларации. Поддержка ЕНС с рекомендациями по суммам платежей. Автоматическое заполнение книги покупок и продаж при работе с НДС.</p>
+<p><strong>Банковская интеграция:</strong> более 90 банков. Автозагрузка выписок, авто-разнесение с ИИ-помощником, сверка взаиморасчётов.</p>
+<p><strong>Зарплата и кадры:</strong> полноценный модуль зарплаты: начисление, удержания, НДФЛ, взносы, кадровые документы (приказы, договоры). Лимит по количеству сотрудников зависит от тарифа.</p>
+<p><strong>Акты и первичка:</strong> создание электронных документов, отправка через ЭДО. Встроенный оператор ЭДО.</p>
+<p><strong>Цены:</strong> тариф «Лёгкий старт» — бесплатно (до 2 операций/мес), «Базовый» — 399 ₽/мес, «Оптимальный» — 799 ₽/мес, «Всё включено» — 1 499 ₽/мес.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Бесплатный тариф для минимальных потребностей</li>
+<li>Высокая степень автоматизации</li>
+<li>Удобный модуль зарплаты и кадров</li>
+<li>Конкурентная цена за полный функционал</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Интерфейс перегружен функциями</li>
+<li>Поддержка реагирует с задержкой</li>
+<li>Нет интеграции с маркетплейсами</li>
+<li>Обновления иногда вызывают баги</li>
+</ul>
+<h2 id="1сонлайн-бухгалтерия">1С:Онлайн-бухгалтерия</h2>
+<p><strong>Сайт:</strong> <a href="https://online.1c.ru" rel="nofollow" target="_blank">online.1c.ru</a></p>
+<p>1С:Онлайн-бухгалтерия — облачная версия легендарной «1С:Бухгалтерии», адаптированная для работы через браузер. Подходит для тех, кто привык к логике 1С, но не хочет устанавливать программы на компьютер.</p>
+<p><strong>Налоги и отчётность:</strong> полная поддержка всех режимов налогообложения (ОСНО, УСН, ПСН, ЕНВД). Расчёт всех налогов, включая сложный учёт НДС. Поддержка ЕНС. Регулярные обновления форм отчётности.</p>
+<p><strong>Банковская интеграция:</strong> более 130 банков. Автозагрузка и разнесение выписок. Глубокая интеграция с 1С-Банком.</p>
+<p><strong>Зарплата и кадры:</strong> полноценный кадровый учёт и расчёт зарплаты для любого количества сотрудников. Больничные, отпуска, командировочные, премии.</p>
+<p><strong>Акты и первичка:</strong> полный цикл работы с первичной документацией. ЭДО через встроенных операторов.</p>
+<p><strong>Цены:</strong> от 5 400 ₽/мес (тариф «Базовый»). Тариф «ПРОФ» — 10 800 ₽/мес.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Максимально полный бухгалтерский функционал</li>
+<li>Привычный интерфейс для пользователей 1С</li>
+<li>Подходит для ООО с любым режимом налогообложения</li>
+<li>Регулярные обновления от «1С»</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Высокая цена</li>
+<li>Интерфейс сложный для новичков</li>
+<li>Требует бухгалтерской подготовки</li>
+<li>Медленная работа при большом объёме данных</li>
+</ul>
+<h2 id="р7-бухгалтерия">Р7-Бухгалтерия</h2>
+<p><strong>Сайт:</strong> <a href="https://r7-buh.ru" rel="nofollow" target="_blank">r7-buh.ru</a></p>
+<p>Р7-Бухгалтерия — онлайн-сервис от компании «Р7» (ранее — «Атлантис»). Ориентирован на ИП и микробизнес, предлагает простой интерфейс и набор базовых бухгалтерских функций.</p>
+<p><strong>Налоги и отчётность:</strong> УСН, ОСНО, ПСН, НПД. Автоматический расчёт налогов, формирование и отправка деклараций. Поддержка ЕНС.</p>
+<p><strong>Банковская интеграция:</strong> около 60 банков. Автозагрузка выписок и ручное разнесение.</p>
+<p><strong>Зарплата и кадры:</strong> базовый модуль расчёта зарплаты (до 3 сотрудников включён в подписку).</p>
+<p><strong>Акты и первичка:</strong> создание и печать первичных документов. ЭДО через партнёрских операторов.</p>
+<p><strong>Цены:</strong> тариф «Старт» — 197 ₽/мес, «Оптимальный» — 597 ₽/мес, «Бизнес» — 1 197 ₽/мес.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Очень низкая цена</li>
+<li>Простой интерфейс</li>
+<li>Быстрый старт без обучения</li>
+<li>Адекватная базовая функциональность</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Ограниченный набор функций</li>
+<li>Нет складского учёта</li>
+<li>Слабая банковская интеграция</li>
+<li>Поддержка только по email и телефону</li>
+</ul>
+<h2 id="тинькофф-бухгалтерия">Тинькофф Бухгалтерия</h2>
+<p><strong>Сайт:</strong> <a href="https://www.tinkoff.ru/business/buhgalteriya/" rel="nofollow" target="_blank">tinkoff.ru/business/buhgalteriya</a></p>
+<p>Тинькофф Бухгалтерия — бухгалтерский сервис от Т-Банка, глубоко интегрированный с банковскими продуктами. Идеальный вариант для клиентов Т-Банка, хотя доступен и для других пользователей.</p>
+<p><strong>Налоги и отчётность:</strong> УСН, ОСНО, ПСН, НПД. Автоматический расчёт налогов, декларации, КУДиР. Поддержка ЕНС. Автоматическая сверка с выписками Т-Банка.</p>
+<p><strong>Банковская интеграция:</strong> бесшовная с Т-Банком (автоматически). Для других банков — загрузка выписок вручную или через клиент-банк.</p>
+<p><strong>Зарплата и кадры:</strong> полный модуль зарплаты: начисление, НДФЛ, взносы, больничные, кадровые документы.</p>
+<p><strong>Акты и первичка:</strong> создание счетов, актов, накладных. ЭДО через Т-Банк.</p>
+<p><strong>Цены:</strong> тариф «Лёгкий» — бесплатно для клиентов Т-Банка, «Полный» — 990 ₽/мес (для клиентов Т-Банка), 1 990 ₽/мес для остальных.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Бесплатный старт для клиентов Т-Банка</li>
+<li>Идеальная интеграция с банком</li>
+<li>Автоматическая сверка расчётов</li>
+<li>Простой интерфейс</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Лучшие условия только для клиентов Т-Банка</li>
+<li>Ограниченный функционал по сравнению с конкурентами</li>
+<li>Нет складского учёта</li>
+<li>Меньше настроек для сложных сценариев</li>
+</ul>
+<h2 id="планфакт">ПланФакт</h2>
+<p><strong>Сайт:</strong> <a href="https://planfact.ru" rel="nofollow" target="_blank">planfact.ru</a></p>
+<p>ПланФакт — облачный сервис для управления финансами и бухгалтерии, который делает акцент на финансовом учёте, бюджете и аналитике. Подходит для малого и среднего бизнеса.</p>
+<p><strong>Налоги и отчётность:</strong> УСН, ОСНО, ПСН. Расчёт налогов, формирование деклараций, КУДиР. Поддержка ЕНС.</p>
+<p><strong>Банковская интеграция:</strong> более 70 банков, автозагрузка выписок, ручное и полуавтоматическое разнесение.</p>
+<p><strong>Зарплата и кадры:</strong> модуль расчёта зарплаты доступен на платных тарифах. Базовые функции начисления, НДФЛ, взносы.</p>
+<p><strong>Акты и первичка:</strong> создание первичных документов, отправка через ЭДО (интеграция с операторами).</p>
+<p><strong>Цены:</strong> тариф «Базовый» — 997 ₽/мес, «Профессиональный» — 1 997 ₽/мес.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Сильная финансовая аналитика и управленческий учёт</li>
+<li>Удобные инструменты бюджетирования</li>
+<li>Конкурентная цена за полный функционал</li>
+<li>Гибкая настройка статей расходов</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Слабая налоговая аналитика по сравнению с Эльбой</li>
+<li>Нет интеграции с маркетплейсами</li>
+<li>Модуль зарплаты уступает конкурентам</li>
+<li>Обновления происходят реже, чем у конкурентов</li>
+</ul>
+<h2 id="атлант-м-небольшой-бизнес">Атлант-М (небольшой бизнес)</h2>
+<p><strong>Сайт:</strong> <a href="https://atlant-m.ru" rel="nofollow" target="_blank">atlant-m.ru</a></p>
+<p>Атлант-М — комплексная автоматизация для небольшого бизнеса, включающая складской, торговый и бухгалтерский учёт. Существует как облачная и коробочная версия.</p>
+<p><strong>Налоги и отчётность:</strong> УСН, ОСНО, ПСН. Формирование деклараций, расчёт налогов, поддержка ЕНС.</p>
+<p><strong>Банковская интеграция:</strong> около 40 банков, загрузка выписок, базовое разнесение.</p>
+<p><strong>Зарплата и кадры:</strong> модуль зарплаты входит в расширенный тариф. Расчёт зарплаты, НДФЛ, взносы.</p>
+<p><strong>Акты и первичка:</strong> создание первичных документов, печать. ЭДО через партнёров.</p>
+<p><strong>Цены:</strong> от 6 000 ₽/год (500 ₽/мес). Расширенный тариф с зарплатой — от 12 000 ₽/год.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Комплексное решение (склад + бухгалтерия)</li>
+<li>Низкая цена</li>
+<li>Возможность коробочной установки</li>
+<li>Подходит для розничного магазина</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Устаревший интерфейс</li>
+<li>Ограниченная банковская интеграция</li>
+<li>Слабая техническая поддержка</li>
+<li>Медленные обновления</li>
+</ul>
+<h2 id="freshbooks-зарубежная-альтернатива">FreshBooks (зарубежная альтернатива)</h2>
+<p><strong>Сайт:</strong> <a href="https://freshbooks.com" rel="nofollow" target="_blank">freshbooks.com</a></p>
+<p>FreshBooks — популярный зарубежный сервис учёта и выставления счетов, ориентированный на фрилансеров и малый бизнес. Упомянут для полноты картины, хотя его применение для российского бизнеса ограничено из-за несоответствия российским стандартам отчётности.</p>
+<p><strong>Плюсы:</strong></p>
+<ul>
+<li>Очень простой и красивый интерфейс</li>
+<li>Отличный модуль выставления счетов</li>
+<li>Интеграция с PayPal, Stripe и другими</li>
+<li>Мобильное приложение</li>
+</ul>
+<p><strong>Минусы:</strong></p>
+<ul>
+<li>Не поддерживает российскую налоговую отчётность</li>
+<li>Нет интеграции с российскими банками</li>
+<li>Цена в долларах (от $17/мес)</li>
+<li>Не адаптирован под ЕНС и российское законодательство</li>
+</ul>
+<h2 id="сравнительная-таблица">Сравнительная таблица</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Сервис</th><th>Цена (от)</th><th>УСН</th><th>ОСНО</th><th>НДС</th><th>ЕНС</th><th>Банки</th><th>Зарплата</th><th>Маркетплейсы</th></tr></thead><tbody><tr><td>МойСклад</td><td>2 990 ₽/мес</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>60+</td><td>✅ (платн.)</td><td>✅</td></tr><tr><td>Контур.Эльба</td><td>324 ₽/мес</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>100+</td><td>✅</td><td>❌</td></tr><tr><td>Мое дело</td><td>399 ₽/мес</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>90+</td><td>✅</td><td>❌</td></tr><tr><td>1С:Онлайн</td><td>5 400 ₽/мес</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>130+</td><td>✅</td><td>❌</td></tr><tr><td>Р7-Бухгалтерия</td><td>197 ₽/мес</td><td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>60+</td><td>✅ (базов.)</td><td>❌</td></tr><tr><td>Тинькофф Бух.</td><td>0 ₽/мес*</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>Т-Банк</td><td>✅</td><td>❌</td></tr><tr><td>ПланФакт</td><td>997 ₽/мес</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>70+</td><td>✅ (платн.)</td><td>❌</td></tr><tr><td>Атлант-М</td><td>500 ₽/мес</td><td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>40+</td><td>✅ (платн.)</td><td>❌</td></tr><tr><td>FreshBooks</td><td>$17/мес</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>Нет</td><td>❌</td><td>❌</td></tr></tbody></table>
+<p>*Бесплатно для клиентов Т-Банка на базовом тарифе.</p>
+<h2 id="что-выбрать">Что выбрать</h2>
+<p>Для <strong>ИП на УСН</strong> без сотрудников оптимальным выбором будет Контур.Эльба — лучший баланс цены и функциональности. Если нужен <strong>склад + бухгалтерия + маркетплейсы</strong>, берите МойСклад. Для <strong>клиентов Т-Банка</strong> логично использовать Тинькофф Бухгалтерию — бесплатный старт и бесшовная интеграция с банком. Для <strong>ООО с НДС</strong> и сложным учётом стоит рассмотреть 1С:Онлайн-бухгалтерию или Мое дело. Если бюджет ограничен, Р7-Бухгалтерия и Атлант-М предложат базовый функционал за минимальные деньги.</p>
+<p>Все перечисленные российские сервисы поддерживают ЕНС и регулярно обновляются под изменения законодательства, что критически важно в 2025–2026 годах при частых налоговых реформах.</p></div></article></main><footer class="site-footer"><div class="footer-inner"><span>© 2026 Ziton. Все права защищены.</span></div></footer><!-- Yandex.Metrika counter (отложенная загрузка) --><script type="module">function e(){(function(e,t,n,r,i,a,o){e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(n),o=t.getElementsByTagName(n)[0],a.async=1,a.src=r,o.parentNode.insertBefore(a,o)})(window,document,`script`,`https://mc.yandex.ru/metrika/tag.js`,`ym`),ym(91976063,`init`,{accurateTrackBounce:!0,trackLinks:!0})}`requestIdleCallback`in window?requestIdleCallback(e,{timeout:3e3}):setTimeout(e,2e3);</script><noscript><div><img src="https://mc.yandex.ru/watch/91976063" style="position:absolute; left:-9999px;" alt=""></div></noscript><!-- /Yandex.Metrika counter --></body></html>

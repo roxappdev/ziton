@@ -1,0 +1,5 @@
+# Правила заголовков для Netlify / Cloudflare Pages.
+# GitHub Pages игнорирует этот файл и принудительно отдаёт Cache-Control: max-age=600.
+# При переезде на Netlify или Cloudflare Pages шрифты будут кешироваться на год.
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
